@@ -58,13 +58,12 @@ function _unpackPost(req, done) {
     body += data;
   });
   req.on('end', function() {
-    if (req.headers['content-type'] === 'application/json') {
-      body = JSON.parse(body);
-      body = body.substring(8);
+    body = JSON.parse(body);
+    body = body.substring(8);
 
-      console.log(body);
-      //body = JSON.stringify(body, null, 2);
-    }
+    console.log(body);
+    //body = JSON.stringify(body, null, 2);
+
     req.body = body;
     done();
   });
