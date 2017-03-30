@@ -19,14 +19,19 @@ const port = 3000;
 const host = 'localhost';
 
 const server = http.createServer( (req, res) => {
-  let webhookData
-  if (req.method === "POST" && url.parse(req.url).pathname == '/github\/webhooks$/') {
+  if (req.method === "POST" && req.url.match(/github\/webhooks$/)) {
     let body = "";
     req.on('data', (data) => {
-      body += data;
+      body += data
     });
     req.on('end', () => {
-      console.log(body);
+      body = body.slice(8);
+      body = JSON.parse(body)
+      reqQuery = {
+        name: body.pusher.name,
+        repo: body.repository.name
+      }
+      console.log(reqQuery)
     });
   }
 
