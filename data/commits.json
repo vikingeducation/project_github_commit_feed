@@ -2,6 +2,12 @@
   "data": [
     {
       "author": "markmarkyesyes",
+      "commit": "tester",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/bfbd2289d7a1f38fe39bce22d495a857d492495e",
+      "sha": "bfbd2289d7a1f38fe39bce22d495a857d492495e"
+    },
+    {
+      "author": "markmarkyesyes",
       "commit": "maybe pusher?",
       "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/116b6095db70980e049f2ae4b05b70c5847364a2",
       "sha": "116b6095db70980e049f2ae4b05b70c5847364a2"

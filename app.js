@@ -19,23 +19,8 @@ const port = 3000;
 const host = 'localhost';
 
 const server = http.createServer( (req, res) => {
-  if (req.method === "POST" && req.url.match(/github\/webhooks$/)) {
-    let body = "";
-    req.on('data', (data) => {
-      body += data
-    });
-    req.on('end', () => {
-      body = body.slice(8);
-      body = unescape(body)
-      body = JSON.parse(body)
-      console.log(body)
-      reqQuery = {
-        name: body.sender.name,
-        repo: body.repository.name
-      }
-      console.log(reqQuery)
-    });
-  }
+
+
 
 
   const path = req.url;
@@ -44,8 +29,24 @@ const server = http.createServer( (req, res) => {
     reqQuery = url.parse(path, true).query;
   }
 
-  if (reqQuery) {
+  if (reqQuery || req.url.match(/github\/webhooks$/)) {
 
+    if (req.method === "POST" && req.url.match(/github\/webhooks$/)) {
+      let body = "";
+      req.on('data', (data) => {
+        body += data
+      });
+      req.on('end', () => {
+        body = body.slice(8);
+        body = unescape(body)
+        body = JSON.parse(body)
+        reqQuery = {
+          name: body.sender.name,
+          repo: body.repository.name
+        }
+      });
+    }
+    
     let data;
     
     github.gitCommits(reqQuery.user, reqQuery.repo)
