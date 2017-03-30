@@ -7,6 +7,7 @@ const indexHtml = './public/index.html';
 let reqQuery;
 const formPath = /^\/commits\?.+/;
 const jsonPath = './data/commits.json';
+
 var _headers = {
   "Content-Type": "text/html",
   "Access-Control-Allow-Origin": "*",
@@ -21,7 +22,13 @@ const host = 'localhost';
 const server = http.createServer( (req, res) => {
 
   if (req.method === "POST") {
-    console.log(req);
+    let body = "";
+    req.on('data', (data) => {
+      body += data;
+    });
+    req.on('end', () => {
+      console.log(body);
+    });
   }
 
 
