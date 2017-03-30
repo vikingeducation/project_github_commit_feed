@@ -3,16 +3,14 @@ const fs = require('fs');
 const url = require('url');
 const github = require('./lib/gitWrapper');
 
-const json = require('./data/commits.json');
 const indexHtml = './public/index.html';
+let reqQuery;
+const formPath = /^\/commits\?.+/;
+const jsonPath = './data/commits.json';
 
 const port = 3000;
 const host = 'localhost';
 
-
-
-let reqQuery;
-const formPath = /^\/commits\?.+/;
 
 const server = http.createServer( (req, res) => {
   const path = req.url;
@@ -30,14 +28,15 @@ const server = http.createServer( (req, res) => {
       return writeFile('./data/commits.json', scrubbedData);
     })
       .then(
-        readFile(indexHtml).then( (data) => {
-          data = data.replace('{{ commitFeed }}', JSON.stringify(json, null, 2));
-          sendOkResponse(res, data);
+        readFile(indexHtml)
+        .then( (data) => {
+          readFile(jsonPath)
+          .then( (json) => {
+            data = data.replace('{{ commitFeed }}', JSON.stringify(json, null, 2));
+            sendOkResponse(res, data);
+          })
         })
       )
-    
-
-
   } else {
 
     readFile(indexHtml).then( (data) => {
