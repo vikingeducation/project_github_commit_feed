@@ -36,7 +36,7 @@ const server = http.createServer( (req, res) => {
       return readFile(jsonPath);
     })
     .then( (json) => {
-      data = data.replace('{{ commitFeed }}', JSON.stringify(json, null, 2));
+      data = data.replace('{{ commitFeed }}', json);
       sendOkResponse(res, data);
     });
 
@@ -95,7 +95,7 @@ function readFile(path) {
   return new Promise( (resolve) => {
     fs.readFile(path, 'utf-8', (err, data) => {
       if (err) throw err;
-      return resolve(data);
+      resolve(data);
     });
   });
 }
