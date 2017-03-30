@@ -20,8 +20,8 @@ const host = 'localhost';
 
 
 const server = http.createServer( (req, res) => {
-
-  if (req.method === "POST") {
+  let webhookData
+  if (req.method === "POST" && url.parse(path).pathname == '/github\/webhooks$/') {
     let body = "";
     req.on('data', (data) => {
       body += data;
