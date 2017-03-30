@@ -2,14 +2,29 @@ const Github = require('github');
 const github = new Github();
 const ghToken = process.env.GITHUB_API_KEY;
 
-github.authenticate({
-  type: "token",
-  token: ghToken
-})
 
-let test = github.repos.getCommits({
-  owner: 'markmarkyesyes',
-  repo: 'project_github_commit_feed'
-})
+const gitWrapper = {
 
-test.then( data => console.log(data));
+  authenticate: () => {
+    github.authenticate({
+      type: "token",
+      token: ghToken
+    });
+  },
+
+  gitCommits: (owner, repo) => {
+
+    // returns this promise
+
+    return github.repos.getCommits({
+      owner: owner,
+      repo: repo
+    });
+  }
+
+};
+
+let commits = gitWrapper.gitCommits('markmarkyesyes', 'project_github_commit_feed').then( data => console.log(data));
+
+
+module.exports = gitWrapper;
