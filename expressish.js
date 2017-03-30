@@ -5,6 +5,14 @@ const path = require('path');
 const url = require('url');
 
 
+
+
+//Get instance of githubapiwrapper
+const GITHUB_API_KEY = require('./config').GITHUB_API_KEY;
+let github = require('./githubapiwrapper')(GITHUB_API_KEY);
+
+
+
 let app = function () {
     //App instance current commitData
     let _appCommitData = '';
@@ -34,6 +42,19 @@ let app = function () {
         console.log(req.url);
         let queryParams = url.parse(req.url, true).query;
         console.log(queryParams);
+        
+        //Configuration object for the getCommits function
+        let { user, repo } = queryParams;
+        console.log(user, repo);
+        let commitsConfig = {
+            'owner': user,
+            'repo': repo
+        };
+        
+        //Now send request to Github API using the getCommits function
+        //Should also be wrapped in promise
+        github.getCommits(commitsConfig);
+        
         
         
         
