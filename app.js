@@ -31,15 +31,13 @@ let server = http.createServer(function(req, res) {
     res.writeHead(200, _headers);
 
     if (pathname == '/commits') {
-      githubWrapper.getCommits(userInfo).then(commitData => {
-        let commitsData = JSON.stringify(commitData, null, 2);
+      githubWrapper.getCommits(userInfo).then((commitsData) => {        
         fileData = fileData.replace('{{ commitFeed }}', commitsData);
-
         res.end(fileData);
       });
     } else if (pathname == '/github/webhooks') {
       let p = new Promise((resolve, reject) => {
-        _unpackPost(req, resolve);
+        _writePostToFile(req, resolve);
         return resolve();
       });
 
@@ -52,7 +50,7 @@ let server = http.createServer(function(req, res) {
   });
 });
 
-function _unpackPost(req, done) {
+function _writePostToFile(req, done) {
   var body = '';
   req.on('data', function(data) {
     body += data.toString();
@@ -62,11 +60,10 @@ function _unpackPost(req, done) {
     body = body.substring(8);
     body = JSON.parse(body);
     body = JSON.stringify(body, null, 2);
-    
-    //Need to decode url info
-    console.log(body);
 
-    req.body = body;
+    //fs.writeFile('/data/commits.json', )
+    //Need to decode url info
+    
     done();
   });
 }
