@@ -35,6 +35,12 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
+function scrubTheData(data) {
+  var scrubObj = {};
+  var array = data.data;
+  console.log(array);
+}
+
 function parseUrl(urlData) {
   let regex = /user=(.+)&repo=(.+)/;
   var matches = regex.exec(urlData);
