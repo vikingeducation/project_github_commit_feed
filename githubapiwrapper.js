@@ -16,9 +16,4 @@ function Session(apiKey) {
 }
 
 
-
-
-
-
-
 module.exports = Session;
