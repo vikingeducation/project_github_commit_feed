@@ -24,9 +24,10 @@ const server = http.createServer( (req, res) => {
     const gitData = github.gitCommits(reqQuery.user, reqQuery.repo);
     
     gitData.then( (resolvedData) => {
+      let scrubbedData = scrubCommits(resolvedData);
       fs.readFile('./public/index.html', 'utf-8', (err, data) => {
         res.writeHead(200, { 'Content-Type': 'text/html' });
-        data = data.replace('{{ commitFeed }}', JSON.stringify(resolvedData, null, 2));
+        data = data.replace('{{ commitFeed }}', JSON.stringify(scrubbedData, null, 2));
         res.end(data);
       });
     });
@@ -37,3 +38,16 @@ server.listen(port, host, () => {
   console.log(`Server listening at http://${host}:${port}`);
 });
 
+function scrubCommits (resolvedData) {
+  let obj = {data:[]}
+  resolvedData.data.map((eachCommit) => {
+    obj.data.push({
+      author: eachCommit.commit.author.name,
+      commit: eachCommit.commit.message,
+      url: eachCommit.url,
+      sha: eachCommit.sha
+
+    })
+  })
+  return obj
+}
