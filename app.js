@@ -7,14 +7,14 @@ const json = require('./data/commits.json');
 const port = 3000;
 const host = 'localhost';
 
+let reqQuery;
+
 const server = http.createServer( (req, res) => {
-  let path = req.url
-  let reqQuery = url.parse(path,true)['query']
-  console.log(reqQuery)
-  
-  // let queryObj = parseQuery(reqQuery);
-  // console.log(queryObj);
-  
+  let path = req.url;
+
+  if (path.match(/^\/commits\?.+/)) {
+    reqQuery = url.parse(path,true).query;
+  }
 
   fs.readFile('./public/index.html', 'utf-8', (err, data) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
