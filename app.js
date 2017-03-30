@@ -21,7 +21,7 @@ const host = 'localhost';
 const server = http.createServer( (req, res) => {
 
   if (req.method === "POST") {
-    console.log(req.body)
+    console.log(req);
   }
 
 
@@ -67,10 +67,6 @@ const server = http.createServer( (req, res) => {
 server.listen(port, host, () => {
   console.log(`Server listening at http://${host}:${port}`);
 });
-
-server.listen(3000, 'http://localhost:3000/github/webhooks', () => {
-
-})
 
 
 function sendOkResponse(res, data) {
