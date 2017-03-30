@@ -1,184 +1,100 @@
 {
   "commits": [
     {
-      "message": "test webhook",
+      "message": "minor bug fixed",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/f3f44143449123cf479873b4bc934ae929bf32b2",
-      "sha": "f3f44143449123cf479873b4bc934ae929bf32b2"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3",
+      "sha": "cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3"
     },
     {
-      "message": "test webhook",
+      "message": "minor bug fixed",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/43b5611ecaf3b1054939c85f44752a52cf454b5f",
-      "sha": "43b5611ecaf3b1054939c85f44752a52cf454b5f"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9346c85f5bf9d798db03b015856e12a1b037eaa4",
+      "sha": "9346c85f5bf9d798db03b015856e12a1b037eaa4"
     },
     {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/1ce71f5153504e606554099197d4cdeb02bc4965",
-      "sha": "1ce71f5153504e606554099197d4cdeb02bc4965"
-    },
-    {
-      "message": "test webhook",
+      "message": "done",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/6f1e74c3f3e350797af301a4a1cc4dd3873798df",
-      "sha": "6f1e74c3f3e350797af301a4a1cc4dd3873798df"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/6113817b258257621af4668ddb70033fd25787cc",
+      "sha": "6113817b258257621af4668ddb70033fd25787cc"
     },
     {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/dd2dc33bebfc20f2aebcdf7c44ca89d0244fe1f2",
-      "sha": "dd2dc33bebfc20f2aebcdf7c44ca89d0244fe1f2"
+      "message": "Finish snake game",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/0f204a7476239d0deaa7c840578af6edf7633c2e",
+      "sha": "0f204a7476239d0deaa7c840578af6edf7633c2e"
     },
     {
-      "message": "test webhook",
+      "message": "movement works",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/1cb3c1ea2fcf267e3ab6aad9fe3cb6b81f893675",
-      "sha": "1cb3c1ea2fcf267e3ab6aad9fe3cb6b81f893675"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47",
+      "sha": "51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47"
     },
     {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/6b8afc28d3f08178a02857870be98a993fb60a67",
-      "sha": "6b8afc28d3f08178a02857870be98a993fb60a67"
-    },
-    {
-      "message": "test webhook",
+      "message": "updated snake css",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/83c8549e114bbb64b7c3c7d9f9b256f1e45a63c8",
-      "sha": "83c8549e114bbb64b7c3c7d9f9b256f1e45a63c8"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/237983629378d2984bd5e39f01992c03a1f7cb47",
+      "sha": "237983629378d2984bd5e39f01992c03a1f7cb47"
     },
     {
-      "message": "test webhook",
+      "message": "first push for snake",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/1ef20c0bbfbbd7634fc5f7fa8fd82df4da63f2a1",
-      "sha": "1ef20c0bbfbbd7634fc5f7fa8fd82df4da63f2a1"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f985dfdc88316915764b636df52872f6700d79c0",
+      "sha": "f985dfdc88316915764b636df52872f6700d79c0"
     },
     {
-      "message": "test webhook",
+      "message": "Remove superfluous else",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/c4630be512d4177375ec63b92895a0b7ee25f893",
+      "sha": "c4630be512d4177375ec63b92895a0b7ee25f893"
+    },
+    {
+      "message": "Fix matcher id bug",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/2ce18f7c2147b2aebceae4824c34b998fca4d628",
+      "sha": "2ce18f7c2147b2aebceae4824c34b998fca4d628"
+    },
+    {
+      "message": "Replace classes with hide and show methods in matching game",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/67e632b37f3d5cd9946ef9ec566bebff75de5087",
+      "sha": "67e632b37f3d5cd9946ef9ec566bebff75de5087"
+    },
+    {
+      "message": "Finish core game mechanics",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/082d2db45c88e8e05e6309efeac8bada77f1b53f",
+      "sha": "082d2db45c88e8e05e6309efeac8bada77f1b53f"
+    },
+    {
+      "message": "added match recognition",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/16ad8272ebade6e73b0604701b0a5a7c327bcc7e",
-      "sha": "16ad8272ebade6e73b0604701b0a5a7c327bcc7e"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/e01a5aa64e96359bb2580e0c6d3810639a343549",
+      "sha": "e01a5aa64e96359bb2580e0c6d3810639a343549"
     },
     {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/3eb6f7efb03fe84a2078b064a108923fb3eadff1",
-      "sha": "3eb6f7efb03fe84a2078b064a108923fb3eadff1"
-    },
-    {
-      "message": "wehooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/f8f828f0d5da3fdf41a7651f3d89630334ce9680",
-      "sha": "f8f828f0d5da3fdf41a7651f3d89630334ce9680"
-    },
-    {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/35e1cf12dce761a9e8ab4cbeac5cc1a80e8e8f52",
-      "sha": "35e1cf12dce761a9e8ab4cbeac5cc1a80e8e8f52"
-    },
-    {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/1c7a1130d5fb9f4e48700e36c20212d059df4bc7",
-      "sha": "1c7a1130d5fb9f4e48700e36c20212d059df4bc7"
-    },
-    {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/39bb82f1296e1f73150f147ae7a37b4aeebfc661",
-      "sha": "39bb82f1296e1f73150f147ae7a37b4aeebfc661"
-    },
-    {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/d85024dfea2f1635644f481d1213d193a1fce529",
-      "sha": "d85024dfea2f1635644f481d1213d193a1fce529"
-    },
-    {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/2c7585f1ac069b7427549e4caba08fd591644125",
-      "sha": "2c7585f1ac069b7427549e4caba08fd591644125"
-    },
-    {
-      "message": "test webhook",
+      "message": "random card generation",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/cee0e794f191991e2bbc2489a9844cc370c81cbc",
-      "sha": "cee0e794f191991e2bbc2489a9844cc370c81cbc"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/4d61db407410ae284863f23fa0759af7848471bc",
+      "sha": "4d61db407410ae284863f23fa0759af7848471bc"
     },
     {
-      "message": "test webhook",
+      "message": "Fix document readying",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/847f9adb9c7504fc3a4ac67b7333f6018cde5ebd",
+      "sha": "847f9adb9c7504fc3a4ac67b7333f6018cde5ebd"
+    },
+    {
+      "message": "first commit",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/cbe3171c3e744f8bda3a989448dafac98285e566",
-      "sha": "cbe3171c3e744f8bda3a989448dafac98285e566"
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f8aebdf77b902f0ab4fc4cd716042047a50096c2",
+      "sha": "f8aebdf77b902f0ab4fc4cd716042047a50096c2"
     },
     {
-      "message": "test webhook",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/feff80627092044bb1fa7655bf57defd559ba330",
-      "sha": "feff80627092044bb1fa7655bf57defd559ba330"
-    },
-    {
-      "message": "test webhook",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/525915d7d9a8d683386fc103fa801baddc7fe0e3",
-      "sha": "525915d7d9a8d683386fc103fa801baddc7fe0e3"
-    },
-    {
-      "message": "test webhook",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/f265c9ea6b54b0a350021a536888a9768562f38c",
-      "sha": "f265c9ea6b54b0a350021a536888a9768562f38c"
-    },
-    {
-      "message": "test webhook",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/6b598f931c28331af3c6d20c017dc697894e6a59",
-      "sha": "6b598f931c28331af3c6d20c017dc697894e6a59"
-    },
-    {
-      "message": "test webhook",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/174244625eb7f0623a2efd1cb8efbbb314a3d1fb",
-      "sha": "174244625eb7f0623a2efd1cb8efbbb314a3d1fb"
-    },
-    {
-      "message": "testing webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/b15b6edc37a98a507a4fd2194e2e0372e6b16fc4",
-      "sha": "b15b6edc37a98a507a4fd2194e2e0372e6b16fc4"
-    },
-    {
-      "message": "webhooks",
-      "author": "DHail",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/10cf74870376597b2bbcc72e5e38ecac3398be1a",
-      "sha": "10cf74870376597b2bbcc72e5e38ecac3398be1a"
-    },
-    {
-      "message": "files are uploaded dynamically",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/706e4e6bbb762089ba85267e9d082235860621fc",
-      "sha": "706e4e6bbb762089ba85267e9d082235860621fc"
-    },
-    {
-      "message": "write request to file and wrap in promise",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/f96b39cffb0837943c77ad534e061235e2163067",
-      "sha": "f96b39cffb0837943c77ad534e061235e2163067"
-    },
-    {
-      "message": "write github output to file",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/56bfa7e7a0773830f7d5a4dd75b7b0a982cfcbdf",
-      "sha": "56bfa7e7a0773830f7d5a4dd75b7b0a982cfcbdf"
-    },
-    {
-      "message": "refactor",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/6df94d2b001837edc7f55d31eee18e81808e1ab4",
-      "sha": "6df94d2b001837edc7f55d31eee18e81808e1ab4"
+      "message": "Initial commit",
+      "author": "eriktrautman",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9f43bf874d81dd53742a42387e7b0a67b2b02233",
+      "sha": "9f43bf874d81dd53742a42387e7b0a67b2b02233"
     }
   ]
 }

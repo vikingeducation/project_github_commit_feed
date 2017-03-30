@@ -2,18 +2,33 @@
 <html>
 <head>
   <title>Github Commit Feed</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 </head>
 <body>
-
-  <form method="get" action="/commits">
-    <label for="user">Username</label>
-    <input type="text" name="user" placeholder="Username">
-    <label for="repo">Repo</label>
-    <input type="text" name="repo" placeholder="Repo">
-    <button type="submit">Submit</button>
-  </form>
-
-  <pre>{{ commitFeed }}</pre>
+  <main class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Github Committron 2000</h1>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-4 col-xs-12">
+        <form class="form-group" method="get" action="/commits">
+          <label for="user">Username</label>
+          <input class="form-control" type="text" name="user" placeholder="Username">
+          <label for="repo">Repo</label>
+          <input class="form-control" type="text" name="repo" placeholder="Repo">
+          <br>
+          <div class="text-center"><button class="btn btn-success btn-large" type="submit">Submit</button></div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-10 col-sm-offset-1 col-xs-12">
+        <pre>{{ commitFeed }}</pre>
+      </div>
+    </div>
+  </main>
 
 </body>
 </html>
