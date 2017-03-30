@@ -32,6 +32,8 @@ let server = http.createServer(function(req, res) {
 
         res.end(fileData);
       });
+    } else if (pathname == '/github/webhooks') {
+      console.log(req);
     } else {
       res.end(fileData);
     }
