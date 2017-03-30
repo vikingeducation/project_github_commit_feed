@@ -32,6 +32,18 @@ let app = function () {
                 resolve(data);
             };
         }
+        
+        console.log('req.url:', req.url);
+        //Check url path
+        if (req.url == '/github/webhooks'){
+            
+            console.log("Hello webhooks");
+            
+        }
+        
+        
+        
+        
 
         //Parse the query string of the submitted form
         //console.log(req.url);
