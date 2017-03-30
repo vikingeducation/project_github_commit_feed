@@ -6,11 +6,7 @@ const port = '3000';
 const jsonData = require('./data/commits.json');
 const url = require('url');
 
-
-let userInfo = githubWrapper.setUserInfo('nicoasp', 'assignment_js_sprint');
-githubWrapper.getCommits(userInfo).then(data => {
-  // console.log(data);
-});
+// let userInfo = githubWrapper.setUserInfo('nicoasp', 'assignment_js_sprint');
 
 //For testing: ngrok http 3000
 
@@ -19,11 +15,8 @@ let server = http.createServer(function(req, res) {
   let params = url.parse(req.url, true).query;
 
   let userInfo = githubWrapper.setUserInfo(params.user, params.repo);
-    githubWrapper.getCommits(userInfo).then(data => {
-  // console.log(data);
-  });
 
-  fs.readFile('./public/index.html', 'utf8', function(err, data) {
+  fs.readFile('./public/index.html', 'utf8', function(err, fileData) {
     if (err) {
       res.statusCode('404');
       res.end('404 not found');
@@ -31,9 +24,17 @@ let server = http.createServer(function(req, res) {
     res.writeHead(200, {
       'Content-Type': 'text/html'
     });
-    let commitsData = JSON.stringify(jsonData, null, 2);
-    data = data.replace('{{ commitFeed }}', commitsData);
-    res.end(data);
+
+    if (pathname == '/commits') {
+      githubWrapper.getCommits(userInfo).then(commitData => {
+        let commitsData = JSON.stringify(commitData, null, 2);
+        fileData = fileData.replace('{{ commitFeed }}', commitsData);
+
+        res.end(fileData);
+      });
+    } else {
+      res.end(fileData);
+    }
   });
 });
 
