@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Github Commit Feed</title>
+</head>
+<body>
+
+	<form method="get" action="/commits">
+		<label for="user">Username</label>
+		<input type="text" name="user" placeholder="Username">
+		<label for="repo">Repo</label>
+		<input type="text" name="repo" placeholder="Repo">
+		<button type="submit">Submit</button>
+	</form>
+
+	<pre>
+		
+		{
+		  "Foobar": {
+		    "foobar": [
+		      {
+		        "message": "Update README.md",
+		        "author": {
+		          "name": "Foobar",
+		          "email": "foobar@email.com",
+		          "date": "2017-02-16T19:25:15Z"
+		        },
+		        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
+		        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
+		      }
+		    ]
+		  }
+		}
+
+		
+	</pre>
+
+</body>
+</html>

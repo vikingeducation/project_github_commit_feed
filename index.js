@@ -16,15 +16,4 @@ githubWrapper.getCommits({
 });
 
 
-// var Github = require('github');
-// var github = new Github;
-
-
-// github.authenticate({
-//   type: "token",
-//   token: apikey
-//   })
-
-
-
 
