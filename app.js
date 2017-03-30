@@ -1,6 +1,3 @@
-var apikey = process.env.githubKey;
-var GithubWrapper = require('./lib/GithubWrapper');
-var githubWrapper = new GithubWrapper(apikey);
 var server = require('./lib/server');
 
 
