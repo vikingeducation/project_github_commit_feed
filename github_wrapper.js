@@ -10,12 +10,9 @@ github.authenticate({
 var github_wrapper = {};
 
 github_wrapper.getCommits = function(info_obj, callback) {
-
   github.repos.getCommits(info_obj).then(function(data) {
     callback(data);
-  })
-}
+  });
+};
 
 module.exports = github_wrapper;
-
-

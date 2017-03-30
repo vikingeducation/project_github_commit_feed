@@ -1,5 +1,8 @@
-var github_api = require('./githubAPI');
+var github_wrapper = require("./github_wrapper");
 
-github_api.getCommits({owner: "William-Charles", repo: "assignment_node_dictionary_reader"}, function(data) {
-  console.log(data);
-});
+github_wrapper.getCommits(
+  { owner: "William-Charles", repo: "assignment_node_dictionary_reader" },
+  function(data) {
+    console.log(data);
+  }
+);
