@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <title>Github Commits</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="text-center">Github Commit Feed</h1>
+      <div class="row">
+        <form class="col-xs-offset-2 col-xs-8 " action="/commits" method="GET">
+          <div class="form-group">
+            <label for="inputUserName">User Name</label>
+            <input name="user" type="text" class="form-control" id="inputUserName" placeholder="User Name">
+          </div>
+          <div class="form-group">
+            <label for="inputRepo">Repo</label>
+            <input name="repo" type="text" class="form-control" id="inputRepo" placeholder="Any-Repo">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      <div class="row" style="margin-top:20px">
+        <div class="col-xs-offset-1 col-xs-10">
+          <pre>
+            {{commitFeed}}
+          </pre>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+  </body>
+</html>
