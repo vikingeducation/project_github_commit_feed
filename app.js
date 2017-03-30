@@ -6,10 +6,6 @@ const port = 3000;
 const jsonData = require('./data/commits.json');
 const url = require('url');
 
-// let userInfo = githubWrapper.setUserInfo('nicoasp', 'assignment_js_sprint');
-
-//For testing: ngrok http 3000
-
 let server = http.createServer(function(req, res) {
   let _headers = {
     'Content-Type': 'text/html',
@@ -32,13 +28,12 @@ let server = http.createServer(function(req, res) {
 
     if (pathname == '/commits') {
       githubWrapper.getCommits(userInfo).then(() => {
-        fs.readFile('./data/commits.json', 'utf8', function(err, data){
+        fs.readFile('./data/commits.json', 'utf8', function(err, data) {
           data = JSON.parse(data);
           data = JSON.stringify(data, null, 2);
           fileData = fileData.replace('{{ commitFeed }}', data);
-          res.end(fileData);          
-        })
-
+          res.end(fileData);
+        });
       });
     } else if (pathname == '/github/webhooks') {
       let p = new Promise((resolve, reject) => {
@@ -64,24 +59,22 @@ function _writePostToFile(req, done) {
     body = decodeURIComponent(body);
     body = body.substring(8);
     body = JSON.parse(body);
-    usefulData = [{
-      username: body.pusher.name,
-      repo: body.repository.name
-    }];
+    usefulData = [
+      {
+        username: body.pusher.name,
+        repo: body.repository.name
+      }
+    ];
     return readFilePromise('./data/commits.json', usefulData)
-    .then(function(fileDataAndStringifiedData) {
-      return writeFilePromise(
-        './data/commits.json',
-        fileDataAndStringifiedData
-      );
-    })
-    .then(function(){
-      done();
-    });
-
-    //fs.writeFile('/data/commits.json', )
-    //Need to decode url info
-    
+      .then(function(fileDataAndStringifiedData) {
+        return writeFilePromise(
+          './data/commits.json',
+          fileDataAndStringifiedData
+        );
+      })
+      .then(function() {
+        done();
+      });
   });
 }
 
