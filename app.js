@@ -2,7 +2,7 @@ let githubWrapper = require('./lib/githubWrapper');
 const http = require('http');
 const fs = require('fs');
 const host = 'localhost';
-const port = '3000';
+const port = 3000;
 const jsonData = require('./data/commits.json');
 const url = require('url');
 
@@ -32,9 +32,10 @@ let server = http.createServer(function(req, res) {
 
         res.end(fileData);
       });
-    } else if (pathname == '/github/webhooks') {
-      console.log(req);
     } else {
+      // } else if (pathname == '/github/webhooks') {
+      //   console.log(req);
+      // }
       res.end(fileData);
     }
   });
