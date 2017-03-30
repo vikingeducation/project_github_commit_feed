@@ -3,6 +3,12 @@
     {
       "message": "test webhook",
       "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/f3f44143449123cf479873b4bc934ae929bf32b2",
+      "sha": "f3f44143449123cf479873b4bc934ae929bf32b2"
+    },
+    {
+      "message": "test webhook",
+      "author": "tim5046",
       "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/43b5611ecaf3b1054939c85f44752a52cf454b5f",
       "sha": "43b5611ecaf3b1054939c85f44752a52cf454b5f"
     },
@@ -173,12 +179,6 @@
       "author": "tim5046",
       "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/6df94d2b001837edc7f55d31eee18e81808e1ab4",
       "sha": "6df94d2b001837edc7f55d31eee18e81808e1ab4"
-    },
-    {
-      "message": "app refactor",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_github_commit_feed/commit/2f7619c978d38f1170b863e103af66f7fd55939c",
-      "sha": "2f7619c978d38f1170b863e103af66f7fd55939c"
     }
   ]
 }
