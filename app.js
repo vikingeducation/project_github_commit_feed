@@ -7,12 +7,24 @@ const indexHtml = './public/index.html';
 let reqQuery;
 const formPath = /^\/commits\?.+/;
 const jsonPath = './data/commits.json';
+var _headers = {
+  "Content-Type": "text/html",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
 
 const port = 3000;
 const host = 'localhost';
 
 
 const server = http.createServer( (req, res) => {
+
+  if (req.method === "POST") {
+    console.log(req.body)
+  }
+
+
   const path = req.url;
 
   if (path.match(formPath)) {
@@ -56,9 +68,13 @@ server.listen(port, host, () => {
   console.log(`Server listening at http://${host}:${port}`);
 });
 
+server.listen(3000, 'http://localhost:3000/github/webhooks', () => {
+
+})
+
 
 function sendOkResponse(res, data) {
-  res.writeHead(200, { 'Content-Type': 'text/html' });
+  res.writeHead(200, _headers);
   res.end(data);
 }
 
