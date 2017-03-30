@@ -18,10 +18,9 @@ var _headers = {
 const port = 3000;
 const host = 'localhost';
 
-
 const server = http.createServer( (req, res) => {
   let webhookData
-  if (req.method === "POST" && url.parse(path).pathname == '/github\/webhooks$/') {
+  if (req.method === "POST" && url.parse(req.url).pathname == '/github\/webhooks$/') {
     let body = "";
     req.on('data', (data) => {
       body += data;
