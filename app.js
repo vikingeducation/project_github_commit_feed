@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const commits = require("./data/commits");
 const url = require("url");
-var github_wrapper = require("./github_wrapper");
+let github_wrapper = require("./github_wrapper");
 const hostname = "localhost";
 const port = 3000;
 
@@ -24,7 +24,7 @@ const server = http.createServer((req, res) => {
       github_wrapper.getCommits(info_obj, function(userCommits) {
         let scrubbedData = scrubTheData(userCommits);
         res.end(
-          data.toString().replace(regex, JSON.stringify(userCommits, null, 2))
+          data.toString().replace(regex, JSON.stringify(scrubbedData, null, 2))
         );
       });
     }
@@ -36,14 +36,22 @@ server.listen(port, hostname, () => {
 });
 
 function scrubTheData(data) {
-  var scrubObj = {};
-  var array = data.data;
-  console.log(array);
+  let scrubArray = [];
+  let commitsArray = data.data;
+  commitsArray.forEach((commit) => {
+    let scrubObj = {};
+    scrubObj.sha = commit.sha;
+    scrubObj.commit_message = commit.commit.message;
+    scrubObj.author = commit.commit.author;
+    scrubObj.html_url = commit.html_url;
+    scrubArray.push(scrubObj);
+  })
+  return scrubArray;
 }
 
 function parseUrl(urlData) {
   let regex = /user=(.+)&repo=(.+)/;
-  var matches = regex.exec(urlData);
+  let matches = regex.exec(urlData);
   if (matches) {
     return {
       owner: matches[1],
