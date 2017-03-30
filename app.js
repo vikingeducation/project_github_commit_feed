@@ -55,13 +55,13 @@ let server = http.createServer(function(req, res) {
 function _unpackPost(req, done) {
   var body = '';
   req.on('data', function(data) {
-    body += data;
+    body += data.toString();
   });
   req.on('end', function() {
     body = JSON.parse(body);
     body = JSON.stringify(body, null, 2);
     body = body.substring(8);
-
+    //Need to decode url info
     console.log(body);
 
     req.body = body;
