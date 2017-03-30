@@ -1,34 +1,88 @@
 {
   "commits": [
     {
-      "message": "minor refactor",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/assignment_githuh/commit/dd3c8da3fee176fc63b779168778f77fe3e5daca",
-      "sha": "dd3c8da3fee176fc63b779168778f77fe3e5daca"
+      "message": "final commit",
+      "author": "DHail",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/68e95d785578a2979a701e64801144094d99b356",
+      "sha": "68e95d785578a2979a701e64801144094d99b356"
     },
     {
-      "message": "project complete",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/assignment_githuh/commit/d3e415d9b3080004d49e47b22bf3836c99a4a41f",
-      "sha": "d3e415d9b3080004d49e47b22bf3836c99a4a41f"
+      "message": "intermediate save",
+      "author": "deven1",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/196f4d5037b3146f8d63eafce423ec92e406f45c",
+      "sha": "196f4d5037b3146f8d63eafce423ec92e406f45c"
     },
     {
-      "message": "repos done",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/assignment_githuh/commit/797b502dd44069df776e4c0139fe83be63dc27a9",
-      "sha": "797b502dd44069df776e4c0139fe83be63dc27a9"
+      "message": "tomato",
+      "author": "markmarkyesyes",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/9a62d240eea863618f7a1aa796c02c97c029b41d",
+      "sha": "9a62d240eea863618f7a1aa796c02c97c029b41d"
     },
     {
-      "message": "repos done",
-      "author": "tim5046",
-      "html_url": "https://github.com/tim5046/assignment_githuh/commit/2c91f654233f64bf0f6b4d1c00082ba820451679",
-      "sha": "2c91f654233f64bf0f6b4d1c00082ba820451679"
+      "message": "added letter counter",
+      "author": "DHail",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/85bf2291916b39bdbba4188a8ada8fabbc5572b4",
+      "sha": "85bf2291916b39bdbba4188a8ada8fabbc5572b4"
+    },
+    {
+      "message": "Fixed functioins in index",
+      "author": "markmarkyesyes",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/fac06dcff81d332a85ffad7aa2c0d30469499a55",
+      "sha": "fac06dcff81d332a85ffad7aa2c0d30469499a55"
+    },
+    {
+      "message": "created loader module and wordcount function",
+      "author": "markmarkyesyes",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/723d2503140a6e19bb86f7fecde0376a08d13c59",
+      "sha": "723d2503140a6e19bb86f7fecde0376a08d13c59"
+    },
+    {
+      "message": "working on loader module",
+      "author": "DHail",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/4e8f83b25d253649def6d4386358a952fd2f83f9",
+      "sha": "4e8f83b25d253649def6d4386358a952fd2f83f9"
+    },
+    {
+      "message": "updates load.js to last commit",
+      "author": "markmarkyesyes",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/b1fe5b3e225f10035fae65028ab5a940f6ea9bc0",
+      "sha": "b1fe5b3e225f10035fae65028ab5a940f6ea9bc0"
+    },
+    {
+      "message": "Fixed getDicts method, created load.js",
+      "author": "markmarkyesyes",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/99530f3444bc322aa124d1d701f1acc0f606ea66",
+      "sha": "99530f3444bc322aa124d1d701f1acc0f606ea66"
+    },
+    {
+      "message": "tomato",
+      "author": "DHail",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/3b52bdee68cba1e852cb663e54d770ee058bb3ce",
+      "sha": "3b52bdee68cba1e852cb663e54d770ee058bb3ce"
+    },
+    {
+      "message": "added user prompts",
+      "author": "DHail",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/5f4288f28cacae76daa5a41dedfd8990c32ec3d5",
+      "sha": "5f4288f28cacae76daa5a41dedfd8990c32ec3d5"
+    },
+    {
+      "message": "Pseudocoding complete",
+      "author": "markmarkyesyes",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/ddd9ff6064387f95a183ea59182f60beb40da248",
+      "sha": "ddd9ff6064387f95a183ea59182f60beb40da248"
+    },
+    {
+      "message": "Add dictionary file",
+      "author": "BideoWego",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/f418961600f5181e122aa236a9ef54221b76e2f1",
+      "sha": "f418961600f5181e122aa236a9ef54221b76e2f1"
     },
     {
       "message": "Initial commit",
-      "author": "kitlangton",
-      "html_url": "https://github.com/tim5046/assignment_githuh/commit/41728d25e3922b822524a1aab369774a38583360",
-      "sha": "41728d25e3922b822524a1aab369774a38583360"
+      "author": "BideoWego",
+      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/fb60d46270eb8d3849234d03da26f8c8e3f4aaee",
+      "sha": "fb60d46270eb8d3849234d03da26f8c8e3f4aaee"
     }
   ]
 }
