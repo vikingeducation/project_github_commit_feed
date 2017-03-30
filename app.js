@@ -9,6 +9,15 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
 
+  if (req.url === "/github/webhooks") {
+    req.on("data", data => {
+      console.log(data.toString());
+    });
+    req.on("end", () => {
+      console.log("END");
+    });
+  }
+
   res.setHeader("Content-Type", "text/html");
   fs.readFile("./public/index.html", (err, data) => {
     let regex = /{{commitFeed}}/;
@@ -38,14 +47,14 @@ server.listen(port, hostname, () => {
 function scrubTheData(data) {
   let scrubArray = [];
   let commitsArray = data.data;
-  commitsArray.forEach((commit) => {
+  commitsArray.forEach(commit => {
     let scrubObj = {};
     scrubObj.sha = commit.sha;
     scrubObj.commit_message = commit.commit.message;
     scrubObj.author = commit.commit.author;
     scrubObj.html_url = commit.html_url;
     scrubArray.push(scrubObj);
-  })
+  });
   return scrubArray;
 }
 
