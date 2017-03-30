@@ -1,88 +1,100 @@
 {
   "commits": [
     {
-      "message": "final commit",
-      "author": "DHail",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/68e95d785578a2979a701e64801144094d99b356",
-      "sha": "68e95d785578a2979a701e64801144094d99b356"
+      "message": "minor bug fixed",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3",
+      "sha": "cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3"
     },
     {
-      "message": "intermediate save",
-      "author": "deven1",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/196f4d5037b3146f8d63eafce423ec92e406f45c",
-      "sha": "196f4d5037b3146f8d63eafce423ec92e406f45c"
+      "message": "minor bug fixed",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9346c85f5bf9d798db03b015856e12a1b037eaa4",
+      "sha": "9346c85f5bf9d798db03b015856e12a1b037eaa4"
     },
     {
-      "message": "tomato",
-      "author": "markmarkyesyes",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/9a62d240eea863618f7a1aa796c02c97c029b41d",
-      "sha": "9a62d240eea863618f7a1aa796c02c97c029b41d"
+      "message": "done",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/6113817b258257621af4668ddb70033fd25787cc",
+      "sha": "6113817b258257621af4668ddb70033fd25787cc"
     },
     {
-      "message": "added letter counter",
-      "author": "DHail",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/85bf2291916b39bdbba4188a8ada8fabbc5572b4",
-      "sha": "85bf2291916b39bdbba4188a8ada8fabbc5572b4"
+      "message": "Finish snake game",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/0f204a7476239d0deaa7c840578af6edf7633c2e",
+      "sha": "0f204a7476239d0deaa7c840578af6edf7633c2e"
     },
     {
-      "message": "Fixed functioins in index",
-      "author": "markmarkyesyes",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/fac06dcff81d332a85ffad7aa2c0d30469499a55",
-      "sha": "fac06dcff81d332a85ffad7aa2c0d30469499a55"
+      "message": "movement works",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47",
+      "sha": "51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47"
     },
     {
-      "message": "created loader module and wordcount function",
-      "author": "markmarkyesyes",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/723d2503140a6e19bb86f7fecde0376a08d13c59",
-      "sha": "723d2503140a6e19bb86f7fecde0376a08d13c59"
+      "message": "updated snake css",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/237983629378d2984bd5e39f01992c03a1f7cb47",
+      "sha": "237983629378d2984bd5e39f01992c03a1f7cb47"
     },
     {
-      "message": "working on loader module",
-      "author": "DHail",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/4e8f83b25d253649def6d4386358a952fd2f83f9",
-      "sha": "4e8f83b25d253649def6d4386358a952fd2f83f9"
+      "message": "first push for snake",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f985dfdc88316915764b636df52872f6700d79c0",
+      "sha": "f985dfdc88316915764b636df52872f6700d79c0"
     },
     {
-      "message": "updates load.js to last commit",
-      "author": "markmarkyesyes",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/b1fe5b3e225f10035fae65028ab5a940f6ea9bc0",
-      "sha": "b1fe5b3e225f10035fae65028ab5a940f6ea9bc0"
+      "message": "Remove superfluous else",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/c4630be512d4177375ec63b92895a0b7ee25f893",
+      "sha": "c4630be512d4177375ec63b92895a0b7ee25f893"
     },
     {
-      "message": "Fixed getDicts method, created load.js",
-      "author": "markmarkyesyes",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/99530f3444bc322aa124d1d701f1acc0f606ea66",
-      "sha": "99530f3444bc322aa124d1d701f1acc0f606ea66"
+      "message": "Fix matcher id bug",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/2ce18f7c2147b2aebceae4824c34b998fca4d628",
+      "sha": "2ce18f7c2147b2aebceae4824c34b998fca4d628"
     },
     {
-      "message": "tomato",
-      "author": "DHail",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/3b52bdee68cba1e852cb663e54d770ee058bb3ce",
-      "sha": "3b52bdee68cba1e852cb663e54d770ee058bb3ce"
+      "message": "Replace classes with hide and show methods in matching game",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/67e632b37f3d5cd9946ef9ec566bebff75de5087",
+      "sha": "67e632b37f3d5cd9946ef9ec566bebff75de5087"
     },
     {
-      "message": "added user prompts",
-      "author": "DHail",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/5f4288f28cacae76daa5a41dedfd8990c32ec3d5",
-      "sha": "5f4288f28cacae76daa5a41dedfd8990c32ec3d5"
+      "message": "Finish core game mechanics",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/082d2db45c88e8e05e6309efeac8bada77f1b53f",
+      "sha": "082d2db45c88e8e05e6309efeac8bada77f1b53f"
     },
     {
-      "message": "Pseudocoding complete",
-      "author": "markmarkyesyes",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/ddd9ff6064387f95a183ea59182f60beb40da248",
-      "sha": "ddd9ff6064387f95a183ea59182f60beb40da248"
+      "message": "added match recognition",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/e01a5aa64e96359bb2580e0c6d3810639a343549",
+      "sha": "e01a5aa64e96359bb2580e0c6d3810639a343549"
     },
     {
-      "message": "Add dictionary file",
-      "author": "BideoWego",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/f418961600f5181e122aa236a9ef54221b76e2f1",
-      "sha": "f418961600f5181e122aa236a9ef54221b76e2f1"
+      "message": "random card generation",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/4d61db407410ae284863f23fa0759af7848471bc",
+      "sha": "4d61db407410ae284863f23fa0759af7848471bc"
+    },
+    {
+      "message": "Fix document readying",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/847f9adb9c7504fc3a4ac67b7333f6018cde5ebd",
+      "sha": "847f9adb9c7504fc3a4ac67b7333f6018cde5ebd"
+    },
+    {
+      "message": "first commit",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f8aebdf77b902f0ab4fc4cd716042047a50096c2",
+      "sha": "f8aebdf77b902f0ab4fc4cd716042047a50096c2"
     },
     {
       "message": "Initial commit",
-      "author": "BideoWego",
-      "html_url": "https://github.com/DHail/assignment_node_dictionary_reader/commit/fb60d46270eb8d3849234d03da26f8c8e3f4aaee",
-      "sha": "fb60d46270eb8d3849234d03da26f8c8e3f4aaee"
+      "author": "eriktrautman",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9f43bf874d81dd53742a42387e7b0a67b2b02233",
+      "sha": "9f43bf874d81dd53742a42387e7b0a67b2b02233"
     }
   ]
 }
