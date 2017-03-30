@@ -62,10 +62,10 @@ function _writePostToFile(req, done) {
   });
   req.on('end', function() {
     body = decodeURIComponent(body);
-    console.log(body);
     body = body.substring(8);
     body = JSON.parse(body);
     body = JSON.stringify(body, null, 2);
+    console.log(body);
 
     //fs.writeFile('/data/commits.json', )
     //Need to decode url info
