@@ -25,15 +25,12 @@ const server = http.createServer( (req, res) => {
       body += data
     });
     req.on('end', () => {
-      body = body.slice(8);
-      body = unescape(body)
-      body = JSON.parse(body)
-      console.log(body)
+      body = JSON.parse(body);
       reqQuery = {
         name: body.pusher.name,
         repo: body.repository.name
-      }
-      console.log(reqQuery)
+      };
+      console.log(reqQuery);
     });
   }
 
