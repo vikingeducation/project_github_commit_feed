@@ -1,0 +1,22 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "Github API Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test/apitester.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rttomlinson/project_github_commit_feed.git"
+  },
+  "author": "Renzo Tomlinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rttomlinson/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/rttomlinson/project_github_commit_feed#readme",
+  "dependencies": {
+    "github": "^9.2.0"
+  }
+}
