@@ -4,10 +4,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* style */
 
+
+
 * {
   box-sizing: border-box;
 }
 
 h1 {
   font-size: 8em;
+}
+
+div {
+  text-align: center;
 }
