@@ -9,30 +9,44 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
 
-  if (req.url === "/github/webhooks") {
-    let body = '';
-    req.on("data", data => {
-      body += data.toString();
-      console.log(body);
-    });
-    req.on("end", () => {
-      console.log("END");
-    });
-  }
-
   res.setHeader("Content-Type", "text/html");
   fs.readFile("./public/index.html", (err, data) => {
     let regex = /{{commitFeed}}/;
+
     let info_obj = parseUrl(req.url);
 
     if (err) {
       throw err;
-    } else if (!info_obj) {
+    } else if (req.url === "/github/webhooks") {
+      
+      let body = '';
+    req.on("data", data => {
+      body += data.toString();
+    });
+    req.on("end", () => {
+      body = JSON.parse(body);
+      console.log('body ', body)
+      let info_obj = {owner: body.pusher.name, repo: body.repository.name};
+      console.log('info_obj ', info_obj)
+      github_wrapper.getCommits(info_obj, function(userCommits) {
+        let scrubbedData = scrubTheData(userCommits);
+        console.log('scrubbed data ', scrubbedData)
+        res.end(
+          // data.replace(regex, JSON.stringify(scrubbedData, null, 2))
+        );
+      });
+    });
+
+    }
+
+
+    else if (!info_obj) {
       res.end(
-        data.toString().replace(regex, "This is where the commits will live.")
+        data.toString().replace(regex, commits)
       );
     } else {
       github_wrapper.getCommits(info_obj, function(userCommits) {
+        console.log('info_obj from form submit ', info_obj)
         let scrubbedData = scrubTheData(userCommits);
         res.end(
           data.toString().replace(regex, JSON.stringify(scrubbedData, null, 2))
