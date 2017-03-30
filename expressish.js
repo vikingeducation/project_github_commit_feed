@@ -33,7 +33,7 @@ let app = function () {
             };
         }
 
-        console.log('req.url:', req.url);
+        //console.log('req.url:', req.url);
         //Check url path
         if (req.url == '/github/webhooks'){
           var _headers = {
