@@ -32,18 +32,20 @@ let app = function () {
                 resolve(data);
             };
         }
-        
+
         console.log('req.url:', req.url);
         //Check url path
         if (req.url == '/github/webhooks'){
-            
+          var _headers = {
+                "Content-Type": "text/html",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Headers": "Content-Type",
+                "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+                };
+            res.writeHead(200, _headers);
+            res.end("Hello webhooks")
             console.log("Hello webhooks");
-            
         }
-        
-        
-        
-        
 
         //Parse the query string of the submitted form
         //console.log(req.url);
