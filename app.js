@@ -1,5 +1,6 @@
 const http = require("http");
 const fs = require("fs");
+const router = require("./router");
 const commits = require("./data/commits");
 
 const hostname = "localhost";
@@ -12,7 +13,7 @@ const server = http.createServer((req, res) => {
     if (err) {
       throw err;
     }
-    let regex = /commitFeed/;
+    let regex = /{{commitFeed}}/;
     res.end(data.toString().replace(regex, JSON.stringify(commits, null, 2)));
   });
 });
