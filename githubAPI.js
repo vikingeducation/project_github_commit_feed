@@ -2,15 +2,20 @@ const Github = require("github");
 var github = new Github();
 
 const token = process.env.GITHUB_API_KEY;
-
-var commits = github.repos.getCommits({
-  owner: "William-Charles",
-  repo: "assignment_node_dictionary_reader"
-});
-
-console.log(commits);
-
-var gitToken = github.authenticate({
+github.authenticate({
   type: "token",
-  token: "userToken"
+  token: token
 });
+
+var github_wrapper = {};
+
+github_wrapper.getCommits = function(info_obj, callback) {
+
+  github.repos.getCommits(info_obj).then(function(data) {
+    callback(data);
+  })
+}
+
+module.exports = github_wrapper;
+
+
