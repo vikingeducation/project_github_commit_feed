@@ -8,8 +8,12 @@ const port = 3000;
 const host = 'localhost';
 
 const server = http.createServer( (req, res) => {
-
-  let reqQuery = url.parse(req.url).query;
+  let path = req.url
+  let reqQuery = url.parse(path,true)['query']
+  console.log(reqQuery)
+  
+  // let queryObj = parseQuery(reqQuery);
+  // console.log(queryObj);
   
 
   fs.readFile('./public/index.html', 'utf-8', (err, data) => {
