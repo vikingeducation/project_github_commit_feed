@@ -18,6 +18,11 @@ let server = http.createServer(function(req, res) {
   let pathname = url.parse(req.url).pathname;
   let params = url.parse(req.url, true).query;
 
+  let userInfo = githubWrapper.setUserInfo(params.user, params.repo);
+    githubWrapper.getCommits(userInfo).then(data => {
+  // console.log(data);
+  });
+
   fs.readFile('./public/index.html', 'utf8', function(err, data) {
     if (err) {
       res.statusCode('404');
