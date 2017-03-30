@@ -61,7 +61,7 @@ let app = function () {
           //Should also be wrapped in promise
           github.getCommits(commitsConfig)
           .then(function onFulfilled(data) {
-              console.log('cleaned up data', data);
+              //console.log('cleaned up data', data);
               //Write to commits.json file
               //Path to commits.json file
               // NOTE: The APPEND functionality is pending - currently overwriting each time we request
