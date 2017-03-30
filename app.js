@@ -11,6 +11,13 @@ const url = require('url');
 //For testing: ngrok http 3000
 
 let server = http.createServer(function(req, res) {
+  let _headers = {
+    'Content-Type': 'text/html',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE'
+  };
+
   let pathname = url.parse(req.url).pathname;
   let params = url.parse(req.url, true).query;
 
@@ -21,9 +28,7 @@ let server = http.createServer(function(req, res) {
       res.statusCode('404');
       res.end('404 not found');
     }
-    res.writeHead(200, {
-      'Content-Type': 'text/html'
-    });
+    res.writeHead(200, _headers);
 
     if (pathname == '/commits') {
       githubWrapper.getCommits(userInfo).then(commitData => {
@@ -32,14 +37,38 @@ let server = http.createServer(function(req, res) {
 
         res.end(fileData);
       });
+    } else if (pathname == '/github/webhooks') {
+      let p = new Promise((resolve, reject) => {
+        _unpackPost(req, resolve);
+        return resolve();
+      });
+
+      p.then(function() {
+        res.end();
+      });
     } else {
-      // } else if (pathname == '/github/webhooks') {
-      //   console.log(req);
-      // }
       res.end(fileData);
     }
   });
 });
+
+function _unpackPost(req, done) {
+  var body = '';
+  req.on('data', function(data) {
+    body += data;
+  });
+  req.on('end', function() {
+    if (req.headers['content-type'] === 'application/json') {
+      body = JSON.parse(body);
+      body = body.substring(8);
+
+      console.log(body);
+      //body = JSON.stringify(body, null, 2);
+    }
+    req.body = body;
+    done();
+  });
+}
 
 server.listen(port, host, () => {
   console.log('Server listening at ' + host + ':' + port);
