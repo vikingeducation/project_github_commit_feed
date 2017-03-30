@@ -2,8 +2,11 @@
 <html>
 <head>
   <title>Git Feed</title>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
 </head>
 <body>
+
+  <h1>The Github Commit Feed</h1>
 
   <form action="/commits" method="GET">
     <label for="user">Username</label>
@@ -13,9 +16,7 @@
     <input type="submit">
   </form>
 
-  <pre>
-{{ commitFeed }}
-  </pre>
+  <pre>{{ commitFeed }}</pre>
 
 </body>
 </html>

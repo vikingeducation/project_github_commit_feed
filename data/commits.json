@@ -1,16 +1,94 @@
 {
-  "Foobar": {
-    "foobar": [
-      {
-        "message": "Update README.md",
-        "author": {
-          "name": "Foobar",
-          "email": "foobar@email.com",
-          "date": "2017-02-16T19:25:15Z"
-        },
-        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
-      }
-    ]
-  }
+  "data": [
+    {
+      "author": "markmarkyesyes",
+      "commit": "Scrubbed commits",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/d248f7bbd62f54618c9d8ee62c963e1204d79b08",
+      "sha": "d248f7bbd62f54618c9d8ee62c963e1204d79b08"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "link gitWrapper to server",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/6de80471c22def65b4f8de30dc1942a7c72a2a48",
+      "sha": "6de80471c22def65b4f8de30dc1942a7c72a2a48"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "capture query params",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/f2a22c633385be9b5f5beb11e83398166d369485",
+      "sha": "f2a22c633385be9b5f5beb11e83398166d369485"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "in progress: parsing queries tomato",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/41b103bb5b7d524098106f1072985632e1809eca",
+      "sha": "41b103bb5b7d524098106f1072985632e1809eca"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "start form parsing",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/d3def896ea3527bd69ec31ae9ea73e89bb772a73",
+      "sha": "d3def896ea3527bd69ec31ae9ea73e89bb772a73"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "start node server",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/8c22c6f7613b178de2d9a313c1a49e3526413361",
+      "sha": "8c22c6f7613b178de2d9a313c1a49e3526413361"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "made html",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/a18f35e734260e68db820b715047170b8c3115b0",
+      "sha": "a18f35e734260e68db820b715047170b8c3115b0"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add ngrok",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/d0bdb1335f65a84f2384fd644f564be0fd9fe9f5",
+      "sha": "d0bdb1335f65a84f2384fd644f564be0fd9fe9f5"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "finish first warmup",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/7152204f7e7228e1b85fd6f8fd502a7ac6ada93b",
+      "sha": "7152204f7e7228e1b85fd6f8fd502a7ac6ada93b"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "set up auth",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/fe75f68acaa97c602403b362eb0575ce027a6a41",
+      "sha": "fe75f68acaa97c602403b362eb0575ce027a6a41"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "Fixing bug finding api key, tomato",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/4a4835928066a1a2d000d1b7df3ce256ccb2635c",
+      "sha": "4a4835928066a1a2d000d1b7df3ce256ccb2635c"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "Added auth to gitwrapper",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/36d236e643f4e7e217b9edc2d8c4524a4bc85fe3",
+      "sha": "36d236e643f4e7e217b9edc2d8c4524a4bc85fe3"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "dependencies installed",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/51ad921e608fbf2467bdbe4b1284e81f6c8d5d38",
+      "sha": "51ad921e608fbf2467bdbe4b1284e81f6c8d5d38"
+    },
+    {
+      "author": "Chris Scavello",
+      "commit": "Update README.md",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/ceec1b2306888905ae12750558706174132a6741",
+      "sha": "ceec1b2306888905ae12750558706174132a6741"
+    },
+    {
+      "author": "Chris Scavello",
+      "commit": "Initial commit",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+      "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+    }
+  ]
 }
