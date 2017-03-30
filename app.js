@@ -58,6 +58,7 @@ function _unpackPost(req, done) {
     body += data.toString();
   });
   req.on('end', function() {
+    body = decodeURIComponent(body);
     body = JSON.parse(body);
     body = JSON.stringify(body, null, 2);
     body = body.substring(8);
