@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "author": "Jerry Gao",
+      "commit": "separate background into new canvas, use const where appropriate",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/bb9ad048421de9cfd0518a324c7cfccf74e93a55",
+      "sha": "bb9ad048421de9cfd0518a324c7cfccf74e93a55"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add comments",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/757f0451bfa5059bf793ad4262d12614a1e5c5b2",
+      "sha": "757f0451bfa5059bf793ad4262d12614a1e5c5b2"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "fix cover image",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/052fb8cb54d9fe0ab4addb901508ae6c45e31a48",
+      "sha": "052fb8cb54d9fe0ab4addb901508ae6c45e31a48"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "change import link to https",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/7c95c2ee148c3335f8133262beeb5cf0d0c35114",
+      "sha": "7c95c2ee148c3335f8133262beeb5cf0d0c35114"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add screenshots, README",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/b6eaeffcd42f02da781c3ae589118d9ddf42e885",
+      "sha": "b6eaeffcd42f02da781c3ae589118d9ddf42e885"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add View methods",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/836a3e8e083f96abf2402c5c2f8ab0175abb1667",
+      "sha": "836a3e8e083f96abf2402c5c2f8ab0175abb1667"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add controller methods",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/c99858acb3aa030c5b190d96fcb909b72af37240",
+      "sha": "c99858acb3aa030c5b190d96fcb909b72af37240"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add collision, clear methods and stubify",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/df052778544b50ff98fba5de614fbd5007c8e90c",
+      "sha": "df052778544b50ff98fba5de614fbd5007c8e90c"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add ship and tic methods",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/2b08b912724ed3a40d7c2185ecfc31a2323465fe",
+      "sha": "2b08b912724ed3a40d7c2185ecfc31a2323465fe"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "rename Objects to Constructor module",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/731de37e4efbca394454360488713808120bb4f5",
+      "sha": "731de37e4efbca394454360488713808120bb4f5"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "move constructor functions into Objects module",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/d411d441b4becb9d7aa9252d2414b47c07e6b5a0",
+      "sha": "d411d441b4becb9d7aa9252d2414b47c07e6b5a0"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add Ship, Shot constructors",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/7f342aa7ecb5cb0f241af4418f6d390cc1afe37b",
+      "sha": "7f342aa7ecb5cb0f241af4418f6d390cc1afe37b"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add MovingObject, Asteroid constructors",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/5a7c6fad530760f197be0674e6297f969096633a",
+      "sha": "5a7c6fad530760f197be0674e6297f969096633a"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add js files",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/0e0687324d44edb4e3893ad276e2a46803c2f5f6",
+      "sha": "0e0687324d44edb4e3893ad276e2a46803c2f5f6"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add html, css",
+      "url": "https://api.github.com/repos/blackwright/asteroids/commits/65cd38a5e3d7ad9981cceca59150861e9e96718a",
+      "sha": "65cd38a5e3d7ad9981cceca59150861e9e96718a"
+    }
+  ]
+}
