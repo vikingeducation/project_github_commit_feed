@@ -10,8 +10,10 @@ const server = http.createServer((req, res) => {
   res.statusCode = 200;
 
   if (req.url === "/github/webhooks") {
+    let body = '';
     req.on("data", data => {
-      console.log(data.toString());
+      body += data.toString();
+      console.log(body);
     });
     req.on("end", () => {
       console.log("END");
