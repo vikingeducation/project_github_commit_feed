@@ -26,7 +26,9 @@ const server = http.createServer( (req, res) => {
     });
     req.on('end', () => {
       body = body.slice(8);
+      body = unescape(body)
       body = JSON.parse(body)
+      console.log(body)
       reqQuery = {
         name: body.pusher.name,
         repo: body.repository.name
