@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Github Commit Feed</title>
+</head>
+<body>
+
+  <form method="get" action="/commits">
+    <label for="user">Username</label>
+    <input type="text" name="user" placeholder="Username">
+    <label for="repo">Repo</label>
+    <input type="text" name="repo" placeholder="Repo">
+    <button type="submit">Submit</button>
+  </form>
+
+  <pre>{{ commitFeed }}</pre>
+
+</body>
+</html>
