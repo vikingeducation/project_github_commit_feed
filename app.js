@@ -31,9 +31,14 @@ let server = http.createServer(function(req, res) {
     res.writeHead(200, _headers);
 
     if (pathname == '/commits') {
-      githubWrapper.getCommits(userInfo).then((commitsData) => {        
-        fileData = fileData.replace('{{ commitFeed }}', commitsData);
-        res.end(fileData);
+      githubWrapper.getCommits(userInfo).then(() => {
+        fs.readFile('./data/commits.json', 'utf8', function(err, data){
+          data = JSON.parse(data);
+          data = JSON.stringify(data, null, 2);
+          fileData = fileData.replace('{{ commitFeed }}', data);
+          res.end(fileData);          
+        })
+
       });
     } else if (pathname == '/github/webhooks') {
       let p = new Promise((resolve, reject) => {
@@ -53,10 +58,11 @@ let server = http.createServer(function(req, res) {
 function _writePostToFile(req, done) {
   var body = '';
   req.on('data', function(data) {
-    body += data.toString();
+    body += data;
   });
   req.on('end', function() {
     body = decodeURIComponent(body);
+    console.log(body);
     body = body.substring(8);
     body = JSON.parse(body);
     body = JSON.stringify(body, null, 2);
