@@ -1,14 +1,15 @@
 const Github = require('github');
-let github = new Github();
-const token = process.env.GITHUB_API_KEY
-console.log(token)
-// github.authenticate({
-//   type: "token",
-// })
+const github = new Github();
+const ghToken = process.env.GITHUB_API_KEY;
 
-// let test = github.repos.getCommits({
-//   owner: 'markmarkyesyes',
-//   repo: 'project_github_commit_feed'
-// })
+github.authenticate({
+  type: "token",
+  token: ghToken
+})
 
-// console.log(test);
+let test = github.repos.getCommits({
+  owner: 'markmarkyesyes',
+  repo: 'project_github_commit_feed'
+})
+
+test.then( data => console.log(data));
