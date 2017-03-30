@@ -61,7 +61,7 @@ let app = function () {
             // we know we have all the data
             // and can send back a response
             req.on('end', () => {
-              res.end(data);
+              res.end(body);
             });
         }
 
