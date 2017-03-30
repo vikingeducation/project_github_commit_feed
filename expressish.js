@@ -53,10 +53,27 @@ let app = function () {
         
         //Now send request to Github API using the getCommits function
         //Should also be wrapped in promise
-        github.getCommits(commitsConfig);
-        
-        
-        
+        github.getCommits(commitsConfig)
+        .then(function onFulfilled(data) {
+            console.log('cleaned up data', data);
+            //Write to commits.json file
+            //Path to commits.json file
+            let pathToCommits = './data/commits.json';
+            let p = new Promise(function (resolve, reject) {
+                let cb = promiseWrap(resolve, reject);
+                fs.appendFile(pathToCommits, JSON.stringify(data, null, 2), cb);
+            });
+            p.then(function onFulfilled() {
+                console.log("Data appended successfully to commits.json");
+            }, function onRejection(err) {
+                console.error('An error occured:', err);
+            })
+            .catch(function onError(err){
+                console.error("Error occurred while writing to commits.json", err);
+            });
+            
+            
+        });
         
         //Read index.html file of public directory
         let p = new Promise(function (resolve, reject) {
