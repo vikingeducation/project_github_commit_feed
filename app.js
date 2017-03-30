@@ -3,6 +3,8 @@ const http = require('http');
 const fs = require('fs');
 const host = 'localhost';
 const port = '3000';
+const jsonData = require('./data/commits.json');
+
 
 let userInfo = githubWrapper.setUserInfo('nicoasp', 'assignment_js_sprint');
 githubWrapper.getCommits(userInfo).then(data => {
@@ -20,6 +22,8 @@ let server = http.createServer(function(req, res) {
     res.writeHead(200, {
       'Content-Type': 'text/html'
     });
+    let commitsData = JSON.stringify(jsonData, null, 2);
+    data = data.replace('{{ commitFeed }}', commitsData);
     res.end(data);
   });
 });
