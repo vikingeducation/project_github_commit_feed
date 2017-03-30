@@ -30,7 +30,7 @@ const server = http.createServer( (req, res) => {
       body = JSON.parse(body)
       console.log(body)
       reqQuery = {
-        name: body.pusher.name,
+        name: body.sender.name,
         repo: body.repository.name
       }
       console.log(reqQuery)
