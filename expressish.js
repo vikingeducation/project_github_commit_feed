@@ -4,14 +4,9 @@ const fs = require('fs');
 const path = require('path');
 const url = require('url');
 
-
-
-
 //Get instance of githubapiwrapper
 const GITHUB_API_KEY = require('./config').GITHUB_API_KEY;
 let github = require('./githubapiwrapper')(GITHUB_API_KEY);
-
-
 
 let app = function () {
     //App instance current commitData
@@ -37,44 +32,48 @@ let app = function () {
                 resolve(data);
             };
         }
-        
+
         //Parse the query string of the submitted form
-        console.log(req.url);
+        //console.log(req.url);
         let queryParams = url.parse(req.url, true).query;
-        console.log(queryParams);
-        
+        //console.log(queryParams);
+
         //Configuration object for the getCommits function
         let { user, repo } = queryParams;
-        console.log(user, repo);
-        let commitsConfig = {
-            'owner': user,
-            'repo': repo
-        };
-        
-        //Now send request to Github API using the getCommits function
-        //Should also be wrapped in promise
-        github.getCommits(commitsConfig)
-        .then(function onFulfilled(data) {
-            console.log('cleaned up data', data);
-            //Write to commits.json file
-            //Path to commits.json file
-            let pathToCommits = './data/commits.json';
-            let p = new Promise(function (resolve, reject) {
-                let cb = promiseWrap(resolve, reject);
-                fs.appendFile(pathToCommits, JSON.stringify(data, null, 2), cb);
-            });
-            p.then(function onFulfilled() {
-                console.log("Data appended successfully to commits.json");
-            }, function onRejection(err) {
-                console.error('An error occured:', err);
-            })
-            .catch(function onError(err){
-                console.error("Error occurred while writing to commits.json", err);
-            });
-            
-            
-        });
-        
+        if(user !== undefined && repo !== undefined ){
+          let commitsConfig = {
+              'owner': user,
+              'repo': repo
+          };
+          //Now send request to Github API using the getCommits function
+          //Should also be wrapped in promise
+          github.getCommits(commitsConfig)
+          .then(function onFulfilled(data) {
+              console.log('cleaned up data', data);
+              //Write to commits.json file
+              //Path to commits.json file
+              // NOTE: The APPEND functionality is pending - currently overwriting each time we request
+              let pathToCommits = './data/commits.json';
+              let p = new Promise(function (resolve, reject) {
+                  let cb = promiseWrap(resolve, reject);
+                  fs.writeFile(pathToCommits, JSON.stringify(data, null, 2), cb);
+              });
+              p.then(function onFulfilled() {
+                  console.log("Data appended successfully to commits.json");
+              }, function onRejection(err) {
+                  console.error('An error occured:', err);
+              })
+              .catch(function onError(err){
+                  console.error("Error occurred while writing to commits.json", err);
+              });
+
+
+          });
+        }
+        // else{
+        // }
+        //console.log(user, repo);
+
         //Read index.html file of public directory
         let p = new Promise(function (resolve, reject) {
             let cb = promiseWrap(resolve, reject);
@@ -83,17 +82,15 @@ let app = function () {
         p.then(function onFulfilled(data) {
             //Replace placeholder with the commitData returned from the server
             data = data.replace(/{{ commitFeed }}/, _appCommitData);
-            
+
             res.end(data);
         })
         .catch(function onError(err) {
             res.end(err);
         });
-        
-        
     };
     return api;
-    
+
 };
 
 

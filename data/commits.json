@@ -1,16 +1,314 @@
-{
-  "Foobar": {
-    "foobar": [
-      {
-        "message": "Update README.md",
-        "author": {
-          "name": "Foobar",
-          "email": "foobar@email.com",
-          "date": "2017-02-16T19:25:15Z"
-        },
-        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
-      }
-    ]
+[
+  {
+    "sha": "8f87a4b0081d68c1d063f4983a6c5b48cccbc7b2",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/8f87a4b0081d68c1d063f4983a6c5b48cccbc7b2",
+    "author": {
+      "login": "deven1",
+      "id": 10873114,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10873114?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/deven1",
+      "html_url": "https://github.com/deven1",
+      "followers_url": "https://api.github.com/users/deven1/followers",
+      "following_url": "https://api.github.com/users/deven1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/deven1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/deven1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/deven1/subscriptions",
+      "organizations_url": "https://api.github.com/users/deven1/orgs",
+      "repos_url": "https://api.github.com/users/deven1/repos",
+      "events_url": "https://api.github.com/users/deven1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/deven1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "5th commit"
+  },
+  {
+    "sha": "0a6a51e88bd705f2343ba4bba3ae534b5ee428f5",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/0a6a51e88bd705f2343ba4bba3ae534b5ee428f5",
+    "author": {
+      "login": "deven1",
+      "id": 10873114,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10873114?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/deven1",
+      "html_url": "https://github.com/deven1",
+      "followers_url": "https://api.github.com/users/deven1/followers",
+      "following_url": "https://api.github.com/users/deven1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/deven1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/deven1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/deven1/subscriptions",
+      "organizations_url": "https://api.github.com/users/deven1/orgs",
+      "repos_url": "https://api.github.com/users/deven1/repos",
+      "events_url": "https://api.github.com/users/deven1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/deven1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "4th commit"
+  },
+  {
+    "sha": "d6030bf653263ff67bf4b473eba8800c3ccf3a3b",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/d6030bf653263ff67bf4b473eba8800c3ccf3a3b",
+    "author": {
+      "login": "tim5046",
+      "id": 4131120,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4131120?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tim5046",
+      "html_url": "https://github.com/tim5046",
+      "followers_url": "https://api.github.com/users/tim5046/followers",
+      "following_url": "https://api.github.com/users/tim5046/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tim5046/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tim5046/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tim5046/subscriptions",
+      "organizations_url": "https://api.github.com/users/tim5046/orgs",
+      "repos_url": "https://api.github.com/users/tim5046/repos",
+      "events_url": "https://api.github.com/users/tim5046/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tim5046/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "wip"
+  },
+  {
+    "sha": "60f165b7e6eb63ae25a6845af9acacf4c7316a71",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/60f165b7e6eb63ae25a6845af9acacf4c7316a71",
+    "author": {
+      "login": "deven1",
+      "id": 10873114,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10873114?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/deven1",
+      "html_url": "https://github.com/deven1",
+      "followers_url": "https://api.github.com/users/deven1/followers",
+      "following_url": "https://api.github.com/users/deven1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/deven1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/deven1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/deven1/subscriptions",
+      "organizations_url": "https://api.github.com/users/deven1/orgs",
+      "repos_url": "https://api.github.com/users/deven1/repos",
+      "events_url": "https://api.github.com/users/deven1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/deven1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "3rd commit"
+  },
+  {
+    "sha": "aea6fd0d38c711378d591d9a3029f45e90f1a66a",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/aea6fd0d38c711378d591d9a3029f45e90f1a66a",
+    "author": {
+      "login": "tim5046",
+      "id": 4131120,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4131120?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tim5046",
+      "html_url": "https://github.com/tim5046",
+      "followers_url": "https://api.github.com/users/tim5046/followers",
+      "following_url": "https://api.github.com/users/tim5046/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tim5046/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tim5046/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tim5046/subscriptions",
+      "organizations_url": "https://api.github.com/users/tim5046/orgs",
+      "repos_url": "https://api.github.com/users/tim5046/repos",
+      "events_url": "https://api.github.com/users/tim5046/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tim5046/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "wip"
+  },
+  {
+    "sha": "a1e531c497f44755073c5ec17be971ff216ce3c3",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/a1e531c497f44755073c5ec17be971ff216ce3c3",
+    "author": {
+      "login": "tim5046",
+      "id": 4131120,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4131120?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tim5046",
+      "html_url": "https://github.com/tim5046",
+      "followers_url": "https://api.github.com/users/tim5046/followers",
+      "following_url": "https://api.github.com/users/tim5046/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tim5046/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tim5046/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tim5046/subscriptions",
+      "organizations_url": "https://api.github.com/users/tim5046/orgs",
+      "repos_url": "https://api.github.com/users/tim5046/repos",
+      "events_url": "https://api.github.com/users/tim5046/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tim5046/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "refactor express to be a function"
+  },
+  {
+    "sha": "5d1a726117df56b5503068ed9089f62f4e5ea9da",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/5d1a726117df56b5503068ed9089f62f4e5ea9da",
+    "author": {
+      "login": "tim5046",
+      "id": 4131120,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4131120?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tim5046",
+      "html_url": "https://github.com/tim5046",
+      "followers_url": "https://api.github.com/users/tim5046/followers",
+      "following_url": "https://api.github.com/users/tim5046/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tim5046/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tim5046/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tim5046/subscriptions",
+      "organizations_url": "https://api.github.com/users/tim5046/orgs",
+      "repos_url": "https://api.github.com/users/tim5046/repos",
+      "events_url": "https://api.github.com/users/tim5046/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tim5046/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "finished with first part plus minor cleanup"
+  },
+  {
+    "sha": "6393a74e427a55b3934493e9d8c4e2608f88cc5e",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/6393a74e427a55b3934493e9d8c4e2608f88cc5e",
+    "author": {
+      "login": "deven1",
+      "id": 10873114,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10873114?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/deven1",
+      "html_url": "https://github.com/deven1",
+      "followers_url": "https://api.github.com/users/deven1/followers",
+      "following_url": "https://api.github.com/users/deven1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/deven1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/deven1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/deven1/subscriptions",
+      "organizations_url": "https://api.github.com/users/deven1/orgs",
+      "repos_url": "https://api.github.com/users/deven1/repos",
+      "events_url": "https://api.github.com/users/deven1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/deven1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "3rd commit"
+  },
+  {
+    "sha": "0a759b423bd6f9cc64192290796d3b99e0f0059e",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/0a759b423bd6f9cc64192290796d3b99e0f0059e",
+    "author": {
+      "login": "tim5046",
+      "id": 4131120,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4131120?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tim5046",
+      "html_url": "https://github.com/tim5046",
+      "followers_url": "https://api.github.com/users/tim5046/followers",
+      "following_url": "https://api.github.com/users/tim5046/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tim5046/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tim5046/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tim5046/subscriptions",
+      "organizations_url": "https://api.github.com/users/tim5046/orgs",
+      "repos_url": "https://api.github.com/users/tim5046/repos",
+      "events_url": "https://api.github.com/users/tim5046/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tim5046/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "almost there"
+  },
+  {
+    "sha": "10cc9802bf71dfeef390eabbeedffe9090c6b8a9",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/10cc9802bf71dfeef390eabbeedffe9090c6b8a9",
+    "author": {
+      "login": "deven1",
+      "id": 10873114,
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10873114?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/deven1",
+      "html_url": "https://github.com/deven1",
+      "followers_url": "https://api.github.com/users/deven1/followers",
+      "following_url": "https://api.github.com/users/deven1/following{/other_user}",
+      "gists_url": "https://api.github.com/users/deven1/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/deven1/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/deven1/subscriptions",
+      "organizations_url": "https://api.github.com/users/deven1/orgs",
+      "repos_url": "https://api.github.com/users/deven1/repos",
+      "events_url": "https://api.github.com/users/deven1/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/deven1/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "second commit"
+  },
+  {
+    "sha": "3a3a679a437151ed5b68750125f04cf67cfd4ccd",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/3a3a679a437151ed5b68750125f04cf67cfd4ccd",
+    "author": {
+      "login": "tim5046",
+      "id": 4131120,
+      "avatar_url": "https://avatars0.githubusercontent.com/u/4131120?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/tim5046",
+      "html_url": "https://github.com/tim5046",
+      "followers_url": "https://api.github.com/users/tim5046/followers",
+      "following_url": "https://api.github.com/users/tim5046/following{/other_user}",
+      "gists_url": "https://api.github.com/users/tim5046/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/tim5046/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/tim5046/subscriptions",
+      "organizations_url": "https://api.github.com/users/tim5046/orgs",
+      "repos_url": "https://api.github.com/users/tim5046/repos",
+      "events_url": "https://api.github.com/users/tim5046/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/tim5046/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "finish listen"
+  },
+  {
+    "sha": "33034e9cde72528af78906518180c5131558dfb8",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/33034e9cde72528af78906518180c5131558dfb8",
+    "author": {
+      "login": "BideoWego",
+      "id": 8287574,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8287574?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/BideoWego",
+      "html_url": "https://github.com/BideoWego",
+      "followers_url": "https://api.github.com/users/BideoWego/followers",
+      "following_url": "https://api.github.com/users/BideoWego/following{/other_user}",
+      "gists_url": "https://api.github.com/users/BideoWego/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/BideoWego/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/BideoWego/subscriptions",
+      "organizations_url": "https://api.github.com/users/BideoWego/orgs",
+      "repos_url": "https://api.github.com/users/BideoWego/repos",
+      "events_url": "https://api.github.com/users/BideoWego/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/BideoWego/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "Update README.md"
+  },
+  {
+    "sha": "fe5365860413daa56107e7acc55ce85f83b57045",
+    "url": "https://api.github.com/repos/deven1/assignment_building_the_express_router/commits/fe5365860413daa56107e7acc55ce85f83b57045",
+    "author": {
+      "login": "BideoWego",
+      "id": 8287574,
+      "avatar_url": "https://avatars2.githubusercontent.com/u/8287574?v=3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/BideoWego",
+      "html_url": "https://github.com/BideoWego",
+      "followers_url": "https://api.github.com/users/BideoWego/followers",
+      "following_url": "https://api.github.com/users/BideoWego/following{/other_user}",
+      "gists_url": "https://api.github.com/users/BideoWego/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/BideoWego/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/BideoWego/subscriptions",
+      "organizations_url": "https://api.github.com/users/BideoWego/orgs",
+      "repos_url": "https://api.github.com/users/BideoWego/repos",
+      "events_url": "https://api.github.com/users/BideoWego/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/BideoWego/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "commitMessage": "Initial commit"
   }
-}
+]
