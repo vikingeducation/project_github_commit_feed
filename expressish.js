@@ -43,8 +43,26 @@ let app = function () {
                 "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
                 };
             res.writeHead(200, _headers);
-            res.end("Hello webhooks")
+            //res.end("Hello webhooks")
             console.log("Hello webhooks");
+
+            // Initialize a string to concat
+            // the data
+            var body = '';
+
+            // Every time a data event is fired
+            // we concat the next chunk of data
+            // to the string
+            req.on('data', (data) => {
+              body += data;
+            });
+
+            // When the end event is fired
+            // we know we have all the data
+            // and can send back a response
+            req.on('end', () => {
+              res.end(data);
+            });
         }
 
         //Parse the query string of the submitted form
