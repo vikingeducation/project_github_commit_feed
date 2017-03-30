@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Git Feed</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>The Github Commit Feed</h1>
+
+    <form action="/commits" method="GET">
+      <label for="user">Username</label>
+      <input id="user" type="text" name="user"></input>
+      <label for="repo">Repo</label>
+      <input id="repo" type="text" name="repo"></input>
+      <input type="submit">
+    </form>
+
+    <pre>{{ commitFeed }}</pre>
+  </div>
+</body>
+</html>
