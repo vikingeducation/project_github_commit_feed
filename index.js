@@ -1,19 +1,6 @@
-var Github = require('github');
+var githubWrapper = require('./lib/githubWrapper');
 
-const github = new Github();
+githubWrapper.userInfo.owner = 'throw22';
+githubWrapper.userInfo.repo = 'assignment_js_sprint';
 
-github.authenticate({
-    type: "token",
-    token: process.env.GITHUB_API_KEY,
-});
-
-let repoInfo = {
-	owner: 'nicoasp',
-	repo: 'TOP---Ruby-Final-Project'
-}
-
-let commits = github.repos.getCommits(repoInfo);
-
-commits.then(function(res){
-	console.log(res);
-})
+githubWrapper.getCommits(githubWrapper.userInfo);
