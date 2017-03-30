@@ -2,81 +2,117 @@
   "data": [
     {
       "author": "markmarkyesyes",
-      "commit": "Added post to parameters",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/3d8062a65f68c6de8306ad857b0405bb3d7dab4d",
-      "sha": "3d8062a65f68c6de8306ad857b0405bb3d7dab4d"
+      "commit": "testing promise resolution to update json",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/76bf59e11fa33afdba0e7d8a9035b7052cc15c75",
+      "sha": "76bf59e11fa33afdba0e7d8a9035b7052cc15c75"
     },
     {
       "author": "markmarkyesyes",
-      "commit": "Refactored parameterized post and get requests",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/1d86af39452838d16b2f79323dbde1483a5c7f8c",
-      "sha": "1d86af39452838d16b2f79323dbde1483a5c7f8c"
+      "commit": "Fixed promise resolution",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/bc59e6ad9217d82e204a18da8e55f0e829bb148e",
+      "sha": "bc59e6ad9217d82e204a18da8e55f0e829bb148e"
     },
     {
-      "author": "nicoasp",
-      "commit": "finish post task",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/c3498951a7e35af6b646977f83481a1331ec2987",
-      "sha": "c3498951a7e35af6b646977f83481a1331ec2987"
+      "author": "Jerry Gao",
+      "commit": "update promise chain",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/20a746a47621c3a794fb9b10452676fb054c6641",
+      "sha": "20a746a47621c3a794fb9b10452676fb054c6641"
     },
     {
-      "author": "markmarkyesyes",
-      "commit": "Parameterized routing feature complete",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/85962f4916016f0c4170407355fb5ef3f86ba79c",
-      "sha": "85962f4916016f0c4170407355fb5ef3f86ba79c"
-    },
-    {
-      "author": "nicoasp",
-      "commit": "fight with parameters",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/e831dfe1dfe5b1d3b3f547498e231b7cec108590",
-      "sha": "e831dfe1dfe5b1d3b3f547498e231b7cec108590"
+      "author": "Jerry Gao",
+      "commit": "refactor",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/8e7fa66fdb17174f171531de1b60ecc442122516",
+      "sha": "8e7fa66fdb17174f171531de1b60ecc442122516"
     },
     {
       "author": "markmarkyesyes",
-      "commit": "Working on paramater parsing in router cfalls",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/71ca2b5c66778b05a888b0d476f30922c0d53efc",
-      "sha": "71ca2b5c66778b05a888b0d476f30922c0d53efc"
+      "commit": "Scrubbed commits",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/d248f7bbd62f54618c9d8ee62c963e1204d79b08",
+      "sha": "d248f7bbd62f54618c9d8ee62c963e1204d79b08"
     },
     {
-      "author": "nicoasp",
-      "commit": "work on router regex",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/a7d61af05f77d1843daf8c20e00e0e2421b5fda2",
-      "sha": "a7d61af05f77d1843daf8c20e00e0e2421b5fda2"
+      "author": "Jerry Gao",
+      "commit": "link gitWrapper to server",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/6de80471c22def65b4f8de30dc1942a7c72a2a48",
+      "sha": "6de80471c22def65b4f8de30dc1942a7c72a2a48"
     },
     {
-      "author": "markmarkyesyes",
-      "commit": "working on pattern parser functionalityA",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/c305cd03bf5649e6f3b230d57929816108573566",
-      "sha": "c305cd03bf5649e6f3b230d57929816108573566"
-    },
-    {
-      "author": "nicoasp",
-      "commit": "start parameterized routing",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/edaf88111029f4a3b12890cff2cc5ec018be52f4",
-      "sha": "edaf88111029f4a3b12890cff2cc5ec018be52f4"
+      "author": "Jerry Gao",
+      "commit": "capture query params",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/f2a22c633385be9b5f5beb11e83398166d369485",
+      "sha": "f2a22c633385be9b5f5beb11e83398166d369485"
     },
     {
       "author": "markmarkyesyes",
-      "commit": "Finished basic router functionalikty",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/fdd1d3082686aea86082e4ca132fa68abb538395",
-      "sha": "fdd1d3082686aea86082e4ca132fa68abb538395"
+      "commit": "in progress: parsing queries tomato",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/41b103bb5b7d524098106f1072985632e1809eca",
+      "sha": "41b103bb5b7d524098106f1072985632e1809eca"
     },
     {
-      "author": "nicoasp",
-      "commit": "set up express module with app.listen functionality",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/6c7ec3a4ce64f0d5d1074e774ad5a46302d70fcb",
-      "sha": "6c7ec3a4ce64f0d5d1074e774ad5a46302d70fcb"
+      "author": "Jerry Gao",
+      "commit": "start form parsing",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/d3def896ea3527bd69ec31ae9ea73e89bb772a73",
+      "sha": "d3def896ea3527bd69ec31ae9ea73e89bb772a73"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "start node server",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/8c22c6f7613b178de2d9a313c1a49e3526413361",
+      "sha": "8c22c6f7613b178de2d9a313c1a49e3526413361"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "made html",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/a18f35e734260e68db820b715047170b8c3115b0",
+      "sha": "a18f35e734260e68db820b715047170b8c3115b0"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "add ngrok",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/d0bdb1335f65a84f2384fd644f564be0fd9fe9f5",
+      "sha": "d0bdb1335f65a84f2384fd644f564be0fd9fe9f5"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "finish first warmup",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/7152204f7e7228e1b85fd6f8fd502a7ac6ada93b",
+      "sha": "7152204f7e7228e1b85fd6f8fd502a7ac6ada93b"
+    },
+    {
+      "author": "Jerry Gao",
+      "commit": "set up auth",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/fe75f68acaa97c602403b362eb0575ce027a6a41",
+      "sha": "fe75f68acaa97c602403b362eb0575ce027a6a41"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "Fixing bug finding api key, tomato",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/4a4835928066a1a2d000d1b7df3ce256ccb2635c",
+      "sha": "4a4835928066a1a2d000d1b7df3ce256ccb2635c"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "Added auth to gitwrapper",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/36d236e643f4e7e217b9edc2d8c4524a4bc85fe3",
+      "sha": "36d236e643f4e7e217b9edc2d8c4524a4bc85fe3"
+    },
+    {
+      "author": "markmarkyesyes",
+      "commit": "dependencies installed",
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/51ad921e608fbf2467bdbe4b1284e81f6c8d5d38",
+      "sha": "51ad921e608fbf2467bdbe4b1284e81f6c8d5d38"
     },
     {
       "author": "Chris Scavello",
       "commit": "Update README.md",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/33034e9cde72528af78906518180c5131558dfb8",
-      "sha": "33034e9cde72528af78906518180c5131558dfb8"
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/ceec1b2306888905ae12750558706174132a6741",
+      "sha": "ceec1b2306888905ae12750558706174132a6741"
     },
     {
       "author": "Chris Scavello",
       "commit": "Initial commit",
-      "url": "https://api.github.com/repos/markmarkyesyes/assignment_building_the_express_router/commits/fe5365860413daa56107e7acc55ce85f83b57045",
-      "sha": "fe5365860413daa56107e7acc55ce85f83b57045"
+      "url": "https://api.github.com/repos/markmarkyesyes/project_github_commit_feed/commits/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+      "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
     }
   ]
 }

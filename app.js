@@ -21,22 +21,25 @@ const server = http.createServer( (req, res) => {
 
   if (reqQuery) {
 
-    const gitData = github.gitCommits(reqQuery.user, reqQuery.repo);
-
-    gitData.then( (resolvedData) => {
+    let data;
+    
+    github.gitCommits(reqQuery.user, reqQuery.repo)
+    .then( (resolvedData) => {
       let scrubbedData = scrubCommits(resolvedData);
       return writeFile('./data/commits.json', scrubbedData);
     })
-      .then(
-        readFile(indexHtml)
-        .then( (data) => {
-          readFile(jsonPath)
-          .then( (json) => {
-            data = data.replace('{{ commitFeed }}', JSON.stringify(json, null, 2));
-            sendOkResponse(res, data);
-          })
-        })
-      )
+    .then( () => {
+      return readFile(indexHtml);
+    })
+    .then( (dat) => {
+      data = dat;
+      return readFile(jsonPath);
+    })
+    .then( (json) => {
+      data = data.replace('{{ commitFeed }}', JSON.stringify(json, null, 2));
+      sendOkResponse(res, data);
+    });
+
   } else {
 
     readFile(indexHtml).then( (data) => {
@@ -92,7 +95,7 @@ function readFile(path) {
   return new Promise( (resolve) => {
     fs.readFile(path, 'utf-8', (err, data) => {
       if (err) throw err;
-      resolve(data);
+      return resolve(data);
     });
   });
 }
