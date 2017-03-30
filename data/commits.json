@@ -1,0 +1,100 @@
+{
+  "commits": [
+    {
+      "message": "minor bug fixed",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3",
+      "sha": "cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3"
+    },
+    {
+      "message": "minor bug fixed",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9346c85f5bf9d798db03b015856e12a1b037eaa4",
+      "sha": "9346c85f5bf9d798db03b015856e12a1b037eaa4"
+    },
+    {
+      "message": "done",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/6113817b258257621af4668ddb70033fd25787cc",
+      "sha": "6113817b258257621af4668ddb70033fd25787cc"
+    },
+    {
+      "message": "Finish snake game",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/0f204a7476239d0deaa7c840578af6edf7633c2e",
+      "sha": "0f204a7476239d0deaa7c840578af6edf7633c2e"
+    },
+    {
+      "message": "movement works",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47",
+      "sha": "51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47"
+    },
+    {
+      "message": "updated snake css",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/237983629378d2984bd5e39f01992c03a1f7cb47",
+      "sha": "237983629378d2984bd5e39f01992c03a1f7cb47"
+    },
+    {
+      "message": "first push for snake",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f985dfdc88316915764b636df52872f6700d79c0",
+      "sha": "f985dfdc88316915764b636df52872f6700d79c0"
+    },
+    {
+      "message": "Remove superfluous else",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/c4630be512d4177375ec63b92895a0b7ee25f893",
+      "sha": "c4630be512d4177375ec63b92895a0b7ee25f893"
+    },
+    {
+      "message": "Fix matcher id bug",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/2ce18f7c2147b2aebceae4824c34b998fca4d628",
+      "sha": "2ce18f7c2147b2aebceae4824c34b998fca4d628"
+    },
+    {
+      "message": "Replace classes with hide and show methods in matching game",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/67e632b37f3d5cd9946ef9ec566bebff75de5087",
+      "sha": "67e632b37f3d5cd9946ef9ec566bebff75de5087"
+    },
+    {
+      "message": "Finish core game mechanics",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/082d2db45c88e8e05e6309efeac8bada77f1b53f",
+      "sha": "082d2db45c88e8e05e6309efeac8bada77f1b53f"
+    },
+    {
+      "message": "added match recognition",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/e01a5aa64e96359bb2580e0c6d3810639a343549",
+      "sha": "e01a5aa64e96359bb2580e0c6d3810639a343549"
+    },
+    {
+      "message": "random card generation",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/4d61db407410ae284863f23fa0759af7848471bc",
+      "sha": "4d61db407410ae284863f23fa0759af7848471bc"
+    },
+    {
+      "message": "Fix document readying",
+      "author": "LaMarseillaise",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/847f9adb9c7504fc3a4ac67b7333f6018cde5ebd",
+      "sha": "847f9adb9c7504fc3a4ac67b7333f6018cde5ebd"
+    },
+    {
+      "message": "first commit",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f8aebdf77b902f0ab4fc4cd716042047a50096c2",
+      "sha": "f8aebdf77b902f0ab4fc4cd716042047a50096c2"
+    },
+    {
+      "message": "Initial commit",
+      "author": "eriktrautman",
+      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9f43bf874d81dd53742a42387e7b0a67b2b02233",
+      "sha": "9f43bf874d81dd53742a42387e7b0a67b2b02233"
+    }
+  ]
+}
