@@ -64,7 +64,6 @@ function _writePostToFile(req, done) {
     body = decodeURIComponent(body);
     body = body.substring(8);
     body = JSON.parse(body);
-    body = JSON.stringify(body, null, 2);
     usefulData = [{
       username: body.pusher.name,
       repo: body.repository.name
