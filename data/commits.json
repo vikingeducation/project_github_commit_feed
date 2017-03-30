@@ -1,100 +1,184 @@
 {
   "commits": [
     {
-      "message": "minor bug fixed",
+      "message": "Merge branch 'master' of https://github.com/tim5046/hp-frontend",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3",
-      "sha": "cd18cbd9c0c7c8cd2d6cb3a76369473078f02cc3"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/7f736b98d542b188644ab46cff6fd7233a590b08",
+      "sha": "7f736b98d542b188644ab46cff6fd7233a590b08"
     },
     {
-      "message": "minor bug fixed",
+      "message": "[AD-243] - make 700 full width, and less padding between items",
+      "author": "Gregoor",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/08cbdccdefa9e0505c8a317ef340deb5f66900c2",
+      "sha": "08cbdccdefa9e0505c8a317ef340deb5f66900c2"
+    },
+    {
+      "message": "modify tab container - module836 scroll behavior",
+      "author": "toberr",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/cf7602437682c78f5bc1885f9e9814a36fb4b9c3",
+      "sha": "cf7602437682c78f5bc1885f9e9814a36fb4b9c3"
+    },
+    {
+      "message": "Merge pull request #41 from gigster-eng/ad-257\n\nAd 257",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9346c85f5bf9d798db03b015856e12a1b037eaa4",
-      "sha": "9346c85f5bf9d798db03b015856e12a1b037eaa4"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/95731862ce485a21c9606399f677e747634e20a1",
+      "sha": "95731862ce485a21c9606399f677e747634e20a1"
     },
     {
-      "message": "done",
+      "message": "updates module 900 font spacing and styles",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/6113817b258257621af4668ddb70033fd25787cc",
-      "sha": "6113817b258257621af4668ddb70033fd25787cc"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/a5f75841dc8fd2186f0127571627ef44eeba36e6",
+      "sha": "a5f75841dc8fd2186f0127571627ef44eeba36e6"
     },
     {
-      "message": "Finish snake game",
-      "author": "LaMarseillaise",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/0f204a7476239d0deaa7c840578af6edf7633c2e",
-      "sha": "0f204a7476239d0deaa7c840578af6edf7633c2e"
+      "message": "fix misdirection of props",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/632f250f92fb71711c3732f6d7f774787b0ab08d",
+      "sha": "632f250f92fb71711c3732f6d7f774787b0ab08d"
     },
     {
-      "message": "movement works",
+      "message": "change module 900 header to h2",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47",
-      "sha": "51d43bffe56df7a112a9f0ce8c74e0a9a57ffd47"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/fd6f8e33c85425cc6f280b96a1ccf1c47e849b75",
+      "sha": "fd6f8e33c85425cc6f280b96a1ccf1c47e849b75"
     },
     {
-      "message": "updated snake css",
+      "message": "merge changes",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/3433a87ce157d7cb2e0471f093afb27ab2c57812",
+      "sha": "3433a87ce157d7cb2e0471f093afb27ab2c57812"
+    },
+    {
+      "message": "change images for Module 700",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/70b08aa80c488c18718c971e9f07f91150f960c2",
+      "sha": "70b08aa80c488c18718c971e9f07f91150f960c2"
+    },
+    {
+      "message": "Merge pull request #40 from gigster-eng/ad-186\n\nAD-264 and AD-186",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/1e685606ad8cd3ca0715adfb25797afd6da3804d",
+      "sha": "1e685606ad8cd3ca0715adfb25797afd6da3804d"
+    },
+    {
+      "message": "update docs",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/237983629378d2984bd5e39f01992c03a1f7cb47",
-      "sha": "237983629378d2984bd5e39f01992c03a1f7cb47"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/a3382255f88687a187cd4f55a00c5fe3cad588e2",
+      "sha": "a3382255f88687a187cd4f55a00c5fe3cad588e2"
     },
     {
-      "message": "first push for snake",
+      "message": "update docs",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f985dfdc88316915764b636df52872f6700d79c0",
-      "sha": "f985dfdc88316915764b636df52872f6700d79c0"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/b58e6223355ba890b24ece42282cb4c39a83d558",
+      "sha": "b58e6223355ba890b24ece42282cb4c39a83d558"
     },
     {
-      "message": "Remove superfluous else",
-      "author": "LaMarseillaise",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/c4630be512d4177375ec63b92895a0b7ee25f893",
-      "sha": "c4630be512d4177375ec63b92895a0b7ee25f893"
-    },
-    {
-      "message": "Fix matcher id bug",
-      "author": "LaMarseillaise",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/2ce18f7c2147b2aebceae4824c34b998fca4d628",
-      "sha": "2ce18f7c2147b2aebceae4824c34b998fca4d628"
-    },
-    {
-      "message": "Replace classes with hide and show methods in matching game",
-      "author": "LaMarseillaise",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/67e632b37f3d5cd9946ef9ec566bebff75de5087",
-      "sha": "67e632b37f3d5cd9946ef9ec566bebff75de5087"
-    },
-    {
-      "message": "Finish core game mechanics",
-      "author": "LaMarseillaise",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/082d2db45c88e8e05e6309efeac8bada77f1b53f",
-      "sha": "082d2db45c88e8e05e6309efeac8bada77f1b53f"
-    },
-    {
-      "message": "added match recognition",
+      "message": "change alttag to alttext on 201",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/e01a5aa64e96359bb2580e0c6d3810639a343549",
-      "sha": "e01a5aa64e96359bb2580e0c6d3810639a343549"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/fc3a97653a2d146134b79f95b679177f49312404",
+      "sha": "fc3a97653a2d146134b79f95b679177f49312404"
     },
     {
-      "message": "random card generation",
+      "message": "update docs",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/4d61db407410ae284863f23fa0759af7848471bc",
-      "sha": "4d61db407410ae284863f23fa0759af7848471bc"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/d7d7a08f379b3a2c36a13abd43592a762bfa708f",
+      "sha": "d7d7a08f379b3a2c36a13abd43592a762bfa708f"
     },
     {
-      "message": "Fix document readying",
-      "author": "LaMarseillaise",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/847f9adb9c7504fc3a4ac67b7333f6018cde5ebd",
-      "sha": "847f9adb9c7504fc3a4ac67b7333f6018cde5ebd"
+      "message": "fix max dimensions properties",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/b8363a48ad72a520c20098b824aec85fe1fff827",
+      "sha": "b8363a48ad72a520c20098b824aec85fe1fff827"
     },
     {
-      "message": "first commit",
+      "message": "add optional alt and title to column to handle the image in 201",
       "author": "tim5046",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/f8aebdf77b902f0ab4fc4cd716042047a50096c2",
-      "sha": "f8aebdf77b902f0ab4fc4cd716042047a50096c2"
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/249ac3458b44d5538c9b4501d9ee8cce29209dc7",
+      "sha": "249ac3458b44d5538c9b4501d9ee8cce29209dc7"
     },
     {
-      "message": "Initial commit",
-      "author": "eriktrautman",
-      "html_url": "https://github.com/tim5046/project_gamecenter_browser/commit/9f43bf874d81dd53742a42387e7b0a67b2b02233",
-      "sha": "9f43bf874d81dd53742a42387e7b0a67b2b02233"
+      "message": "fix Image max sizing props",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/28826ac40c00743aa1779c89755df616f062b3fc",
+      "sha": "28826ac40c00743aa1779c89755df616f062b3fc"
+    },
+    {
+      "message": "add alt and title to module 302",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/fab97647cf3d8910fe09e910dfebd9117d7b849a",
+      "sha": "fab97647cf3d8910fe09e910dfebd9117d7b849a"
+    },
+    {
+      "message": "change Image component to use actual <img/> tag",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/284ca4e2ea3951bde68d5eef9e8d00e4e1b15aff",
+      "sha": "284ca4e2ea3951bde68d5eef9e8d00e4e1b15aff"
+    },
+    {
+      "message": "add alt and title to module 700",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/809ee1bac4a3b9a37dbdc64d015f3aacfd038c4c",
+      "sha": "809ee1bac4a3b9a37dbdc64d015f3aacfd038c4c"
+    },
+    {
+      "message": "add alt and title to secondary module 201 image",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/4b097aa62d45a30a1fbdf68ec4aa00b2f8e200a3",
+      "sha": "4b097aa62d45a30a1fbdf68ec4aa00b2f8e200a3"
+    },
+    {
+      "message": "add alt and title text to module 900",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/891f02ffaeeb65da6921f063855b8046dffc511b",
+      "sha": "891f02ffaeeb65da6921f063855b8046dffc511b"
+    },
+    {
+      "message": "improve doc comments",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/5bb87e6c33a38645953ab692c77881fcb7e4edac",
+      "sha": "5bb87e6c33a38645953ab692c77881fcb7e4edac"
+    },
+    {
+      "message": "[AD-264] - add alt property to item comps on Module 700",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/01794bb7c191222db0b396af3c26716036a346b4",
+      "sha": "01794bb7c191222db0b396af3c26716036a346b4"
+    },
+    {
+      "message": "201 secondary alt text",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/ad1f5e48aedde640e0b905c1cc7e52de7bd6d949",
+      "sha": "ad1f5e48aedde640e0b905c1cc7e52de7bd6d949"
+    },
+    {
+      "message": "[AD-264] - add alt property to column component",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/64a0449d1c1532d798f046cc1dbfd3f05fce142b",
+      "sha": "64a0449d1c1532d798f046cc1dbfd3f05fce142b"
+    },
+    {
+      "message": "Merge branch 'master' of github.com:gigster-eng/hp-frontend",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/f87a975f4325a1b68ba9aaebebfa2e938c18a696",
+      "sha": "f87a975f4325a1b68ba9aaebebfa2e938c18a696"
+    },
+    {
+      "message": "add alt text to Module 302 demos",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/e688c9fd4a8d41a829f6992972fabca09c5f487f",
+      "sha": "e688c9fd4a8d41a829f6992972fabca09c5f487f"
+    },
+    {
+      "message": "fix conflict",
+      "author": "tim5046",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/c927bb4d2fabc3c45fc87977e1b0cc320e5d57d9",
+      "sha": "c927bb4d2fabc3c45fc87977e1b0cc320e5d57d9"
+    },
+    {
+      "message": "set color property properly",
+      "author": "Stephn-R",
+      "html_url": "https://github.com/tim5046/hp-frontend/commit/63a22f20518cd8d9b23684377889e3c9ad86370d",
+      "sha": "63a22f20518cd8d9b23684377889e3c9ad86370d"
     }
   ]
 }
