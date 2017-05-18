@@ -9,7 +9,6 @@ let savedFeed = JSON.stringify(savedCommits, null, 2);
 const hostname = 'localhost';
 const port = 3002;
 const _webhookHeaders = {
-  "Content-Type": "text/html",
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Headers": "Content-Type",
   "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
@@ -23,7 +22,6 @@ const handleRouting = (req, res) => {
   let method = req.method.toLowerCase();
   const path = url.parse(req.url).pathname;
   const query = url.parse(req.url, true).query;
-  res.statusCode = 200;
 
   let isQueryEmpty = Object.keys(query).length === 0;
 
@@ -123,9 +121,11 @@ const render = (req, res, feed) => {
     if (err) throw err;
 
     file = file.replace('{{ commitFeed }}', feed);
-    res.setHeader('Content-Type', 'text/html');
+
+    res.statusCode = 200;
+    res.writeHead('Content-Type', 'text/html');
     res.write(file);
-    res.end();
+    res.end('200 OK');
   });
 };
 
