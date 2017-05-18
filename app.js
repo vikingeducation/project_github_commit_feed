@@ -19,6 +19,7 @@ const refreshFeed = () => {
 };
 
 const handleRouting = (req, res) => {
+  res.statusCode = 200;
   let method = req.method.toLowerCase();
   const path = url.parse(req.url).pathname;
   const query = url.parse(req.url, true).query;
@@ -122,7 +123,7 @@ const render = (req, res, feed) => {
 
     file = file.replace('{{ commitFeed }}', feed);
 
-    res.statusCode = 200;
+    
     res.writeHead('Content-Type', 'text/html');
     res.write(file);
     res.end('200 OK');
