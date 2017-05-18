@@ -3,7 +3,7 @@ const fs = require('fs');
 const url = require('url');
 const githubWrapper = require('./lib/github');
 const GITHUB_LEADING_TRIM_AMT = 8;
-//test
+
 let savedCommits = require('./data/commits');
 let savedFeed = JSON.stringify(savedCommits, null, 2);
 const hostname = 'localhost';
