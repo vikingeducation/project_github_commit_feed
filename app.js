@@ -29,6 +29,7 @@ const handleRouting = (req, res) => {
   // If there's a query, process it first, save it to commits.json file, then render commits.json
   // else if there's no query, just open up commits.json
   if (method === "get") {
+    res.writeHead(200, {'Content-Type': 'text/html'});
     if (!isQueryEmpty) {
       // let params = getParams(query);
       githubWrapper.init();
@@ -118,16 +119,19 @@ const _saveFeed = (results) => {
 };
 
 const render = (req, res, feed) => {
-  fs.readFile('./public/index.html', 'utf8', (err, file) =>{
-    if (err) throw err;
+  let method = req.method.toLowerCase();
 
-    file = file.replace('{{ commitFeed }}', feed);
+  if (method === 'get') {
+    fs.readFile('./public/index.html', 'utf8', (err, file) =>{
+      if (err) throw err;
+      file = file.replace('{{ commitFeed }}', feed);
 
-    
-    res.writeHead('Content-Type', 'text/html');
-    res.write(file);
+      res.write(file);
+      res.end();
+    });
+  } else if (method === 'post') {
     res.end('200 OK');
-  });
+  }
 };
 
 const _extractPostData = (req, done) => {
