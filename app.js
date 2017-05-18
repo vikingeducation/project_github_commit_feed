@@ -54,9 +54,20 @@ const handleRouting = (req, res) => {
     var p = new Promise((resolve) => {
         _extractPostData(req, resolve);
     });
-    
+
     p.then(() => {
-      console.log(JSON.parse(req.body.slice(GITHUB_LEADING_TRIM_AMT)));
+      githubWrapper.init();
+      githubWrapper.authenticate(process.env.GITHUB_API_KEY);
+      githubWrapper.getRepoCommits(req.body.pusher.name, req.body.repository.name, (err, feed) => {
+        if (feed) {
+          scrubFeed(feed.data);
+          refreshFeed();
+          render(req, res, savedFeed);
+        } else {
+          render(req, res, savedFeed);
+        }
+      });
+      // console.log(req.body);
       res.end();
     })
     .catch((error) => {
@@ -124,7 +135,10 @@ const _extractPostData = (req, done) => {
     body += data;
   });
   req.on('end', () => {
-    req.body = unescape(body);
+    req.body = JSON.parse(
+      unescape(body)
+      .slice(GITHUB_LEADING_TRIM_AMT)
+    );
     done();
   });
 };
