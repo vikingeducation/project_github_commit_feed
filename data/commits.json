@@ -112,5 +112,343 @@
       "url": "https://github.com/christianflorez/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
       "sha": "ceec1b2306888905ae12750558706174132a6741"
     }
+  ],
+  "Daniel Bevenius": [
+    {
+      "message": "src: only call FatalException if not verbose\n\nThis commit attempts to address the TODO regarding not calling\nFatalException if the try_catch is verbose.\n\nPR-URL: https://github.com/nodejs/node/pull/12826\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>",
+      "author": {
+        "name": "Daniel Bevenius",
+        "email": "daniel.bevenius@gmail.com",
+        "date": "2017-05-03T17:17:22Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/fefab9026b4dac57de30f81dd39b9c2f20a3ada8",
+      "sha": "fefab9026b4dac57de30f81dd39b9c2f20a3ada8"
+    },
+    {
+      "message": "build: don't print directory for GNUMake\n\nCurrently when running make targets the directory is printed on some\noperating systems (Linux for example):\n\n$ make lint\nmake[1]: Entering directory '/work/node'\nRunning JS linter...\n./node tools/eslint/bin/eslint.js --cache --rulesdir=tools/eslint-rules\n--ext=.js,.md \\\n  benchmark doc lib test tools\nmake[1]: Leaving directory '/work/node'\nmake[1]: Entering directory '/work/node'\nRunning C++ linter...\n\nOn other operating systems the directory is not printed. This commit\nsuggests adding a flag to make this consistent for GNUMake by not\nprinting the directory.\n\nPR-URL: https://github.com/nodejs/node/pull/13042\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
+      "author": {
+        "name": "Daniel Bevenius",
+        "email": "daniel.bevenius@gmail.com",
+        "date": "2017-05-15T18:24:43Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/ad7b98baa84172d1c6de1ed0a06be6aad9f6f3db",
+      "sha": "ad7b98baa84172d1c6de1ed0a06be6aad9f6f3db"
+    },
+    {
+      "message": "test: add hasCrypto to tls-wrap-event-emmiter\n\nCurrently when building --without-ssl this test will report the\nfollowing error:\ninternal/util.js:82\n    throw new Error('Node.js is not compiled with openssl crypto\nsupport');\n\nThis commit adds a check for crypto and skips this test if node was\nbuilt without ssl support.\n\nPR-URL: https://github.com/nodejs/node/pull/13041\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+      "author": {
+        "name": "Daniel Bevenius",
+        "email": "daniel.bevenius@gmail.com",
+        "date": "2017-05-15T18:39:52Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/5debcceafcdd73035d840f53deb931925691a3ab",
+      "sha": "5debcceafcdd73035d840f53deb931925691a3ab"
+    },
+    {
+      "message": "test: add hasCrypto to tls-lookup\n\nCurrently when building --without-ssl this test will report the\nfollowing error:\ninternal/util.js:82\n    throw new Error('Node.js is not compiled with openssl crypto\nsupport');\n\nThis commit adds a check for crypto and skips this test if node was\nbuilt without ssl support.\n\nPR-URL: https://github.com/nodejs/node/pull/13047\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: David Cai <davidcai1993@yahoo.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+      "author": {
+        "name": "Daniel Bevenius",
+        "email": "daniel.bevenius@gmail.com",
+        "date": "2017-05-15T18:39:52Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/6933419cb919e42b03ef980e762f19e70d3d0c29",
+      "sha": "6933419cb919e42b03ef980e762f19e70d3d0c29"
+    },
+    {
+      "message": "src: split CryptoPemCallback into two functions\n\nCurrently the function CryptoPemCallback is used for two things:\n1. As a passphrase callback.\n2. To avoid the default OpenSSL passphrase routine.\n\nThe default OpenSSL passphase routine would apply if both\nthe callback and the passphrase are null pointers and the typical\nbehaviour is to prompt for the passphase which is not appropriate in\nnode.\n\nThis commit suggests that the PasswordCallback function only handle\npassphrases, and that an additional function named NoPasswordCallback\nused for the second case to avoid OpenSSL's passphase routine.\n\nPR-URL: https://github.com/nodejs/node/pull/12827\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+      "author": {
+        "name": "Daniel Bevenius",
+        "email": "daniel.bevenius@gmail.com",
+        "date": "2017-05-03T10:37:13Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/29d89c98559df117bdd2d7d943a12344c72ac9fc",
+      "sha": "29d89c98559df117bdd2d7d943a12344c72ac9fc"
+    }
+  ],
+  "Rich Trott": [
+    {
+      "message": "benchmark: remove redundant timers benchmark\n\nThe immediate.js benchmark with `type` set to `depth` measures the same\nthing as set-immediate-depth.js. Remove the redundancy.`\n\nPR-URL: https://github.com/nodejs/node/pull/13009\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>",
+      "author": {
+        "name": "Rich Trott",
+        "email": "rtrott@gmail.com",
+        "date": "2017-05-12T16:06:57Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/f2ba06db92ea561e23f93e85ba29404abfe74b1a",
+      "sha": "f2ba06db92ea561e23f93e85ba29404abfe74b1a"
+    },
+    {
+      "message": "test: refactor test-dns-regress-6244.js\n\n* Move from parallel to internet because it performs a DNS query\n* Provide link to relevant issue in comments\n* Remove unnecessary explicit no-op function\n\nPR-URL: https://github.com/nodejs/node/pull/13058\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Santiago Gimeno <santiago.gimeno@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
+      "author": {
+        "name": "Rich Trott",
+        "email": "rtrott@gmail.com",
+        "date": "2017-05-16T17:41:36Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/47e3d00241ca69fddaa154462e81f99547533719",
+      "sha": "47e3d00241ca69fddaa154462e81f99547533719"
+    },
+    {
+      "message": "test: track callback invocations\n\nUse `common.mustCall()` and `common.mustNotCall()` to check that\ncallbacks are invoked the expected number of times in\ntest-net-listen-shared-ports.\n\nPR-URL: https://github.com/nodejs/node/pull/13010\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>",
+      "author": {
+        "name": "Rich Trott",
+        "email": "rtrott@gmail.com",
+        "date": "2017-05-13T00:01:13Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/7e5ed8bad9b135c710a6623ed34e2c78de3b53de",
+      "sha": "7e5ed8bad9b135c710a6623ed34e2c78de3b53de"
+    }
+  ],
+  "Anna Henningsen": [
+    {
+      "message": "n-api: remove compiler warning\n\n`TryCatch` without an `Isolate*` argument is deprecated, so add one.\n\nPR-URL: https://github.com/nodejs/node/pull/13014\nReviewed-By: Timothy Gu <timothygu99@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
+      "author": {
+        "name": "Anna Henningsen",
+        "email": "anna@addaleax.net",
+        "date": "2017-05-13T15:36:23Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/008301167eaed35306005ba20c5ac7bc04ff32f7",
+      "sha": "008301167eaed35306005ba20c5ac7bc04ff32f7"
+    },
+    {
+      "message": "buffer: fix indexOf for empty searches\n\nMake searches for empty subsequences do exactly what\n`String.prototype.indexOf()` does.\n\nFixes: https://github.com/nodejs/node/issues/13023\nPR-URL: https://github.com/nodejs/node/pull/13024\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Sakthipriyan Vairamani <thechargingvolcano@gmail.com>",
+      "author": {
+        "name": "Anna Henningsen",
+        "email": "anna@addaleax.net",
+        "date": "2017-05-14T17:57:52Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/28ddac2ec285b950a17bc42d7c79c329c8573c9e",
+      "sha": "28ddac2ec285b950a17bc42d7c79c329c8573c9e"
+    }
+  ],
+  "XadillaX": [
+    {
+      "message": "dns: fix crash using dns.setServers after resolve4\n\nThe callback function in cares_query is synchronous and called before\nclosed. So dns.setServers in the synchronous callback before closed will\noccur crashing.\n\nFixes: https://github.com/nodejs/node/issues/894\nRefs: https://github.com/nodejs/node/blob/v6.9.4/deps/cares/src/ares_process.c#L1332-L1333\nRefs: https://github.com/OpenSIPS/opensips/blob/2.3.0/proxy.c\nPR-URL: https://github.com/nodejs/node/pull/13050\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+      "author": {
+        "name": "XadillaX",
+        "email": "admin@xcoder.in",
+        "date": "2017-05-17T05:36:15Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/5a948f6f64a538dedce969b21cde454600197ded",
+      "sha": "5a948f6f64a538dedce969b21cde454600197ded"
+    }
+  ],
+  "Frank Lanitz": [
+    {
+      "message": "doc: fix links from ToC to subsection for 4.8.x\n\nPR-URL: https://github.com/nodejs/node/pull/13039\nReviewed-By: Vse Mozhet Byt <vsemozhetbyt@gmail.com>\nReviewed-By: Daniel Bevenius <daniel.bevenius@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
+      "author": {
+        "name": "Frank Lanitz",
+        "email": "frank@frank.uvena.de",
+        "date": "2017-05-15T12:53:20Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/5de722ab6d1039980d3bafef42496e3659461573",
+      "sha": "5de722ab6d1039980d3bafef42496e3659461573"
+    }
+  ],
+  "Michael Dawson": [
+    {
+      "message": "doc: clarify operation of napi_cancel_async_work\n\nPR-URL: https://github.com/nodejs/node/pull/12974\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Sakthipriyan Vairamani <thechargingvolcano@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
+      "author": {
+        "name": "Michael Dawson",
+        "email": "michael_dawson@ca.ibm.com",
+        "date": "2017-05-11T13:53:35Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/1b28022de0556350ed75137e0d94446441ea5544",
+      "sha": "1b28022de0556350ed75137e0d94446441ea5544"
+    },
+    {
+      "message": "test: improve N-API test coverage\n\nAdd tests to cover functions that return globals\n\nPR-URL: https://github.com/nodejs/node/pull/13006\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
+      "author": {
+        "name": "Michael Dawson",
+        "email": "michael_dawson@ca.ibm.com",
+        "date": "2017-05-12T21:26:38Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/47c3c58704a8e61e429daf2b8ad640edae862139",
+      "sha": "47c3c58704a8e61e429daf2b8ad640edae862139"
+    },
+    {
+      "message": "test: Improve N-API test coverage\n\n- add coverage for napi_get_prototype\n- add coverage for napi_strict_equals\n\nPR-URL: https://github.com/nodejs/node/pull/13044\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
+      "author": {
+        "name": "Michael Dawson",
+        "email": "michael_dawson@ca.ibm.com",
+        "date": "2017-05-16T00:18:50Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/0dd8b9a96561f9b85783a7e1178d35d49e2340e2",
+      "sha": "0dd8b9a96561f9b85783a7e1178d35d49e2340e2"
+    }
+  ],
+  "Sam Roberts": [
+    {
+      "message": "src: fix --abort_on_uncaught_exception arg parsing\n\nFix c0bde73f, which inadvertently introduced a use of strcmp() without\ncorrectly comparing its return to zero. Caught by coverity:\n\n        >>>     CID 169223:  Integer handling issues  (CONSTANT_EXPRESSION_RESULT)\n        >>>     The \"or\" condition \"strcmp(arg, \"--abort-on-uncaught-exception\") || strcmp(arg, \"--abort_on_uncaught_exception\")\" will always be true because \"arg\" cannot be equal to two different values at the same time, so it must be not equal to at least one of them.\n        3909         } else if (strcmp(arg, \"--abort-on-uncaught-exception\") ||\n        3910                    strcmp(arg, \"--abort_on_uncaught_exception\")) {\n        3911           abort_on_uncaught_exception = true;\n        3912           // Also a V8 option.  Pass through as-is.\n        3913           new_v8_argv[new_v8_argc] = arg;\n        3914           new_v8_argc += 1;\n\nPR-URL: https://github.com/nodejs/node/pull/13004\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>",
+      "author": {
+        "name": "Sam Roberts",
+        "email": "vieuxtech@gmail.com",
+        "date": "2017-05-12T19:47:47Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/53dae8383309b8d1a7ccdf81bbddd5e4e594b48d",
+      "sha": "53dae8383309b8d1a7ccdf81bbddd5e4e594b48d"
+    },
+    {
+      "message": "src: whitelist new options for NODE_OPTIONS\n\nAdd --inspect-*, --napi-modules, --trace-event-categories\n\nRemove --prof-process, like -p and -e, it causes node to do something\nother than run node js scripts.\n\nPR-URL: https://github.com/nodejs/node/pull/13002\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>",
+      "author": {
+        "name": "Sam Roberts",
+        "email": "vieuxtech@gmail.com",
+        "date": "2017-05-12T19:39:11Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/d6cd466a25aa9ab5acd075b1b12befc0cb4bf7fe",
+      "sha": "d6cd466a25aa9ab5acd075b1b12befc0cb4bf7fe"
+    }
+  ],
+  "Joyee Cheung": [
+    {
+      "message": "build: clean up napi build in test-addons-clean\n\nPR-URL: https://github.com/nodejs/node/pull/13034\nRef: https://github.com/nodejs/node/issues/13031\nReviewed-By: Daniel Bevenius <daniel.bevenius@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>\nReviewed-By: Rajaram Gaunker <rajarams@gmail.com>",
+      "author": {
+        "name": "Joyee Cheung",
+        "email": "joyeec9h3@gmail.com",
+        "date": "2017-05-15T04:58:21Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/6342988053652e8ea1e3cd52e36d02926c2dea44",
+      "sha": "6342988053652e8ea1e3cd52e36d02926c2dea44"
+    }
+  ],
+  "Refael Ackermann": [
+    {
+      "message": "build: reduce one level of spawning in node_gyp\n\n`configure` will now call `node_gyp` as a module instead of forking\nmakes it easier to debug\n\nPR-URL: https://github.com/nodejs/node/pull/12653\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
+      "author": {
+        "name": "Refael Ackermann",
+        "email": "refack@gmail.com",
+        "date": "2017-04-25T21:36:50Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/4aff0563aa75f64adc6f6d4ef0965b3a14617d2b",
+      "sha": "4aff0563aa75f64adc6f6d4ef0965b3a14617d2b"
+    },
+    {
+      "message": "build: simplify `if` in setting of arg_paths\n\nPR-URL: https://github.com/nodejs/node/pull/12653\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
+      "author": {
+        "name": "Refael Ackermann",
+        "email": "refack@gmail.com",
+        "date": "2017-04-26T13:27:46Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/80355271c324d2a5515768c1d58976d4483f650c",
+      "sha": "80355271c324d2a5515768c1d58976d4483f650c"
+    }
+  ],
+  "Tobias Nießen": [
+    {
+      "message": "stream: fix highWaterMark integer overflow\n\nFixes integer overflows when supplying values exceeding MAX_SAFE_INTEGER\nfor highWaterMark.\n\nPR-URL: https://github.com/nodejs/node/pull/12593\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Luca Maraschi <luca.maraschi@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
+      "author": {
+        "name": "Tobias Nießen",
+        "email": "tniessen@tnie.de",
+        "date": "2017-05-10T13:36:22Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/11918c4aedd27c0ed6b5f029fb2a50c889530db5",
+      "sha": "11918c4aedd27c0ed6b5f029fb2a50c889530db5"
+    }
+  ],
+  "Andrei Cioromila": [
+    {
+      "message": "test: add regex check in test-url-parse-invalid-input\n\nUse a regex to validate the error message.\n\nPR-URL: https://github.com/nodejs/node/pull/12879\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Yuta Hiroto <hello@about-hiroppy.com>\nReviewed-By: David Cai <davidcai1993@yahoo.com>\nReviewed-By: Timothy Gu <timothygu99@gmail.com>\nReviewed-By: Daijiro Wachi <daijiro.wachi@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "author": {
+        "name": "Andrei Cioromila",
+        "email": "andrei.cioromila@gmail.com",
+        "date": "2017-05-07T11:12:30Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/7906ed50fab6d3e8f6bd259484c465f2df1bc754",
+      "sha": "7906ed50fab6d3e8f6bd259484c465f2df1bc754"
+    }
+  ],
+  "Gibson Fahnestock": [
+    {
+      "message": "doc: document method for reverting commits\n\nPR-URL: https://github.com/nodejs/node/pull/13015\nFixes: https://github.com/nodejs/node/issues/12979\nRefs: https://github.com/nodejs/node/pull/4679#issuecomment-172421320\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
+      "author": {
+        "name": "Gibson Fahnestock",
+        "email": "gibfahn@gmail.com",
+        "date": "2017-05-13T17:12:26Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/92f3b301ab706d6254814b3f0a2689a32bbafb01",
+      "sha": "92f3b301ab706d6254814b3f0a2689a32bbafb01"
+    }
+  ],
+  "daniel.bevenius": [
+    {
+      "message": "deps: cherry-pick f5fad6d from upstream v8\n\nOriginal commit message:\n\n    This commit adds a getter for the private is_verbose_ member.\n    The use case for this comes from Node.js where the ability to avoid\n    calling FatalException if the TryCatch is verbose would be nice\n    to have.\n\n    BUG=\n\n    Review-Url: https://codereview.chromium.org/2840803002\n    Cr-Commit-Position: refs/heads/master@{#45018}\n\nPR-URL: https://github.com/nodejs/node/pull/12826\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>",
+      "author": {
+        "name": "daniel.bevenius",
+        "email": "daniel.bevenius@gmail.com",
+        "date": "2017-05-02T10:28:17Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/986e1d2c6fda62e189bbcc27c856ee0e58adddaf",
+      "sha": "986e1d2c6fda62e189bbcc27c856ee0e58adddaf"
+    }
+  ],
+  "Sebastian Plesciuc": [
+    {
+      "message": "test: fixed flaky test-net-connect-local-error\n\nFixed test-net-connect-local-error by moving the test from\nparallel to sequential.\n\nPR-URL: https://github.com/nodejs/node/pull/12964\nFixes: https://github.com/nodejs/node/issues/12950\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+      "author": {
+        "name": "Sebastian Plesciuc",
+        "email": "sebastian.plesciuc@sendgrid.com",
+        "date": "2017-05-15T17:19:43Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/0c2edd27e693ef5bb914a25c3257511fe2bb99f6",
+      "sha": "0c2edd27e693ef5bb914a25c3257511fe2bb99f6"
+    }
+  ],
+  "Fedor Indutny": [
+    {
+      "message": "tls: accept `lookup` option for `tls.connect()`\n\n`net.connect()` and consequently `http.Agent` support custom DNS\n`lookup` option. However, as we move to `https.Agent` - this option no\nlonger works because it is not proxied by `tls.connect`.\n\nFix this inconsistency by passing it down to `net.connect`.\n\nPR-URL: https://github.com/nodejs/node/pull/12839\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>",
+      "author": {
+        "name": "Fedor Indutny",
+        "email": "fedor@indutny.com",
+        "date": "2017-05-04T23:05:35Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/e600fbe576e7806a01e11708b65830aeae96b590",
+      "sha": "e600fbe576e7806a01e11708b65830aeae96b590"
+    }
+  ],
+  "Gabriel Schulhof": [
+    {
+      "message": "addons: remove semicolons from after module definition\n\nHaving semicolons there runs counter to our documentation and illicits\nwarnings in pedantic mode. This removes semicolons from after uses of\nNODE_MODULE and NODE_MODULE_CONTEXT_AWARE_BUILTIN.\n\nPR-URL: https://github.com/nodejs/node/pull/12919\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Daniel Bevenius <daniel.bevenius@gmail.com>\nReviewed-By: Alexey Orlenko <eaglexrlnk@gmail.com>",
+      "author": {
+        "name": "Gabriel Schulhof",
+        "email": "gabriel.schulhof@intel.com",
+        "date": "2017-05-09T10:53:29Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/276720921ba8b4428d3832867e8c6474156a75d1",
+      "sha": "276720921ba8b4428d3832867e8c6474156a75d1"
+    }
+  ],
+  "Ruslan Bekenev": [
+    {
+      "message": "tls: do not wrap net.Socket with StreamWrap\n\nFixes: https://github.com/nodejs/node/issues/3655\nPR-URL: https://github.com/nodejs/node/pull/12799\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Fedor Indutny <fedor@indutny.com>",
+      "author": {
+        "name": "Ruslan Bekenev",
+        "email": "furyinbox@gmail.com",
+        "date": "2017-05-02T17:36:50Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/b23d414c7ec0674ba3cbb36427e4c29dbd396338",
+      "sha": "b23d414c7ec0674ba3cbb36427e4c29dbd396338"
+    }
+  ],
+  "James M Snell": [
+    {
+      "message": "util: fixup internal util exports\n\nutil.promisify landed without using the module.exports = {}\npattern. This fixes it up for consistency\n\nPR-URL: https://github.com/nodejs/node/pull/12998\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
+      "author": {
+        "name": "James M Snell",
+        "email": "jasnell@gmail.com",
+        "date": "2017-05-12T15:37:32Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/ef16319effe396622666268cd8100ad8d586c4ee",
+      "sha": "ef16319effe396622666268cd8100ad8d586c4ee"
+    }
+  ],
+  "Shigeki Ohtsu": [
+    {
+      "message": "deps: update openssl asm and asm_obsolete files\n\nRegenerate asm files according to the fix of\nopenssl/crypto/perlasm/x86_64-xlate.pl.\n\nFixes: https://github.com/nodejs/node/issues/12691\nPR-URL: https://github.com/nodejs/node/pull/12913\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
+      "author": {
+        "name": "Shigeki Ohtsu",
+        "email": "ohtsu@ohtsu.org",
+        "date": "2017-05-09T02:06:16Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/e896898deac171c94de6466948686fbc280663b2",
+      "sha": "e896898deac171c94de6466948686fbc280663b2"
+    }
   ]
 }
