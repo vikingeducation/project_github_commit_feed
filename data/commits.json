@@ -1,146 +1,138 @@
 {
-  "Christian Florez": [
+  "Refael Ackermann": [
     {
-      "message": "implement webhooks",
+      "message": "build: reduce one level of spawning in node_gyp\n\n`configure` will now call `node_gyp` as a module instead of forking\nmakes it easier to debug\n\nPR-URL: https://github.com/nodejs/node/pull/12653\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
       "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T19:40:01Z"
+        "name": "Refael Ackermann",
+        "email": "refack@gmail.com",
+        "date": "2017-04-25T21:36:50Z"
       },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/8d444d7a9c14653a0a2f9e6d5d1e2f2b9b0ae9c1",
-      "sha": "8d444d7a9c14653a0a2f9e6d5d1e2f2b9b0ae9c1"
+      "url": "https://github.com/nodejs/node/commit/4aff0563aa75f64adc6f6d4ef0965b3a14617d2b",
+      "sha": "4aff0563aa75f64adc6f6d4ef0965b3a14617d2b"
     },
     {
-      "message": "test webhook",
+      "message": "build: simplify `if` in setting of arg_paths\n\nPR-URL: https://github.com/nodejs/node/pull/12653\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
       "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T23:14:28Z"
+        "name": "Refael Ackermann",
+        "email": "refack@gmail.com",
+        "date": "2017-04-26T13:27:46Z"
       },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/5e16ecc1c56a6a023dbd605213ec09abc14afd17",
-      "sha": "5e16ecc1c56a6a023dbd605213ec09abc14afd17"
+      "url": "https://github.com/nodejs/node/commit/80355271c324d2a5515768c1d58976d4483f650c",
+      "sha": "80355271c324d2a5515768c1d58976d4483f650c"
     },
     {
-      "message": "one more time",
+      "message": "test: ignore spurious 'EMFILE'\n\nAccording to the explanation in #3635#issuecomment-157714683\nAnd as a continuation to #5422 we also ignore EMFILE\n\"No more file descriptors are available,so no more files can be opened\"\n\nPR-URL: https://github.com/nodejs/node/pull/12698\nFixes: https://github.com/nodejs/node/issues/10286\nRefs: https://github.com/nodejs/node/issues/3635#issuecomment-157714683\nRefs: https://github.com/nodejs/node/pull/5178\nRefs: https://github.com/nodejs/node/pull/5179\nRefs: https://github.com/nodejs/node/pull/4005\nRefs: https://github.com/nodejs/node/pull/5121\nRefs: https://github.com/nodejs/node/pull/5422\nRefs: https://github.com/nodejs/node/pull/12621#issuecomment-297701459\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Santiago Gimeno <santiago.gimeno@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>",
       "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T23:15:51Z"
+        "name": "Refael Ackermann",
+        "email": "refack@gmail.com",
+        "date": "2017-04-27T14:02:46Z"
       },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/06f6c12907a4643f1c7b3e7d8aec12e24097ef9f",
-      "sha": "06f6c12907a4643f1c7b3e7d8aec12e24097ef9f"
+      "url": "https://github.com/nodejs/node/commit/6f216710eb49436f0c372fbaf6da3e65ba9578c2",
+      "sha": "6f216710eb49436f0c372fbaf6da3e65ba9578c2"
     },
     {
-      "message": "4th webhook test",
+      "message": "test: add mustCallAtLeast\n\nPR-URL: https://github.com/nodejs/node/pull/12935\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
       "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T19:38:56Z"
+        "name": "Refael Ackermann",
+        "email": "refack@gmail.com",
+        "date": "2017-05-09T21:16:52Z"
       },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/a00c2ea0c9951b990d3b8a730bf0438d1e6bf443",
-      "sha": "a00c2ea0c9951b990d3b8a730bf0438d1e6bf443"
-    },
-    {
-      "message": "3rd webhook test",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T19:32:38Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/7933c35f627fb462e363a29cdeb0434ec0c4459b",
-      "sha": "7933c35f627fb462e363a29cdeb0434ec0c4459b"
-    },
-    {
-      "message": "2nd webhook test",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T19:31:27Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/ac8e9e0f44c193429120a07617adc12078acfc56",
-      "sha": "ac8e9e0f44c193429120a07617adc12078acfc56"
-    },
-    {
-      "message": "test webhook",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T19:27:30Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/4335dbaf82ce0f46e8284ed1c2b4af3bf07659fb",
-      "sha": "4335dbaf82ce0f46e8284ed1c2b4af3bf07659fb"
-    },
-    {
-      "message": "create github wrapper",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T14:53:07Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/5b846cea7c45e92ba6f47de20ac2f2baa59b6d21",
-      "sha": "5b846cea7c45e92ba6f47de20ac2f2baa59b6d21"
-    },
-    {
-      "message": "implement form as post",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T16:12:19Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/aa537df240007bd52d1fb3e7a08ff21f1a952292",
-      "sha": "aa537df240007bd52d1fb3e7a08ff21f1a952292"
-    },
-    {
-      "message": "parse username and repo",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T16:52:36Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/18713a52563208e130542ee43d08d4bcaf71f585",
-      "sha": "18713a52563208e130542ee43d08d4bcaf71f585"
-    },
-    {
-      "message": "enable json saving",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T17:39:29Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/3a898105a6b688befe9f2255db6889e2eb615e8d",
-      "sha": "3a898105a6b688befe9f2255db6889e2eb615e8d"
-    },
-    {
-      "message": "begin webhooks implementation",
-      "author": {
-        "name": "Christian Florez",
-        "email": "florez.christian@gmail.com",
-        "date": "2017-05-18T19:21:59Z"
-      },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/07a59d12eabc5a9bcb1a830a8f047bf236d5a4ec",
-      "sha": "07a59d12eabc5a9bcb1a830a8f047bf236d5a4ec"
+      "url": "https://github.com/nodejs/node/commit/fccc0bf6e68981f6225315875524e1a0b56fcc20",
+      "sha": "fccc0bf6e68981f6225315875524e1a0b56fcc20"
     }
   ],
-  "Chris Scavello": [
+  "Ben Noordhuis": [
     {
-      "message": "Initial commit",
+      "message": "src: check if --icu-data-dir= points to valid dir\n\nCall uc_init() after u_setDataDirectory() to find out if the data\ndirectory is actually valid.\n\nThis commit removes parallel/test-intl-no-icu-data, added in commit\n46345b9 (\"src: make --icu-data-dir= switch testable\").  It no longer\nworks now that an invalid --icu-data-dir= argument is rejected.\nCoverage is now provided by parallel/test-icu-data-dir.\n\nFixes: https://github.com/nodejs/node/issues/13043\nRefs: https://github.com/nodejs/node-gyp/issues/1199\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Steven R Loomis <srloomis@us.ibm.com>",
       "author": {
-        "name": "Chris Scavello",
-        "email": "bideowego@gmail.com",
-        "date": "2017-02-21T16:47:14Z"
+        "name": "Ben Noordhuis",
+        "email": "info@bnoordhuis.nl",
+        "date": "2017-05-16T13:15:14Z"
       },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
-      "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+      "url": "https://github.com/nodejs/node/commit/46e773c5db9ebc106823594b82f4ff14a0a004f3",
+      "sha": "46e773c5db9ebc106823594b82f4ff14a0a004f3"
+    }
+  ],
+  "cjihrig": [
+    {
+      "message": "net: add symbol to normalized connect() args\n\nThis commit attaches a Symbol to the result of\nnet._normalizeArgs(). This prevents normal arrays from being\npassed to the internal Socket.prototype.connect() bypass logic.\n\nPR-URL: https://github.com/nodejs/node/pull/13069\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>",
+      "author": {
+        "name": "cjihrig",
+        "email": "cjihrig@gmail.com",
+        "date": "2017-05-18T18:19:21Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/51664fc265bf4ce9757f18b7b78f18b34678b3e3",
+      "sha": "51664fc265bf4ce9757f18b7b78f18b34678b3e3"
+    }
+  ],
+  "Artur Vieira": [
+    {
+      "message": "test: use dynamic port in test-cluster-dgram-reuse\n\nRemove common.PORT from test-cluster-dgram-reuse to eliminate\npossibility that a dynamic port used in another test will collide with\ncommon.PORT.\n\nPR-URL: https://github.com/nodejs/node/pull/12901\nRef: https://github.com/nodejs/node/issues/12376\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Daijiro Wachi <daijiro.wachi@gmail.com>",
+      "author": {
+        "name": "Artur Vieira",
+        "email": "vieira.artur.g@gmail.com",
+        "date": "2017-05-08T09:38:53Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/6b1819cff59c674d03f0afca80f33369b36b3926",
+      "sha": "6b1819cff59c674d03f0afca80f33369b36b3926"
+    }
+  ],
+  "Rick Bullotta": [
+    {
+      "message": "doc: don't suggest setEncoding for binary streams\n\nRemoved an incorrect reference to the use of setEncoding(null) as the\nproper way to handling binary streams or to disable encoding, and\nexplained that the default encoding is \"no encoding\", and that this is\nthe correct approach for dealing with binary data via Buffers.\n\nPR-URL: https://github.com/nodejs/node/pull/11363\nFixes: https://github.com/nodejs/node/issues/11352\nRefs: https://github.com/nodejs/node/issues/11316\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Matteo Collina <matteo.collina@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
+      "author": {
+        "name": "Rick Bullotta",
+        "email": "rickbullotta@users.noreply.github.com",
+        "date": "2017-05-19T11:59:25Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/847688018cb166eea7bfff9a9044a7295c17d5d8",
+      "sha": "847688018cb166eea7bfff9a9044a7295c17d5d8"
+    }
+  ],
+  "Faiz Halde": [
+    {
+      "message": "doc: update doc of publicEncrypt method\n\nAs per https://github.com/nodejs/node/issues/12946\nthe crypto doc for publicEncrypt doesn't tell\nyou whether the encryption happens in place or not.\n\nFixes: https://github.com/nodejs/node/issues/12946\nPR-URL: https://github.com/nodejs/node/pull/12947\nReviewed-By: Brian White <mscdex@mscdex.net>\nReviewed-By: Daniel Bevenius <daniel.bevenius@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
+      "author": {
+        "name": "Faiz Halde",
+        "email": "faiz_84123@yahoo.com",
+        "date": "2017-05-10T07:11:54Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/eff9252181abe6ebd19252af652f29581711e665",
+      "sha": "eff9252181abe6ebd19252af652f29581711e665"
+    }
+  ],
+  "Michael Dawson": [
+    {
+      "message": "test: Improve N-API test coverage\n\n- add coverage for napi_get_prototype\n- add coverage for napi_strict_equals\n\nPR-URL: https://github.com/nodejs/node/pull/13044\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
+      "author": {
+        "name": "Michael Dawson",
+        "email": "michael_dawson@ca.ibm.com",
+        "date": "2017-05-16T00:18:50Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/0dd8b9a96561f9b85783a7e1178d35d49e2340e2",
+      "sha": "0dd8b9a96561f9b85783a7e1178d35d49e2340e2"
     },
     {
-      "message": "Update README.md",
+      "message": "doc: update doc to remove usage of \"you\"\n\nAs per style guide avoid the use of you, your etc.\nRational as per: http://www2.ivcc.edu/rambo/tip_formal_writing_voice.htm\n\nPR-URL: https://github.com/nodejs/node/pull/13067\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Sakthipriyan Vairamani <thechargingvolcano@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Alexey Orlenko <eaglexrlnk@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>",
       "author": {
-        "name": "Chris Scavello",
-        "email": "bideowego@gmail.com",
-        "date": "2017-02-21T16:48:57Z"
+        "name": "Michael Dawson",
+        "email": "michael_dawson@ca.ibm.com",
+        "date": "2017-05-16T22:53:27Z"
       },
-      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
-      "sha": "ceec1b2306888905ae12750558706174132a6741"
+      "url": "https://github.com/nodejs/node/commit/ab34f9dec200490c935c179f0f3244c3fa38cc88",
+      "sha": "ab34f9dec200490c935c179f0f3244c3fa38cc88"
+    }
+  ],
+  "Akshay Iyer": [
+    {
+      "message": "test: refactor test-vm-new-script-new-context\n\nChanged the second parameter of assert.throws to match the errors.\n\nPR-URL: https://github.com/nodejs/node/pull/13035\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>",
+      "author": {
+        "name": "Akshay Iyer",
+        "email": "c.m.akshay.iyer@gmail.com",
+        "date": "2017-05-15T05:05:00Z"
+      },
+      "url": "https://github.com/nodejs/node/commit/a593c74f811c12823053e6b7093466015992e9e6",
+      "sha": "a593c74f811c12823053e6b7093466015992e9e6"
     }
   ],
   "Daniel Bevenius": [
@@ -229,16 +221,6 @@
   ],
   "Anna Henningsen": [
     {
-      "message": "n-api: remove compiler warning\n\n`TryCatch` without an `Isolate*` argument is deprecated, so add one.\n\nPR-URL: https://github.com/nodejs/node/pull/13014\nReviewed-By: Timothy Gu <timothygu99@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Michael Dawson <michael_dawson@ca.ibm.com>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
-      "author": {
-        "name": "Anna Henningsen",
-        "email": "anna@addaleax.net",
-        "date": "2017-05-13T15:36:23Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/008301167eaed35306005ba20c5ac7bc04ff32f7",
-      "sha": "008301167eaed35306005ba20c5ac7bc04ff32f7"
-    },
-    {
       "message": "buffer: fix indexOf for empty searches\n\nMake searches for empty subsequences do exactly what\n`String.prototype.indexOf()` does.\n\nFixes: https://github.com/nodejs/node/issues/13023\nPR-URL: https://github.com/nodejs/node/pull/13024\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Sakthipriyan Vairamani <thechargingvolcano@gmail.com>",
       "author": {
         "name": "Anna Henningsen",
@@ -273,38 +255,6 @@
       "sha": "5de722ab6d1039980d3bafef42496e3659461573"
     }
   ],
-  "Michael Dawson": [
-    {
-      "message": "doc: clarify operation of napi_cancel_async_work\n\nPR-URL: https://github.com/nodejs/node/pull/12974\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Sakthipriyan Vairamani <thechargingvolcano@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
-      "author": {
-        "name": "Michael Dawson",
-        "email": "michael_dawson@ca.ibm.com",
-        "date": "2017-05-11T13:53:35Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/1b28022de0556350ed75137e0d94446441ea5544",
-      "sha": "1b28022de0556350ed75137e0d94446441ea5544"
-    },
-    {
-      "message": "test: improve N-API test coverage\n\nAdd tests to cover functions that return globals\n\nPR-URL: https://github.com/nodejs/node/pull/13006\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
-      "author": {
-        "name": "Michael Dawson",
-        "email": "michael_dawson@ca.ibm.com",
-        "date": "2017-05-12T21:26:38Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/47c3c58704a8e61e429daf2b8ad640edae862139",
-      "sha": "47c3c58704a8e61e429daf2b8ad640edae862139"
-    },
-    {
-      "message": "test: Improve N-API test coverage\n\n- add coverage for napi_get_prototype\n- add coverage for napi_strict_equals\n\nPR-URL: https://github.com/nodejs/node/pull/13044\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Jason Ginchereau <jasongin@microsoft.com>",
-      "author": {
-        "name": "Michael Dawson",
-        "email": "michael_dawson@ca.ibm.com",
-        "date": "2017-05-16T00:18:50Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/0dd8b9a96561f9b85783a7e1178d35d49e2340e2",
-      "sha": "0dd8b9a96561f9b85783a7e1178d35d49e2340e2"
-    }
-  ],
   "Sam Roberts": [
     {
       "message": "src: fix --abort_on_uncaught_exception arg parsing\n\nFix c0bde73f, which inadvertently introduced a use of strcmp() without\ncorrectly comparing its return to zero. Caught by coverity:\n\n        >>>     CID 169223:  Integer handling issues  (CONSTANT_EXPRESSION_RESULT)\n        >>>     The \"or\" condition \"strcmp(arg, \"--abort-on-uncaught-exception\") || strcmp(arg, \"--abort_on_uncaught_exception\")\" will always be true because \"arg\" cannot be equal to two different values at the same time, so it must be not equal to at least one of them.\n        3909         } else if (strcmp(arg, \"--abort-on-uncaught-exception\") ||\n        3910                    strcmp(arg, \"--abort_on_uncaught_exception\")) {\n        3911           abort_on_uncaught_exception = true;\n        3912           // Also a V8 option.  Pass through as-is.\n        3913           new_v8_argv[new_v8_argc] = arg;\n        3914           new_v8_argc += 1;\n\nPR-URL: https://github.com/nodejs/node/pull/13004\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>\nReviewed-By: Richard Lau <riclau@uk.ibm.com>",
@@ -337,28 +287,6 @@
       },
       "url": "https://github.com/nodejs/node/commit/6342988053652e8ea1e3cd52e36d02926c2dea44",
       "sha": "6342988053652e8ea1e3cd52e36d02926c2dea44"
-    }
-  ],
-  "Refael Ackermann": [
-    {
-      "message": "build: reduce one level of spawning in node_gyp\n\n`configure` will now call `node_gyp` as a module instead of forking\nmakes it easier to debug\n\nPR-URL: https://github.com/nodejs/node/pull/12653\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
-      "author": {
-        "name": "Refael Ackermann",
-        "email": "refack@gmail.com",
-        "date": "2017-04-25T21:36:50Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/4aff0563aa75f64adc6f6d4ef0965b3a14617d2b",
-      "sha": "4aff0563aa75f64adc6f6d4ef0965b3a14617d2b"
-    },
-    {
-      "message": "build: simplify `if` in setting of arg_paths\n\nPR-URL: https://github.com/nodejs/node/pull/12653\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>\nReviewed-By: Gibson Fahnestock <gibfahn@gmail.com>",
-      "author": {
-        "name": "Refael Ackermann",
-        "email": "refack@gmail.com",
-        "date": "2017-04-26T13:27:46Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/80355271c324d2a5515768c1d58976d4483f650c",
-      "sha": "80355271c324d2a5515768c1d58976d4483f650c"
     }
   ],
   "Tobias Nießen": [
@@ -409,76 +337,178 @@
       "sha": "986e1d2c6fda62e189bbcc27c856ee0e58adddaf"
     }
   ],
-  "Sebastian Plesciuc": [
+  "Christian Florez": [
     {
-      "message": "test: fixed flaky test-net-connect-local-error\n\nFixed test-net-connect-local-error by moving the test from\nparallel to sequential.\n\nPR-URL: https://github.com/nodejs/node/pull/12964\nFixes: https://github.com/nodejs/node/issues/12950\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Rich Trott <rtrott@gmail.com>",
+      "message": "create github wrapper",
       "author": {
-        "name": "Sebastian Plesciuc",
-        "email": "sebastian.plesciuc@sendgrid.com",
-        "date": "2017-05-15T17:19:43Z"
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T14:53:07Z"
       },
-      "url": "https://github.com/nodejs/node/commit/0c2edd27e693ef5bb914a25c3257511fe2bb99f6",
-      "sha": "0c2edd27e693ef5bb914a25c3257511fe2bb99f6"
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/5b846cea7c45e92ba6f47de20ac2f2baa59b6d21",
+      "sha": "5b846cea7c45e92ba6f47de20ac2f2baa59b6d21"
+    },
+    {
+      "message": "implement form as post",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T16:12:19Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/aa537df240007bd52d1fb3e7a08ff21f1a952292",
+      "sha": "aa537df240007bd52d1fb3e7a08ff21f1a952292"
+    },
+    {
+      "message": "parse username and repo",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T16:52:36Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/18713a52563208e130542ee43d08d4bcaf71f585",
+      "sha": "18713a52563208e130542ee43d08d4bcaf71f585"
+    },
+    {
+      "message": "enable json saving",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T17:39:29Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/3a898105a6b688befe9f2255db6889e2eb615e8d",
+      "sha": "3a898105a6b688befe9f2255db6889e2eb615e8d"
+    },
+    {
+      "message": "begin webhooks implementation",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T19:21:59Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/07a59d12eabc5a9bcb1a830a8f047bf236d5a4ec",
+      "sha": "07a59d12eabc5a9bcb1a830a8f047bf236d5a4ec"
+    },
+    {
+      "message": "test webhook",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T19:27:30Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/4335dbaf82ce0f46e8284ed1c2b4af3bf07659fb",
+      "sha": "4335dbaf82ce0f46e8284ed1c2b4af3bf07659fb"
+    },
+    {
+      "message": "2nd webhook test",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T19:31:27Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/ac8e9e0f44c193429120a07617adc12078acfc56",
+      "sha": "ac8e9e0f44c193429120a07617adc12078acfc56"
+    },
+    {
+      "message": "3rd webhook test",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T19:32:38Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/7933c35f627fb462e363a29cdeb0434ec0c4459b",
+      "sha": "7933c35f627fb462e363a29cdeb0434ec0c4459b"
+    },
+    {
+      "message": "4th webhook test",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T19:38:56Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/a00c2ea0c9951b990d3b8a730bf0438d1e6bf443",
+      "sha": "a00c2ea0c9951b990d3b8a730bf0438d1e6bf443"
+    },
+    {
+      "message": "implement webhooks",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T19:40:01Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/8d444d7a9c14653a0a2f9e6d5d1e2f2b9b0ae9c1",
+      "sha": "8d444d7a9c14653a0a2f9e6d5d1e2f2b9b0ae9c1"
+    },
+    {
+      "message": "test webhook",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T23:14:28Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/5e16ecc1c56a6a023dbd605213ec09abc14afd17",
+      "sha": "5e16ecc1c56a6a023dbd605213ec09abc14afd17"
+    },
+    {
+      "message": "one more time",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T23:15:51Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/06f6c12907a4643f1c7b3e7d8aec12e24097ef9f",
+      "sha": "06f6c12907a4643f1c7b3e7d8aec12e24097ef9f"
+    },
+    {
+      "message": "yetagain",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-18T23:16:37Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/ed51da8e5c5af6e7a6c0ee76cbeccbdc8e6a6bcc",
+      "sha": "ed51da8e5c5af6e7a6c0ee76cbeccbdc8e6a6bcc"
+    },
+    {
+      "message": "refactor github api fetch",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-19T15:09:46Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/f5e19e462387794400498ac70c8f8e65e50ef68a",
+      "sha": "f5e19e462387794400498ac70c8f8e65e50ef68a"
+    },
+    {
+      "message": "fix merge",
+      "author": {
+        "name": "Christian Florez",
+        "email": "florez.christian@gmail.com",
+        "date": "2017-05-19T15:10:26Z"
+      },
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/28b31b1555e052aba06887b9b0248f7ec0bf6a98",
+      "sha": "28b31b1555e052aba06887b9b0248f7ec0bf6a98"
     }
   ],
-  "Fedor Indutny": [
+  "Chris Scavello": [
     {
-      "message": "tls: accept `lookup` option for `tls.connect()`\n\n`net.connect()` and consequently `http.Agent` support custom DNS\n`lookup` option. However, as we move to `https.Agent` - this option no\nlonger works because it is not proxied by `tls.connect`.\n\nFix this inconsistency by passing it down to `net.connect`.\n\nPR-URL: https://github.com/nodejs/node/pull/12839\nReviewed-By: Benjamin Gruenbaum <benjamingr@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Joyee Cheung <joyeec9h3@gmail.com>\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Ben Noordhuis <info@bnoordhuis.nl>",
+      "message": "Initial commit",
       "author": {
-        "name": "Fedor Indutny",
-        "email": "fedor@indutny.com",
-        "date": "2017-05-04T23:05:35Z"
+        "name": "Chris Scavello",
+        "email": "bideowego@gmail.com",
+        "date": "2017-02-21T16:47:14Z"
       },
-      "url": "https://github.com/nodejs/node/commit/e600fbe576e7806a01e11708b65830aeae96b590",
-      "sha": "e600fbe576e7806a01e11708b65830aeae96b590"
-    }
-  ],
-  "Gabriel Schulhof": [
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+      "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+    },
     {
-      "message": "addons: remove semicolons from after module definition\n\nHaving semicolons there runs counter to our documentation and illicits\nwarnings in pedantic mode. This removes semicolons from after uses of\nNODE_MODULE and NODE_MODULE_CONTEXT_AWARE_BUILTIN.\n\nPR-URL: https://github.com/nodejs/node/pull/12919\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Daniel Bevenius <daniel.bevenius@gmail.com>\nReviewed-By: Alexey Orlenko <eaglexrlnk@gmail.com>",
+      "message": "Update README.md",
       "author": {
-        "name": "Gabriel Schulhof",
-        "email": "gabriel.schulhof@intel.com",
-        "date": "2017-05-09T10:53:29Z"
+        "name": "Chris Scavello",
+        "email": "bideowego@gmail.com",
+        "date": "2017-02-21T16:48:57Z"
       },
-      "url": "https://github.com/nodejs/node/commit/276720921ba8b4428d3832867e8c6474156a75d1",
-      "sha": "276720921ba8b4428d3832867e8c6474156a75d1"
-    }
-  ],
-  "Ruslan Bekenev": [
-    {
-      "message": "tls: do not wrap net.Socket with StreamWrap\n\nFixes: https://github.com/nodejs/node/issues/3655\nPR-URL: https://github.com/nodejs/node/pull/12799\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Fedor Indutny <fedor@indutny.com>",
-      "author": {
-        "name": "Ruslan Bekenev",
-        "email": "furyinbox@gmail.com",
-        "date": "2017-05-02T17:36:50Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/b23d414c7ec0674ba3cbb36427e4c29dbd396338",
-      "sha": "b23d414c7ec0674ba3cbb36427e4c29dbd396338"
-    }
-  ],
-  "James M Snell": [
-    {
-      "message": "util: fixup internal util exports\n\nutil.promisify landed without using the module.exports = {}\npattern. This fixes it up for consistency\n\nPR-URL: https://github.com/nodejs/node/pull/12998\nReviewed-By: Refael Ackermann <refack@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>\nReviewed-By: Colin Ihrig <cjihrig@gmail.com>\nReviewed-By: Michaël Zasso <targos@protonmail.com>\nReviewed-By: Luigi Pinca <luigipinca@gmail.com>",
-      "author": {
-        "name": "James M Snell",
-        "email": "jasnell@gmail.com",
-        "date": "2017-05-12T15:37:32Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/ef16319effe396622666268cd8100ad8d586c4ee",
-      "sha": "ef16319effe396622666268cd8100ad8d586c4ee"
-    }
-  ],
-  "Shigeki Ohtsu": [
-    {
-      "message": "deps: update openssl asm and asm_obsolete files\n\nRegenerate asm files according to the fix of\nopenssl/crypto/perlasm/x86_64-xlate.pl.\n\nFixes: https://github.com/nodejs/node/issues/12691\nPR-URL: https://github.com/nodejs/node/pull/12913\nReviewed-By: James M Snell <jasnell@gmail.com>\nReviewed-By: Sam Roberts <vieuxtech@gmail.com>\nReviewed-By: Anna Henningsen <anna@addaleax.net>",
-      "author": {
-        "name": "Shigeki Ohtsu",
-        "email": "ohtsu@ohtsu.org",
-        "date": "2017-05-09T02:06:16Z"
-      },
-      "url": "https://github.com/nodejs/node/commit/e896898deac171c94de6466948686fbc280663b2",
-      "sha": "e896898deac171c94de6466948686fbc280663b2"
+      "url": "https://github.com/christianflorez/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
+      "sha": "ceec1b2306888905ae12750558706174132a6741"
     }
   ]
 }
