@@ -31,24 +31,11 @@ const handleRouting = (req, res) => {
   if (method === "get") {
     res.writeHead(200, {'Content-Type': 'text/html'});
     if (!isQueryEmpty) {
-      // let params = getParams(query);
-      githubWrapper.init();
-      githubWrapper.authenticate(process.env.GITHUB_API_KEY);
-      githubWrapper.getRepoCommits(query.username, query.repo, (err, feed) => {
-        if (feed) {
-          // feed = JSON.stringify(feed, null, 2);
-          scrubFeed(feed.data);
-          refreshFeed();
-          render(req, res, savedFeed);
-        } else {
-          render(req, res, savedFeed);
-        }
-      });
+      fetchRepoCommits(req, res, query.username, query.repo);
     } else {
       render(req, res, savedFeed);
     }
   } else if (method === "post" && path === "/github/webhooks") {
-    // TO DO
     res.writeHead(200, _webhookHeaders);
 
     var p = new Promise((resolve) => {
@@ -56,19 +43,7 @@ const handleRouting = (req, res) => {
     });
 
     p.then(() => {
-      githubWrapper.init();
-      githubWrapper.authenticate(process.env.GITHUB_API_KEY);
-      githubWrapper.getRepoCommits(req.body.pusher.name, req.body.repository.name, (err, feed) => {
-        if (feed) {
-          scrubFeed(feed.data);
-          refreshFeed();
-          render(req, res, savedFeed);
-        } else {
-          render(req, res, savedFeed);
-        }
-      });
-      // console.log(req.body);
-      res.end();
+      fetchRepoCommits(req, res, req.body.pusher.name, req.body.repository.name);
     })
     .catch((error) => {
       console.error(error);
@@ -76,8 +51,21 @@ const handleRouting = (req, res) => {
   }
 };
 
-const scrubFeed = (feed) => {
+const fetchRepoCommits = (req, res, username, repo) => {
+  githubWrapper.init();
+  githubWrapper.authenticate(process.env.GITHUB_API_KEY);
+  githubWrapper.getRepoCommits(username, repo, (err, feed) => {
+    if (feed) {
+      scrubFeed(feed.data);
+      refreshFeed();
+      render(req, res, savedFeed);
+    } else {
+      render(req, res, savedFeed);
+    }
+  });
+};
 
+const scrubFeed = (feed) => {
   // this returns an array with our scrubbed results
   let results = feed.map((commit) => {
     let scrubbedCommit = {};
@@ -92,7 +80,7 @@ const scrubFeed = (feed) => {
 };
 
 const _saveFeed = (results) => {
-// Iterates through every commit found
+  // Iterates through every commit found
   results.forEach((commit) => {
     // Check if author exists
     let author = commit.author.name;
