@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Malbaron0/project_github_commit_feed/issues"
   },
-  "homepage": "https://github.com/Malbaron0/project_github_commit_feed#readme"
+  "homepage": "https://github.com/Malbaron0/project_github_commit_feed#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "github": "^9.2.0"
+  }
 }
