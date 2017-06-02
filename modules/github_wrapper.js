@@ -1,22 +1,26 @@
-//require('dotenv/config');
+require('dotenv').config();
 const Github = require('github');
 const fs = require('fs');
 
+let githubWrapper = {};
+let github;
 
+githubWrapper.init = () => {
+    github = new Github;
+}
 
-let github = new Github();
+githubWrapper.authenticate = () => {
+    github.authenticate({
+        type: "token",
+        token: process.env.GITHUB_TOKEN
+    });
+}
 
-github.authenticate({
-    type: "token",
-    token: process.env.GITHUB_TOKEN
-});
+githubWrapper.getCommits = (user, repoName, callback) => {
+    github.repos.getCommits({
+        owner: user,
+        repo: repoName
+    }, callback);
+}
 
-
-let commits = github.repos.getCommits({
-    owner: 'malbaron0',
-    repo: 'assignment_building_the_express_router'
-});
-
-commits.then((res) => {
-    console.log(res);
-});
+module.exports = githubWrapper;
