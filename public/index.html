@@ -10,11 +10,11 @@
 </header>
 
 <body>
-    
+
     <div class="container">
         <h1>The Github Commit Feed</h1>
         <form action="/commits" method="GET">
-        <fieldset class="form-group">
+            <fieldset class="form-group">
                 <legend class="col-form-legend">Github User/Repo</legend>
                 <div class="form-group row">
                     <label class="col-sm-1 col-form-label" for="user">User:</label>
@@ -25,30 +25,13 @@
                     <input class="col-sm-10 form-control" type="text" name="repo" id="repo">
                 </div>
                 <div class="form-group row">
-                     <button type="submit" class="col-sm-1 btn btn-primary">Submit</button>
+                    <button type="submit" class="col-sm-1 btn btn-primary">Submit</button>
                 </div>
-        </fieldset>
+            </fieldset>
         </form>
 
         <div>
-            <pre class="commit_feed">
-                {
-  "Foobar": {
-    "foobar": [
-      {
-        "message": "Update README.md",
-        "author": {
-          "name": "Foobar",
-          "email": "foobar@email.com",
-          "date": "2017-02-16T19:25:15Z"
-        },
-        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
-      }
-    ]
-  }
-}
-            </pre>
+            <pre class="commit_feed">{{commitFeed}}</pre>
         </div>
     </div>
 
