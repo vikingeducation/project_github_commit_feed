@@ -3,7 +3,7 @@ const fs = require('fs');
 const url = require('url');
 const github = require('./modules/github_wrapper')
 let commitFeed = require('./data/commits.json');
-
+const scrubData = require('./modules/scrubData');
 
 const port = process.env.PORT || process.argv[2] || 3000;
 const host = "localhost";
@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
 
 //read the html file into res.write and insert the appropriate JSON commit by replacing {{commitFeed}} in the html file
 let renderHTML = (res) => {
-    let commitFeedString = JSON.stringify(commitFeed, null, 2);
+    let commitFeedString = JSON.stringify(commitFeed, null, 2) || "";
 
     fs.readFile('./public/index.html', 'utf8', (err, data) => {
         if (err) throw err;
@@ -50,11 +50,13 @@ let getUserAndRepo = (req, res) => {
 
 //call the github API and retrieve the data with the passed in user and repo name.
 let getCommits = (formData) => {
+    let commitFeedString = JSON.stringify(commitFeed, null, 2);
     github.init();
     github.authenticate();
     github.getCommits(formData.user, formData.repo, (err, res) => {
         if (err) throw err;
-        console.log(res);
+        scrubData.formatData(res.data, commitFeedString); //Formate (scrub the data) to output only the necessary information and save to commits.json
+    
     });
 }
 
