@@ -1,16 +1,23 @@
-let http = require('http');
-let fs = require('fs');
+const http = require('http');
+const fs = require('fs');
+const url = require('url');
 let commitFeed = require('./data/commits.json');
 
-let port = process.env.PORT || process.argv[2] || 3000;
-let host = "localhost";
+
+const port = process.env.PORT || process.argv[2] || 3000;
+const host = "localhost";
 
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html');
-
         renderHTML(res);
+    }
+
+    else if(url.parse(req.url).pathname === '/commits'){
+        res.statusCode = 200;
+        res.setHeader('Content-Type', 'text/html');
+        getUserAndRepo(req,res);
     }
     else {
         res.statusCode = 404;
@@ -31,6 +38,12 @@ let renderHTML = (res) => {
     });
 }
 
+let getUserAndRepo = (req,res) => {
+    let path = url.parse(req.url).path;
+    let user = /user=([^&|?|///|]*)/.exec(path);
+    let repo = /repo=([^&|?|///|]*)/.exec(path);
+    console.log(`Username is: ${user[1]}\nRepo is: ${repo[1]}`);
+}
 
 server.listen(port, host, () => {
     console.log(`Server running at ${host}:${port}`);
