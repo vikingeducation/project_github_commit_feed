@@ -32,11 +32,11 @@ const server = http.createServer((req, res) => {
     else if(url.parse(req.url).pathname === '/github/webhooks'){
         let body = '';
         res.writeHead(200, headers);
-        req.on(data, (data) => {
+        req.on('data', (data) => {
            body += data;
         
         });
-        req.on(end, (data) => {
+        req.on('end', (data) => {
             console.log(data);
         })
         res.end();
