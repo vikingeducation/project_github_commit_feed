@@ -36,7 +36,7 @@ const server = http.createServer((req, res) => {
            body += data;
         
         });
-        console.log('bosy');
+        console.log(body);
         res.end();
     }
     else{
