@@ -9,10 +9,10 @@ const port = process.env.PORT || process.argv[2] || 3000;
 const host = "localhost";
 
 const headers = {
-  "Content-Type": "text/html",
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "Content-Type",
-  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+    "Content-Type": "text/html",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
 };
 
 const server = http.createServer((req, res) => {
@@ -29,17 +29,23 @@ const server = http.createServer((req, res) => {
         res.end();
     }
 
-    else if(url.parse(req.url).pathname === '/github/webhooks'){
-        let body = '';
-        res.writeHead(200, headers);
-        req.on('data', (data) => {
-           body += data;
-        
+    else if (url.parse(req.url).path === '/github/webhooks' && req.method === 'POST') {
+        res.writeHead(200, _headers);
+
+        let p = new Promise((resolve) => {
+            extractPostData(req, resolve);
         });
-        console.log(body);
-        res.end();
+
+        p.then((data) => {
+            console.log(data);
+            getCommits({ 'user': data.pusher.name, 'repo': data.repository.name });
+            res.end('200 OK');
+        })
+        .catch((err) => {
+            console.log(err);
+        });
     }
-    else{
+    else {
         res.statusCode = 200;
         res.end(`You made a ${req.method} request`);
     }
@@ -74,7 +80,22 @@ let getCommits = (formData) => {
     github.getCommits(formData.user, formData.repo, (err, res) => {
         if (err) throw err;
         scrubData.formatData(res.data, commitFeedString); //Formate (scrub the data) to output only the necessary information and save to commits.json
-    
+
+    });
+}
+
+
+
+//Get data from the requested objected and attach it to the requested object body
+let extractPostData = (req, done) => {
+    var body = '';
+    req.on('data', (data) => {
+        body += data;
+    });
+
+    req.on('end', () => {
+        let data = JSON.parse(decodeURI(body).slice(8)); //remove payload= which is a length of 8
+        done(data);
     });
 }
 
