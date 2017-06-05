@@ -8,6 +8,13 @@ const scrubData = require('./modules/scrubData');
 const port = process.env.PORT || process.argv[2] || 3000;
 const host = "localhost";
 
+const headers = {
+  "Content-Type": "text/html",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
+
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
         res.statusCode = 200;
@@ -19,6 +26,19 @@ const server = http.createServer((req, res) => {
         res.statusCode = 200;
         res.setHeader('Content-Type', 'text/html');
         getCommits(getUserAndRepo(req, res));
+        res.end();
+    }
+
+    else if(url.parse(req.url).pathname === '/github/webhooks'){
+        let body = '';
+        res.writeHead(200, headers);
+        req.on(data, (data) => {
+           body += data;
+        
+        });
+        req.on(end, (data) => {
+            console.log(data);
+        })
         res.end();
     }
     else{
