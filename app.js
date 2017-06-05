@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
     }
 
     else if (url.parse(req.url).path === '/github/webhooks' && req.method === 'POST') {
-        res.writeHead(200, _headers);
+        res.writeHead(200, headers);
 
         let p = new Promise((resolve) => {
             extractPostData(req, resolve);
