@@ -94,7 +94,7 @@ let extractPostData = (req, done) => {
     });
 
     req.on('end', () => {
-        let result = JSON.parse(decodeURI(body).slice(8)); //remove payload= which is a length of 8
+        let result = JSON.parse(decodeURIComponent(body).slice(8)); //remove payload= which is a length of 8
         console.log(result);
         done(result);
     });
