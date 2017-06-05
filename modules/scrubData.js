@@ -14,10 +14,10 @@ scrubData.formatData = (jsonData, dataFile) => {
         return commitObj;
     });
 
-    writeToCommitFile(formattedData, dataFile);
+   return writeToCommitFile(formattedData, dataFile);
 }
 
-//Write the JSON to commits.json file if array of data exists then append to the data.
+//Write the JSON to commits.json file if array of data exists then append to the data, return updated data in the file
 let writeToCommitFile = (commitData, dataFile) => {
 
     let json = JSON.parse(dataFile);
@@ -28,16 +28,12 @@ let writeToCommitFile = (commitData, dataFile) => {
             json.push(element);
         });
 
-        fs.writeFile('./data/commits.json', JSON.stringify(json, null, 2), (err) => {
-            if (err) throw err;
-            console.log('The data has been appended');
-        });
-    }
+        fs.writeFileSync('./data/commits.json', JSON.stringify(json, null, 2));
+        return JSON.stringify(json, null , 2);
+}
     else {
-        fs.writeFile('./data/commits.json', JSON.stringify(commitData, null, 2), (err) => {
-            if (err) throw err;
-            console.log('The file has been saved');
-        });
+        fs.writeFile('./data/commits.json', JSON.stringify(commitData, null, 2));
+        return JSON.stringify(commitData, null , 2);
     }
 };
 

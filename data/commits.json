@@ -1,123 +1,86 @@
 [
   {
-    "message": "Parsing Form Data",
+    "message": "hello"
+  },
+  {
+    "message": "Success on webhook",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-04T02:52:58Z"
+      "date": "2017-06-05T03:24:44Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/3cb97e45c1611682f47dd29194b2ee3f094c809f",
-    "SHA": "3cb97e45c1611682f47dd29194b2ee3f094c809f"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/d2f06810d29be9fc24636cb44043f92721bf9b86",
+    "SHA": "d2f06810d29be9fc24636cb44043f92721bf9b86"
   },
   {
-    "message": "Displaying Dynamic JSON in HTML",
+    "message": "decodeURIComponent fix",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-03T23:23:44Z"
+      "date": "2017-06-05T03:23:31Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/be526112a15dec53c8c8e9d16961c835b6cd0be2",
-    "SHA": "be526112a15dec53c8c8e9d16961c835b6cd0be2"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/16d96e3ed06eff8a5e80583d487ef3f248766f2d",
+    "SHA": "16d96e3ed06eff8a5e80583d487ef3f248766f2d"
   },
   {
-    "message": "Initial Server Setup",
+    "message": "Unpacking Webhook Data fixing errors",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-03T22:54:18Z"
+      "date": "2017-06-05T03:18:23Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/8645dfd2c30e84f596a7661688145af087c547e0",
-    "SHA": "8645dfd2c30e84f596a7661688145af087c547e0"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/5d8d7dfe934b24faa469ba96df4144ae8e83dbfd",
+    "SHA": "5d8d7dfe934b24faa469ba96df4144ae8e83dbfd"
   },
   {
-    "message": "div container to show commit feed",
+    "message": "Unpacking Webhook Data trying again",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-03T22:24:46Z"
+      "date": "2017-06-05T03:14:50Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/ec42fb99c25aeeb4f0e6518cb9107760cd1f2a5b",
-    "SHA": "ec42fb99c25aeeb4f0e6518cb9107760cd1f2a5b"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/809b0d20f5700207fc4eb9df30a5a1281dd6b278",
+    "SHA": "809b0d20f5700207fc4eb9df30a5a1281dd6b278"
   },
   {
-    "message": "Adding the Form",
+    "message": "Unpacking Webhook Data test",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-03T22:22:05Z"
+      "date": "2017-06-05T03:14:09Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/7235de1ec1bfe644278beea7778b72ea9f208fa5",
-    "SHA": "7235de1ec1bfe644278beea7778b72ea9f208fa5"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/f1baa9ef240610bfc82d5bec3f7c43b34076c727",
+    "SHA": "f1baa9ef240610bfc82d5bec3f7c43b34076c727"
   },
   {
-    "message": "Created the node github API wrapper",
+    "message": "Test",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-02T03:42:55Z"
+      "date": "2017-06-05T02:39:45Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/2dd9a98b6f6656ee71177c7cf5725698b44878b3",
-    "SHA": "2dd9a98b6f6656ee71177c7cf5725698b44878b3"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/1d8b8e5fdf2a592ac47428bfabee8f6379bac804",
+    "SHA": "1d8b8e5fdf2a592ac47428bfabee8f6379bac804"
   },
   {
-    "message": "Getting Commits from Github API",
+    "message": "webhook",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-01T21:22:54Z"
+      "date": "2017-06-05T02:39:02Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/a022a85c3770942a8739ef412b2f51dbfa7f9856",
-    "SHA": "a022a85c3770942a8739ef412b2f51dbfa7f9856"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/257d0523dd2fb012131b08af6ac6be71161d1179",
+    "SHA": "257d0523dd2fb012131b08af6ac6be71161d1179"
   },
   {
-    "message": "getting started",
+    "message": "Webhook test",
     "author": {
       "name": "Malyar Baron",
       "email": "malbaron0@gmail.com",
-      "date": "2017-06-01T04:42:38Z"
+      "date": "2017-06-05T02:37:24Z"
     },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/7c601750871cc6eb1e377e7188dc48ee9e28ad6d",
-    "SHA": "7c601750871cc6eb1e377e7188dc48ee9e28ad6d"
-  },
-  {
-    "message": "Update README.md",
-    "author": {
-      "name": "Chris Scavello",
-      "email": "bideowego@gmail.com",
-      "date": "2017-02-21T16:48:57Z"
-    },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
-    "SHA": "ceec1b2306888905ae12750558706174132a6741"
-  },
-  {
-    "message": "Initial commit",
-    "author": {
-      "name": "Chris Scavello",
-      "email": "bideowego@gmail.com",
-      "date": "2017-02-21T16:47:14Z"
-    },
-    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
-    "SHA": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
-  },
-  {
-    "message": "Fixed issue with z-index and reworked the UI as well as adding a score",
-    "author": {
-      "name": "Malyar Baron",
-      "email": "malbaron0@gmail.com",
-      "date": "2017-04-15T02:48:19Z"
-    },
-    "HTML_URL": "https://github.com/Malbaron0/Whack-A-Mole/commit/f0afab6baafd739a7a79118d97b1ab4e827a8dac",
-    "SHA": "f0afab6baafd739a7a79118d97b1ab4e827a8dac"
-  },
-  {
-    "message": "First commit\n\nCommiting all project files",
-    "author": {
-      "name": "Malyar Baron",
-      "email": "malbaron0@gmail.com",
-      "date": "2017-04-13T05:09:23Z"
-    },
-    "HTML_URL": "https://github.com/Malbaron0/Whack-A-Mole/commit/6817c3e6a30f753b740bada15f29e3cffe0d511d",
-    "SHA": "6817c3e6a30f753b740bada15f29e3cffe0d511d"
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/38080798ac894b74f992c3df11e24e95a798acfa",
+    "SHA": "38080798ac894b74f992c3df11e24e95a798acfa"
   },
   {
     "message": "Testing Webhook github/webhooks endpoint",
