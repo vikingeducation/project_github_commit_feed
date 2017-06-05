@@ -118,5 +118,155 @@
     },
     "HTML_URL": "https://github.com/Malbaron0/Whack-A-Mole/commit/6817c3e6a30f753b740bada15f29e3cffe0d511d",
     "SHA": "6817c3e6a30f753b740bada15f29e3cffe0d511d"
+  },
+  {
+    "message": "Testing Webhook github/webhooks endpoint",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-05T02:34:20Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/4c517a2e672091341951e4f04680ab73c7eb7b90",
+    "SHA": "4c517a2e672091341951e4f04680ab73c7eb7b90"
+  },
+  {
+    "message": "Listening to all request URLS",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-05T00:21:22Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/454ffda85967970ad1e7bf2b9c51ccec709f9fca",
+    "SHA": "454ffda85967970ad1e7bf2b9c51ccec709f9fca"
+  },
+  {
+    "message": "Testing webhook push",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-05T00:18:36Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/4495829b6a6c34644ec3000553df0b74502d5921",
+    "SHA": "4495829b6a6c34644ec3000553df0b74502d5921"
+  },
+  {
+    "message": "Scrubbing and Logging the Data",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-04T23:55:57Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/464cd30594ac5d4868602247ace93909a3f28609",
+    "SHA": "464cd30594ac5d4868602247ace93909a3f28609"
+  },
+  {
+    "message": "Connecting Form data and Github API Wrapper",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-04T03:07:18Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/bb1395702a5edc53d047df4123d7c1a54b11bcfe",
+    "SHA": "bb1395702a5edc53d047df4123d7c1a54b11bcfe"
+  },
+  {
+    "message": "Parsing Form Data",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-04T02:52:58Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/3cb97e45c1611682f47dd29194b2ee3f094c809f",
+    "SHA": "3cb97e45c1611682f47dd29194b2ee3f094c809f"
+  },
+  {
+    "message": "Displaying Dynamic JSON in HTML",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-03T23:23:44Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/be526112a15dec53c8c8e9d16961c835b6cd0be2",
+    "SHA": "be526112a15dec53c8c8e9d16961c835b6cd0be2"
+  },
+  {
+    "message": "Initial Server Setup",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-03T22:54:18Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/8645dfd2c30e84f596a7661688145af087c547e0",
+    "SHA": "8645dfd2c30e84f596a7661688145af087c547e0"
+  },
+  {
+    "message": "div container to show commit feed",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-03T22:24:46Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/ec42fb99c25aeeb4f0e6518cb9107760cd1f2a5b",
+    "SHA": "ec42fb99c25aeeb4f0e6518cb9107760cd1f2a5b"
+  },
+  {
+    "message": "Adding the Form",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-03T22:22:05Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/7235de1ec1bfe644278beea7778b72ea9f208fa5",
+    "SHA": "7235de1ec1bfe644278beea7778b72ea9f208fa5"
+  },
+  {
+    "message": "Created the node github API wrapper",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-02T03:42:55Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/2dd9a98b6f6656ee71177c7cf5725698b44878b3",
+    "SHA": "2dd9a98b6f6656ee71177c7cf5725698b44878b3"
+  },
+  {
+    "message": "Getting Commits from Github API",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-01T21:22:54Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/a022a85c3770942a8739ef412b2f51dbfa7f9856",
+    "SHA": "a022a85c3770942a8739ef412b2f51dbfa7f9856"
+  },
+  {
+    "message": "getting started",
+    "author": {
+      "name": "Malyar Baron",
+      "email": "malbaron0@gmail.com",
+      "date": "2017-06-01T04:42:38Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/7c601750871cc6eb1e377e7188dc48ee9e28ad6d",
+    "SHA": "7c601750871cc6eb1e377e7188dc48ee9e28ad6d"
+  },
+  {
+    "message": "Update README.md",
+    "author": {
+      "name": "Chris Scavello",
+      "email": "bideowego@gmail.com",
+      "date": "2017-02-21T16:48:57Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
+    "SHA": "ceec1b2306888905ae12750558706174132a6741"
+  },
+  {
+    "message": "Initial commit",
+    "author": {
+      "name": "Chris Scavello",
+      "email": "bideowego@gmail.com",
+      "date": "2017-02-21T16:47:14Z"
+    },
+    "HTML_URL": "https://github.com/Malbaron0/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+    "SHA": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
   }
 ]
