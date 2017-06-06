@@ -4,7 +4,7 @@ This application will build a feed to display the Github commits for a given rep
 
 In order to access the commits for a given user, the library [Node-Github (Github)](https://github.com/mikedeboer/node-github) is being to access the Github API.
 
-In order to run the application you can run the app.js file, but a  token are needed when starting the application. In order to use a token make a ```.env``` file in the root directory of the project and type your key like so ```GITHUB_TOKEN=whateveryourtokeis```
+In order to run the application you can run the ```app.js``` file, but a token is needed when starting the application. In order to use a token make a ```.env``` file in the root directory of the project and type your key like so ```GITHUB_TOKEN=whateveryourtokeis```
 
 The retrieved commits when the form is submitted are displayed on the html page as well as in a json file. 
 
