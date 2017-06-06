@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+fieldset {
+  border: 1px solid #cecfd5;
+  border-radius: 6px;
+  padding: 24px 30px;
+}
+
+legend {
+  width: auto;
+}
