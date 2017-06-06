@@ -8,7 +8,4 @@ In order to run the application you can run the ```app.js``` file, but a token i
 
 The retrieved commits when the form is submitted are displayed on the html page as well as in a json file. 
 
-![Github Commit Feed](https://lh5.googleusercontent.com/XINPznsH2bZv7p6dmxX8WDSmSrHetNkcEnvIM8gax2ISoTIR1rGNnK09799MFh6i5F1AHeC1ruvZY5U=w1919-h950-rw)
-
-
-
+![Github Commit Feed](https://user-images.githubusercontent.com/10369374/26847395-e997c98e-4aca-11e7-97ed-33ca213ca862.PNG)
