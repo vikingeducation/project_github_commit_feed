@@ -31,13 +31,15 @@ const server = http.createServer((req, res) => {
         res.end();
     }
 
+    //route for POST method with url /github/webhooks. This is called by the github webhook
     else if (url.parse(req.url).path === '/github/webhooks' && req.method === 'POST') {
         res.writeHead(200, headers);
-
+        //get data from POST which contains the pushers username and password
         let p = new Promise((resolve) => {
             extractPostData(req, resolve);
         });
 
+        //Use the github API to retrieve the users commits and save them to commits.json
         p.then((data) => {
             console.log(data);
             getCommits({ 'user': data.pusher.name, 'repo': data.repository.name }, res);
