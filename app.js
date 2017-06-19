@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
+var githubWrapper = require('./lib/github_wrapper');
 var commitFeedJSON = require('./data/commits.json');
 
 const hostname = '127.0.0.1';
@@ -16,6 +17,10 @@ const server = http.createServer((req, res) => {
     repo: parsedQuery[6]
   };
   console.log(queryParams);
+
+  githubWrapper.getCommits(queryParams.user, queryParams.repo)
+    .then(data => console.log(data))
+    .catch(err => console.log(err));
 
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
