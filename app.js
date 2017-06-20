@@ -19,7 +19,22 @@ const server = http.createServer((req, res) => {
   console.log(queryParams);
 
   githubWrapper.getCommits(queryParams.user, queryParams.repo)
-    .then(data => console.log(data))
+    .then( data => {
+      //map json object
+      var formattedData = {};
+      // for (commit in data.data) {
+      //   console.log(commit);
+      // }
+      var formattedCommitData = data.data.map(function(commit) {
+        var formattedCommit = {};
+        formattedCommit.author = commit.commit.author;
+        formattedCommit.message = commit.commit.message;
+        formattedCommit.html_url = commit.html_url;
+        formattedCommit.sha = commit.sha;
+        return formattedCommit;
+      });
+      console.log(formattedCommitData);
+    })
     .catch(err => console.log(err));
 
   res.statusCode = 200;
