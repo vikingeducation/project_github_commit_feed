@@ -1,16 +1,1 @@
-{
-  "Foobar": {
-    "foobar": [
-    {
-      "message": "Update README.md",
-      "author": {
-      "name": "Foobar",
-      "email": "foobar@email.com",
-      "date": "2017-02-16T19:25:15Z"
-      },
-      "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-      "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
-      }
-    ]
-  }
-}
+[{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-25T05:30:31Z"},"message":"Implement reset and grid size","html_url":"https://github.com/tketron/gridpad/commit/0e0412fe755ce31fc0a8e2db650ff764733c67a1","sha":"0e0412fe755ce31fc0a8e2db650ff764733c67a1"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-21T05:22:26Z"},"message":"Squares change to random color on hover","html_url":"https://github.com/tketron/gridpad/commit/cef51e277d863f4e7a41d2079da6077c44778365","sha":"cef51e277d863f4e7a41d2079da6077c44778365"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-20T02:29:36Z"},"message":"Move container size setting out of loop to improve speed","html_url":"https://github.com/tketron/gridpad/commit/b005882bebd8db66e1a78fa6d05e799f42fec775","sha":"b005882bebd8db66e1a78fa6d05e799f42fec775"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-20T02:28:14Z"},"message":"Create grid on page load","html_url":"https://github.com/tketron/gridpad/commit/885e28c88613a3639857ff11cd5f03ed5939794a","sha":"885e28c88613a3639857ff11cd5f03ed5939794a"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-17T05:14:04Z"},"message":"Initial commit","html_url":"https://github.com/tketron/gridpad/commit/5354ce174410bd18a58984faa974f2d67c432b9d","sha":"5354ce174410bd18a58984faa974f2d67c432b9d"}]

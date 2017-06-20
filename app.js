@@ -20,11 +20,6 @@ const server = http.createServer((req, res) => {
 
   githubWrapper.getCommits(queryParams.user, queryParams.repo)
     .then( data => {
-      //map json object
-      var formattedData = {};
-      // for (commit in data.data) {
-      //   console.log(commit);
-      // }
       var formattedCommitData = data.data.map(function(commit) {
         var formattedCommit = {};
         formattedCommit.author = commit.commit.author;
@@ -33,7 +28,11 @@ const server = http.createServer((req, res) => {
         formattedCommit.sha = commit.sha;
         return formattedCommit;
       });
-      console.log(formattedCommitData);
+      console.log(JSON.stringify(formattedCommitData));
+      fs.writeFile('./data/commits.json', JSON.stringify(formattedCommitData), (err) => {
+        if (err) throw err;
+        console.log('Commit file updated');
+      });
     })
     .catch(err => console.log(err));
 
