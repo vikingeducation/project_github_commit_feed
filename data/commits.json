@@ -1,1 +1,142 @@
-[{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-25T05:30:31Z"},"message":"Implement reset and grid size","html_url":"https://github.com/tketron/gridpad/commit/0e0412fe755ce31fc0a8e2db650ff764733c67a1","sha":"0e0412fe755ce31fc0a8e2db650ff764733c67a1"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-21T05:22:26Z"},"message":"Squares change to random color on hover","html_url":"https://github.com/tketron/gridpad/commit/cef51e277d863f4e7a41d2079da6077c44778365","sha":"cef51e277d863f4e7a41d2079da6077c44778365"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-20T02:29:36Z"},"message":"Move container size setting out of loop to improve speed","html_url":"https://github.com/tketron/gridpad/commit/b005882bebd8db66e1a78fa6d05e799f42fec775","sha":"b005882bebd8db66e1a78fa6d05e799f42fec775"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-20T02:28:14Z"},"message":"Create grid on page load","html_url":"https://github.com/tketron/gridpad/commit/885e28c88613a3639857ff11cd5f03ed5939794a","sha":"885e28c88613a3639857ff11cd5f03ed5939794a"},{"author":{"name":"tketron","email":"tketron@gmail.com","date":"2016-03-17T05:14:04Z"},"message":"Initial commit","html_url":"https://github.com/tketron/gridpad/commit/5354ce174410bd18a58984faa974f2d67c432b9d","sha":"5354ce174410bd18a58984faa974f2d67c432b9d"}]
+[
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-20T01:11:11Z"
+    },
+    "message": "replace commit feed data with results of github api query on index page",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/688321562da60db147c6c06c6427b7fe18589860",
+    "sha": "688321562da60db147c6c06c6427b7fe18589860"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-20T01:01:38Z"
+    },
+    "message": "scrub github api data to relevant data only",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/9055599ee9202a946acdb0e43eb409499db51851",
+    "sha": "9055599ee9202a946acdb0e43eb409499db51851"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-19T03:15:24Z"
+    },
+    "message": "use submitted form data to query github api",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/59e68d6735d23b9ac2e3dd5e93e29c87f18e849f",
+    "sha": "59e68d6735d23b9ac2e3dd5e93e29c87f18e849f"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-19T02:47:35Z"
+    },
+    "message": "parse url parameters on form submit",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/48af71a992d1105898d1700af642555e463b540d",
+    "sha": "48af71a992d1105898d1700af642555e463b540d"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-19T02:22:31Z"
+    },
+    "message": "modify index html file to serve JSON dynamically from file",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/c66687dc064b6968b0767f7362b243f32ffbd30f",
+    "sha": "c66687dc064b6968b0767f7362b243f32ffbd30f"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-19T02:15:09Z"
+    },
+    "message": "setup web server to serve index html file",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/fd7ddc8581957747944127462bca0b9e9336afd0",
+    "sha": "fd7ddc8581957747944127462bca0b9e9336afd0"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-17T23:04:57Z"
+    },
+    "message": "add static JSON placeholder to index file",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/a73ab886ea728834ec9a71984a31c31e7e135546",
+    "sha": "a73ab886ea728834ec9a71984a31c31e7e135546"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-17T22:55:28Z"
+    },
+    "message": "completed html index file with basic form",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/6ba333b428d78af68648c6dc970ce35624e82f03",
+    "sha": "6ba333b428d78af68648c6dc970ce35624e82f03"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-16T05:06:57Z"
+    },
+    "message": "wrapped github API in a Promises-enabled wrapper",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/e904e109378632339040103d83f0c8bcb18d29be",
+    "sha": "e904e109378632339040103d83f0c8bcb18d29be"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-16T04:53:27Z"
+    },
+    "message": "moved user token to untracked file",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/b2685919fd1b233c8e278b08b330d5ba502be850",
+    "sha": "b2685919fd1b233c8e278b08b330d5ba502be850"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-16T04:46:12Z"
+    },
+    "message": "enable github library to query API using user token",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/a57b2095fae874f676bddd28251f624d147cb68e",
+    "sha": "a57b2095fae874f676bddd28251f624d147cb68e"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-15T03:49:13Z"
+    },
+    "message": "initial commit",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/2c1bc1d9f8a05164887735b716ea8484654e488d",
+    "sha": "2c1bc1d9f8a05164887735b716ea8484654e488d"
+  },
+  {
+    "author": {
+      "name": "Chris Scavello",
+      "email": "bideowego@gmail.com",
+      "date": "2017-02-21T16:48:57Z"
+    },
+    "message": "Update README.md",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
+    "sha": "ceec1b2306888905ae12750558706174132a6741"
+  },
+  {
+    "author": {
+      "name": "Chris Scavello",
+      "email": "bideowego@gmail.com",
+      "date": "2017-02-21T16:47:14Z"
+    },
+    "message": "Initial commit",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+    "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+  }
+]
