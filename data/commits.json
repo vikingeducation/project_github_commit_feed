@@ -3,180 +3,120 @@
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-21T00:02:05Z"
+      "date": "2017-06-21T00:45:56Z"
     },
-    "message": "refactored to include router and respond to webhooks",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/b9cb355c30a64c22c90d6c57f2c9ca6a6a03215d",
-    "sha": "b9cb355c30a64c22c90d6c57f2c9ca6a6a03215d"
+    "message": "removed testfile",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/8f9e582dd57fdf0a228ffdea8ba4e22d328f70b1",
+    "sha": "8f9e582dd57fdf0a228ffdea8ba4e22d328f70b1"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-20T21:07:52Z"
+      "date": "2017-06-21T00:42:32Z"
     },
-    "message": "second readmet update",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/ff27241fcfe20c1f50804772d53b9f2949b916b1",
-    "sha": "ff27241fcfe20c1f50804772d53b9f2949b916b1"
+    "message": "add test file for webhook integration",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/635726362b6d336071c371615b0c30657e8ac09f",
+    "sha": "635726362b6d336071c371615b0c30657e8ac09f"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-20T21:03:16Z"
+      "date": "2017-06-15T03:44:28Z"
     },
-    "message": "update readme to test webhook integration",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/a113e1370dd1c9b146e79a813cc2590e2636ecca",
-    "sha": "a113e1370dd1c9b146e79a813cc2590e2636ecca"
+    "message": "added additional RESTful methods to router",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/fb3f7d6e05d700893bd0707cb51d76d60c17fda6",
+    "sha": "fb3f7d6e05d700893bd0707cb51d76d60c17fda6"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-20T04:08:59Z"
+      "date": "2017-06-14T03:34:44Z"
     },
-    "message": "completed update of index file using query parameters",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/76169de307896050e36e76c6a2039d4ad19293ce",
-    "sha": "76169de307896050e36e76c6a2039d4ad19293ce"
+    "message": "enabled extracing POST data using a buffer",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/07c0e8c2556c17ba4c43483f472ba159b225e544",
+    "sha": "07c0e8c2556c17ba4c43483f472ba159b225e544"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-20T01:11:11Z"
+      "date": "2017-06-11T02:05:11Z"
     },
-    "message": "replace commit feed data with results of github api query on index page",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/688321562da60db147c6c06c6427b7fe18589860",
-    "sha": "688321562da60db147c6c06c6427b7fe18589860"
+    "message": "implemented post function in router",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/a8b0bda463cd4b4644af424b9a6fd54440fa8fb4",
+    "sha": "a8b0bda463cd4b4644af424b9a6fd54440fa8fb4"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-20T01:01:38Z"
+      "date": "2017-06-06T04:00:11Z"
     },
-    "message": "scrub github api data to relevant data only",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/9055599ee9202a946acdb0e43eb409499db51851",
-    "sha": "9055599ee9202a946acdb0e43eb409499db51851"
+    "message": "enabled parametrized routing",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/9d8590cd95237081de9a6ce4772f6f71f6d051b5",
+    "sha": "9d8590cd95237081de9a6ce4772f6f71f6d051b5"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-19T03:15:24Z"
+      "date": "2017-06-05T00:48:08Z"
     },
-    "message": "use submitted form data to query github api",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/59e68d6735d23b9ac2e3dd5e93e29c87f18e849f",
-    "sha": "59e68d6735d23b9ac2e3dd5e93e29c87f18e849f"
+    "message": "parser module to parse urls and return parameters",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/652890da6611fe990bda712a9a13e6c4724afab4",
+    "sha": "652890da6611fe990bda712a9a13e6c4724afab4"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-19T02:47:35Z"
+      "date": "2017-06-04T15:55:00Z"
     },
-    "message": "parse url parameters on form submit",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/48af71a992d1105898d1700af642555e463b540d",
-    "sha": "48af71a992d1105898d1700af642555e463b540d"
+    "message": "implemented basic routing functionality",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/975017e9893f7b169ada992a4ae81c374e505c14",
+    "sha": "975017e9893f7b169ada992a4ae81c374e505c14"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-19T02:22:31Z"
+      "date": "2017-06-01T02:04:43Z"
     },
-    "message": "modify index html file to serve JSON dynamically from file",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/c66687dc064b6968b0767f7362b243f32ffbd30f",
-    "sha": "c66687dc064b6968b0767f7362b243f32ffbd30f"
+    "message": "basic module structure",
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/363edb66b4bda7e1423628fca2d63defafe49545",
+    "sha": "363edb66b4bda7e1423628fca2d63defafe49545"
   },
   {
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
-      "date": "2017-06-19T02:15:09Z"
-    },
-    "message": "setup web server to serve index html file",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/fd7ddc8581957747944127462bca0b9e9336afd0",
-    "sha": "fd7ddc8581957747944127462bca0b9e9336afd0"
-  },
-  {
-    "author": {
-      "name": "Tyler Ketron",
-      "email": "tketron@gmail.com",
-      "date": "2017-06-17T23:04:57Z"
-    },
-    "message": "add static JSON placeholder to index file",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/a73ab886ea728834ec9a71984a31c31e7e135546",
-    "sha": "a73ab886ea728834ec9a71984a31c31e7e135546"
-  },
-  {
-    "author": {
-      "name": "Tyler Ketron",
-      "email": "tketron@gmail.com",
-      "date": "2017-06-17T22:55:28Z"
-    },
-    "message": "completed html index file with basic form",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/6ba333b428d78af68648c6dc970ce35624e82f03",
-    "sha": "6ba333b428d78af68648c6dc970ce35624e82f03"
-  },
-  {
-    "author": {
-      "name": "Tyler Ketron",
-      "email": "tketron@gmail.com",
-      "date": "2017-06-16T05:06:57Z"
-    },
-    "message": "wrapped github API in a Promises-enabled wrapper",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/e904e109378632339040103d83f0c8bcb18d29be",
-    "sha": "e904e109378632339040103d83f0c8bcb18d29be"
-  },
-  {
-    "author": {
-      "name": "Tyler Ketron",
-      "email": "tketron@gmail.com",
-      "date": "2017-06-16T04:53:27Z"
-    },
-    "message": "moved user token to untracked file",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/b2685919fd1b233c8e278b08b330d5ba502be850",
-    "sha": "b2685919fd1b233c8e278b08b330d5ba502be850"
-  },
-  {
-    "author": {
-      "name": "Tyler Ketron",
-      "email": "tketron@gmail.com",
-      "date": "2017-06-16T04:46:12Z"
-    },
-    "message": "enable github library to query API using user token",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/a57b2095fae874f676bddd28251f624d147cb68e",
-    "sha": "a57b2095fae874f676bddd28251f624d147cb68e"
-  },
-  {
-    "author": {
-      "name": "Tyler Ketron",
-      "email": "tketron@gmail.com",
-      "date": "2017-06-15T03:49:13Z"
+      "date": "2017-06-01T01:40:52Z"
     },
     "message": "initial commit",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/2c1bc1d9f8a05164887735b716ea8484654e488d",
-    "sha": "2c1bc1d9f8a05164887735b716ea8484654e488d"
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/1dcd9b73c5cbd79445e9d0675278b956b4de64cc",
+    "sha": "1dcd9b73c5cbd79445e9d0675278b956b4de64cc"
   },
   {
     "author": {
       "name": "Chris Scavello",
       "email": "bideowego@gmail.com",
-      "date": "2017-02-21T16:48:57Z"
+      "date": "2017-03-05T23:32:57Z"
     },
     "message": "Update README.md",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
-    "sha": "ceec1b2306888905ae12750558706174132a6741"
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/33034e9cde72528af78906518180c5131558dfb8",
+    "sha": "33034e9cde72528af78906518180c5131558dfb8"
   },
   {
     "author": {
       "name": "Chris Scavello",
       "email": "bideowego@gmail.com",
-      "date": "2017-02-21T16:47:14Z"
+      "date": "2017-03-05T23:32:22Z"
     },
     "message": "Initial commit",
-    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
-    "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+    "html_url": "https://github.com/tketron/assignment_building_the_express_router/commit/fe5365860413daa56107e7acc55ce85f83b57045",
+    "sha": "fe5365860413daa56107e7acc55ce85f83b57045"
   }
 ]
