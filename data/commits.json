@@ -3,6 +3,36 @@
     "author": {
       "name": "Tyler Ketron",
       "email": "tketron@gmail.com",
+      "date": "2017-06-20T21:07:52Z"
+    },
+    "message": "second readmet update",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/ff27241fcfe20c1f50804772d53b9f2949b916b1",
+    "sha": "ff27241fcfe20c1f50804772d53b9f2949b916b1"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-20T21:03:16Z"
+    },
+    "message": "update readme to test webhook integration",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/a113e1370dd1c9b146e79a813cc2590e2636ecca",
+    "sha": "a113e1370dd1c9b146e79a813cc2590e2636ecca"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
+      "date": "2017-06-20T04:08:59Z"
+    },
+    "message": "completed update of index file using query parameters",
+    "html_url": "https://github.com/tketron/project_github_commit_feed/commit/76169de307896050e36e76c6a2039d4ad19293ce",
+    "sha": "76169de307896050e36e76c6a2039d4ad19293ce"
+  },
+  {
+    "author": {
+      "name": "Tyler Ketron",
+      "email": "tketron@gmail.com",
       "date": "2017-06-20T01:11:11Z"
     },
     "message": "replace commit feed data with results of github api query on index page",
