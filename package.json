@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tgturner/project_github_commit_feed/issues"
   },
-  "homepage": "https://github.com/tgturner/project_github_commit_feed#readme"
+  "homepage": "https://github.com/tgturner/project_github_commit_feed#readme",
+  "dependencies": {
+    "github": "^9.2.0"
+  }
 }
