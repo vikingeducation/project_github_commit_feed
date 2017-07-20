@@ -11,20 +11,57 @@
     <div class="row">
       <div class="col-xs-12">
         <h1>The Github Commit Feed</h1>
-        <form>
+        <form action="/commits" method="GET">
           <fieldset>
             <legend>Github User Repo</legend>
             <div class="form-group">
-              <label>UserName </label>
-              <input name="username" type="text" />
-              <label>Repo: </label>
-              <input name="repo" typte="text" />
-              <button type="submit" class="btn btn-default"></button>
+              <div class="row">
+                <div class="col-xs-2">
+                  <label>UserName:</label>
+                </div>
+                <div class="col-xs-10">
+                  <input name="username" type="text" class="form-control"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-2">
+                  <label>Repo:</label>
+                </div>
+                <div class="col-xs-10">
+                  <input name="repo" type="text" class="form-control"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </div>
             </div>
           </fieldset>
-
-
         </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <pre>
+{
+  "Foobar": {
+    "foobar": [
+      {
+        "message": "Update README.md",
+        "author": {
+          "name": "Foobar",
+          "email": "foobar@email.com",
+          "date": "2017-02-16T19:25:15Z"
+        },
+        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
+        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
+      }
+    ]
+  }
+}
+        </pre>
       </div>
     </div>
   </div>
