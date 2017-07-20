@@ -62,11 +62,13 @@ function listenWebHook(req, res) {
 
     body = qs.parse(body);
 
+    console.log(body.pusher);
+
     var webHookData = {
     	username: body.pusher.name,
     	repo: body.repository.name
     }
-    
+
     htmlRead().then((htmldata) => {
     	dataPromise = github(webHookData);
 
