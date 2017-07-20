@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.end(html);
 });
 
-app.post("/", (req, res) => {
+app.post("/github/webhooks", (req, res) => {
   console.log("IT WORKED");
 });
 
