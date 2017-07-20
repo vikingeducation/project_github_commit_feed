@@ -27,12 +27,6 @@ let serveWebpage = function(req, res) {
 
 		p.then(function(result) {
 
-			fs.writeFile("./data/commits.json", JSON.stringify(result), 'utf8', (err) => {
-				let dataJSON = require("./data/commits");
-				dataJSON = JSON.stringify(dataJSON, null, 2);
-				data = data.replace("{{ commitFeed }}", dataJSON);
-				res.end(data);
-			});
 		}, function(reject) {
 			console.log(reject);
 			res.end(data);
@@ -65,6 +59,13 @@ function listenWebHook(req, res) {
     body = body.slice(8);
 
     body = qs.parse(body);
+
+    var webHookData = {
+    	username: body.pusher.name,
+    	repo: body.repository.name
+    }
+
+    var dataPromise = github(webHookData);
     console.log(body);
   });
 }
