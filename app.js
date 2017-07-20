@@ -60,10 +60,12 @@ function listenWebHook(req, res) {
 
 
 		body = body.slice(8);
-		console.log(body);
+		//console.log(body);
     //console.log(parseURL(body));
 		//console.log(qs.parse(body));
-		body = qs.parse(body);
+		//body = qs.parse(body);
+		body = decodeURIComponent(body);
+		console.log(body);
 		// console.log(req.headers);
 		// console.log(body.pusher);
 
