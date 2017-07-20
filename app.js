@@ -60,7 +60,7 @@ function listenWebHook(req, res) {
 
     body = qs.parse(body);
     
-    for (key in body) {
+    for (key in body.payload) {
     	console.log("Key: " + key);
     }
 
