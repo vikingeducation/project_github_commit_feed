@@ -17,21 +17,23 @@ app.get('/:username/:repository', (req, res) => {
 	apiWrapper.authenticate();
 
 
-  apiWrapper.getCommits().then(results => {
-		console.log(results);
-    res.statusCode = 200;
+  apiWrapper.getCommits()
+		.then(apiWrapper.parseData)
+		.then(results => {
+			console.log(results);
+	    res.statusCode = 200;
 
-    // read in the file we need to display (index.html)
+	    // read in the file we need to display (index.html)
 
-    res.end();
+	    res.end();
 
-    // res.render('index', {
-    //   title: 'Github Commit Feed',
-    //   commits: apiWrapper.parseData(results.data)
-    // });
-  }, error => {
-		console.log(error);
-	});
+	    // res.render('index', {
+	    //   title: 'Github Commit Feed',
+	    //   commits: apiWrapper.parseData(results.data)
+	    // });
+	  }, error => {
+			console.log(error);
+		});
 });
 
 app.listen(PORT, HOST, () => {
