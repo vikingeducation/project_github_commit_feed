@@ -4,6 +4,7 @@ const parser = (req, res) => {
   var body = "";
   req.on("data", data => {
     body += data;
+    console.log(body);
   });
   req.on("end", () => {
     let bodyArray = body.split("&");

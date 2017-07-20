@@ -6,6 +6,7 @@ const hostname = "0.0.0.0";
 const port = 3000;
 const app = express();
 const parser = require("./parser.js");
+const webhookParser = require('./webhookParser.js');
 
 var html = fs.readFileSync("./public/index.html", "utf8");
 
@@ -25,7 +26,7 @@ app.get("/", (req, res) => {
 
 app.post("/github/webhooks", (req, res) => {
   res.writeHead(200, _headers);
-  console.log("IT WORKED");
+  webhookParser(req, res);
 });
 
 app.post("/", (req, res) => {
