@@ -4,6 +4,15 @@ const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
 
 const server = http.createServer((req, res) => {
+	var _headers = {
+    "Content-Type": "text/html",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+  };
+
+  res.writeHead(200, _headers);
+  
 	checkMethod(req, res);
 });
 
@@ -45,15 +54,6 @@ server.listen(3000, "localhost", function() {
 });
 
 function listenWebHook(req, res) {
-  var _headers = {
-    "Content-Type": "text/html",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
-  };
-
-  res.writeHead(200, _headers);
-
   var body = ""
 
   req.on("data", function(data) {
