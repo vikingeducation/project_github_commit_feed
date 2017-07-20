@@ -15,7 +15,7 @@ app.get("/:username/:repository", (req, res) => {
   // Authenticate with github using our token
   apiWrapper.authenticate();
 
-  apiWrapper.getCommits().then(
+  apiWrapper.getCommits().then(apiWrapper.parseData).then(
     results => {
       console.log(results);
       res.statusCode = 200;
