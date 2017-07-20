@@ -16,7 +16,6 @@ app.get('/:username/:repository', (req, res) => {
 	// Authenticate with github using our token
 	apiWrapper.authenticate();
 
-
   apiWrapper.getCommits()
 		.then(apiWrapper.parseData)
 		.then(results => {
@@ -24,7 +23,6 @@ app.get('/:username/:repository', (req, res) => {
 	    res.statusCode = 200;
 
 	    // read in the file we need to display (index.html)
-
 	    res.end();
 
 	    // res.render('index', {
