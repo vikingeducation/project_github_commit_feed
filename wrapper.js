@@ -1,19 +1,15 @@
 let Github = require("github");
 
-let GITHUB = {
-  create: () => {
-    return new Github({
-      debug: true,
-      protocol: "https",
-      host: "api.github.com", // should be api.github.com for GitHub
-      // pathPrefix: "/api/v3", // for some GHEs; none for GitHub
-      headers: {
-        "user-agent": "My-Cool-GitHub-App" // GitHub is happy with a unique user agent
-      },
-      // Promise: require('bluebird'),
-      followRedirects: false, // default: true; there's currently an issue with non-get redirects, so allow ability to disable follow-redirects
-      timeout: 5000
-    });
+
+const github = new Github({ debug : true });
+
+module.exports = {
+
+  authenticateWithToken: (token) => {
+  github.authenticate({
+  type: "token",
+  token: "userToken",
+  });
   },
 
   getCommits: () => {
@@ -33,5 +29,3 @@ let GITHUB = {
   //   token: "userToken"
   // })
 };
-
-module.exports = GITHUB;
