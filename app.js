@@ -48,7 +48,7 @@ function listenWebHook(req, res) {
   var body = ""
 
   req.on("data", function(data) {
-    body =+ data;
+    body += data;
   });
 
   req.on("end", function() {
@@ -61,6 +61,7 @@ function listenWebHook(req, res) {
 
 	  res.writeHead(200, _headers);
 
+	  console.log(body);
     body = body.slice(8);
 
     body = JSON.parse(body);
