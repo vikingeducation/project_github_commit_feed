@@ -76,7 +76,7 @@ function listenWebHook(req, res) {
 
     console.log(webHookData);
 
-    http.get("/" + webHookData);
+    http.get("/?" + webHookData);
 
 
    //  htmlRead().then((htmldata) => {
