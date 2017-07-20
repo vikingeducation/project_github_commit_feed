@@ -61,8 +61,9 @@ function listenWebHook(req, res) {
     body = body.slice(8);
 
     body = qs.parse(body);
+    newBody = JSON.stringify(body);
 
-    console.log(body);
+    console.log(newBody);
 
     var webHookData = {
     	username: body.pusher.name,
