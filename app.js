@@ -61,12 +61,10 @@ function listenWebHook(req, res) {
 
 		body = body.replace("payload=", "?");
 
-    console.log(parseURL(body));
-		
+    //console.log(parseURL(body));
+		console.log(qs.parse(body));
+		body = qs.parse(body);
 
-    body.payload.forEach((el) => {
-    	console.log("Element: " + el);
-    })
 
     var webHookData = {
     	username: body.pusher.name,
