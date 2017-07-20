@@ -5,6 +5,7 @@ const express = require("./router/express.js");
 const hostname = "0.0.0.0";
 const port = 3000;
 const app = express();
+const parser = require('./parser.js');
 
 var html = fs.readFileSync("./public/index.html", "utf8");
 
@@ -16,17 +17,9 @@ app.get("/", (req, res) => {
 });
 
 app.post("/commits", (req, res) => {
-  var body = "";
-  req.on("data", data => {
-    body += data;
-  });
-  req.on("end", () => {
-    let bodyArray = body.split("&");
-    let username = bodyArray[0].split("=")[1];
-    let repo = bodyArray[1].split("=")[1];
-    res.writeHead(200, { "Content-Type": "text/html" });
-    res.end(html);
-  });
+  parser(req, res);
+  res.writeHead(200, { "Content-Type": "text/html" });
+  res.end(html);
 });
 
 app.listen(port, hostname, () => {

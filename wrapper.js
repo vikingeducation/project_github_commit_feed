@@ -10,15 +10,16 @@ module.exports = {
     });
   },
 
-  getCommits() {
+  getCommits(uname, rep) {
     github.repos.getCommits(
       {
-        owner: "gregfilipczak",
-        repo: "project_github_commit_feed"
+        owner: uname,
+        repo: rep
       },
       function(err, res) {
-        console.log(res);
+        console.log(JSON.stringify(res));
       }
+
     );
   }
 };
