@@ -58,33 +58,33 @@ function listenWebHook(req, res) {
 
 	  res.writeHead(200, _headers);
 
-
-		body = body.slice(8);
+		body = decodeURIComponent(body)
+		body = JSON.parse(body.slice(8));
 		//console.log(body);
     //console.log(parseURL(body));
 		//console.log(qs.parse(body));
 		//body = qs.parse(body);
-		body = decodeURIComponent(body);
+
 		console.log(body);
 		// console.log(req.headers);
 		// console.log(body.pusher);
 
 
-    var webHookData = {
-    	username: body.pusher.name,
-    	repo: body.repository.name
-    }
-
-    htmlRead().then((htmldata) => {
-    	dataPromise = github(webHookData);
-
-			dataPromise.then(function(jsondata) {
-				writeData(htmldata, jsondata, res);
-			}, function(reject) {
-				console.log(reject);
-				res.end(htmldata);
-			});
-    });
+    // var webHookData = {
+    // 	username: body.pusher.name,
+    // 	repo: body.repository.name
+    // }
+		//
+    // htmlRead().then((htmldata) => {
+    // 	dataPromise = github(webHookData);
+		//
+		// 	dataPromise.then(function(jsondata) {
+		// 		writeData(htmldata, jsondata, res);
+		// 	}, function(reject) {
+		// 		console.log(reject);
+		// 		res.end(htmldata);
+		// 	});
+    // });
 
   });
 }
