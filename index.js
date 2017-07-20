@@ -1,10 +1,23 @@
 let Github = require("github");
 
-let github = new Github();
 
-github.repos.getCommits({ owner: "gregfilipczak", repo: "" });
+let GITHUB = {
 
-github.authenticate({
-  type: "token",
-  token: "793358e3f98ea0a1dfa00a5136adef8f9c96db98"
-});
+  getCommites =
+  let github = new Github();
+
+  github.repos.getCommits(
+    {
+      owner: "gregfilipczak",
+      repo: "project_github_commit_feed"
+    },
+    function(err, res) {
+      console.log(res);
+    }
+  );
+
+  github.authenticate({
+    type: "token",
+    token: "userToken"
+  });
+}
