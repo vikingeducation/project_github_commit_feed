@@ -1,0 +1,27 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "GitHub Commit Feed project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IDHalverson/project_github_commit_feed.git"
+  },
+  "keywords": [
+    "GitHub",
+    "Commit",
+    "Feed"
+  ],
+  "author": "Ian Halverson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IDHalverson/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/IDHalverson/project_github_commit_feed#readme",
+  "dependencies": {
+    "github": "^9.2.0"
+  }
+}
