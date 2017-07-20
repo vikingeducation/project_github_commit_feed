@@ -22,6 +22,11 @@ app.post("/commits", (req, res) => {
   });
   req.on("end", () => {
     console.log(body);
+    let bodyArray = body.split("&");
+    let username = bodyArray[0].split("=")[1];
+    let repo = bodyArray[1].split("=")[1];
+    console.log(username);
+    console.log(repo);
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(html);
   });

@@ -18,8 +18,6 @@ Router.handle = (req, res) => {
   // let matches = parser(Router.routes, path, method);
   if (Router.routes[method][path] && path !== "/favicon.ico") {
     Router.routes[method][path](req, res);
-  } else {
-    res.end("404 Not Found");
   }
 };
 module.exports = Router;
