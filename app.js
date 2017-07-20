@@ -16,6 +16,10 @@ app.get("/", (req, res) => {
   res.end(html);
 });
 
+app.post("/", (req, res) => {
+  console.log("IT WORKED");
+});
+
 app.post("/commits", (req, res) => {
   parser(req, res);
   res.writeHead(200, { "Content-Type": "text/html" });
