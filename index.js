@@ -20,6 +20,7 @@ app.get('/:username/:repository', (req, res) => {
 
 
   apiWrapper.getCommits().then(results => {
+		console.log(results);
     res.statusCode = 200;
 
     // read in the file we need to display (index.html)
