@@ -2,7 +2,6 @@ const http = require("http");
 const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
 const qs = require("qs");
-
 const writeData = require("./data_writing");
 const htmlRead = require("./html_reading");
 
@@ -21,10 +20,21 @@ let serveWebpage = function(req, res) {
 	htmlRead()
 	.then((htmldata) => {
 		var p = github(parseURL(req.url));
-		p.then((jsondata) => {
-			writeData(htmldata, jsondata, res);
+
+	p.then((jsondata) => {
+			jsondata = JSON.stringify(jsondata, null, 2);
+			captured = htmldata.split("<pre>");
+			capturedData = captured[1].split("</pre>");
+			htmldata = htmldata.replace(capturedData[0], jsondata);
+			console.log(htmldata);
+			res.end(htmldata);
 		}, function(reject) {
 			console.log(reject);
+			var defaultData = require("./data/commits.json");
+			defaultData = JSON.stringify(defaultData, null, 2)
+			captured = htmldata.split("<pre>");
+			capturedData = captured[1].split("</pre>");
+			htmldata = htmldata.replace(capturedData[0], defaultData);
 			res.end(htmldata);
 		});
 	});
@@ -66,25 +76,19 @@ function listenWebHook(req, res) {
     	repo: body.repository.name
     }
 
-    webHookData = qs.stringify(webHookData);
-
     res.end("200 OK");
 
-    console.log(webHookData);
 
-    http.get("http://localhost:3000/?" + webHookData);
+    htmlRead().then((htmldata) => {
+    	dataPromise = github(webHookData);
 
-
-   //  htmlRead().then((htmldata) => {
-   //  	dataPromise = github(webHookData);
-
-			// dataPromise.then(function(jsondata) {
-			// 	writeData(htmldata, jsondata, res);
-			// }, function(reject) {
-			// 	console.log(reject);
-			// 	res.end(htmldata);
-			// });
-   //  });
+			dataPromise.then(function(jsondata) {
+				writeData(htmldata, jsondata, res);
+			}, function(reject) {
+				console.log(reject);
+				res.end(htmldata);
+			});
+    });
 
   });
 }
