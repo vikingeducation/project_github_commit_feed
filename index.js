@@ -8,8 +8,6 @@ const PORT = process.env.port ||
 const HOST = "127.0.0.1";
 
 app.get('/', (req, res) => {
-
-
   res.statusCode = 200;
   res.end("Hello World!");
 });
@@ -32,7 +30,7 @@ app.get('/:username/:repository', (req, res) => {
     //   commits: apiWrapper.parseData(results.data)
     // });
   }, error => {
-
+		console.log(error);
 	});
 });
 
