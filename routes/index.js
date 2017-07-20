@@ -1,19 +1,15 @@
-const express = require('express');
-const router = express.Router();
 const apiWrapper = require("../lib/apiWrapper");
-
-
-
+const app = require("../lib/routeInit");
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get("/", function(req, res, next) {
   apiWrapper.authenticate();
   apiWrapper.getCommits().then(results => {
-		res.statusCode = 200;
+    res.statusCode = 200;
 
-		// read in the file we need to display (index.html)
+    // read in the file we need to display (index.html)
 
-		res.end();
+    res.end();
 
     // res.render('index', {
     //   title: 'Github Commit Feed',
