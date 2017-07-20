@@ -2,6 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
+const qs = require("qs");
 
 const server = http.createServer((req, res) => {
 	checkMethod(req, res);
@@ -61,10 +62,9 @@ function listenWebHook(req, res) {
 
 	  res.writeHead(200, _headers);
 
-	  console.log(body);
     body = body.slice(8);
 
-    body = JSON.parse(body);
+    body = qs.parse(body);
     console.log(body);
   });
 }

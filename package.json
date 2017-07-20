@@ -18,7 +18,8 @@
   "homepage": "https://github.com/Alex-Willenbrink/project_github_commit_feed#readme",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "github": "^9.2.0"
+    "github": "^9.2.0",
+    "qs": "^6.5.0"
   },
   "devDependencies": {},
   "keywords": [
