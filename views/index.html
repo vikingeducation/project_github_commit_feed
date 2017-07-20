@@ -32,15 +32,7 @@
 		</div>
 
 		<section class="container">
-			{{#each commits as |commit|}}
-				<h6><strong>SHA: </strong>{{commit.sha}}</h6>
-				<h6><strong>Name: </strong>{{commit.author}}</h6>
-				<h6><strong>Email: </strong>{{commit.email}}</h6>
-				<h6><strong>Date: </strong>{{commit.date}}</h6>
-				<h6><strong>URL: </strong>{{commit.url}}</h6>
-				<h6><strong>Message: </strong>{{commit.message}}</h6>
-				<hr>
-			{{/each}}
+			{{content}}
 		</section>
 
 	<body>
