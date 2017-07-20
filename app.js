@@ -2,7 +2,6 @@ const http = require("http");
 const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
 const qs = require("qs");
-
 const writeData = require("./data_writing");
 const htmlRead = require("./html_reading");
 
@@ -22,6 +21,7 @@ let serveWebpage = function(req, res) {
 	.then((htmldata) => {
 		var p = github(parseURL(req.url));
 	p.then((jsondata) => {
+			htmldata = htmldata.replace("{{ commits }}", require("./commits.json"))
 			writeData(htmldata, jsondata, res);
 		}, function(reject) {
 			console.log(reject);
