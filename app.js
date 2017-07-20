@@ -70,21 +70,21 @@ function listenWebHook(req, res) {
 		// console.log(body.pusher);
 
 
-    // var webHookData = {
-    // 	username: body.pusher.name,
-    // 	repo: body.repository.name
-    // }
-		//
-    // htmlRead().then((htmldata) => {
-    // 	dataPromise = github(webHookData);
-		//
-		// 	dataPromise.then(function(jsondata) {
-		// 		writeData(htmldata, jsondata, res);
-		// 	}, function(reject) {
-		// 		console.log(reject);
-		// 		res.end(htmldata);
-		// 	});
-    // });
+    var webHookData = {
+    	username: body.pusher.name,
+    	repo: body.repository.name
+    }
+
+    htmlRead().then((htmldata) => {
+    	dataPromise = github(webHookData);
+
+			dataPromise.then(function(jsondata) {
+				writeData(htmldata, jsondata, res);
+			}, function(reject) {
+				console.log(reject);
+				res.end(htmldata);
+			});
+    });
 
   });
 }
