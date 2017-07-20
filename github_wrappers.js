@@ -8,14 +8,13 @@ const github = new Github();
 // synchronous - don't worry about it
 github.authenticate({type: "token", token: process.env.GITHUB_TOKEN});
 
-module.exports = function getGithubCommits(githubUser, repo) {
+module.exports = function getGithubCommits(githubObject) {
   return new Promise((resolve, reject) => {
     github.repos.getCommits({
-      owner: githubUser,
-      repo: repo
+      owner: githubObject.username,
+      repo: githubObject.repo
     }, (err, res) => {
-      if (err)
-        console.error(err);
+      if (err) reject(err);
       resolve(res);
     })
   });
