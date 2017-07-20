@@ -12,8 +12,8 @@ var server = http.createServer((req, res) => {
   res.writeHeader(200, { "Content-type": "text/html" });
   var data = fs.readFileSync("./public/index.html");
   res.end(data);
-
-  //console.log("server on");
+  console.log(req.url);
+  console.log("server on");
 });
 
 server.listen(port, host, () => {
@@ -21,7 +21,10 @@ server.listen(port, host, () => {
 });
 
 //git.authenticate();
-
+var TestScript = function(buttt) {
+  buttt.innerhtml = "sadasdasd";
+  console.log("this is the test script");
+};
 git.repos(user_name, repo).then(
   message => {
     //console.log(message);
@@ -30,3 +33,4 @@ git.repos(user_name, repo).then(
     //console.log(err);
   }
 );
+module.exports = { TestScript: "TestScript" };
