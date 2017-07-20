@@ -34,29 +34,29 @@ server.listen(3000, "localhost", function() {
 });
 
 
-server2 = http.createServer(function (req, res) {
-	var _headers = {
-	  "Content-Type": "text/html",
-	  "Access-Control-Allow-Origin": "*",
-	  "Access-Control-Allow-Headers": "Content-Type",
-	  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
-	};
+// server2 = http.createServer(function (req, res) {
+// 	var _headers = {
+// 	  "Content-Type": "text/html",
+// 	  "Access-Control-Allow-Origin": "*",
+// 	  "Access-Control-Allow-Headers": "Content-Type",
+// 	  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+// 	};
 
-	res.writeHead(200, _headers);
+// 	res.writeHead(200, _headers);
 
-	var body = ""
+// 	var body = ""
 
-	req.on("data", function(data) {
-		body =+ data;
-	});
+// 	req.on("data", function(data) {
+// 		body =+ data;
+// 	});
 
-	req.on("end", function() {
-		body = body.slice(8);
+// 	req.on("end", function() {
+// 		body = body.slice(8);
 
-		body = JSON.parse(body);
-		console.log(body);
-	});
-});
+// 		body = JSON.parse(body);
+// 		console.log(body);
+// 	});
+// });
 
-server2.listen("/github/webhooks", function() {
-});
+// server2.listen("/github/webhooks", function() {
+// });
