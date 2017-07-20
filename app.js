@@ -64,6 +64,7 @@ function listenWebHook(req, res) {
     //console.log(parseURL(body));
 		console.log(qs.parse(body));
 		body = qs.parse(body);
+		console.log(req.headers);
 
 
     var webHookData = {
