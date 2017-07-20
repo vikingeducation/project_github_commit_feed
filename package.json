@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/thebopshoobop/project_github_commit_feed#readme",
   "dependencies": {
-    "github": "^9.2.0"
+    "github": "^9.2.0",
+    "handlebars": "^4.0.10"
   }
 }
