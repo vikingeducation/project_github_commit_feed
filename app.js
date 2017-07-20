@@ -44,7 +44,7 @@ server.listen(3000, "localhost", function() {
 	console.log("Now listening...");
 });
 
-let listenWebhook = function(req, res) {
+function listenWebHook(req, res) {
   var _headers = {
     "Content-Type": "text/html",
     "Access-Control-Allow-Origin": "*",
