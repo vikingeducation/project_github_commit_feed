@@ -9,6 +9,8 @@ const repo = "project_github_commit_feed";
 const git = require("./lib/github_wrapper");
 const json = require("./public/commits.json");
 
+const lineBlocks = "==================================";
+
 function parse_url(url) {
   //EXPECTED URL =  /commits?username=EricGlover&repo=project_github_commit_feed
   url_arr = url.split("&");
@@ -27,23 +29,34 @@ var server = http.createServer((req, res) => {
   res.writeHeader(200, { "Content-type": "text/html" });
   var data = fs.readFileSync("./public/index.html", "UTF-8");
   if (req.url === "/") {
-    res.writeHeader(200, { "Content-type": "text/html" });
-    var data = fs.readFileSync("./public/index.html", "utf-8");
-  } else {
+    fs.writeFileSync("./public/commits.json", lineBlocks);
+    //  res.writeHeader(200, { "Content-type": "text/html" });
+    //var data = fs.readFileSync("./public/index.html", "utf-8");
+  } else if (req.url.includes("commits")) {
     //grab necessary params from url so we can call the api
     var request_url = parse_url(req.url);
+
+    console.log(request_url);
     /* API CALL CODE */
     git.repos(request_url).then(
       message => {
         console.log(message);
-        //parse our html and remove {{ commitFeed }}
-        //replace it with our json object
-        data = data.replace("{{ commitFeed }}", JSON.stringify(json, null, 2));
+
+        fs.writeFileSync(
+          "./public/commits.json",
+          message[0]["author"] + "/n" + lineBlocks + "/n" + json
+        );
       },
       err => {
         console.log(err);
       }
     );
+    //parse our html and remove {{ commitFeed }}
+    //replace it with our json object
+    //debugger;
+
+    data = data.replace("{{ commitFeed }}", JSON.stringify(json, null, 2));
+  } else {
   }
   res.end(data);
   /*
