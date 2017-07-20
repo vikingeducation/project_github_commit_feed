@@ -9,6 +9,13 @@ const parser = require("./parser.js");
 
 var html = fs.readFileSync("./public/index.html", "utf8");
 
+var _headers = {
+  "Content-Type": "text/html",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
+
 html = html.replace("{{commitFeed}}", JSON.stringify(commits, null, 2));
 
 app.get("/", (req, res) => {
@@ -17,7 +24,13 @@ app.get("/", (req, res) => {
 });
 
 app.post("/github/webhooks", (req, res) => {
+  res.writeHead(200, _headers);
   console.log("IT WORKED");
+});
+
+app.post("/", (req, res) => {
+  console.log("IT WORKED");
+  res.writeHead(200, _headers);
 });
 
 app.post("/commits", (req, res) => {
