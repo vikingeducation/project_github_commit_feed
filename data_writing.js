@@ -1,10 +1,13 @@
 const fs = require("fs");
 
-module.exports = function(err, result) {
-	fs.writeFile("./data/commits.json", JSON.stringify(result), 'utf8', (err) => {
+// changing the data commits file and the html file simultaneously
+// break functionality into 2
+module.exports = function(htmldata, jsondata, res) {
+	fs.writeFile("./data/commits.json", JSON.stringify(jsondata), 'utf8', (err) => {
+		if(err) throw err;
 		let dataJSON = require("./data/commits");
 		dataJSON = JSON.stringify(dataJSON, null, 2);
-		data = data.replace("{{ commitFeed }}", dataJSON);
-		res.end(data);
+		htmldata = htmldata.replace("{{ commitFeed }}", dataJSON);
+		res.end(htmldata);
 	});
 }

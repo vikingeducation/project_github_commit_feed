@@ -1,43 +1,48 @@
 const http = require("http");
-const fs = require("fs");
 const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
 const qs = require("qs");
+const fs = require("fs");
+const writeData = require("./data_writing");
 
 const server = http.createServer((req, res) => {
 	checkMethod(req, res);
 });
 
+server.listen(3000, "localhost", function() {
+	console.log("Now listening...");
+});
 
-function checkMethod(req, res) {
-	if(req.method.toLowerCase() === "post") {
-		listenWebHook(req,res);
-	}
-	serveWebpage(req, res);
-}
 
 let serveWebpage = function(req, res) {
 	res.setHeader('Content-Type', 'text/html');
 
-	fs.readFile("./public/index.html", "utf8", function(err, data) {
+	fs.readFile("./public/index.html", "utf8", function(err, htmldata) {
 		if (err) throw err;
 
 		//console.log(req.url);
 		var p = github(parseURL(req.url));
+		//console.log(htmldata);
 
-		p.then(function(result) {
-
+		p.then(function(jsondata) {
+			writeData(htmldata, jsondata, res);
 		}, function(reject) {
 			console.log(reject);
-			res.end(data);
+			res.end(htmldata);
 		});
 	});
 }
 
 
-server.listen(3000, "localhost", function() {
-	console.log("Now listening...");
-});
+function checkMethod(req, res) {
+	console.log("checking");
+	if(req.method.toLowerCase() === "post") {
+		console.log("post");
+		listenWebHook(req,res);
+	}
+	console.log("get");
+	serveWebpage(req, res);
+}
 
 function listenWebHook(req, res) {
   var body = ""
@@ -66,6 +71,5 @@ function listenWebHook(req, res) {
     }
 
     var dataPromise = github(webHookData);
-    console.log(body);
   });
 }
