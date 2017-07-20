@@ -1,7 +1,7 @@
 {
   "name": "project_github_commit_feed",
   "version": "1.0.0",
-  "description": "Andrew Senner",
+  "description": "GitHub Commit Feed project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,13 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/drewdiddy611/project_github_commit_feed.git"
   },
-  "author": "Andrew Senner",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/drewdiddy611/project_github_commit_feed/issues"
-  },
   "homepage": "https://github.com/drewdiddy611/project_github_commit_feed#readme",
   "dependencies": {
     "github": "^9.2.0"
   }
+  "keywords": [
+    "GitHub",
+    "Commit",
+    "Feed"
+  ],
+  "author": "Ian Halverson, Andrew Senner",
+  "license": "ISC",
+  "homepage": "https://github.com/IDHalverson/project_github_commit_feed#readme",
+  "dependencies": {
+    "github": "^9.2.0"
+  },
+  "devDependencies": {}
 }
