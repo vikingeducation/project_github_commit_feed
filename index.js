@@ -4,7 +4,7 @@ const app = require("./lib/routeInit.js");
 const apiWrapper = require("./lib/apiWrapper");
 
 const PORT = process.env.port || process.argv[2] || 3000;
-const HOST = "localhost";
+const HOST = "127.0.0.1";
 
 app.get("/", (req, res) => {
   res.statusCode = 200;
@@ -29,7 +29,9 @@ app.get("/:username/:repository", (req, res) => {
       //   commits: apiWrapper.parseData(results.data)
       // });
     },
-    error => {}
+    error => {
+      console.log(error);
+    }
   );
 });
 
