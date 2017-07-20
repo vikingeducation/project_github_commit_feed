@@ -58,8 +58,6 @@ function listenWebHook(req, res) {
 
 	  res.writeHead(200, _headers);
 
-    body = body.slice(8);
-
     body = qs.parse(body);
     
     for (key in body) {
