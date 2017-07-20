@@ -7,6 +7,10 @@ a {
   color: #00b7ff;
 }
 
+.jumbotron {
+	border-radius: 2em;
+}
+
 .jumbotron h1 {
   text-align: center;
 }

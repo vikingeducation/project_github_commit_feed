@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon index.js"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
@@ -13,5 +13,20 @@
     "hbs": "~4.0.1",
     "morgan": "~1.8.1",
     "serve-favicon": "~2.4.2"
-  }
+  },
+  "description": "",
+  "main": "token.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewdiddy611/project_github_commit_feed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewdiddy611/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/drewdiddy611/project_github_commit_feed#readme"
 }
