@@ -29,36 +29,43 @@ var server = http.createServer((req, res) => {
   res.writeHeader(200, { "Content-type": "text/html" });
   var data = fs.readFileSync("./public/index.html", "UTF-8");
   if (req.url === "/") {
-    fs.writeFileSync("./public/commits.json", lineBlocks);
-    //  res.writeHeader(200, { "Content-type": "text/html" });
-    //var data = fs.readFileSync("./public/index.html", "utf-8");
+    var data = fs.readFileSync("./public/index.html", "utf-8");
+    res.end(data);
   } else if (req.url.includes("commits")) {
     //grab necessary params from url so we can call the api
     var request_url = parse_url(req.url);
 
-    console.log(request_url);
     /* API CALL CODE */
     git.repos(request_url).then(
       message => {
-        console.log(message);
-
-        fs.writeFileSync(
-          "./public/commits.json",
-          message[0]["author"] + "/n" + lineBlocks + "/n" + json
-        );
+        //console.log(message);
+        ////
+        //fs.writeFileSync("./public/commits.json", message);
+        let new_json = {
+          0: {
+            user: message[1].user,
+            repo: message[1].repo,
+            commits: message[0]
+          }
+        };
+        debugger;
+        fs.writeFile("./public/commits.json", JSON.stringify(new_json), err => {
+          if (err) {
+            console.log(`Error writing = ${err}`);
+          }
+        });
+        //parse our html and remove {{ commitFeed }}
+        //replace it with our json object
+        data = data.replace("{{ commitFeed }}", JSON.stringify(json, null, 2));
+        res.end(data);
       },
       err => {
         console.log(err);
       }
     );
-    //parse our html and remove {{ commitFeed }}
-    //replace it with our json object
-    //debugger;
-
-    data = data.replace("{{ commitFeed }}", JSON.stringify(json, null, 2));
   } else {
   }
-  res.end(data);
+  //res.end(data);
   /*
   res.writeHeader(200, { "Content-type": "text/html" });
   var data = fs.readFileSync("./public/index.html", "utf-8");
