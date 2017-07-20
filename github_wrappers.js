@@ -15,7 +15,18 @@ module.exports = function getGithubCommits(githubObject) {
       repo: githubObject.repo
     }, (err, res) => {
       if (err) reject(err);
-      resolve(res);
-    })
+      resolve(makeGithubArray(res));
+    });
   });
+
+  function makeGithubArray(commitObject) {
+    return commitObject = commitObject.data.map((ele) => {
+      return gitCommitObject = {
+        sha: ele.sha,
+        commit: ele.commit,
+        author: ele.author.login,
+        htmlURL: ele.html_url
+      };
+    })
+  }
 }
