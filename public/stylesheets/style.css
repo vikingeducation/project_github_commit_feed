@@ -14,3 +14,7 @@ a {
 .jumbotron h1 {
   text-align: center;
 }
+
+.jumbotron input[type="button"] {
+	margin: 0 calc(50% - 80px);
+}
