@@ -10,7 +10,7 @@ const HOST = "127.0.0.1";
 
 app.get("/", (req, res) => {
   res.statusCode = 200;
-  render("index.html", []).then(result => {
+  render.render("index.html", []).then(result => {
     res.end(result);
   });
 });
@@ -18,7 +18,6 @@ app.get("/", (req, res) => {
 app.get("/:username/:repository", (req, res) => {
   // Authenticate with github using our token
   apiWrapper.authenticate();
-  console.log(req.params);
   apiWrapper.getCommits(req.params).then(apiWrapper.parseData).then(
     results => {
       res.statusCode = 200;
@@ -27,7 +26,8 @@ app.get("/:username/:repository", (req, res) => {
       });
     },
     error => {
-      render.renderError(error.message).then(result => {
+      var msg = JSON.parse(error.message);
+      render.renderError(msg.message).then(result => {
         res.end(result);
       });
     }

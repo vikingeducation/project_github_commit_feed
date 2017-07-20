@@ -15,6 +15,13 @@ a {
   text-align: center;
 }
 
-.jumbotron input[type="button"] {
+.jumbotron button {
 	margin: 0 calc(50% - 80px);
+}
+
+h2.error {
+  color: red;
+  font-size: 400%;
+  font-weight: bolder;
+  text-align: center;
 }
