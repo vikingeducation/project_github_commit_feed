@@ -32,3 +32,27 @@ const server = http.createServer(function(req, res) {
 server.listen(3000, "localhost", function() {
 	console.log("Now listening...");
 });
+
+server.listen("/github/webhooks", function(req, res) {
+	var _headers = {
+	  "Content-Type": "text/html",
+	  "Access-Control-Allow-Origin": "*",
+	  "Access-Control-Allow-Headers": "Content-Type",
+	  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+	};
+
+	res.writeHead(200, _headers);
+
+	var body = ""
+
+	req.on("data", function(data) {
+		body =+ data;
+	});
+
+	req.on("end", function() {
+		body = body.slice(8);
+
+		body = JSON.parse(body);
+		console.log(body);
+	});
+});
