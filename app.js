@@ -76,7 +76,7 @@ function listenWebHook(req, res) {
 
     console.log(webHookData);
 
-    http.get("/?" + webHookData);
+    http.get("http://localhost:3000/?" + webHookData);
 
 
    //  htmlRead().then((htmldata) => {
