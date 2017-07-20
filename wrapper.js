@@ -1,19 +1,17 @@
 let Github = require("github");
 
-
-const github = new Github({ debug : true });
+const github = new Github({ debug: true });
 
 module.exports = {
-
-  authenticateWithToken: (token) => {
-  github.authenticate({
-  type: "token",
-  token: "userToken",
-  });
+  authenticateWithToken(token) {
+    github.authenticate({
+      type: "token",
+      token: "userToken"
+    });
   },
 
-  getCommits: () => {
-    Github.repos.getCommits(
+  getCommits() {
+    github.repos.getCommits(
       {
         owner: "gregfilipczak",
         repo: "project_github_commit_feed"
@@ -23,9 +21,4 @@ module.exports = {
       }
     );
   }
-  //
-  // authenticate: Github.authenticate({
-  //   type: "token",
-  //   token: "userToken"
-  // })
 };
