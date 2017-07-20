@@ -39,7 +39,8 @@
           <table class="table table-striped">
             <thead>
               <tr>
-                <th>Shasum</th>
+                <th>Sha1sum</th>
+                <th>Commit Message</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Date</th>
@@ -49,8 +50,9 @@
               {{#each commits as |commit|}}
               <tr>
                 <td><a href="{{commit.url}}">{{commit.sha}}</a></td>
+                <td>{{commit.message}}</td>
                 <td>{{commit.author.name}}</td>
-                <td>{{commit.author.email}}</td>
+                <td><a href="{{commit.author.email}}">{{commit.author.email}}</a></td>
                 <td>{{commit.author.date}}</td>
               </tr>
               {{/each}}
