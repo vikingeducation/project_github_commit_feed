@@ -33,7 +33,8 @@ server.listen(3000, "localhost", function() {
 	console.log("Now listening...");
 });
 
-server.listen("/github/webhooks", function(req, res) {
+
+server2 = http.createServer(function (req, res) {
 	var _headers = {
 	  "Content-Type": "text/html",
 	  "Access-Control-Allow-Origin": "*",
@@ -55,4 +56,7 @@ server.listen("/github/webhooks", function(req, res) {
 		body = JSON.parse(body);
 		console.log(body);
 	});
+});
+
+server2.listen("/github/webhooks", function() {
 });
