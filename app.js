@@ -2,6 +2,7 @@ const http = require("http");
 const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
 const qs = require("qs");
+
 const writeData = require("./data_writing");
 const htmlRead = require("./html_reading");
 
@@ -65,15 +66,16 @@ function listenWebHook(req, res) {
     	username: body.pusher.name,
     	repo: body.repository.name
     }
+    htmlRead().then((htmldata) => {
+    	dataPromise = github(webHookData);
 
-    dataPromise = github(webHookData);
-
-		dataPromise.then(function(jsondata) {
-			writeData(htmldata, jsondata, res);
-		}, function(reject) {
-			console.log(reject);
-			res.end(htmldata);
-		});
+			dataPromise.then(function(jsondata) {
+				writeData(htmldata, jsondata, res);
+			}, function(reject) {
+				console.log(reject);
+				res.end(htmldata);
+			});
+    });
 
   });
 }
