@@ -1,3 +1,3 @@
 # project_github_commit_feed
 
-By Benjamin and Will.
+By Benjamin and Will

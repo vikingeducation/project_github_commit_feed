@@ -11,6 +11,9 @@
   <main class="container">
     <header class="row">
       <section class="col-xs-12">
+        {{#if error}}
+        <h2>Error: {{error}}</h2>
+        {{/if}}
         <h1>The Github Commit Feed</h1>
       </section>
     </header>
