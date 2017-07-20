@@ -21,7 +21,7 @@ let serveWebpage = function(req, res) {
 	htmlRead()
 	.then((htmldata) => {
 		var p = github(parseURL(req.url));
-	p.then((jsondata) => {
+		p.then((jsondata) => {
 			writeData(htmldata, jsondata, res);
 		}, function(reject) {
 			console.log(reject);
@@ -60,14 +60,9 @@ function listenWebHook(req, res) {
 
 		body = decodeURIComponent(body)
 		body = JSON.parse(body.slice(8));
-		//console.log(body);
-    //console.log(parseURL(body));
-		//console.log(qs.parse(body));
-		//body = qs.parse(body);
 
 		console.log(body);
-		// console.log(req.headers);
-		// console.log(body.pusher);//
+
 
 
     var webHookData = {
@@ -75,16 +70,25 @@ function listenWebHook(req, res) {
     	repo: body.repository.name
     }
 
-    htmlRead().then((htmldata) => {
-    	dataPromise = github(webHookData);
+    webHookData = qs.stringify(webHookData);
 
-			dataPromise.then(function(jsondata) {
-				writeData(htmldata, jsondata, res);
-			}, function(reject) {
-				console.log(reject);
-				res.end(htmldata);
-			});
-    });
+    res.end("200 OK");
+
+    console.log(webHookData);
+
+    http.get("/" + webHookData);
+
+
+   //  htmlRead().then((htmldata) => {
+   //  	dataPromise = github(webHookData);
+
+			// dataPromise.then(function(jsondata) {
+			// 	writeData(htmldata, jsondata, res);
+			// }, function(reject) {
+			// 	console.log(reject);
+			// 	res.end(htmldata);
+			// });
+   //  });
 
   });
 }
