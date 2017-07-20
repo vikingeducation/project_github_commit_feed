@@ -11,7 +11,7 @@ html = html.replace("{{commitFeed}}", JSON.stringify(commits, null, 2));
 
 const server = http.createServer(function(req, res) {
   var body = "";
-  console.log(req);
+ // console.log(req);
   req.on("data", data => {
     console.log(data);
     body += data;
