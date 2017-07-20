@@ -21,12 +21,9 @@ app.post("/commits", (req, res) => {
     body += data;
   });
   req.on("end", () => {
-    console.log(body);
     let bodyArray = body.split("&");
     let username = bodyArray[0].split("=")[1];
     let repo = bodyArray[1].split("=")[1];
-    console.log(username);
-    console.log(repo);
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(html);
   });
@@ -35,13 +32,3 @@ app.post("/commits", (req, res) => {
 app.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
-
-// const server = http.createServer(function(req, res) {
-//   console.log(req.url);
-//   console.log(req.method);
-//   if (req.method === "POST") {
-//
-//   res.writeHead(200, { "Content-Type": "text/html" });
-//   res.end(html);
-// });
-//
