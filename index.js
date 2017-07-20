@@ -10,7 +10,7 @@ const git = require("./lib/github_wrapper");
 const json = require("./public/commits.json");
 
 const lineBlocks = "==================================";
-
+var new_json = {};
 function parse_url(url) {
   //EXPECTED URL =  /commits?username=EricGlover&repo=project_github_commit_feed
   url_arr = url.split("&");
@@ -23,8 +23,6 @@ function parse_url(url) {
 
 /* SERVER CODE */
 var server = http.createServer((req, res) => {
-  //console.log(req.url);
-
   /* ROUTING CODE */
   res.writeHeader(200, { "Content-type": "text/html" });
   var data = fs.readFileSync("./public/index.html", "UTF-8");
@@ -38,25 +36,26 @@ var server = http.createServer((req, res) => {
     /* API CALL CODE */
     git.repos(request_url).then(
       message => {
-        //console.log(message);
-        ////
-        //fs.writeFileSync("./public/commits.json", message);
-        let new_json = {
-          0: {
-            user: message[1].user,
-            repo: message[1].repo,
-            commits: message[0]
-          }
-        };
+        UpdateJsonData(message);
+        //make this json change in upadate json functio n
+        // new_json = {
+        //   0: {
+        //     user: message[1].user,
+        //     repo: message[1].repo,
+        //     commits: message[0]
+        //   }
+        // };
         debugger;
-        fs.writeFile("./public/commits.json", JSON.stringify(new_json), err => {
-          if (err) {
-            console.log(`Error writing = ${err}`);
-          }
-        });
+        ////check to see if this user/repo combo is in the json
+        ///then if yes skip
+        ///if no append
+
         //parse our html and remove {{ commitFeed }}
         //replace it with our json object
-        data = data.replace("{{ commitFeed }}", JSON.stringify(json, null, 2));
+        data = data.replace(
+          "{{ commitFeed }}",
+          JSON.stringify(new_json, null, 2)
+        );
         res.end(data);
       },
       err => {
@@ -65,38 +64,37 @@ var server = http.createServer((req, res) => {
     );
   } else {
   }
-  //res.end(data);
-  /*
-  res.writeHeader(200, { "Content-type": "text/html" });
-  var data = fs.readFileSync("./public/index.html", "utf-8");
 
-  //parse our html and remove {{ commitFeed }}
-  //replace it with our json object
-  //debugger;
-  data = data.replace("{{ commitFeed }}", JSON.stringify(json, null, 2));
-
-  res.end(data);
-  //console.log(req.url);*/
   console.log("server on");
 });
+
+var UpdateJsonData = function(newSearch) {
+  var oldJsonSearch = require("./public/commits.json");
+  for (var k in oldJsonSearch) {
+    if (
+      oldJsonSearch[k].user === newSearch[1].user &&
+      oldJsonSearch[k].repo === newSearch[1].repo
+    ) {
+      return;
+    }
+  }
+  //add to the json
+  oldJsonSearch[oldJsonSearch.length] = {
+    user: newSearch[1].user,
+    repo: newSearch[1].repo,
+    commits: newSearch[0]
+  };
+  fs.writeFile(
+    "./public/commits.json",
+    JSON.stringify(oldJsonSearch, null, 2),
+    err => {
+      if (err) {
+        console.log(`Error writing = ${err}`);
+      }
+    }
+  );
+};
 
 server.listen(port, host, () => {
   console.log(`Listening at: http://${host}:${port}`);
 });
-
-/*
-var TestScript = function(buttt) {
-  buttt.innerhtml = "sadasdasd";
-  console.log("this is the test script");
-};*/
-
-/* API CALL CODE */
-/*git.repos(params).then(
-  message => {
-    console.log(message);
-  },
-  err => {
-    //console.log(err);
-  }
-);*/
-//module.exports = { TestScript: "TestScript" };
