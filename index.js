@@ -1,20 +1,6 @@
-const Github = require("github");
-const token = require("./token.js");
+const apiWrapper = require("./lib/apiWrapper");
 
-const github = new Github();
-
-github.authenticate({
-  type: "token",
-  token: token,
+apiWrapper.authenticate();
+apiWrapper.getCommits().then(results => {
+  console.log(apiWrapper.parseData(results.data));
 });
-
-var commits = github.repos
-  .getCommits({
-    owner: "idhalverson",
-    repo: "assignment_building_the_express_router"
-  })
-  .then(resolve => {
-    resolve.data.forEach(commit => {
-      console.log(commit.commit);
-    });
-  });
