@@ -1,6 +1,8 @@
 const http = require("http");
 const fs = require("fs");
 var commitFeed = require("./data/commits");
+const parseURL = require("./lib/parse_url");
+
 
 commitFeed = JSON.stringify(commitFeed, null, 2);
 
@@ -10,7 +12,10 @@ const server = http.createServer(function(req, res) {
 	fs.readFile("./public/index.html", "utf8", function(err, data) {
 		if (err) throw err;
 
-		data.replace("{{ commitFeed }}", commitFeed);
+		data = data.replace("{{ commitFeed }}", commitFeed);
+
+		//console.log(req.url);
+		console.log(parseURL(req.url));
 		res.end(data);
 	});
 });

@@ -1,5 +1,5 @@
 const Github = require('github');
-require('dotenv').config()
+require('dotenv').config();
 
 //console.log(process.env.GITHUB_TOKEN);
 
