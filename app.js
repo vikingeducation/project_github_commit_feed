@@ -59,7 +59,7 @@ function listenWebHook(req, res) {
 	  res.writeHead(200, _headers);
 
 
-		body = body.splice(8);
+		body = body.slice(8);
 
     //console.log(parseURL(body));
 		console.log(qs.parse(body));
