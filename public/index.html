@@ -27,24 +27,20 @@ var TestScript = function(buttt) {
   </head>
 
   <body>
-    <form>
-      <div class="form-group">
+    <!--- our Input Form -->
+    <form action='/commits' method='GET'>
+      <div class="form-group" >
         <label for="exampleInputEmail1">Git User</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        <input type="text" class="form-control" name='username'id="exampleInputEmail1" placeholder="Enter a Username">
       </div>
       <div class="form-group">
         <label for="exampleInputPassword1">Repo Name</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input type="text" class="form-control" name="repo" placeholder="Enter a Repository">
       </div>
       <button type="submit" class="btn btn-default" >Submit</button>
     </form>
-  </body>
-  <form action="/" method="Get">
-    First name:<br>
-    <input type="text" name="firstname"><br>
-    Last name:<br>
-    <input type="text" name="lastname" ><br><br>
-    <input type="submit" value="Submit">
-  </form>
 
+    <!--- where the JSON REPO DATA will go (?) -->
+    <pre>{{ commitFeed }}</pre>
+  </body>
 </html>
