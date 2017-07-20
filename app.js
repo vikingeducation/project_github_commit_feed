@@ -4,15 +4,6 @@ const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
 
 const server = http.createServer((req, res) => {
-	var _headers = {
-    "Content-Type": "text/html",
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Headers": "Content-Type",
-    "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
-  };
-
-  res.writeHead(200, _headers);
-  
 	checkMethod(req, res);
 });
 
@@ -61,6 +52,15 @@ function listenWebHook(req, res) {
   });
 
   req.on("end", function() {
+  	var _headers = {
+	    "Content-Type": "text/html",
+	    "Access-Control-Allow-Origin": "*",
+	    "Access-Control-Allow-Headers": "Content-Type",
+	    "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+	  };
+
+	  res.writeHead(200, _headers);
+
     body = body.slice(8);
 
     body = JSON.parse(body);
