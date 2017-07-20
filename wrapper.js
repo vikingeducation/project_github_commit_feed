@@ -17,9 +17,17 @@ module.exports = {
         repo: rep
       },
       function(err, res) {
-        console.log(JSON.stringify(res));
+        console.log(res.data[0].sha);
+        console.log(res.data[0].commit.author);
+        console.log(res.data[0].commit.message);
+        console.log(res.data[0].commit.url);
+        let results = {
+          sha: res.data[0].sha,
+          author: res.data[0].commit.author,
+          message: res.data[0].commit.message,
+          url: res.data[0].commit.url
+        };
       }
-
     );
   }
 };

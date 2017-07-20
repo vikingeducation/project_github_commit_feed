@@ -5,7 +5,7 @@ const express = require("./router/express.js");
 const hostname = "0.0.0.0";
 const port = 3000;
 const app = express();
-const parser = require('./parser.js');
+const parser = require("./parser.js");
 
 var html = fs.readFileSync("./public/index.html", "utf8");
 
