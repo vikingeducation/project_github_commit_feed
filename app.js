@@ -61,10 +61,6 @@ function listenWebHook(req, res) {
 		body = decodeURIComponent(body)
 		body = JSON.parse(body.slice(8));
 
-		console.log(body);
-
-
-
     var webHookData = {
     	username: body.pusher.name,
     	repo: body.repository.name
