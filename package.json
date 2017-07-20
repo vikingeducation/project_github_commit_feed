@@ -23,5 +23,6 @@
   "homepage": "https://github.com/IDHalverson/project_github_commit_feed#readme",
   "dependencies": {
     "github": "^9.2.0"
-  }
+  },
+  "devDependencies": {}
 }
