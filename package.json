@@ -1,30 +1,17 @@
 {
-  "name": "project_github_commit_feed",
-  "version": "1.0.0",
-  "description": "GitHub Commit Feed project",
-  "main": "index.js",
+  "name": "project-github-commit-feed",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drewdiddy611/project_github_commit_feed.git"
-  },
-  "homepage": "https://github.com/drewdiddy611/project_github_commit_feed#readme",
   "dependencies": {
-    "github": "^9.2.0"
+    "body-parser": "~1.17.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "hbs": "~4.0.1",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
   }
-  "keywords": [
-    "GitHub",
-    "Commit",
-    "Feed"
-  ],
-  "author": "Ian Halverson, Andrew Senner",
-  "license": "ISC",
-  "homepage": "https://github.com/IDHalverson/project_github_commit_feed#readme",
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "github": "^9.2.0"
-  },
-  "homepage": "https://github.com/Zhunussova/project_github_commit_feed#readme"
 }

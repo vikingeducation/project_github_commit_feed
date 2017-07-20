@@ -1,4 +1,4 @@
-const apiWrapper = require("./lib/apiWrapper");
+const apiWrapper = require("../../lib/apiWrapper");
 
 apiWrapper.authenticate();
 apiWrapper.getCommits().then(results => {
