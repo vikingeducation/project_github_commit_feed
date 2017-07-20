@@ -40,10 +40,6 @@ let serveWebpage = function(req, res) {
 }
 
 
-
-
-
-
 server.listen(3000, "localhost", function() {
 	console.log("Now listening...");
 });
