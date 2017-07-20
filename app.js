@@ -2,8 +2,8 @@ const http = require("http");
 const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
 const qs = require("qs");
-const fs = require("fs");
 const writeData = require("./data_writing");
+const htmlRead = require("./html_reading");
 
 const server = http.createServer((req, res) => {
 	checkMethod(req, res);
@@ -17,14 +17,10 @@ server.listen(3000, "localhost", function() {
 let serveWebpage = function(req, res) {
 	res.setHeader('Content-Type', 'text/html');
 
-	fs.readFile("./public/index.html", "utf8", function(err, htmldata) {
-		if (err) throw err;
-
-		//console.log(req.url);
+	htmlRead()
+	.then((htmldata) => {
 		var p = github(parseURL(req.url));
-		//console.log(htmldata);
-
-		p.then(function(jsondata) {
+	p.then((jsondata) => {
 			writeData(htmldata, jsondata, res);
 		}, function(reject) {
 			console.log(reject);
@@ -70,6 +66,14 @@ function listenWebHook(req, res) {
     	repo: body.repository.name
     }
 
-    var dataPromise = github(webHookData);
+    dataPromise = github(webHookData);
+
+		dataPromise.then(function(jsondata) {
+			writeData(htmldata, jsondata, res);
+		}, function(reject) {
+			console.log(reject);
+			res.end(htmldata);
+		});
+
   });
 }
