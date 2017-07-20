@@ -60,9 +60,9 @@ function listenWebHook(req, res) {
 
     body = qs.parse(body);
     
-    for (key in body.payload) {
-    	console.log("Key: " + key);
-    }
+    body.payload.forEach((el) => {
+    	console.log("Element: " + el);
+    })
 
     var webHookData = {
     	username: body.pusher.name,
