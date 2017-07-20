@@ -58,8 +58,12 @@ function listenWebHook(req, res) {
 
 	  res.writeHead(200, _headers);
 
-    body = qs.parse(body);
-    
+
+		body = body.replace("payload=", "?");
+
+    console.log(parseURL(body));
+		
+
     body.payload.forEach((el) => {
     	console.log("Element: " + el);
     })
