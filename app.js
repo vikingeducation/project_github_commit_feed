@@ -10,17 +10,19 @@ const port = process.env.PORT || 3000;
 const server = http.createServer((req, res) => {
   fs.readFile('./public/index.html', (err, htmlTemplate) => {
     if (err) {
-      res.statusCode = 500;
-      res.setHeader('Content-Type', 'text/plain');
-      res.end('File not found!');
-      console.error(err);
+      _writeTemplate(
+        ['{{commits}}'],
+        'Error! Template file not found!',
+        res,
+        500
+      );
     }
 
     let query = url.parse(req.url, true).query;
     if (Object.keys(query).length) {
-      _respondWithApi(htmlTemplate, query, res);
+      _respondWithApi(htmlTemplate, query, res, 200);
     } else {
-      _writeTemplate(htmlTemplate, '', res);
+      _writeTemplate(htmlTemplate, '', res, 200);
     }
   });
 });
@@ -35,20 +37,20 @@ function _respondWithApi(htmlTemplate, query, res) {
   commitPromise
     .then(commits => {
       commits = JSON.stringify(commits, null, 2);
-      _writeTemplate(htmlTemplate, commits, res);
+      _writeTemplate(htmlTemplate, commits, res, 200);
     })
     .catch(err => {
-      res.statusCode = 500;
-      res.setHeader('Content-Type', 'text/plain');
-      res.end('API Request Failed');
       console.error(err);
+      _writeTemplate(htmlTemplate, 'API Request Failed', res, 500);
     });
 }
 
-function _writeTemplate(template, insertValue, res) {
+function _writeTemplate(template, insertValue, res, code) {
+  console.log(template);
   let pageContents = template.toString().replace('{{commits}}', insertValue);
 
-  res.statusCode = 200;
+  console.log(code);
+  res.statusCode = code;
   res.setHeader('Content-Type', 'text/html');
   res.end(pageContents);
 }
