@@ -69,6 +69,8 @@ function listenWebHook(req, res) {
 
 	  res.writeHead(200, _headers);
 
+		console.log(body);
+
 		body = decodeURIComponent(body)
 		body = JSON.parse(body.slice(8));
 
