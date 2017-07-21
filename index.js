@@ -51,5 +51,5 @@ app.get("/public/javascripts/script.js", (req, res) => {
 });
 
 app.listen(PORT, HOST, () => {
-  console.log(`Listening on ${HOST}:${PORT}`);
+  console.log(`Listening on  ${HOST}:${PORT}`);
 });
