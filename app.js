@@ -82,11 +82,8 @@ function listenWebHook(req, res) {
     res.end("200 OK");
 
     htmlRead().then((htmldata) => {
-    	dataPromise = github(webHookData);
-
-			console.log("writing data");
-
-			dataPromise.then(function(jsondata) {
+			github.makeGithubArray(webHookData)
+			.then(function(jsondata) {
 				writeData(htmldata, jsondata, res);
 			}, function(reject) {
 				console.log(reject);
