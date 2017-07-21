@@ -52,6 +52,7 @@ function serveWebpage(req, res) {
 
 
 function listenWebHook(req, res) {
+	console.log("POSTING DATA");
   var body = ""
 
   req.on("data", function(data) {
@@ -78,7 +79,6 @@ function listenWebHook(req, res) {
 
     res.end("200 OK");
 
-
     htmlRead().then((htmldata) => {
     	dataPromise = github(webHookData);
 
@@ -89,6 +89,5 @@ function listenWebHook(req, res) {
 				res.end(htmldata);
 			});
     });
-
   });
 }
