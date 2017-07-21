@@ -10,7 +10,9 @@ $(document).ready(function() {
     return true;
   });
 
-  gatherCommitNames().then(insertOptions).change(filterByName);
+  gatherCommitNames().then((names) => {
+    insertOptions(names).change(filterByName);
+  });
 });
 
 function gatherCommitNames() {
@@ -35,12 +37,13 @@ function insertOptions(names) {
 }
 
 function filterByName(e) {
-  var $target = $(e.target);
-  console.log($target);
-  var $commits = $("commit");
+  var selectedName = $(e.target).val().trim();
+
+  var $commits = $(".commit");
   $commits.show();
   $commits.each(function(idx, commit) {
-    //var name = commit.("name");
-    // if (name === )
+    var name = $(commit).data("name").trim();
+    if (name !== selectedName)
+      $(commit).hide();
   });
 }
