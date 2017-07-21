@@ -11,10 +11,6 @@ const HOST = "127.0.0.1";
 app.get("/", (req, res) => {
   res.statusCode = 200;
   render.render("index.html", []).then(res.end.bind(res));
-
-  //   result => {
-  //   res.end(result);
-  // });
 });
 
 app.get("/:username/:repository", (req, res) => {
@@ -23,16 +19,11 @@ app.get("/:username/:repository", (req, res) => {
   apiWrapper.getCommits(req.params).then(apiWrapper.parseData).then(
     results => {
       res.statusCode = 200;
-      console.log(res.end.parent);
-      render.render("index.html", results).then(result => {
-        res.end(result);
-      });
+      render.render("index.html", results).then(res.end.bind(res));
     },
     error => {
       var msg = JSON.parse(error.message);
-      render.renderError(msg.message).then(result => {
-        res.end(result);
-      });
+      render.renderError(msg.message).then(res.end.bind(res));
     }
   );
 });
