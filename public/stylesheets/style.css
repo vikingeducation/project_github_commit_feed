@@ -1,0 +1,27 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.jumbotron {
+	border-radius: 2em;
+}
+
+.jumbotron h1 {
+  text-align: center;
+}
+
+.jumbotron button {
+	margin: 0 calc(50% - 80px);
+}
+
+h2.error {
+  color: red;
+  font-size: 400%;
+  font-weight: bolder;
+  text-align: center;
+}
