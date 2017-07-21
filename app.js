@@ -1,8 +1,8 @@
 const http = require("http");
 const parseURL = require("./lib/parse_url");
-const github = require("./github_wrappers");
-const writeData = require("./data_writing");
-const htmlRead = require("./html_reading");
+const github = require("./lib/github_wrappers");
+const writeData = require("./lib/data_writing");
+const htmlRead = require("./lib/html_reading");
 
 const server = http.createServer((req, res) => {
 	checkMethod(req, res);
@@ -47,9 +47,6 @@ function serveWebpage(req, res) {
 		});
 	});
 }
-
-
-
 
 function listenWebHook(req, res) {
 	console.log("POSTING DATA");
