@@ -1,7 +1,6 @@
 const http = require("http");
 const parseURL = require("./lib/parse_url");
 const github = require("./github_wrappers");
-const qs = require("qs");
 const writeData = require("./data_writing");
 const htmlRead = require("./html_reading");
 
@@ -13,23 +12,32 @@ server.listen(3000, "localhost", function() {
 	console.log("Now listening...");
 });
 
+function checkMethod(req, res) {
+	console.log("checking");
+	if(req.method.toLowerCase() === "post") {
+		console.log("post");
+		listenWebHook(req,res);
+	}
+	console.log("get");
+	serveWebpage(req, res);
+}
 
-let serveWebpage = function(req, res) {
+
+function serveWebpage(req, res) {
 	res.setHeader('Content-Type', 'text/html');
 
 	htmlRead()
 	.then((htmldata) => {
-		var p = github(parseURL(req.url));
-////
+		console.log(parseURL(req.url));
+		let p = github.getGithubCommits(parseURL(req.url));
+
 	p.then((jsondata) => {
 			jsondata = JSON.stringify(jsondata, null, 2);
 			captured = htmldata.split("<pre>");
 			capturedData = captured[1].split("</pre>");
 			htmldata = htmldata.replace(capturedData[0], jsondata);
-			console.log(htmldata);
 			res.end(htmldata);
 		}, function(reject) {
-			console.log(reject);
 			var defaultData = require("./data/commits.json");
 			defaultData = JSON.stringify(defaultData, null, 2)
 			captured = htmldata.split("<pre>");
@@ -41,15 +49,7 @@ let serveWebpage = function(req, res) {
 }
 
 
-function checkMethod(req, res) {
-	console.log("checking");
-	if(req.method.toLowerCase() === "post") {
-		console.log("post");
-		listenWebHook(req,res);
-	}
-	console.log("get");
-	serveWebpage(req, res);
-}
+
 
 function listenWebHook(req, res) {
   var body = ""

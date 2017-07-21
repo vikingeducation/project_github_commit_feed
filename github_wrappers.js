@@ -8,18 +8,22 @@ const github = new Github();
 // synchronous - don't worry about it
 github.authenticate({type: "token", token: process.env.GITHUB_TOKEN});
 
-module.exports = function getGithubCommits(githubObject) {
-  return new Promise((resolve, reject) => {
-    github.repos.getCommits({
-      owner: githubObject.username,
-      repo: githubObject.repo
-    }, (err, res) => {
-      if (err) reject(err);
-      resolve(makeGithubArray(res));
-    });
-  });
+module.exports = {
+  getGithubCommits: (githubObject) => {
+    return new Promise((resolve, reject) => {
+      if(Object.keys(githubObject).length < 1) resolve({});
+      github.repos.getCommits({
+        owner: githubObject.username,
+        repo: githubObject.repo
+      }, (err, res) => {
+        if (err)
+          reject(err);
+        resolve(makeGithubArray(res));
+      });
+    })
+  },
 
-  function makeGithubArray(commitObject) {
+  makeGithubArray: (commitObject) => {
     return commitObject = commitObject.data.map((ele) => {
       return gitCommitObject = {
         sha: ele.sha,
