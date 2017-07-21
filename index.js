@@ -21,9 +21,7 @@ app.get("/:username/:repository", (req, res) => {
   apiWrapper.getCommits(req.params).then(apiWrapper.parseData).then(
     results => {
       res.statusCode = 200;
-      render.render("index.html", results).then(result => {
-        res.end(result);
-      });
+      render.render("index.html", results).then(res.end.bind(res));
     },
     error => {
       var msg = JSON.parse(error.message);
