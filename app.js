@@ -77,13 +77,13 @@ function listenWebHook(req, res) {
     	username: body.pusher.name,
     	repo: body.repository.name
     }
-		console.log(webHookData);
 
     res.end("200 OK");
 
     htmlRead().then((htmldata) => {
-			github.makeGithubArray(webHookData)
+			github.getGithubCommits(webHookData)
 			.then(function(jsondata) {
+				console.log(jsondata);
 				writeData(htmldata, jsondata, res);
 			}, function(reject) {
 				console.log(reject);
