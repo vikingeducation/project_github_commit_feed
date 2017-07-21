@@ -36,33 +36,43 @@ var server = http.createServer((req, res) => {
     var request_url = parse_url(req.url);
 
     /* API CALL CODE */
-    git.repos(request_url).then(
-      message => {
-        //console.log(message);
-        ////
-        //fs.writeFileSync("./public/commits.json", message);
-        let new_json = {
-          0: {
-            user: message[1].user,
-            repo: message[1].repo,
-            commits: message[0]
-          }
-        };
-        debugger;
-        fs.writeFile("./public/commits.json", JSON.stringify(new_json), err => {
-          if (err) {
-            console.log(`Error writing = ${err}`);
-          }
-        });
-        //parse our html and remove {{ commitFeed }}
-        //replace it with our json object
-        data = data.replace("{{ commitFeed }}", JSON.stringify(json, null, 2));
-        res.end(data);
-      },
-      err => {
-        console.log(err);
-      }
-    );
+    git
+      .repos(request_url)
+      .then(
+        message => {
+          //console.log(message);
+          ////
+          //fs.writeFileSync("./public/commits.json", message);
+          let new_json = {
+            0: {
+              user: message[1].user,
+              repo: message[1].repo,
+              commits: message[0]
+            }
+          };
+          debugger;
+          fs.writeFile(
+            "./public/commits.json",
+            JSON.stringify(new_json),
+            err => {
+              if (err) {
+                console.log(`Error writing = ${err}`);
+              }
+            }
+          );
+          //parse our html and remove {{ commitFeed }}
+          //replace it with our json object
+          data = data.replace(
+            "{{ commitFeed }}",
+            JSON.stringify(json, null, 2)
+          );
+          res.end(data);
+        },
+        err => {
+          console.log(err);
+        }
+      )
+      .then(message => {});
   } else {
   }
   //res.end(data);
