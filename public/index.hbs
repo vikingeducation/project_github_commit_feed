@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/styles.css">
+  <title>Github Commit Feed</title>
+</head>
+
+<body>
+  <main class="container">
+    <header class="row">
+      <section class="col-xs-12">
+        {{#if error}}
+        <div class="alert alert-warning">
+          Warning: {{error}}
+        </div>
+        {{/if}}
+        <h1>The Github Commit Feed</h1>
+      </section>
+    </header>
+
+    <section class="row">
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <form action="/" method="get">
+          <fieldset>
+            <legend>Select a new repo:</legend>
+            <section class="form-group">
+              <label for="username">Username</label>
+              <input name="username" type="text" class="form-control">
+            </section>
+            <section class="form-group">
+              <label for="repo">Repository</label>
+              <input name="repo" type="text" class="form-control">
+            </section>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="row">
+      {{#if commits}}
+      <div class="col-xs-12">
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Sha1sum</th>
+                <th>Commit Message</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              {{#each commits as |commit|}}
+              <tr>
+                <td><a href="{{commit.url}}">{{commit.sha}}</a></td>
+                <td>{{commit.message}}</td>
+                <td>{{commit.author.name}}</td>
+                <td><a href="{{commit.author.email}}">{{commit.author.email}}</a></td>
+                <td>{{commit.author.date}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      {{/if}}
+    </section>
+
+
+  </main>
+
+</body>
+
+</html>
