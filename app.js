@@ -20,11 +20,21 @@ let serveWebpage = function(req, res) {
 	htmlRead()
 	.then((htmldata) => {
 		var p = github(parseURL(req.url));
+//
 	p.then((jsondata) => {
-			htmldata = htmldata.replace("{{ commits }}", require("./commits.json"))
-			writeData(htmldata, jsondata, res);
+			jsondata = JSON.stringify(jsondata, null, 2);
+			captured = htmldata.split("<pre>");
+			capturedData = captured[1].split("</pre>");
+			htmldata = htmldata.replace(capturedData[0], jsondata);
+			console.log(htmldata);
+			res.end(htmldata);
 		}, function(reject) {
 			console.log(reject);
+			var defaultData = require("./data/commits.json");
+			defaultData = JSON.stringify(defaultData, null, 2)
+			captured = htmldata.split("<pre>");
+			capturedData = captured[1].split("</pre>");
+			htmldata = htmldata.replace(capturedData[0], defaultData);
 			res.end(htmldata);
 		});
 	});
@@ -60,20 +70,14 @@ function listenWebHook(req, res) {
 
 		body = decodeURIComponent(body)
 		body = JSON.parse(body.slice(8));
-		//console.log(body);
-    //console.log(parseURL(body));
-		//console.log(qs.parse(body));
-		//body = qs.parse(body);
-
-		console.log(body);
-		// console.log(req.headers);
-		// console.log(body.pusher);//
-
 
     var webHookData = {
     	username: body.pusher.name,
     	repo: body.repository.name
     }
+
+    res.end("200 OK");
+
 
     htmlRead().then((htmldata) => {
     	dataPromise = github(webHookData);
