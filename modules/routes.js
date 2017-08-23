@@ -58,7 +58,7 @@ var routesInit = function () {
     }
   })
 
-  routes.post('/github/webhooks', function (req,res){
+  routes.post('/', function (req,res){
     var _headers = {
       "Content-Type": "text/html",
       "Access-Control-Allow-Origin": "*",
