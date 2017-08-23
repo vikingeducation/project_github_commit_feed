@@ -59,6 +59,7 @@ var routesInit = function () {
   })
 
   routes.post('/', function (req,res){
+    console.log( req, res);
     var _headers = {
       "Content-Type": "text/html",
       "Access-Control-Allow-Origin": "*",
