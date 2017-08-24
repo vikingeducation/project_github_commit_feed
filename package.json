@@ -1,0 +1,23 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "Chuck Michael's (https://github.com/chuckinabox/) solution",
+  "main": "index.js",
+  "dependencies": {
+    "github": "^9.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuckinabox/project_github_commit_feed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuckinabox/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/chuckinabox/project_github_commit_feed#readme"
+}
