@@ -59,25 +59,9 @@ var routesInit = function () {
   })
 
   routes.post('/', function (req,res){
-    console.log(Object.getOwnPropertyNames(req));
-    var _headers = {
-      "Content-Type": "text/html",
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers": "Content-Type",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
-    };
-    res.writeHead(200, _headers);
-    var data = req.body;
-
-  // If the content type is JSON
-  // parse the data into a JSON string
-  if (req.headers['content-type'] === 'application/json') {
-    data = JSON.parse(req.body);
-    data = JSON.stringify(data, null, 2);
-  }
-
-  // Output the POST data
-  res.end(`Data: ${ data }`);
+    req.on('data', function(chunck){
+      console.log(chunck);
+    })
   })
   return routes;
 }
