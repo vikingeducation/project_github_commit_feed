@@ -64,10 +64,10 @@ var routesInit = function () {
       data += chunck.toString('utf8');
     })
     req.on('end', function(){
-      data = data.slice(7);
+      data = data.slice(8);
       data = decodeURIComponent(data);
-      
-      console.log(data);
+      console.log(data.pusher.name)
+      console.log(data.repository.name);
       res.end('200 OK')
     })
   })
