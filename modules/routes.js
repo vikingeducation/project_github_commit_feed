@@ -64,12 +64,13 @@ var routesInit = function () {
       data += chunck.toString('utf8');
     })
     req.on('end', function(){
+      res.end('200 OK');
       data = data.slice(8);
       data = decodeURIComponent(data);
       data = JSON.parse(data);
-      console.log(data.pusher.name)
-      console.log(data.repository.name);
-      res.end('200 OK')
+      github(data.pusher.name, data.repository.name, function() {
+        routes.get['/'](req,res);
+      });
     })
   })
   return routes;

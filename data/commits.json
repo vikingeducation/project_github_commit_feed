@@ -1,16 +1,13 @@
 {
-  "0": "Fixed post request? | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/43fcf7eb60d69368bb1ef56ad90073368b181a2f | 43fcf7eb60d69368bb1ef56ad90073368b181a2f",
-  "1": "Added post | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/55174c51fb0bd0f4739efc14fb94e594be7c064d | 55174c51fb0bd0f4739efc14fb94e594be7c064d",
-  "2": "ngorktest | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/284ae2688da54ee10cc419abd14a9c76297dc3ba | 284ae2688da54ee10cc419abd14a9c76297dc3ba",
-  "3": "Connecting form and scrubing data completed | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/feea88c44eca8282a7ed0765c944b7a375e69b23 | feea88c44eca8282a7ed0765c944b7a375e69b23",
-  "4": "Parsed form data | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/782561ca46d553e4d5b5e515ff11f51e8e40ab3d | 782561ca46d553e4d5b5e515ff11f51e8e40ab3d",
-  "5": "Displaying Dynamic Json completed | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/9de51dd27604149abade16bd2c43fa1008d8c7db | 9de51dd27604149abade16bd2c43fa1008d8c7db",
-  "6": "Initial Server Setup completed | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/938ac091256ae95db9d124823296de390931c18b | 938ac091256ae95db9d124823296de390931c18b",
-  "7": "Added commit feed | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/13ac6a671ef81aa7284d11a36a7881a524419af0 | 13ac6a671ef81aa7284d11a36a7881a524419af0",
-  "8": "Added starting webpage | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/e9ec69fff26cb4f6f4194a047e505063e332a8e9 | e9ec69fff26cb4f6f4194a047e505063e332a8e9",
-  "9": "Removed unoauth token | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/ec9056506c0717809453639a0f283c7f9c234a90 | ec9056506c0717809453639a0f283c7f9c234a90",
-  "10": "Added github wrapper | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/503a444a47ba598a442bfb14cbc4a96de62fdc70 | 503a444a47ba598a442bfb14cbc4a96de62fdc70",
-  "11": "Added name to README | Chuck Michael | https://github.com/chuckinabox/project_github_commit_feed/commit/3e754a587dd01ec1d190b96901319661f3b02d7f | 3e754a587dd01ec1d190b96901319661f3b02d7f",
-  "12": "Update README.md | Chris Scavello | https://github.com/chuckinabox/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741 | ceec1b2306888905ae12750558706174132a6741",
-  "13": "Initial commit | Chris Scavello | https://github.com/chuckinabox/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55 | 526145a8b50b13bafc85f9c8e3fa603c93912f55"
+  "0": "Added bootstrap js | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/a9dfce1b9e087fef868c225262361f3660974c3f | a9dfce1b9e087fef868c225262361f3660974c3f",
+  "1": "Recommit | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/aa7c0581422b5c440f6650761834d4c95a2c9e83 | aa7c0581422b5c440f6650761834d4c95a2c9e83",
+  "2": "More mobile styling | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/cd2ecb1b11277e59d506a0e865264bbfd92b67d1 | cd2ecb1b11277e59d506a0e865264bbfd92b67d1",
+  "3": "Aligned navbar on mobile | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/198b5c754f7e568caaf48fd349de147c27c14065 | 198b5c754f7e568caaf48fd349de147c27c14065",
+  "4": "Adjusted image size/res/ and positioning | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/1680fdbfed68d5e83ecb1f4d6888dbf1ef7d6345 | 1680fdbfed68d5e83ecb1f4d6888dbf1ef7d6345",
+  "5": "Finish basic layout of site | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/d670e1551b71acbdf0dfb7492c005a4c6bc6a13a | d670e1551b71acbdf0dfb7492c005a4c6bc6a13a",
+  "6": "Moved bottom navbar a bit | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/9bf2973162efec8a504c78b45fa3158ec28e9ab8 | 9bf2973162efec8a504c78b45fa3158ec28e9ab8",
+  "7": "Added links and background image | Chuck Michael | https://github.com/chuckinabox/chuckinabox.github.io/commit/b6616423bab8f7f391b552d257e27a505965a491 | b6616423bab8f7f391b552d257e27a505965a491",
+  "8": "Changed from name to hello world | chuckinabox | https://github.com/chuckinabox/chuckinabox.github.io/commit/de3334d2fda323ddc4dc9b00e6c0faecb4c832ac | de3334d2fda323ddc4dc9b00e6c0faecb4c832ac",
+  "9": "Initiazied index.html | chuckinabox | https://github.com/chuckinabox/chuckinabox.github.io/commit/a75ea3b377bb35dac16d1fb81ca207b0f577572c | a75ea3b377bb35dac16d1fb81ca207b0f577572c",
+  "10": "Initial commit | chuckinabox | https://github.com/chuckinabox/chuckinabox.github.io/commit/3ceca2aa3bdd892086241496d682d2c7b583289f | 3ceca2aa3bdd892086241496d682d2c7b583289f"
 }
