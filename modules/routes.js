@@ -59,7 +59,7 @@ var routesInit = function () {
   })
 
   routes.post('/', function (req,res){
-    console.log( req);
+    console.log(Object.getOwnPropertyNames(req));
     var _headers = {
       "Content-Type": "text/html",
       "Access-Control-Allow-Origin": "*",
