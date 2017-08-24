@@ -68,7 +68,6 @@ var routesInit = function () {
       data = decodeURIComponent(data);
       data = JSON.parse(data);
       github(data.pusher.name, data.repository.name, function() {
-        res.end('200 OK');
         routes.get['/'](req,res);
       });
 
