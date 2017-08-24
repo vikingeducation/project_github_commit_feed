@@ -64,8 +64,11 @@ var routesInit = function () {
       data += chunck.toString('utf8');
     })
     req.on('end', function(){
-      data = decodeURIComponent(data)
+      data = data.slice(7);
+      data = decodeURIComponent(data);
+      
       console.log(data);
+      res.end('200 OK')
     })
   })
   return routes;
