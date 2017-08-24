@@ -64,6 +64,7 @@ var routesInit = function () {
       data += chunck.toString('utf8');
     })
     req.on('end', function(){
+      data = decodeURIComponent(data)
       console.log(data);
     })
   })
