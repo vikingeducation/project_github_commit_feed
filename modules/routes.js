@@ -66,6 +66,7 @@ var routesInit = function () {
     req.on('end', function(){
       data = data.slice(8);
       data = decodeURIComponent(data);
+      data = JSON.parse(data);
       console.log(data.pusher.name)
       console.log(data.repository.name);
       res.end('200 OK')
