@@ -59,8 +59,12 @@ var routesInit = function () {
   })
 
   routes.post('/', function (req,res){
+    var data = "";
     req.on('data', function(chunck){
-      console.log(chunck);
+      data += chunck.toString('utf8');
+    })
+    req.on('end', function(){
+      console.log(data);
     })
   })
   return routes;
