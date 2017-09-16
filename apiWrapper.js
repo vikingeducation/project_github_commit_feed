@@ -1,18 +1,23 @@
-const token = require("./apikey");
+const ghtoken = require("./apikey");
 var GithubApi = require("github");
-var github = new GithubApi({});
-
-github.authenticate({
-	type: "token",
-	token: token
-});
+var github = new GithubApi();
 
 const apiWrapper = {
+	auth: () => {
+		github.authenticate({
+			type: "token",
+			token: token
+		});
+	},
+
 	returnCommits: (owner, repo) => {
-		github.repos.getCommits({
+		return github.repos.getCommits({
 			owner: owner,
 			repo: repo
-		});
+		}); /*
+			.then(data => {
+				console.log(data);
+			});*/
 	}
 };
 

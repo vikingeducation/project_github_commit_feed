@@ -1,8 +1,8 @@
-const token = require("./apikey");
 const http = require("http");
 const fs = require("fs");
-const commitsData = require("./data/commits");
 const url = require("url");
+const commitsData = require("./data/commits");
+const api = require("./apiWrapper");
 
 const indexHtml = "./public/index.html";
 const urlRegex = /\/commits\?/;
@@ -28,6 +28,9 @@ function handle(req, res) {
 		readAndResHtmlFile(req, res);
 		console.log("found a match");
 		console.log(urlParsedObj);
+		api.returnCommits(urlParsedObj.user, urlParsedObj.repo).then(res => {
+			console.log(res);
+		});
 	} else {
 		readAndResHtmlFile(req, res);
 	}
