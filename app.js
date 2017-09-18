@@ -25,13 +25,22 @@ function handle(req, res) {
 	console.log("url.pathname" + url.pathname);
 
 	if (urlMatchesFormSubmit) {
+		api
+			.returnCommits(urlParsedObj.user, urlParsedObj.repo)
+			.then(fullData => {
+				var scrubbedData = scrubTheData(fullData);
+				return scrubbedData;
+			})
+			.then(scrubbedData => {
+				console.log(scrubbedData);
+			})
+			.catch(error => {
+				console.error(error);
+			});
 		var commitFeed = JSON.stringify(commitsDataFile, null, 2);
 		readAndResHtmlFile(req, res, commitFeed);
 		console.log("found a match");
 		console.log(urlParsedObj);
-		api.returnCommits(urlParsedObj.user, urlParsedObj.repo).then(res => {
-			console.log(res);
-		});
 	} else {
 		var commitFeed = "enter a username and rep";
 		readAndResHtmlFile(req, res, commitFeed);
@@ -41,15 +50,24 @@ function handle(req, res) {
 server.listen(port, host, () => {
 	console.log(`Listening: http://${host}:${port}`);
 });
-/*
-function postParser(req, res) {
-	//body data += lalala
-	console.log(req, "req");
-	console.log(res, "res");
+
+//http://learnjsdata.com/iterate_data.html
+function scrubTheData(fullData) {
+	var scrubbedData = fullData.data.map(function(data, i) {
+		return {
+			index: i + 1,
+			commit: data.commit.message,
+			html_url: data.html_url,
+			author: data.author.login,
+			author_url: data.author.html_url,
+			sha: data.sha
+		};
+	});
+	return scrubbedData;
 }
-*/
+
 function readAndResHtmlFile(req, res, commitFeed) {
-	readHtmlFile(indexHtml).then(data => {
+	readTheFile(indexHtml).then(data => {
 		//var replacedData = JSON.stringify(commitsDataFile, null, 2);
 		var _data = data;
 		_data = _data.replace("{{ commitFeed }}", commitFeed);
@@ -58,7 +76,7 @@ function readAndResHtmlFile(req, res, commitFeed) {
 	});
 }
 
-function readHtmlFile(path) {
+function readTheFile(path) {
 	return new Promise(resolve => {
 		fs.readFile(path, "utf8", (err, data) => {
 			if (err) throw err;
@@ -66,3 +84,5 @@ function readHtmlFile(path) {
 		});
 	});
 }
+
+function writeFile(file) {}
