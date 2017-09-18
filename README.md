@@ -2,7 +2,3 @@
 
 
 Gregory Alford
-
-To run:
-
-cd into project directory and run "node app"
