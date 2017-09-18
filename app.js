@@ -5,6 +5,7 @@ const commitsDataFile = require("./data/commits");
 const api = require("./apiWrapper");
 
 const indexHtml = "./public/index.html";
+const jsonCommitsFile = "./data/commits.json";
 const urlRegex = /\/commits\?user=[a-z]/gi;
 
 var port = process.env.PORT || process.argv[2] || 3000;
@@ -22,25 +23,25 @@ function handle(req, res) {
 	console.log("urlMatchesFormSubmit " + urlMatchesFormSubmit);
 	console.log("req.url " + req.url);
 	console.log("req.method " + req.method);
-	console.log("url.pathname" + url.pathname);
+	console.log("");
 
 	if (urlMatchesFormSubmit) {
 		api
 			.returnCommits(urlParsedObj.user, urlParsedObj.repo)
 			.then(fullData => {
 				var scrubbedData = scrubTheData(fullData);
-				return scrubbedData;
+				return writeFile(jsonCommitsFile, scrubbedData);
 			})
-			.then(scrubbedData => {
-				console.log(scrubbedData);
+			.then(() => {
+				return readTheFile(jsonCommitsFile);
+			})
+			.then(jsonCommitsData => {
+				readAndResHtmlFile(req, res, jsonCommitsData);
 			})
 			.catch(error => {
 				console.error(error);
 			});
-		var commitFeed = JSON.stringify(commitsDataFile, null, 2);
-		readAndResHtmlFile(req, res, commitFeed);
-		console.log("found a match");
-		console.log(urlParsedObj);
+		//console.log(urlParsedObj);
 	} else {
 		var commitFeed = "enter a username and rep";
 		readAndResHtmlFile(req, res, commitFeed);
@@ -85,4 +86,12 @@ function readTheFile(path) {
 	});
 }
 
-function writeFile(file) {}
+function writeFile(path, scrubbedData) {
+	var jsonData = JSON.stringify(scrubbedData, null, 2);
+	return new Promise(resolve => {
+		fs.writeFile(path, jsonData, "utf8", err => {
+			if (err) throw err;
+			resolve();
+		});
+	});
+}

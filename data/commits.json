@@ -1,17 +1,106 @@
-{
-	"Foobar": {
-		"foobar": [
-			{
-				"message": "Update README.md",
-				"author": {
-					"name": "Foobar",
-					"email": "foobar@email.com",
-					"date": "2017-02-16T19:25:15Z"
-				},
-				"url":
-					"https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-				"sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
-			}
-		]
-	}
-}
+[
+  {
+    "index": 1,
+    "commit": "got the data scrubbed",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/ed084727d0f56ff17d13e5826993d3df47ff252b",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "ed084727d0f56ff17d13e5826993d3df47ff252b"
+  },
+  {
+    "index": 2,
+    "commit": "starting to work on scrubbing data",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/4b80cbb4329b9a276f76a6b2c74429ca3ad36a5a",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "4b80cbb4329b9a276f76a6b2c74429ca3ad36a5a"
+  },
+  {
+    "index": 3,
+    "commit": "retrieving and console log data from api",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/f5be6f2d59aa91cdb16d27fde0847ecf2d33a7f3",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "f5be6f2d59aa91cdb16d27fde0847ecf2d33a7f3"
+  },
+  {
+    "index": 4,
+    "commit": "organized a few things",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/7d0c2f4366ad598020e5970dfbda26f3b5172a11",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "7d0c2f4366ad598020e5970dfbda26f3b5172a11"
+  },
+  {
+    "index": 5,
+    "commit": "i got some url data somewhat parsed",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/438cb2eec9daa900c5b922634c614a076fd0284e",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "438cb2eec9daa900c5b922634c614a076fd0284e"
+  },
+  {
+    "index": 6,
+    "commit": "basic server is functioning",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/1fbb7148117e2790cce8e6895f4e35889b031d37",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "1fbb7148117e2790cce8e6895f4e35889b031d37"
+  },
+  {
+    "index": 7,
+    "commit": "commit feed is up",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/cd9081f1c816ef3b875c250393c70d9c59b22a75",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "cd9081f1c816ef3b875c250393c70d9c59b22a75"
+  },
+  {
+    "index": 8,
+    "commit": "html bootstrap form set up",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/751e0f8b938be97e3afa9bac2467cf3ecee146fc",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "751e0f8b938be97e3afa9bac2467cf3ecee146fc"
+  },
+  {
+    "index": 9,
+    "commit": "set up a wrapper",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/fbdf0ea907f05aa30ab4cde912fa828f59fd41df",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "fbdf0ea907f05aa30ab4cde912fa828f59fd41df"
+  },
+  {
+    "index": 10,
+    "commit": "update readme",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/d152722bb3bad21696d242939c9d46b07c40a85f",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "d152722bb3bad21696d242939c9d46b07c40a85f"
+  },
+  {
+    "index": 11,
+    "commit": "set up file structure",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/a6426b215c5d05f0c41934f9ecf020d592d6b4a5",
+    "author": "coelacanth7",
+    "author_url": "https://github.com/coelacanth7",
+    "sha": "a6426b215c5d05f0c41934f9ecf020d592d6b4a5"
+  },
+  {
+    "index": 12,
+    "commit": "Update README.md",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
+    "author": "BideoWego",
+    "author_url": "https://github.com/BideoWego",
+    "sha": "ceec1b2306888905ae12750558706174132a6741"
+  },
+  {
+    "index": 13,
+    "commit": "Initial commit",
+    "html_url": "https://github.com/coelacanth7/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+    "author": "BideoWego",
+    "author_url": "https://github.com/BideoWego",
+    "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+  }
+]
