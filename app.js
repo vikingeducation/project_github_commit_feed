@@ -1,8 +1,8 @@
 const http = require("http");
-const fs = require("fs");
 const url = require("url");
 const commitsDataFile = require("./data/commits");
-const api = require("./apiWrapper");
+const api = require("./modules/apiWrapper");
+const fsOperation = require("./modules/fs_promises");
 
 const indexHtml = "./public/index.html";
 const jsonCommitsFile = "./data/commits.json";
@@ -30,10 +30,10 @@ function handle(req, res) {
 			.returnCommits(urlParsedObj.user, urlParsedObj.repo)
 			.then(fullData => {
 				var scrubbedData = scrubTheData(fullData);
-				return writeFile(jsonCommitsFile, scrubbedData);
+				return fsOperation.writeTheFile(jsonCommitsFile, scrubbedData);
 			})
 			.then(() => {
-				return readTheFile(jsonCommitsFile);
+				return fsOperation.readTheFile(jsonCommitsFile);
 			})
 			.then(jsonCommitsData => {
 				readAndResHtmlFile(req, res, jsonCommitsData);
@@ -68,30 +68,11 @@ function scrubTheData(fullData) {
 }
 
 function readAndResHtmlFile(req, res, commitFeed) {
-	readTheFile(indexHtml).then(data => {
+	fsOperation.readTheFile(indexHtml).then(data => {
 		//var replacedData = JSON.stringify(commitsDataFile, null, 2);
 		var _data = data;
 		_data = _data.replace("{{ commitFeed }}", commitFeed);
 		res.writeHead(200, { "content-Type": "text/html" });
 		res.end(_data);
-	});
-}
-
-function readTheFile(path) {
-	return new Promise(resolve => {
-		fs.readFile(path, "utf8", (err, data) => {
-			if (err) throw err;
-			resolve(data);
-		});
-	});
-}
-
-function writeFile(path, scrubbedData) {
-	var jsonData = JSON.stringify(scrubbedData, null, 2);
-	return new Promise(resolve => {
-		fs.writeFile(path, jsonData, "utf8", err => {
-			if (err) throw err;
-			resolve();
-		});
 	});
 }
