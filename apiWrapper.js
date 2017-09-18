@@ -14,10 +14,7 @@ const apiWrapper = {
 		return github.repos.getCommits({
 			owner: owner,
 			repo: repo
-		}); /*
-			.then(data => {
-				console.log(data);
-			});*/
+		});
 	}
 };
 

@@ -1,11 +1,11 @@
 const http = require("http");
 const fs = require("fs");
 const url = require("url");
-const commitsData = require("./data/commits");
+const commitsDataFile = require("./data/commits");
 const api = require("./apiWrapper");
 
 const indexHtml = "./public/index.html";
-const urlRegex = /\/commits\?/;
+const urlRegex = /\/commits\?user=[a-z]/gi;
 
 var port = process.env.PORT || process.argv[2] || 3000;
 var host = "localhost";
@@ -25,14 +25,16 @@ function handle(req, res) {
 	console.log("url.pathname" + url.pathname);
 
 	if (urlMatchesFormSubmit) {
-		readAndResHtmlFile(req, res);
+		var commitFeed = JSON.stringify(commitsDataFile, null, 2);
+		readAndResHtmlFile(req, res, commitFeed);
 		console.log("found a match");
 		console.log(urlParsedObj);
 		api.returnCommits(urlParsedObj.user, urlParsedObj.repo).then(res => {
 			console.log(res);
 		});
 	} else {
-		readAndResHtmlFile(req, res);
+		var commitFeed = "enter a username and rep";
+		readAndResHtmlFile(req, res, commitFeed);
 	}
 }
 
@@ -46,13 +48,13 @@ function postParser(req, res) {
 	console.log(res, "res");
 }
 */
-function readAndResHtmlFile(req, res) {
+function readAndResHtmlFile(req, res, commitFeed) {
 	readHtmlFile(indexHtml).then(data => {
-		var replacedData = JSON.stringify(commitsData, null, 2);
-		var dataReplacer = data;
-		dataReplacer = data.replace("{{ commitFeed }}", replacedData);
+		//var replacedData = JSON.stringify(commitsDataFile, null, 2);
+		var _data = data;
+		_data = _data.replace("{{ commitFeed }}", commitFeed);
 		res.writeHead(200, { "content-Type": "text/html" });
-		res.end(dataReplacer);
+		res.end(_data);
 	});
 }
 
