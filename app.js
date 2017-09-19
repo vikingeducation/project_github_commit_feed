@@ -8,25 +8,26 @@ const indexHtml = "./public/index.html";
 const jsonCommitsFile = "./data/commits.json";
 const urlRegex = /\/commits\?user=[a-z]/gi;
 
-var _headers = {
-	"Content-Type": "text/html",
-	"Access-Control-Allow-Origin": "*",
-	"Access-Control-Allow-Headers": "Content-Type",
-	"Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
-};
-
 var port = process.env.PORT || process.argv[2] || 3000;
 var host = "localhost";
 
 var server = http.createServer((req, res) => {
-	handle(req, res);
+	postOrGet(req, res);
 });
 
 server.listen(port, host, () => {
 	console.log(`Listening: http://${host}:${port}`);
 });
 
-function handle(req, res) {
+function postOrGet(req, res) {
+	if (req.method == "POST") {
+		handleWebhooks(req, res);
+	} else {
+		handleHtml(req, res);
+	}
+}
+
+function handleHtml(req, res) {
 	var reqUrl = req.url;
 	var urlMatchesFormSubmit = urlRegex.test(req.url);
 	var urlParsedObj = url.parse(reqUrl, true).query;
@@ -57,6 +58,39 @@ function handle(req, res) {
 		var commitFeed = "enter a username and rep";
 		readAndResHtmlFile(req, res, commitFeed);
 	}
+}
+
+function handleWebhooks(req, res) {
+	console.log(req.method);
+
+	var body = "";
+	req.on("data", data => {
+		body += data;
+	});
+
+	req.on("end", () => {
+		var _headers = {
+			"Content-Type": "text/html",
+			"Access-Control-Allow-Origin": "*",
+			"Access-Control-Allow-Headers": "Content-Type",
+			"Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+		};
+		res.writeHead(200, _headers);
+		try {
+			body = decodeURIComponent(body);
+			body = JSON.parse(body.slice(8));
+		} catch (e) {
+			console.error(e);
+		}
+
+		res.end("200 OK");
+
+		api
+			.returnCommits(webhookData.pusher.name, webhookData.repository.name)
+			.then(webhookData => {
+				console.log(webhookData);
+			});
+	});
 }
 
 //http://learnjsdata.com/iterate_data.html
