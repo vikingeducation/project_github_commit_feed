@@ -1,0 +1,28 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-Willenbrink/project_github_commit_feed.git"
+  },
+  "author": "Alex Willenbrink",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-Willenbrink/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/Alex-Willenbrink/project_github_commit_feed#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "github": "^9.2.0",
+    "qs": "^6.5.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "project"
+  ]
+}
