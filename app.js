@@ -93,8 +93,17 @@ function handleWebhooks(req, res) {
 		api
 			.returnCommits(webhookData.username, webhookData.repository)
 			.then(webhookData => {
-				console.log("BODY", body);
-				console.log("webhookData", webhookData);
+				var scrubbedData = scrubTheData(webhookData);
+				return fsOperation.writeTheFile(jsonCommitsFile, scrubbedData);
+			})
+			.then(() => {
+				return fsOperation.readTheFile(jsonCommitsFile);
+			})
+			.then(jsonCommitsData => {
+				readAndResHtmlFile(req, res, jsonCommitsData);
+			})
+			.catch(error => {
+				console.error(error);
 			});
 	});
 }
