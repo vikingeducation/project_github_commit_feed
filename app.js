@@ -8,11 +8,22 @@ const indexHtml = "./public/index.html";
 const jsonCommitsFile = "./data/commits.json";
 const urlRegex = /\/commits\?user=[a-z]/gi;
 
+var _headers = {
+	"Content-Type": "text/html",
+	"Access-Control-Allow-Origin": "*",
+	"Access-Control-Allow-Headers": "Content-Type",
+	"Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
+
 var port = process.env.PORT || process.argv[2] || 3000;
 var host = "localhost";
 
 var server = http.createServer((req, res) => {
 	handle(req, res);
+});
+
+server.listen(port, host, () => {
+	console.log(`Listening: http://${host}:${port}`);
 });
 
 function handle(req, res) {
@@ -47,10 +58,6 @@ function handle(req, res) {
 		readAndResHtmlFile(req, res, commitFeed);
 	}
 }
-
-server.listen(port, host, () => {
-	console.log(`Listening: http://${host}:${port}`);
-});
 
 //http://learnjsdata.com/iterate_data.html
 function scrubTheData(fullData) {
