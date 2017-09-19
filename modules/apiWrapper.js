@@ -6,7 +6,7 @@ const apiWrapper = {
 	auth: () => {
 		github.authenticate({
 			type: "token",
-			token: token
+			token: ghtoken
 		});
 	},
 
