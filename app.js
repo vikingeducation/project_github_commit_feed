@@ -85,10 +85,16 @@ function handleWebhooks(req, res) {
 
 		res.end("200 OK");
 
+		var webhookData = {
+			username: body.pusher.name,
+			repository: body.repository.name
+		};
+
 		api
-			.returnCommits(webhookData.pusher.name, webhookData.repository.name)
+			.returnCommits(webhookData.username, webhookData.repository)
 			.then(webhookData => {
-				console.log(webhookData);
+				console.log("BODY", body);
+				console.log("webhookData", webhookData);
 			});
 	});
 }
