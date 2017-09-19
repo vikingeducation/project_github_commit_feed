@@ -83,8 +83,6 @@ function handleWebhooks(req, res) {
 			console.error(e);
 		}
 
-		res.end("200 OK");
-
 		var webhookData = {
 			username: body.pusher.name,
 			repository: body.repository.name
