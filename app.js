@@ -76,12 +76,9 @@ function handleWebhooks(req, res) {
 			"Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
 		};
 		res.writeHead(200, _headers);
-		try {
-			body = decodeURIComponent(body);
-			body = JSON.parse(body.slice(8));
-		} catch (e) {
-			console.error(e);
-		}
+
+		body = decodeURIComponent(body);
+		body = JSON.parse(body.slice(8));
 
 		var webhookData = {
 			username: body.pusher.name,
