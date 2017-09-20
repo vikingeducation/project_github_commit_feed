@@ -93,7 +93,8 @@ function readAndResHtmlFile(req, res, commitFeed) {
 		_data = _data.replace("{{ commitFeed }}", commitFeed);
 		res.writeHead(200, { "content-Type": "text/html" });
 		res.end(_data);
-		console.log(_data);
+		//console.log(_data);
+		console.log(req.url);
 	});
 }
 
