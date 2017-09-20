@@ -51,7 +51,7 @@ routes.handleWebhooks = function(req, res) {
 		body += data;
 	});
 
-	req.end(() => {
+	req.on("end", () => {
 		var _headers = {
 			"Content-Type": "text/html",
 			"Access-Control-Allow-Origin": "*",
@@ -92,7 +92,7 @@ function readAndResHtmlFile(req, res, commitFeed) {
 		var _data = data;
 		_data = _data.replace("{{ commitFeed }}", commitFeed);
 		res.writeHead(200, { "content-Type": "text/html" });
-		res.end(_data);
+		res.send(_data);
 		//console.log(_data);
 		console.log(req.url);
 	});
