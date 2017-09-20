@@ -51,7 +51,7 @@ routes.handleWebhooks = function(req, res) {
 		body += data;
 	});
 
-	req.on("end", () => {
+	req.end(() => {
 		var _headers = {
 			"Content-Type": "text/html",
 			"Access-Control-Allow-Origin": "*",
