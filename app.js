@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const commitFile = require('./data/commits');
 
 const port = 3000;
 const host = 'localhost';
@@ -13,6 +14,8 @@ var server = http.createServer((req, res) => {
       res.writeHead(200, {
         'Content-Type': 'text/html'
       });
+      var commitFeed = JSON.stringify(commitFile, null, 2);
+      data = data.replace('{{ commitFeed }}', commitFeed);
       res.end(data);
     }
   });
