@@ -2,7 +2,7 @@
   "name": "github_commit_feed",
   "version": "1.0.0",
   "description": "Project for Viking Code School",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
