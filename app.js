@@ -30,7 +30,10 @@ var server = http.createServer((req, res) => {
 
           req.on('end', () => {
             body = JSON.parse(req.body);
-            params = { owner: body.repository.owner.login, repo: body.repository.name };
+            var owner = body.repository.owner.login;
+            var repo = body.repository.name;
+            console.log(`Recieved webhook push data from repository - Owner: ${ owner }, Repo Name: ${ repo } `);
+            params = { owner: owner, repo: repo };
             resolve(params);
           });
         } else {
