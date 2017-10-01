@@ -1,16 +1,7 @@
-var Github = require('github');
-var env = require('node-env-file');
-require('dotenv').config();
-var github = new Github()
-github.authenticate({
-  type:'token',
-  token: process.env.TOKEN
-})
-var getCommits = github.repos.getCommits({
-  owner: "promilo",
-  repo: "github-avatar-downloader"
-})
+const git = require("./modules/github");
 
-getCommits.then( commit => {
-  console.log(commit)
-})
+// User can insert their own api key here locally if they want to.
+git.authenticate();
+git.getCommits("promilo", "github-avatar-downloader").then(
+  commit => console.log(commit.data[0])
+)
