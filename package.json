@@ -1,0 +1,24 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "Milind Shah",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/promilo/project_github_commit_feed.git"
+  },
+  "author": "milind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/promilo/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/promilo/project_github_commit_feed#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "github": "^11.0.0",
+    "node-env-file": "^0.1.8"
+  }
+}
