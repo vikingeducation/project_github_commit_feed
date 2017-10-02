@@ -15,12 +15,15 @@ const port = 3000;
 // wrapper.getCommits(github, "maddiereddy", "project_what_have_you_done");
 
 const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  
-  let data = fs.readFileSync(htmlFilePath);
-  data = data.toString().replace('{{ commitFeed }}', JSON.stringify(feed, null, '  '));
-  res.end(data);
+  let request = url.parse(req.url, true);
+  if (request.pathname !== '/stylesheets/style.css') {
+    console.log(`Username: ${request.query.user} \nRepo: ${request.query.repo} `);
+  }
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
+    let data = fs.readFileSync(htmlFilePath);
+    data = data.toString().replace('{{ commitFeed }}', JSON.stringify(feed, null, '  '));
+    res.end(data);
 });
 
 
