@@ -3,7 +3,8 @@ const url = require('url');
 const fs = require('fs');
 
 const wrapper = require('./gitHubApiWrapper');
-let htmlFilePath = './public/index.html';
+const feed = require('./data/commits.json');
+const htmlFilePath = './public/index.html';
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -16,7 +17,10 @@ const port = 3000;
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');
-  res.end(fs.readFileSync(htmlFilePath));
+  
+  let data = fs.readFileSync(htmlFilePath);
+  data = data.toString().replace('{{ commitFeed }}', JSON.stringify(feed, null, '  '));
+  res.end(data);
 });
 
 
