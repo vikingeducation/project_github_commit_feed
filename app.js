@@ -1,18 +1,25 @@
-var GitHubApi = require("github");
-const GITHUB_API_KEY = require('./config.json').token;
+const wrapper = require('./gitHubApiWrapper');
 
-var github = new GitHubApi({});
+let github = wrapper.init();
 
-// TODO: optional authentication here depending on desired endpoints. See below in README.
-// user token
-github.authenticate({
-    type: "token",
-    token: GITHUB_API_KEY
-});
+wrapper.authenticate(github);
+wrapper.getCommits(github, "maddiereddy", "project_what_have_you_done");
 
-github.repos.getCommits({
-    owner: "maddiereddy", 
-    repo: "assignment_building_the_express_router"
-}, function(err, res) {
-    console.log(JSON.stringify(res, null , "  "));
-});
+
+// const GitHubApi = require("github");
+// const GITHUB_API_KEY = require('./config.json').token;
+
+// let github = new GitHubApi();
+
+// github.authenticate({
+//     type: "token",
+//     token: GITHUB_API_KEY
+// });
+
+// github.repos.getCommits({
+//   owner: "maddiereddy", 
+//   repo: "project_what_have_you_done"
+// }, function(err, res) {
+//   if (err) console.log(err);
+//   else console.log(JSON.stringify(res, null , "  "));
+// });
