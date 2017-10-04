@@ -41,6 +41,7 @@ function scrubData(commits) {
 
   });
 
+  // call savedFeed here
   if (savedFeed.commits) {
     // if existing saved feed, push new feed
     results.forEach((element) => {
@@ -59,6 +60,8 @@ function scrubData(commits) {
 
   return savedFeed;
 }
+
+
 
 function renderHTML(res, feed) {
   
