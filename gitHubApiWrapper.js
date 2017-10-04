@@ -1,57 +1,74 @@
-const GitHubApi = require("github");
+const GitHub = require("github");
 const GITHUB_API_KEY = require('./config.json').token;
 const fs = require('fs');
-let feed = require('./data/commits');
+let savedFeed = require('./data/commits');
 
 let wrapper = {};
+let github;
 
 wrapper.init = () => {
-	let github = new GitHubApi();
-	return github;
+	github = new GitHub();
 };
 
-wrapper.authenticate = (github) => {
+wrapper.authenticate = () => {
 	github.authenticate({
     type: "token",
     token: GITHUB_API_KEY
   });
 };
 
-wrapper.getCommits = (github, username, repo) => {
+wrapper.getCommits = (username, repo, res) => {
 	github.repos.getCommits({
   	owner: username, 
   	repo: repo
-	}, function(err, res) {
+	}, function(err, response) {
   	if (err) console.log(err);
-  	else scrubData(res.data);
+  	else renderHTML(res, scrubData(response.data));
 	});
 };
 
-scrubData = (commits) => {
+function scrubData(commits) {
 
   let results = commits.map((each) => {
+
     let scrubbed = {}; 
     scrubbed.message = each.commit.message;
     scrubbed.author = each.commit.author;
     scrubbed.url = each.html_url;
     scrubbed.sha = each.sha;
+
     return scrubbed;
+
   });
 
-  if (feed.commits) {
+  if (savedFeed.commits) {
+    // if existing saved feed, push new feed
     results.forEach((element) => {
-      // check if record (by sha) already exists 
-      feed.commits.push(element);
+      savedFeed.commits.push(element);
     });
 
   } else {
-    feed.commits = results;
-
+    // if empty, just assign new feed to saved feed
+    savedFeed.commits = results;
   }
 
-  fs.writeFileSync('./data/commits.json', JSON.stringify(feed, null, 2), (err) => {
+  fs.writeFileSync('./data/commits.json', JSON.stringify(savedFeed, null, 2), (err) => {
     if (err) throw err;
     console.log("saved commits appended successfully");
+  });
+
+  return savedFeed;
+}
+
+function renderHTML(res, feed) {
+  
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/html');
+
+  fs.readFile('./public/index.html', 'utf8', (err, data) => {
+      if (err) throw err;
+      data = data.replace('{{ commitFeed }}', JSON.stringify(feed, null, 2));
+      res.write(data);
   });
 }
 

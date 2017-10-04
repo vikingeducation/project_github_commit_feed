@@ -3,7 +3,6 @@ const url = require('url');
 const fs = require('fs');
 
 const wrapper = require('./gitHubApiWrapper');
-const htmlFilePath = './public/index.html';
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -11,25 +10,32 @@ const port = 3000;
 let github = wrapper.init();
 wrapper.authenticate(github);
 
-let feed = require('./data/commits.json');
-let data = fs.readFileSync(htmlFilePath);
+let savedFeed = require('./data/commits.json');
 
 const server = http.createServer((req, res) => {
   let request = url.parse(req.url, true);
 
-  // error check user and repo
-  let user = request.query.user;
-  let repo = request.query.repo;
+  // show existing saved commits feed
+  if (request.pathname === '/') {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/html');
 
-  if (checkValid(user) && checkValid(repo)) 
-    wrapper.getCommits(github, user.trim(), repo.trim());
+    fs.readFile('./public/index.html', 'utf8', (err, data) => {
+        if (err) throw err;
+        data = data.replace('{{ commitFeed }}', JSON.stringify(savedFeed, null, 2));
+        res.write(data);
+    });
 
-  console.log('hit me');
+  } else if (request.pathname === '/commits') {
+    // get user entries for hitting the gihub api and getting new feed
+    let user = request.query.user;
+    let repo = request.query.repo;
 
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  data = data.toString().replace('{{ commitFeed }}', JSON.stringify(feed, null, 2));
-  res.end(data);
+    // error check user and repo
+    if (checkValid(user) && checkValid(repo)) {
+      wrapper.getCommits(user.trim(), repo.trim(), res);
+    }
+  }
 });
 
 server.listen(port, hostname, () => {
@@ -46,24 +52,3 @@ function checkValid(str) {
     return false;
   }
 }
-
-
-
-
-// const GitHubApi = require("github");
-// const GITHUB_API_KEY = require('./config.json').token;
-
-// let github = new GitHubApi();
-
-// github.authenticate({
-//     type: "token",
-//     token: GITHUB_API_KEY
-// });
-
-// github.repos.getCommits({
-//   owner: "maddiereddy", 
-//   repo: "project_what_have_you_done"
-// }, function(err, res) {
-//   if (err) console.log(err);
-//   else console.log(JSON.stringify(res, null , "  "));
-// });
