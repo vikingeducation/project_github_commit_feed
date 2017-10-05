@@ -41,10 +41,26 @@ function scrubData(commits) {
 
   });
 
+  let savedCommits = checkSaved(results);
+
+  fs.writeFileSync('./data/commits.json', JSON.stringify(savedCommits, null, 2), (err) => {
+    if (err) throw err;
+    console.log("saved commits appended successfully");
+  });
+
+  return savedCommits;
+}
+
+function checkSaved(commits) {
+
+  // neeed to check if already in the commits.json
+  // compare sha to see if exists 
+
   // call savedFeed here
   if (savedFeed.commits) {
+
     // if existing saved feed, push new feed
-    results.forEach((element) => {
+    commits.forEach((element) => {
       savedFeed.commits.push(element);
     });
 
@@ -53,15 +69,8 @@ function scrubData(commits) {
     savedFeed.commits = results;
   }
 
-  fs.writeFileSync('./data/commits.json', JSON.stringify(savedFeed, null, 2), (err) => {
-    if (err) throw err;
-    console.log("saved commits appended successfully");
-  });
-
   return savedFeed;
 }
-
-
 
 function renderHTML(res, feed) {
   

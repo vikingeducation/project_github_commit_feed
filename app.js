@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const wrapper = require('./gitHubApiWrapper');
 
-const hostname = '127.0.0.1';
+const hostname = 'localhost';
 const port = 3000;
 
 let github = wrapper.init();
@@ -35,7 +35,17 @@ const server = http.createServer((req, res) => {
     if (checkValid(user) && checkValid(repo)) {
       wrapper.getCommits(user.trim(), repo.trim(), res);
     }
+  } else {
+    res.statusCode = 200;
+
+    fs.readFile('./public/index.html', 'utf8', (err, data) => {
+        if (err) throw err;
+        data = data.replace('{{ commitFeed }}', JSON.stringify(savedFeed, null, 2));
+        res.write(data);
+    });
   }
+
+  res.end();
 });
 
 server.listen(port, hostname, () => {
