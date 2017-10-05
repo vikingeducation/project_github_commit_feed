@@ -1,0 +1,27 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomahau/project_github_commit_feed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomahau/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/thomahau/project_github_commit_feed#readme",
+  "dependencies": {
+    "github": "^11.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
