@@ -22,10 +22,13 @@ wrapper.getCommits = (username, repo, res) => {
   	owner: username, 
   	repo: repo
 	}, function(err, response) {
-  	if (err) console.log(err);
-  	else renderHTML(res, scrubData(response.data));
+  	if (err) throw err;  //handle error
+  	else refreshHTML(res, scrubData(response.data));
 	});
 };
+
+
+///////////////////////////////////////////////////////////////////
 
 function scrubData(commits) {
 
@@ -52,27 +55,31 @@ function scrubData(commits) {
 }
 
 function checkSaved(commits) {
+  commits.forEach((element) => {
+    let name = element.author.name;
 
-  // neeed to check if already in the commits.json
-  // compare sha to see if exists 
+    if (savedFeed[name]) {
+      let noMatch = true;
 
-  // call savedFeed here
-  if (savedFeed.commits) {
+      savedFeed[name].forEach((each) => {
+        if (each.sha === element.sha) {
+          noMatch = false;
+        }
+      });
 
-    // if existing saved feed, push new feed
-    commits.forEach((element) => {
-      savedFeed.commits.push(element);
-    });
-
-  } else {
-    // if empty, just assign new feed to saved feed
-    savedFeed.commits = results;
-  }
+      if (noMatch) {
+        savedFeed[name].unshift(element);
+      }
+    } else {
+      savedFeed[name] = [element];
+    }
+  });
 
   return savedFeed;
 }
 
-function renderHTML(res, feed) {
+
+function refreshHTML(res, feed) {
   
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/html');

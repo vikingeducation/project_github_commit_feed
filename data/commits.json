@@ -1,24 +1,260 @@
 {
-  "commits": [
+  "Kit Langton": [
     {
-      "message": "Create README.md",
+      "message": "Initial commit",
       "author": {
-        "name": "maddiereddy",
-        "email": "maddiereddy@users.noreply.github.com",
-        "date": "2015-07-25T01:51:49Z"
+        "name": "Kit Langton",
+        "email": "kitlangton@gmail.com",
+        "date": "2017-02-08T21:01:27Z"
       },
-      "url": "https://github.com/maddiereddy/MovieTrailer/commit/ed6459293a55c6899db9eeb7df69794e2163405a",
-      "sha": "ed6459293a55c6899db9eeb7df69794e2163405a"
+      "url": "https://github.com/vikingeducation/project_what_have_you_done/commit/2ac8b06df82cfe083069cffd84d04f26b89be891",
+      "sha": "2ac8b06df82cfe083069cffd84d04f26b89be891"
     },
     {
-      "message": "Add files in MovieTrailer",
+      "message": "Initial commit",
       "author": {
-        "name": "Madhavi",
-        "email": "maddiereddy@gmail.com",
-        "date": "2015-07-25T01:48:34Z"
+        "name": "Kit Langton",
+        "email": "kitlangton@gmail.com",
+        "date": "2017-02-10T18:45:02Z"
       },
-      "url": "https://github.com/maddiereddy/MovieTrailer/commit/cc3e275950b71164c59aecd43c2477b7eb07e1c2",
-      "sha": "cc3e275950b71164c59aecd43c2477b7eb07e1c2"
+      "url": "https://github.com/vikingeducation/assignment_githuh/commit/41728d25e3922b822524a1aab369774a38583360",
+      "sha": "41728d25e3922b822524a1aab369774a38583360"
+    }
+  ],
+  "Chris Scavello": [
+    {
+      "message": "Initial commit",
+      "author": {
+        "name": "Chris Scavello",
+        "email": "bideowego@gmail.com",
+        "date": "2017-02-21T16:47:14Z"
+      },
+      "url": "https://github.com/vikingeducation/project_github_commit_feed/commit/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+      "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+    },
+    {
+      "message": "Update README.md",
+      "author": {
+        "name": "Chris Scavello",
+        "email": "bideowego@gmail.com",
+        "date": "2017-02-21T16:48:57Z"
+      },
+      "url": "https://github.com/vikingeducation/project_github_commit_feed/commit/ceec1b2306888905ae12750558706174132a6741",
+      "sha": "ceec1b2306888905ae12750558706174132a6741"
+    },
+    {
+      "message": "Initial commit",
+      "author": {
+        "name": "Chris Scavello",
+        "email": "bideowego@gmail.com",
+        "date": "2017-03-05T23:32:22Z"
+      },
+      "url": "https://github.com/vikingeducation/assignment_building_the_express_router/commit/fe5365860413daa56107e7acc55ce85f83b57045",
+      "sha": "fe5365860413daa56107e7acc55ce85f83b57045"
+    },
+    {
+      "message": "Update README.md",
+      "author": {
+        "name": "Chris Scavello",
+        "email": "bideowego@gmail.com",
+        "date": "2017-03-05T23:32:57Z"
+      },
+      "url": "https://github.com/vikingeducation/assignment_building_the_express_router/commit/33034e9cde72528af78906518180c5131558dfb8",
+      "sha": "33034e9cde72528af78906518180c5131558dfb8"
+    }
+  ],
+  "maddiereddy": [
+    {
+      "message": "completed getting commits from the API",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T03:57:23Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/269324d507a64b0cb92a4e0aebb05da005ac5487",
+      "sha": "269324d507a64b0cb92a4e0aebb05da005ac5487"
+    },
+    {
+      "message": "completed creating api wrapper",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T15:34:30Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/d360980ddf5bed30dd4ded7ac207e283cd101e67",
+      "sha": "d360980ddf5bed30dd4ded7ac207e283cd101e67"
+    },
+    {
+      "message": "fixed merge problems",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T15:43:39Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/23cf06fed87b993ff20ae0f2f182e6296975dda6",
+      "sha": "23cf06fed87b993ff20ae0f2f182e6296975dda6"
+    },
+    {
+      "message": "completed api wrapper",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T15:45:14Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/91f84971a9346566e7590aacd5848c61a637a2d5",
+      "sha": "91f84971a9346566e7590aacd5848c61a637a2d5"
+    },
+    {
+      "message": "completed form with dummy data",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T17:36:47Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/a75e60230966819dfc38d5e97ec28308f6ea6263",
+      "sha": "a75e60230966819dfc38d5e97ec28308f6ea6263"
+    },
+    {
+      "message": "completed initial server setup",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T19:15:38Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/0b4aca600e3aaea21cf1c9be22f804648970b805",
+      "sha": "0b4aca600e3aaea21cf1c9be22f804648970b805"
+    },
+    {
+      "message": "completed displaying dynamic data",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T19:52:56Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/13dc2c14c094fab5b4959463cb1f033b17c41978",
+      "sha": "13dc2c14c094fab5b4959463cb1f033b17c41978"
+    },
+    {
+      "message": "completed parsing form data",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T20:51:11Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/701603a9c63160202eb88617830cb6a2f1ad73fc",
+      "sha": "701603a9c63160202eb88617830cb6a2f1ad73fc"
+    },
+    {
+      "message": "completed connecting form with Git API Wrapper",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-02T21:02:43Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/89e01bcb194f65b794b9f1cf38931e0d47056871",
+      "sha": "89e01bcb194f65b794b9f1cf38931e0d47056871"
+    },
+    {
+      "message": "html page not getting refreshed with new feed",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-04T06:07:46Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/e6e39d38ec76b2c47ea3c8a2b8a55cb4cc9d33b6",
+      "sha": "e6e39d38ec76b2c47ea3c8a2b8a55cb4cc9d33b6"
+    },
+    {
+      "message": "completed scrubbing and logging data",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-04T07:20:30Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/88277f654301af5ea05d11e4ee504b3d602eaf56",
+      "sha": "88277f654301af5ea05d11e4ee504b3d602eaf56"
+    },
+    {
+      "message": "testing webhook",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-04T07:48:17Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/d3f37f51778a54523600d38c34c6737b0564dbfc",
+      "sha": "d3f37f51778a54523600d38c34c6737b0564dbfc"
+    },
+    {
+      "message": "testing webhooks again",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-04T07:59:39Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/907754f8b95ddd76b323e892fcea23c5574817b2",
+      "sha": "907754f8b95ddd76b323e892fcea23c5574817b2"
+    },
+    {
+      "message": "Another webhooks test",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-04T08:11:16Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/7e464e3676eb8b506cbdbecc3b72df274740e081",
+      "sha": "7e464e3676eb8b506cbdbecc3b72df274740e081"
+    },
+    {
+      "message": "another webhooks test",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-04T15:46:59Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/6b1025c1a24fe6df170d11667198a7af8cd13df7",
+      "sha": "6b1025c1a24fe6df170d11667198a7af8cd13df7"
+    },
+    {
+      "message": "completed setting up webhooks",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-05T01:25:46Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/2ffb5cba3c3e94bf896d49acb822f3241cffb052",
+      "sha": "2ffb5cba3c3e94bf896d49acb822f3241cffb052"
+    },
+    {
+      "message": "testing unpacking webhook data",
+      "author": {
+        "name": "maddiereddy",
+        "email": "maddiereddy@gmail.com",
+        "date": "2017-10-05T02:06:34Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/ddf43444da6736b0c155cb9ffdd6576fa09e6554",
+      "sha": "ddf43444da6736b0c155cb9ffdd6576fa09e6554"
+    }
+  ],
+  "Madhavi Rajavasireddy": [
+    {
+      "message": "Added name",
+      "author": {
+        "name": "Madhavi Rajavasireddy",
+        "email": "maddiereddy@users.noreply.github.com",
+        "date": "2017-10-02T00:45:40Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/6a749af0d4c4651349f8e08cd3af1eb8869ccd37",
+      "sha": "6a749af0d4c4651349f8e08cd3af1eb8869ccd37"
+    },
+    {
+      "message": "Delete config.json",
+      "author": {
+        "name": "Madhavi Rajavasireddy",
+        "email": "maddiereddy@users.noreply.github.com",
+        "date": "2017-10-02T14:57:56Z"
+      },
+      "url": "https://github.com/maddiereddy/project_github_commit_feed/commit/8f456f2aff561b2a7d4b7a6d8efa4ab9447d788b",
+      "sha": "8f456f2aff561b2a7d4b7a6d8efa4ab9447d788b"
     }
   ]
 }
