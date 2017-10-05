@@ -12,6 +12,13 @@ wrapper.authenticate(github);
 
 let savedFeed = require('./data/commits.json');
 
+let _headers = {
+  "Content-Type": "text/html",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
+
 const server = http.createServer((req, res) => {
   let request = url.parse(req.url, true);
 
@@ -35,6 +42,31 @@ const server = http.createServer((req, res) => {
     if (checkValid(user) && checkValid(repo)) {
       wrapper.getCommits(user.trim(), repo.trim(), res);
     }
+  } else if (request.pathname === '/github/webhooks' && req.method === 'POST') {
+
+    res.writeHead(200, _headers);
+
+    let p = new Promise((resolve) => {
+        extractPostData(req, resolve);
+    });
+
+    p.then((data) => {
+      console.log(data);
+
+      let user = data.pusher.name;
+      let repo = data.repository.name;
+
+      // error check user and repo
+      if (checkValid(user) && checkValid(repo)) {
+        wrapper.getCommits(user.trim(), repo.trim(), res);
+      }
+      
+      res.end('200 OK');
+    })
+    .catch((err) => {
+        console.log(err);
+    });
+
   } else {
     res.statusCode = 200;
 
@@ -43,14 +75,31 @@ const server = http.createServer((req, res) => {
         data = data.replace('{{ commitFeed }}', JSON.stringify(savedFeed, null, 2));
         res.write(data);
     });
+
+    res.end();
   }
 
-  res.end();
+  
 });
 
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
+
+//Get data from the requested objected and attach it to the requested object body
+function extractPostData(req, done) {
+    let body = '';
+
+    req.on('data', (data) => {
+        body += data;
+    });
+
+    req.on('end', () => {
+        let result = JSON.parse(decodeURIComponent(body).slice(8)); //remove payload= which is a length of 8
+        console.log(result);
+        done(result);
+    });
+}
 
 
 function checkValid(str) {
