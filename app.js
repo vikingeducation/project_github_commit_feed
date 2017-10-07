@@ -1,11 +1,15 @@
 const http = require('http');
 const fs = require('fs');
+const url = require('url');
 let commitFeed = require('./data/commits');
 
 const port = process.env.PORT || 3000;
 const host = 'localhost';
 
 const server = http.createServer((req, res) => {
+  const urlObj = url.parse(req.url, true);
+  console.log(urlObj.query.user);
+  console.log(urlObj.query.repo);
   fs.readFile('./public/index.html', 'utf8', (err, data) => {
     if (err) {
       res.writeHead(404);
