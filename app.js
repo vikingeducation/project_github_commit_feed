@@ -1,5 +1,6 @@
 const http = require('http');
 const fs = require('fs');
+const commits = require('./data/commits.json');
 
 
 const server = http.createServer((req, res) => {
@@ -8,6 +9,10 @@ const server = http.createServer((req, res) => {
       res.statusCode = 404;
       res.end('Not Found.');
     }
+
+    data = data.toString();
+    const commitsStr = JSON.stringify(commits, null, 2);
+    data = data.replace('{{ commitFeed }}', commitsStr);
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
