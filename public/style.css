@@ -39,3 +39,10 @@ button {
 .form-row {
   margin-bottom: 15px;
 }
+
+
+#commit-feed {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
