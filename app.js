@@ -1,24 +1,10 @@
 const http = require('http');
 const fs = require('fs');
-const commits = require('./data/commits.json');
+const router = require('./src/router.js');
 
 
-const server = http.createServer((req, res) => {
-  fs.readFile('./public/index.html', (err, data) => {
-    if (err) {
-      res.statusCode = 404;
-      res.end('Not Found.');
-    }
+const server = http.createServer(router.handleReq);
 
-    data = data.toString();
-    const commitsStr = JSON.stringify(commits, null, 2);
-    data = data.replace('{{ commitFeed }}', commitsStr);
-
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
-    res.end(data);
-  });
-});
 
 
 server.listen(3000, () => {

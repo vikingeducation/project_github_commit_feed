@@ -1,6 +1,6 @@
 const Github = require('github');
 const github = new Github();
-const userToken = require('./config.js');
+const userToken = require('../config.js');
 
 
 github.authenticate({
