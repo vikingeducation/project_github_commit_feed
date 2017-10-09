@@ -30,6 +30,7 @@ const server = http.createServer((req, res) => {
       buffer += data.toString()
     })
     req.on("end", () => {
+      buffer = decodeURI(buffer)
       data = JSON.parse(buffer)
       console.log(data)
       var name = data.pusher.name
