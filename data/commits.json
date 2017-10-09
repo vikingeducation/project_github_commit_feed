@@ -1,5 +1,11 @@
 [
   {
+    "message": "its working",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/12f388d9985c682042cccf8f057132bb6f34daf8",
+    "sha": "12f388d9985c682042cccf8f057132bb6f34daf8"
+  },
+  {
     "message": "try again",
     "author": "promilo",
     "url": "https://github.com/promilo/project_github_commit_feed/commit/314d91cc659ba29a3423ca11e19375794a417027",
@@ -172,11 +178,5 @@
     "author": "promilo",
     "url": "https://github.com/promilo/project_github_commit_feed/commit/8d44b6a7aa7aa795910000eb771e6deddc876d27",
     "sha": "8d44b6a7aa7aa795910000eb771e6deddc876d27"
-  },
-  {
-    "message": "Added the pre dummy jason tag",
-    "author": "promilo",
-    "url": "https://github.com/promilo/project_github_commit_feed/commit/1fddfe42db2ad33e590f7a4d7779ad58d8fc5ef9",
-    "sha": "1fddfe42db2ad33e590f7a4d7779ad58d8fc5ef9"
   }
 ]

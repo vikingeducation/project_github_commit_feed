@@ -35,6 +35,7 @@ const server = http.createServer((req, res) => {
       console.log(data)
       var name = data.pusher.name
       var repo = data.repository.name;
+      //TODO: Figure out the way to not repeat the the getcommits code
       github.getCommits(name, repo).then( gitcommits =>{
         gitcommits = gitcommits.data.map(gitcommit => {
           return {
