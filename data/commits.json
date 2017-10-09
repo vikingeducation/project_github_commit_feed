@@ -1,182 +1,182 @@
 [
   {
-    "message": "updated readme to be more specific on how to run this application.",
+    "message": "Added readme for mobile",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/9edd461e5722a041a31c2ce63d1a4eedd340d19a",
+    "sha": "9edd461e5722a041a31c2ce63d1a4eedd340d19a"
+  },
+  {
+    "message": "Update README.md",
     "author": "Milind Shah",
-    "url": "https://github.com/promilo/Chatty/commit/a8f15831ccde05a67b6864fe3f5129ea9941a088",
-    "sha": "a8f15831ccde05a67b6864fe3f5129ea9941a088"
+    "url": "https://github.com/promilo/Waundr/commit/6a5a8eb49cd513e3292a72eae7964332c04b4415",
+    "sha": "6a5a8eb49cd513e3292a72eae7964332c04b4415"
   },
   {
-    "message": "Finished randomizing colorss for every user",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/96cc00bc701f62fc1e4d487b1ac8a4ff15d3b2ed",
-    "sha": "96cc00bc701f62fc1e4d487b1ac8a4ff15d3b2ed"
+    "message": "modified readme",
+    "author": "Arjun",
+    "url": "https://github.com/promilo/Waundr/commit/64ae4f42df6ec6d7bb3a23710cf42a4725b13237",
+    "sha": "64ae4f42df6ec6d7bb3a23710cf42a4725b13237"
   },
   {
-    "message": "Fixed the message list component",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/4dd52fd785f39102c6284d03cd92948c2ec759cf",
-    "sha": "4dd52fd785f39102c6284d03cd92948c2ec759cf"
+    "message": "Update README.md",
+    "author": "Raymond Chow",
+    "url": "https://github.com/promilo/Waundr/commit/84cf7c3a6329103fb1dbbdfd0843476144eb842c",
+    "sha": "84cf7c3a6329103fb1dbbdfd0843476144eb842c"
   },
   {
-    "message": "Added package.json file for dependendencies",
+    "message": "Edited the readme file so that it can read the gifs",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/9d37cc13e8caec3cbfa0f729a6acef7794d86cf1",
-    "sha": "9d37cc13e8caec3cbfa0f729a6acef7794d86cf1"
+    "url": "https://github.com/promilo/Waundr/commit/3284859eb6a9426b65d65c75e93e7d314bbdd7f5",
+    "sha": "3284859eb6a9426b65d65c75e93e7d314bbdd7f5"
+  },
+  {
+    "message": "Edited the readme file so that it can read the gifs",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/4d88318d8776b82a3a442cd1dbb1bcf41438b5ba",
+    "sha": "4d88318d8776b82a3a442cd1dbb1bcf41438b5ba"
+  },
+  {
+    "message": "Edited the readme file so that it can read the gifs",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/58901db34bf41c9fc63b01d9c5a43de19487547c",
+    "sha": "58901db34bf41c9fc63b01d9c5a43de19487547c"
+  },
+  {
+    "message": "Added create marker.gif",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/bb25c13c63d4e234cc05f7af85286d464751b9e9",
+    "sha": "bb25c13c63d4e234cc05f7af85286d464751b9e9"
+  },
+  {
+    "message": "Adding meetup gifs",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/25d49ed251a8ee3b0c2aaa5ffbef4f35a5df3fa1",
+    "sha": "25d49ed251a8ee3b0c2aaa5ffbef4f35a5df3fa1"
+  },
+  {
+    "message": "Adding filter",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/e696427c484ba64c98d677f7e669d6cd9d95ead8",
+    "sha": "e696427c484ba64c98d677f7e669d6cd9d95ead8"
+  },
+  {
+    "message": "Testing the gif v3",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/02f945da13f2075c61399137d502bc6fb7386b48",
+    "sha": "02f945da13f2075c61399137d502bc6fb7386b48"
+  },
+  {
+    "message": "Testing the gif v2",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/3fa7125867b67d72bfb13a2cb13b231ddf52d4ce",
+    "sha": "3fa7125867b67d72bfb13a2cb13b231ddf52d4ce"
+  },
+  {
+    "message": "Testing the gif",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/894692564afe68695eb15f4bb14b135b7693708d",
+    "sha": "894692564afe68695eb15f4bb14b135b7693708d"
+  },
+  {
+    "message": "Added photos folder",
+    "author": "promilo",
+    "url": "https://github.com/promilo/Waundr/commit/5c27f8d02777a26427b592607dcaa96ea38e6a93",
+    "sha": "5c27f8d02777a26427b592607dcaa96ea38e6a93"
   },
   {
     "message": "Edited the readme file",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/3c891772aaddd1318593fcf1f314b0cc1ac28f3f",
-    "sha": "3c891772aaddd1318593fcf1f314b0cc1ac28f3f"
+    "url": "https://github.com/promilo/Waundr/commit/19ba7338249a379cbda760c7f1da11da90a24507",
+    "sha": "19ba7338249a379cbda760c7f1da11da90a24507"
   },
   {
-    "message": "updated the read me",
+    "message": "Edited the read me file",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/009004bd6691051123a57bff0c2408cf516f16c2",
-    "sha": "009004bd6691051123a57bff0c2408cf516f16c2"
+    "url": "https://github.com/promilo/Waundr/commit/59c3e46f3be640efe857e88a81e5580e58adf745",
+    "sha": "59c3e46f3be640efe857e88a81e5580e58adf745"
   },
   {
-    "message": "Added some changes to display online users and change the username",
+    "message": "changes index html back to build folder to development mode",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/7d186d2aabf158275e3b64d7c52a9d41c4feb337",
+    "sha": "7d186d2aabf158275e3b64d7c52a9d41c4feb337"
+  },
+  {
+    "message": "fixes index html to dist folder",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/59ed041ab4247bf07672bc95d69deafcb7881613",
+    "sha": "59ed041ab4247bf07672bc95d69deafcb7881613"
+  },
+  {
+    "message": "adds webpack to dependencies",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/66648a517bd914e00bde2ef9a6098149097711be",
+    "sha": "66648a517bd914e00bde2ef9a6098149097711be"
+  },
+  {
+    "message": "rn styling updates",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/1bc9fbb1f588b331160efd41a042622cab2f7cfe",
+    "sha": "1bc9fbb1f588b331160efd41a042622cab2f7cfe"
+  },
+  {
+    "message": "changed some colors and some styling",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/ea1bc32c3745c72e69b01001335e1f844124ba45",
-    "sha": "ea1bc32c3745c72e69b01001335e1f844124ba45"
+    "url": "https://github.com/promilo/Waundr/commit/abacec66df52ea89d43a36e9c1ddab2a94730a1b",
+    "sha": "abacec66df52ea89d43a36e9c1ddab2a94730a1b"
   },
   {
-    "message": "Finished implementing hte number of users functinoality",
+    "message": "minor import fix",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/5def8099a8d6536259a8b55d3f0a5168bdfdd62a",
+    "sha": "5def8099a8d6536259a8b55d3f0a5168bdfdd62a"
+  },
+  {
+    "message": "Merge branch 'faeture/loginStyleing'",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/8eff420c58576fd026c493c0c57b9759a2a0ecd2",
+    "sha": "8eff420c58576fd026c493c0c57b9759a2a0ecd2"
+  },
+  {
+    "message": "incremental changes",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/785ec7b58dd055dfa54f7eab2e31e04182185f24",
+    "sha": "785ec7b58dd055dfa54f7eab2e31e04182185f24"
+  },
+  {
+    "message": "Added some style to the modals and changed some colors",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/d26777c4110a02c11f668a53a7a4c29df73d896f",
-    "sha": "d26777c4110a02c11f668a53a7a4c29df73d896f"
+    "url": "https://github.com/promilo/Waundr/commit/5ab55b6fab9872b2c55aa8e5fbded2285f3fa6b5",
+    "sha": "5ab55b6fab9872b2c55aa8e5fbded2285f3fa6b5"
   },
   {
-    "message": "fixed bug",
+    "message": "makes title background transparent",
+    "author": "ffiargus",
+    "url": "https://github.com/promilo/Waundr/commit/94f39470838d5607276b3c51fa85dd5ad32b9933",
+    "sha": "94f39470838d5607276b3c51fa85dd5ad32b9933"
+  },
+  {
+    "message": "Fixed some style",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/e2c279493f07928214887dd29332bddf4d3bba64",
-    "sha": "e2c279493f07928214887dd29332bddf4d3bba64"
+    "url": "https://github.com/promilo/Waundr/commit/3c380fc3a7bdd9cfaad71d19f072994b5b2fa412",
+    "sha": "3c380fc3a7bdd9cfaad71d19f072994b5b2fa412"
   },
   {
-    "message": "fixed a bug to broadcast to all clients",
+    "message": "Merge branch 'master' of github.com:promilo/gmap",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/03f9b9080998dbdd58da0a5da7dcbda332a0cadd",
-    "sha": "03f9b9080998dbdd58da0a5da7dcbda332a0cadd"
+    "url": "https://github.com/promilo/Waundr/commit/078d85ba61309ae77d6bc7b4a0128c4d3aff8e5b",
+    "sha": "078d85ba61309ae77d6bc7b4a0128c4d3aff8e5b"
   },
   {
-    "message": "able to broadcast to all clients that the user name has been changed",
+    "message": "Changed the infowindow design",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/796b45dd579248e9ddf4eec1e9e43b49d7084515",
-    "sha": "796b45dd579248e9ddf4eec1e9e43b49d7084515"
+    "url": "https://github.com/promilo/Waundr/commit/47a0fbb7ef98e27fa55d579151f0712d87a36e94",
+    "sha": "47a0fbb7ef98e27fa55d579151f0712d87a36e94"
   },
   {
-    "message": "Modified the app so that this.state.currentUser is updated",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/eccfe94bff1b632662365ebb05fb845d7f85dfcb",
-    "sha": "eccfe94bff1b632662365ebb05fb845d7f85dfcb"
-  },
-  {
-    "message": "Added realtime chat functionality",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/7ba827807b84507f3c2dba072e7d1193d9c730c8",
-    "sha": "7ba827807b84507f3c2dba072e7d1193d9c730c8"
-  },
-  {
-    "message": "Successfully made a connection to send data to the server",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/089425fb5c84c00f72e99b78573a3b82457245ae",
-    "sha": "089425fb5c84c00f72e99b78573a3b82457245ae"
-  },
-  {
-    "message": "Made a connection to the server",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/d3e5fbb1191d38e3f8b3f68f99d7754a5973dab2",
-    "sha": "d3e5fbb1191d38e3f8b3f68f99d7754a5973dab2"
-  },
-  {
-    "message": "Fixed the rendering username and content form bars",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/b05e62984a601f50c42847df704d09cec98be926",
-    "sha": "b05e62984a601f50c42847df704d09cec98be926"
-  },
-  {
-    "message": "Finished entering new message to the message list",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/b715bee477ed7cb2ac14ed6d4ab462a3276a41a2",
-    "sha": "b715bee477ed7cb2ac14ed6d4ab462a3276a41a2"
-  },
-  {
-    "message": "Able to print every message",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/de2832962e0b533b90ab4e8e0c353c64597899f2",
-    "sha": "de2832962e0b533b90ab4e8e0c353c64597899f2"
-  },
-  {
-    "message": "Splitted up the components",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/67a8d606900b8825bb63bbbe58f094da69d421a4",
-    "sha": "67a8d606900b8825bb63bbbe58f094da69d421a4"
-  },
-  {
-    "message": "Merge pull request #6 from daegren/master\n\nUpdate lint script to scan JSX files",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/2227649a3c62514f84842d9e31c969ebda275f6b",
-    "sha": "2227649a3c62514f84842d9e31c969ebda275f6b"
-  },
-  {
-    "message": "Merge pull request #5 from vaz/watch-ignore-node-modules\n\n[High CPU/slowdowns issue] webpack watch should ignore node_modules",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/dd418d54706acffeed2d68d75520078d9fb9c3c5",
-    "sha": "dd418d54706acffeed2d68d75520078d9fb9c3c5"
-  },
-  {
-    "message": "Merge pull request #3 from davidvandusen/feature/webpack-2\n\nUpdate dependencies, migrate to webpack v2",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/9499c8aaa6a420a7d8169aa91561f8b1b0aa8188",
-    "sha": "9499c8aaa6a420a7d8169aa91561f8b1b0aa8188"
-  },
-  {
-    "message": "Merge pull request #2 from lighthouse-labs/update-readme-instructions\n\nAdded instruction to cd into the cloned directory before removing remotes",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/294b13c0ca9417a46b2ffd453e3f5b02965ff175",
-    "sha": "294b13c0ca9417a46b2ffd453e3f5b02965ff175"
-  },
-  {
-    "message": "Update lint script to scan JSX files",
-    "author": "David Mills",
-    "url": "https://github.com/promilo/Chatty/commit/07b7821c5fdcb8f0a7752546785bde47fd9ea4d1",
-    "sha": "07b7821c5fdcb8f0a7752546785bde47fd9ea4d1"
-  },
-  {
-    "message": "webpack watch should ignore node_modules\n\nThis is quite likely to be the cause of the common high CPU\nusage and excessive slowdown experienced by students using\nthis boilerplate.\n\nThis only happens because we turn on polling, but we turn\non polling because we have to (for Vagrant).\n\nSee https://github.com/webpack/watchpack/pull/23",
-    "author": "vaz",
-    "url": "https://github.com/promilo/Chatty/commit/c26ba3203cdeefa3d5c349b2a93f662f60aac066",
-    "sha": "c26ba3203cdeefa3d5c349b2a93f662f60aac066"
-  },
-  {
-    "message": "Migrate webpack.config.js to webpack 2\n\nFollowing instructions in https://webpack.js.org/guides/migrating/",
-    "author": "David VanDusen",
-    "url": "https://github.com/promilo/Chatty/commit/62c08975001757d364dabde919668150de05109b",
-    "sha": "62c08975001757d364dabde919668150de05109b"
-  },
-  {
-    "message": "Update dependencies to latest",
-    "author": "David VanDusen",
-    "url": "https://github.com/promilo/Chatty/commit/d3b5cf903b56f814f64582f553e7be1bee66010e",
-    "sha": "d3b5cf903b56f814f64582f553e7be1bee66010e"
-  },
-  {
-    "message": "adds instruction to cd before rm-ing remotes",
-    "author": "Horatiu Halmaghi",
-    "url": "https://github.com/promilo/Chatty/commit/4514f47a3958966d417d44cabb05c63207eef72a",
-    "sha": "4514f47a3958966d417d44cabb05c63207eef72a"
-  },
-  {
-    "message": "Merge pull request #1 from fzero/fix-vagrant-hmr\n\nAdded `watchOptions` to fix automatic rebuild on Vagrant",
-    "author": "Khurram Virani",
-    "url": "https://github.com/promilo/Chatty/commit/b73edf6a3017f078439b0b4a1765627fddc44fd3",
-    "sha": "b73edf6a3017f078439b0b4a1765627fddc44fd3"
-  },
-  {
-    "message": "Require node >= 6",
-    "author": "Monica Olinescu",
-    "url": "https://github.com/promilo/Chatty/commit/95824070497cb4f545d6e1669a1f4dbac930f29b",
-    "sha": "95824070497cb4f545d6e1669a1f4dbac930f29b"
+    "message": "Merge branch 'master' of github.com:promilo/Waundr",
+    "author": "Arjun",
+    "url": "https://github.com/promilo/Waundr/commit/89b18000f6ca9ecdea51fc299051851734764bb0",
+    "sha": "89b18000f6ca9ecdea51fc299051851734764bb0"
   }
 ]

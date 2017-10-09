@@ -13,6 +13,13 @@ var commits = JSON.stringify(commitsJSON, null, 2)
 
 var currentCommits = commits;
 
+var _headers = {
+  "Content-Type": "text/html",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
+
 const server = http.createServer((req, res) => {
 
   fs.readFile('./public/index.html', 'utf8', (err, data) => {
@@ -20,9 +27,9 @@ const server = http.createServer((req, res) => {
         res.statusCode = 404;
         res.end('404 not found');
       }
-      res.writeHead(200, {
-        'Content-Type': 'text/html'
-      });
+      res.writeHead(200, _headers);
+
+      console.log(url.parse(req.url).pathname)
 
       if (url.parse(req.url).pathname === '/commits'){
         let formData = url.parse(req.url, true).query
@@ -37,12 +44,11 @@ const server = http.createServer((req, res) => {
           })
           gitcommits = JSON.stringify(gitcommits, null, 2)
           fs.writeFileSync('./data/commits.json', gitcommits);
-          res.writeHead(200, {
-            'Content-Type': 'text/html'
-          });
+          res.writeHead(200, _headers);
           data = data.toString().replace(currentCommits, gitcommits);
           currentCommits = gitcommits
           console.log(data)
+          res.write
           res.end(data)
         })
         // console.log("params", formData);
