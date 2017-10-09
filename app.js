@@ -8,7 +8,7 @@ github.authenticate()
 const host = "localhost";
 const port = 3000;
 
-const commitsJSON = require('./data/commits.json')
+var commitsJSON = require('./data/commits.json')
 var commits = JSON.stringify(commitsJSON, null, 2)
 
 var currentCommits;
@@ -30,16 +30,20 @@ const server = http.createServer((req, res) => {
           gitcommits = gitcommits.data.map(Json => {
             return {
               'message': Json.commit.message,
-              'author': Json.commit.author,
+              'author': Json.commit.author.name,
               'url': Json.html_url,
               'sha': Json.sha
             }
           })
           gitcommits = JSON.stringify(gitcommits, null, 2)
           fs.writeFileSync('./data/commits.json', gitcommits);
-          data = data.toString().replace(currentcommits, gitcommits);
-          currentcommits = gitcommits
+          var commitsJSON = require('./data/commits.json')
+          var commits = JSON.stringify(commitsJSON, null, 2)
+          data = data.toString().replace(currentcommits, commits);
+          currentcommits = commmits
+          console.log(data)
           res.end(data)
+
         })
         // console.log("params", formData);
         // var gitmod = require('./index.js')(formData['username'], formData['repo'])
@@ -48,9 +52,17 @@ const server = http.createServer((req, res) => {
         // console.log(data)
       }
       // console.log(url.parse(req.url, true))
-      data = data.toString().replace( '{{ commitFeed }}', commits)
-      currentcommits = commits
-      res.end(data);
+      if (data.toString().search('{{ commitFeed }}') > -1){
+        data = data.toString().replace( '{{ commitFeed }}', commits)
+        currentcommits = commits
+        res.end(data);
+      } else {
+        data = data.toString().replace(currentcommits, gitcommits);
+        currentcommits = gitcommits
+        console.log(data)
+        res.end(data)
+      }
+
     });
   });
 
