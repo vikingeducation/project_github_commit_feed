@@ -28,7 +28,7 @@ const server = http.createServer((req, res) => {
     console.log("req.data", req.data)
     req.on("data", (data) => {
       console.log("i am in the req.on data")
-      console.log(JSON.stringify(data))
+      console.log(JSON.parse(decodeURI(data).slice(8)));
       // data = JSON.parse(data);
       // name = data.pusher.name;
       // repo = data.repository.name;
