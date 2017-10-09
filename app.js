@@ -22,12 +22,15 @@ var _headers = {
 
 const server = http.createServer((req, res) => {
   console.log("/req.url", req.url)
-
+// WEBHOOKS!!!
   if (req.url === '/github/webhooks') {
     console.log("its reached to the endpoint github webhooks enpoint")
     var buffer = '';
-    req.on("data", (data) => {
-      data = JSON.parse(decodeURI(data).slice(8));
+    req.on("data", data => {
+      buffer += data.toString()
+    })
+    req.on("end", () => {
+      data = JSON.parse(buffer)
       console.log(data)
       var name = data.pusher.name
       var repo = data.repository.name;
@@ -54,7 +57,7 @@ const server = http.createServer((req, res) => {
 
   }
 
-
+//NORMAL FUNCTIONALITY
   fs.readFile('./public/index.html', 'utf8', (err, data) => {
       if (err) {
         res.statusCode = 404;
@@ -64,12 +67,12 @@ const server = http.createServer((req, res) => {
       if (url.parse(req.url).pathname === '/commits'){
         let formData = url.parse(req.url, true).query
         github.getCommits(formData.username, formData.repo).then( gitcommits =>{
-          gitcommits = gitcommits.data.map(Json => {
+          gitcommits = gitcommits.data.map(gitcommit => {
             return {
-              'message': Json.commit.message,
-              'author': Json.commit.author.name,
-              'url': Json.html_url,
-              'sha': Json.sha
+              'message': gitcommit.commit.message,
+              'author': gitcommit.commit.author.name,
+              'url': gitcommit.html_url,
+              'sha': gitcommit.sha
             }
           })
           gitcommits = JSON.stringify(gitcommits, null, 2)
