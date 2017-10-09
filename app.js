@@ -11,7 +11,7 @@ const port = 3000;
 var commitsJSON = require('./data/commits.json')
 var commits = JSON.stringify(commitsJSON, null, 2)
 
-var currentCommits;
+var currentCommits = commits;
 
 const server = http.createServer((req, res) => {
 
@@ -37,13 +37,13 @@ const server = http.createServer((req, res) => {
           })
           gitcommits = JSON.stringify(gitcommits, null, 2)
           fs.writeFileSync('./data/commits.json', gitcommits);
-          var commitsJSON = require('./data/commits.json')
-          var commits = JSON.stringify(commitsJSON, null, 2)
-          data = data.toString().replace(currentcommits, commits);
-          currentcommits = commmits
+          res.writeHead(200, {
+            'Content-Type': 'text/html'
+          });
+          data = data.toString().replace(currentCommits, gitcommits);
+          currentCommits = gitcommits
           console.log(data)
           res.end(data)
-
         })
         // console.log("params", formData);
         // var gitmod = require('./index.js')(formData['username'], formData['repo'])
@@ -53,14 +53,11 @@ const server = http.createServer((req, res) => {
       }
       // console.log(url.parse(req.url, true))
       if (data.toString().search('{{ commitFeed }}') > -1){
-        data = data.toString().replace( '{{ commitFeed }}', commits)
-        currentcommits = commits
+        console.log("{{ commitFeed }} is found!")
+        data = data.toString().replace( '{{ commitFeed }}', currentCommits)
         res.end(data);
       } else {
-        data = data.toString().replace(currentcommits, gitcommits);
-        currentcommits = gitcommits
-        console.log(data)
-        res.end(data)
+        console.log("{{cmmtFeed}} is not found");
       }
 
     });
