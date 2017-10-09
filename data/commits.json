@@ -1,182 +1,182 @@
 [
   {
-    "message": "updated readme to be more specific on how to run this application.",
-    "author": "Milind Shah",
-    "url": "https://github.com/promilo/Chatty/commit/a8f15831ccde05a67b6864fe3f5129ea9941a088",
-    "sha": "a8f15831ccde05a67b6864fe3f5129ea9941a088"
-  },
-  {
-    "message": "Finished randomizing colorss for every user",
+    "message": "try again",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/96cc00bc701f62fc1e4d487b1ac8a4ff15d3b2ed",
-    "sha": "96cc00bc701f62fc1e4d487b1ac8a4ff15d3b2ed"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/314d91cc659ba29a3423ca11e19375794a417027",
+    "sha": "314d91cc659ba29a3423ca11e19375794a417027"
   },
   {
-    "message": "Fixed the message list component",
+    "message": "try again",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/4dd52fd785f39102c6284d03cd92948c2ec759cf",
-    "sha": "4dd52fd785f39102c6284d03cd92948c2ec759cf"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/0743bfbfaed0d3923d626aa8fb3c2e6baa7e003f",
+    "sha": "0743bfbfaed0d3923d626aa8fb3c2e6baa7e003f"
   },
   {
-    "message": "Added package.json file for dependendencies",
+    "message": "try",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/9d37cc13e8caec3cbfa0f729a6acef7794d86cf1",
-    "sha": "9d37cc13e8caec3cbfa0f729a6acef7794d86cf1"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/0d21bebb25b09fb6f49b997e25c9a0efd1f5e718",
+    "sha": "0d21bebb25b09fb6f49b997e25c9a0efd1f5e718"
   },
   {
-    "message": "Edited the readme file",
+    "message": "test'",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/3c891772aaddd1318593fcf1f314b0cc1ac28f3f",
-    "sha": "3c891772aaddd1318593fcf1f314b0cc1ac28f3f"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/1737a591b044b1ef742e798cbafbdd4cbb66c814",
+    "sha": "1737a591b044b1ef742e798cbafbdd4cbb66c814"
   },
   {
-    "message": "updated the read me",
+    "message": "test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/009004bd6691051123a57bff0c2408cf516f16c2",
-    "sha": "009004bd6691051123a57bff0c2408cf516f16c2"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/4d67043972121f4e27557a829a2e59ae5c199b92",
+    "sha": "4d67043972121f4e27557a829a2e59ae5c199b92"
   },
   {
-    "message": "Added some changes to display online users and change the username",
+    "message": "test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/ea1bc32c3745c72e69b01001335e1f844124ba45",
-    "sha": "ea1bc32c3745c72e69b01001335e1f844124ba45"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/5efc9c327964cd1fc97cb4c98ec2575dc35e2e2d",
+    "sha": "5efc9c327964cd1fc97cb4c98ec2575dc35e2e2d"
   },
   {
-    "message": "Finished implementing hte number of users functinoality",
+    "message": "try",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/d26777c4110a02c11f668a53a7a4c29df73d896f",
-    "sha": "d26777c4110a02c11f668a53a7a4c29df73d896f"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/de8864dc1fc10b0e80664c33a2e3a74b3521bcbe",
+    "sha": "de8864dc1fc10b0e80664c33a2e3a74b3521bcbe"
   },
   {
-    "message": "fixed bug",
+    "message": "try",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/e2c279493f07928214887dd29332bddf4d3bba64",
-    "sha": "e2c279493f07928214887dd29332bddf4d3bba64"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/44006b14331bca80f9fa9704f4fb3ee45bf26436",
+    "sha": "44006b14331bca80f9fa9704f4fb3ee45bf26436"
   },
   {
-    "message": "fixed a bug to broadcast to all clients",
+    "message": "try",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/03f9b9080998dbdd58da0a5da7dcbda332a0cadd",
-    "sha": "03f9b9080998dbdd58da0a5da7dcbda332a0cadd"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/06d1a72f0b67f01545f66ab042ff84156400ee33",
+    "sha": "06d1a72f0b67f01545f66ab042ff84156400ee33"
   },
   {
-    "message": "able to broadcast to all clients that the user name has been changed",
+    "message": "test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/796b45dd579248e9ddf4eec1e9e43b49d7084515",
-    "sha": "796b45dd579248e9ddf4eec1e9e43b49d7084515"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/f6e0ec397936b700228b4b583c1b1795a0726fe2",
+    "sha": "f6e0ec397936b700228b4b583c1b1795a0726fe2"
   },
   {
-    "message": "Modified the app so that this.state.currentUser is updated",
+    "message": "push",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/eccfe94bff1b632662365ebb05fb845d7f85dfcb",
-    "sha": "eccfe94bff1b632662365ebb05fb845d7f85dfcb"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/38ea5bf78b338d61478adecd4c72828847385545",
+    "sha": "38ea5bf78b338d61478adecd4c72828847385545"
   },
   {
-    "message": "Added realtime chat functionality",
+    "message": "Modified webhooks",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/7ba827807b84507f3c2dba072e7d1193d9c730c8",
-    "sha": "7ba827807b84507f3c2dba072e7d1193d9c730c8"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/a3b5909a3fd6df9c7b602974fe75405838850dd5",
+    "sha": "a3b5909a3fd6df9c7b602974fe75405838850dd5"
   },
   {
-    "message": "Successfully made a connection to send data to the server",
+    "message": "test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/089425fb5c84c00f72e99b78573a3b82457245ae",
-    "sha": "089425fb5c84c00f72e99b78573a3b82457245ae"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/531311accfe6a81bda956032eb23e7d35fd15481",
+    "sha": "531311accfe6a81bda956032eb23e7d35fd15481"
   },
   {
-    "message": "Made a connection to the server",
+    "message": "webhook test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/d3e5fbb1191d38e3f8b3f68f99d7754a5973dab2",
-    "sha": "d3e5fbb1191d38e3f8b3f68f99d7754a5973dab2"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/7414be1eac5523b4f9ef71cf798fcd31310df6c1",
+    "sha": "7414be1eac5523b4f9ef71cf798fcd31310df6c1"
   },
   {
-    "message": "Fixed the rendering username and content form bars",
+    "message": "webhook test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/b05e62984a601f50c42847df704d09cec98be926",
-    "sha": "b05e62984a601f50c42847df704d09cec98be926"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/9c860409ae98cc788090ce9e9b59fc23fa0bf593",
+    "sha": "9c860409ae98cc788090ce9e9b59fc23fa0bf593"
   },
   {
-    "message": "Finished entering new message to the message list",
+    "message": "webhook test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/b715bee477ed7cb2ac14ed6d4ab462a3276a41a2",
-    "sha": "b715bee477ed7cb2ac14ed6d4ab462a3276a41a2"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/12905a468d549e558e2b6cc6d7d53f4a2b27e4c5",
+    "sha": "12905a468d549e558e2b6cc6d7d53f4a2b27e4c5"
   },
   {
-    "message": "Able to print every message",
+    "message": "webhook test",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/de2832962e0b533b90ab4e8e0c353c64597899f2",
-    "sha": "de2832962e0b533b90ab4e8e0c353c64597899f2"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/c858f81d4934416ec2fe1a4c2285981578fa1589",
+    "sha": "c858f81d4934416ec2fe1a4c2285981578fa1589"
   },
   {
-    "message": "Splitted up the components",
+    "message": "changed it to string",
     "author": "promilo",
-    "url": "https://github.com/promilo/Chatty/commit/67a8d606900b8825bb63bbbe58f094da69d421a4",
-    "sha": "67a8d606900b8825bb63bbbe58f094da69d421a4"
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/5a8fa921e4e989363459a80a5274f451a4162027",
+    "sha": "5a8fa921e4e989363459a80a5274f451a4162027"
   },
   {
-    "message": "Merge pull request #6 from daegren/master\n\nUpdate lint script to scan JSX files",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/2227649a3c62514f84842d9e31c969ebda275f6b",
-    "sha": "2227649a3c62514f84842d9e31c969ebda275f6b"
+    "message": "test webhook",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/97b4cc6aa2dd1a38f4991dcaddcd75525c853d46",
+    "sha": "97b4cc6aa2dd1a38f4991dcaddcd75525c853d46"
   },
   {
-    "message": "Merge pull request #5 from vaz/watch-ignore-node-modules\n\n[High CPU/slowdowns issue] webpack watch should ignore node_modules",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/dd418d54706acffeed2d68d75520078d9fb9c3c5",
-    "sha": "dd418d54706acffeed2d68d75520078d9fb9c3c5"
+    "message": "test",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/44c0758bb47de54230a27bbdc023759ae849cbc5",
+    "sha": "44c0758bb47de54230a27bbdc023759ae849cbc5"
   },
   {
-    "message": "Merge pull request #3 from davidvandusen/feature/webpack-2\n\nUpdate dependencies, migrate to webpack v2",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/9499c8aaa6a420a7d8169aa91561f8b1b0aa8188",
-    "sha": "9499c8aaa6a420a7d8169aa91561f8b1b0aa8188"
+    "message": "did some refactoring",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/f32f3ee2890442a09e7742720924eac1321146db",
+    "sha": "f32f3ee2890442a09e7742720924eac1321146db"
   },
   {
-    "message": "Merge pull request #2 from lighthouse-labs/update-readme-instructions\n\nAdded instruction to cd into the cloned directory before removing remotes",
-    "author": "hora",
-    "url": "https://github.com/promilo/Chatty/commit/294b13c0ca9417a46b2ffd453e3f5b02965ff175",
-    "sha": "294b13c0ca9417a46b2ffd453e3f5b02965ff175"
+    "message": "added some restructuring",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/247e71ac8dc7841011975247fb14f28abc59ec48",
+    "sha": "247e71ac8dc7841011975247fb14f28abc59ec48"
   },
   {
-    "message": "Update lint script to scan JSX files",
-    "author": "David Mills",
-    "url": "https://github.com/promilo/Chatty/commit/07b7821c5fdcb8f0a7752546785bde47fd9ea4d1",
-    "sha": "07b7821c5fdcb8f0a7752546785bde47fd9ea4d1"
+    "message": "added webhook url",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/a77e3a3f3c8a885d95c7385177ef1a153780af93",
+    "sha": "a77e3a3f3c8a885d95c7385177ef1a153780af93"
   },
   {
-    "message": "webpack watch should ignore node_modules\n\nThis is quite likely to be the cause of the common high CPU\nusage and excessive slowdown experienced by students using\nthis boilerplate.\n\nThis only happens because we turn on polling, but we turn\non polling because we have to (for Vagrant).\n\nSee https://github.com/webpack/watchpack/pull/23",
-    "author": "vaz",
-    "url": "https://github.com/promilo/Chatty/commit/c26ba3203cdeefa3d5c349b2a93f662f60aac066",
-    "sha": "c26ba3203cdeefa3d5c349b2a93f662f60aac066"
+    "message": "finished scrubbing the data and was able to rechange the username and repo",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/b21cbedfd29592bbb2b9099d7f4b5268c12b1427",
+    "sha": "b21cbedfd29592bbb2b9099d7f4b5268c12b1427"
   },
   {
-    "message": "Migrate webpack.config.js to webpack 2\n\nFollowing instructions in https://webpack.js.org/guides/migrating/",
-    "author": "David VanDusen",
-    "url": "https://github.com/promilo/Chatty/commit/62c08975001757d364dabde919668150de05109b",
-    "sha": "62c08975001757d364dabde919668150de05109b"
+    "message": "finished connecting github wrapper to the web application",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/0e18f1ed9991ab3d4b65830c4e39f7b922e794f2",
+    "sha": "0e18f1ed9991ab3d4b65830c4e39f7b922e794f2"
   },
   {
-    "message": "Update dependencies to latest",
-    "author": "David VanDusen",
-    "url": "https://github.com/promilo/Chatty/commit/d3b5cf903b56f814f64582f553e7be1bee66010e",
-    "sha": "d3b5cf903b56f814f64582f553e7be1bee66010e"
+    "message": "Was able to get form data",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/78ae029d98a3c77b5f420a54583d0099316b3066",
+    "sha": "78ae029d98a3c77b5f420a54583d0099316b3066"
   },
   {
-    "message": "adds instruction to cd before rm-ing remotes",
-    "author": "Horatiu Halmaghi",
-    "url": "https://github.com/promilo/Chatty/commit/4514f47a3958966d417d44cabb05c63207eef72a",
-    "sha": "4514f47a3958966d417d44cabb05c63207eef72a"
+    "message": "Finished writing server that reads the JSON file",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/67ca81c71eda3c7de077af840a820526d4e8462b",
+    "sha": "67ca81c71eda3c7de077af840a820526d4e8462b"
   },
   {
-    "message": "Merge pull request #1 from fzero/fix-vagrant-hmr\n\nAdded `watchOptions` to fix automatic rebuild on Vagrant",
-    "author": "Khurram Virani",
-    "url": "https://github.com/promilo/Chatty/commit/b73edf6a3017f078439b0b4a1765627fddc44fd3",
-    "sha": "b73edf6a3017f078439b0b4a1765627fddc44fd3"
+    "message": "reconstructed server",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/c3b6a8f5835783bc09b353a07c9841904df9f072",
+    "sha": "c3b6a8f5835783bc09b353a07c9841904df9f072"
   },
   {
-    "message": "Require node >= 6",
-    "author": "Monica Olinescu",
-    "url": "https://github.com/promilo/Chatty/commit/95824070497cb4f545d6e1669a1f4dbac930f29b",
-    "sha": "95824070497cb4f545d6e1669a1f4dbac930f29b"
+    "message": "Basic server",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/8d44b6a7aa7aa795910000eb771e6deddc876d27",
+    "sha": "8d44b6a7aa7aa795910000eb771e6deddc876d27"
+  },
+  {
+    "message": "Added the pre dummy jason tag",
+    "author": "promilo",
+    "url": "https://github.com/promilo/project_github_commit_feed/commit/1fddfe42db2ad33e590f7a4d7779ad58d8fc5ef9",
+    "sha": "1fddfe42db2ad33e590f7a4d7779ad58d8fc5ef9"
   }
 ]
