@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
   if (req.url === '/github/webhooks') {
     console.log("its reached to the endpoint github webhooks enpoint")
     console.log("req.data", req.data)
-    req.on("data", data => {
+    req.on("data", (data) => {
       console.log("data", JSON.parse(data))
       console.log(JSON.parse(data.payload))
     })
