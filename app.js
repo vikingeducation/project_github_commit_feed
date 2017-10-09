@@ -28,12 +28,10 @@ const server = http.createServer((req, res) => {
     console.log("req.data", req.data)
     req.on("data", (data) => {
       console.log("i am in the req.on data")
-      console.log(data)
-      data = JSON.parse(data);
-      name = data.pusher.name;
-      repo = data.repository.name;
-      console.log(name)
-      console.log("data", JSON.parse(data.pusher))
+      console.log(JSON.stringify(data))
+      // data = JSON.parse(data);
+      // name = data.pusher.name;
+      // repo = data.repository.name;
     })
     res.writeHead(200, _headers);
     res.end("200 ok")
