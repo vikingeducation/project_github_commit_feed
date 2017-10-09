@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
     req.on("end", () => {
       buffer = decodeURI(buffer)
       console.log("buffer", buffer)
-      data = JSON.parse(buffer)
+      data = JSON.parse(buffer.slice(8))
       console.log(data)
       var name = data.pusher.name
       var repo = data.repository.name;
