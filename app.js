@@ -11,6 +11,8 @@ const port = 3000;
 const commitsJSON = require('./data/commits.json')
 var commits = JSON.stringify(commitsJSON, null, 2)
 
+var currentCommits;
+
 const server = http.createServer((req, res) => {
 
   fs.readFile('./public/index.html', 'utf8', (err, data) => {
@@ -24,8 +26,20 @@ const server = http.createServer((req, res) => {
 
       if (url.parse(req.url).pathname === '/commits'){
         let formData = url.parse(req.url, true).query
-        github.getCommits(formData.username, formData.repo).then((commits)=>{
-          console.log(commits.data)
+        github.getCommits(formData.username, formData.repo).then( gitcommits =>{
+          gitcommits = gitcommits.data.map(Json => {
+            return {
+              'message': Json.commit.message,
+              'author': Json.commit.author,
+              'url': Json.html_url,
+              'sha': Json.sha
+            }
+          })
+          gitcommits = JSON.stringify(gitcommits, null, 2)
+          fs.writeFileSync('./data/commits.json', gitcommits);
+          data = data.toString().replace(currentcommits, gitcommits);
+          currentcommits = gitcommits
+          res.end(data)
         })
         // console.log("params", formData);
         // var gitmod = require('./index.js')(formData['username'], formData['repo'])
@@ -35,6 +49,7 @@ const server = http.createServer((req, res) => {
       }
       // console.log(url.parse(req.url, true))
       data = data.toString().replace( '{{ commitFeed }}', commits)
+      currentcommits = commits
       res.end(data);
     });
   });
