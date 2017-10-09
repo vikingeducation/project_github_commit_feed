@@ -21,6 +21,19 @@ var _headers = {
 };
 
 const server = http.createServer((req, res) => {
+  console.log("/req.url", req.url)
+
+  if (req.url === '/github/webhooks') {
+    console.log("its reached to the endpoint github webhooks enpoint")
+    console.log("req.data", req.data)
+    req.on("data", data => {
+      console.log("data", data)
+    })
+    res.writeHead(200, _headers);
+    res.end("200 ok")
+
+  }
+
 
   fs.readFile('./public/index.html', 'utf8', (err, data) => {
       if (err) {
@@ -29,7 +42,7 @@ const server = http.createServer((req, res) => {
       }
       res.writeHead(200, _headers);
 
-      console.log(url.parse(req.url).pathname)
+
 
       if (url.parse(req.url).pathname === '/commits'){
         let formData = url.parse(req.url, true).query
@@ -47,8 +60,6 @@ const server = http.createServer((req, res) => {
           res.writeHead(200, _headers);
           data = data.toString().replace(currentCommits, gitcommits);
           currentCommits = gitcommits
-          console.log(data)
-          res.write
           res.end(data)
         })
         // console.log("params", formData);

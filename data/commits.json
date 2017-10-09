@@ -1,182 +1,182 @@
 [
   {
-    "message": "Added readme for mobile",
+    "message": "Merge branch 'master' of github.com:promilo/tweetr into feature/userlogin",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/9edd461e5722a041a31c2ce63d1a4eedd340d19a",
-    "sha": "9edd461e5722a041a31c2ce63d1a4eedd340d19a"
+    "url": "https://github.com/promilo/tweetr/commit/511947d9263ce320ad056672f5ebc61da440b82c",
+    "sha": "511947d9263ce320ad056672f5ebc61da440b82c"
   },
   {
-    "message": "Update README.md",
+    "message": "added user registration",
+    "author": "promilo",
+    "url": "https://github.com/promilo/tweetr/commit/44d48920632af18e34d4cc8a558831c94e4899cc",
+    "sha": "44d48920632af18e34d4cc8a558831c94e4899cc"
+  },
+  {
+    "message": "corrected a screenshot image.",
     "author": "Milind Shah",
-    "url": "https://github.com/promilo/Waundr/commit/6a5a8eb49cd513e3292a72eae7964332c04b4415",
-    "sha": "6a5a8eb49cd513e3292a72eae7964332c04b4415"
+    "url": "https://github.com/promilo/tweetr/commit/eb6bcc4935adc7206a756b4aeb98fea1e5d833e9",
+    "sha": "eb6bcc4935adc7206a756b4aeb98fea1e5d833e9"
   },
   {
-    "message": "modified readme",
-    "author": "Arjun",
-    "url": "https://github.com/promilo/Waundr/commit/64ae4f42df6ec6d7bb3a23710cf42a4725b13237",
-    "sha": "64ae4f42df6ec6d7bb3a23710cf42a4725b13237"
+    "message": "updated readme to include the screenshots",
+    "author": "Milind Shah",
+    "url": "https://github.com/promilo/tweetr/commit/43d20b92ff690fe146b4ee3dc31e460b863846cf",
+    "sha": "43d20b92ff690fe146b4ee3dc31e460b863846cf"
   },
   {
-    "message": "Update README.md",
-    "author": "Raymond Chow",
-    "url": "https://github.com/promilo/Waundr/commit/84cf7c3a6329103fb1dbbdfd0843476144eb842c",
-    "sha": "84cf7c3a6329103fb1dbbdfd0843476144eb842c"
-  },
-  {
-    "message": "Edited the readme file so that it can read the gifs",
+    "message": "added screenshots for readme",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/3284859eb6a9426b65d65c75e93e7d314bbdd7f5",
-    "sha": "3284859eb6a9426b65d65c75e93e7d314bbdd7f5"
+    "url": "https://github.com/promilo/tweetr/commit/e1e7f3a5a8b2ba325800be1b211814b32b3e56f2",
+    "sha": "e1e7f3a5a8b2ba325800be1b211814b32b3e56f2"
   },
   {
-    "message": "Edited the readme file so that it can read the gifs",
+    "message": "Fixed some styling with css and index.html",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/4d88318d8776b82a3a442cd1dbb1bcf41438b5ba",
-    "sha": "4d88318d8776b82a3a442cd1dbb1bcf41438b5ba"
+    "url": "https://github.com/promilo/tweetr/commit/7c72bc2576250cb8439719b73331b753b567bacc",
+    "sha": "7c72bc2576250cb8439719b73331b753b567bacc"
   },
   {
-    "message": "Edited the readme file so that it can read the gifs",
+    "message": "corrected some more styling from app.js and char counter script",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/58901db34bf41c9fc63b01d9c5a43de19487547c",
-    "sha": "58901db34bf41c9fc63b01d9c5a43de19487547c"
+    "url": "https://github.com/promilo/tweetr/commit/0f6454c30d8fd2bffa335c20e52eea98cafd7cea",
+    "sha": "0f6454c30d8fd2bffa335c20e52eea98cafd7cea"
   },
   {
-    "message": "Added create marker.gif",
+    "message": "Fixed some styling and made comments on app.js",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/bb25c13c63d4e234cc05f7af85286d464751b9e9",
-    "sha": "bb25c13c63d4e234cc05f7af85286d464751b9e9"
+    "url": "https://github.com/promilo/tweetr/commit/6bac148cc8e5ae5d3672a170c587f7a34bf08e15",
+    "sha": "6bac148cc8e5ae5d3672a170c587f7a34bf08e15"
   },
   {
-    "message": "Adding meetup gifs",
+    "message": "Created a function to convert miliseconds to date",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/25d49ed251a8ee3b0c2aaa5ffbef4f35a5df3fa1",
-    "sha": "25d49ed251a8ee3b0c2aaa5ffbef4f35a5df3fa1"
+    "url": "https://github.com/promilo/tweetr/commit/0530932c05fb09dd1dd6e004ec74ccf715d30607",
+    "sha": "0530932c05fb09dd1dd6e004ec74ccf715d30607"
   },
   {
-    "message": "Adding filter",
+    "message": "Added mongodb functionality",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/e696427c484ba64c98d677f7e669d6cd9d95ead8",
-    "sha": "e696427c484ba64c98d677f7e669d6cd9d95ead8"
+    "url": "https://github.com/promilo/tweetr/commit/d5b16625a01a943456ad91f4a791449597a466c4",
+    "sha": "d5b16625a01a943456ad91f4a791449597a466c4"
   },
   {
-    "message": "Testing the gif v3",
+    "message": "Fixed some Css for tweet overflow.",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/02f945da13f2075c61399137d502bc6fb7386b48",
-    "sha": "02f945da13f2075c61399137d502bc6fb7386b48"
+    "url": "https://github.com/promilo/tweetr/commit/d25a95b017884d42a36369dcb69483d58be2f508",
+    "sha": "d25a95b017884d42a36369dcb69483d58be2f508"
   },
   {
-    "message": "Testing the gif v2",
+    "message": "fixed up validation and refactor loading tweets",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/3fa7125867b67d72bfb13a2cb13b231ddf52d4ce",
-    "sha": "3fa7125867b67d72bfb13a2cb13b231ddf52d4ce"
+    "url": "https://github.com/promilo/tweetr/commit/1ffa89adf270d1131c5d12eefa0d2b7e5f6890af",
+    "sha": "1ffa89adf270d1131c5d12eefa0d2b7e5f6890af"
   },
   {
-    "message": "Testing the gif",
+    "message": "Implemented adding tweets to the container automatically without having to refresh",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/894692564afe68695eb15f4bb14b135b7693708d",
-    "sha": "894692564afe68695eb15f4bb14b135b7693708d"
+    "url": "https://github.com/promilo/tweetr/commit/d36a9e6f76fd83b9c504610321ea177168baec9f",
+    "sha": "d36a9e6f76fd83b9c504610321ea177168baec9f"
   },
   {
-    "message": "Added photos folder",
+    "message": "Added ajex calls for adding in tweets live but will display only upon refresh",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/5c27f8d02777a26427b592607dcaa96ea38e6a93",
-    "sha": "5c27f8d02777a26427b592607dcaa96ea38e6a93"
+    "url": "https://github.com/promilo/tweetr/commit/7b0c94ef1ebd03ec438e2a42497d8453d8d43af1",
+    "sha": "7b0c94ef1ebd03ec438e2a42497d8453d8d43af1"
   },
   {
-    "message": "Edited the readme file",
+    "message": "tested the ajax and it posted to localhost/tweets",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/19ba7338249a379cbda760c7f1da11da90a24507",
-    "sha": "19ba7338249a379cbda760c7f1da11da90a24507"
+    "url": "https://github.com/promilo/tweetr/commit/af8ab770fb789806d37a913d57a8c572bdc81b63",
+    "sha": "af8ab770fb789806d37a913d57a8c572bdc81b63"
   },
   {
-    "message": "Edited the read me file",
+    "message": "Fixed some style errors and changed  for of  loop to for each to be more compatible to more browsers",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/59c3e46f3be640efe857e88a81e5580e58adf745",
-    "sha": "59c3e46f3be640efe857e88a81e5580e58adf745"
+    "url": "https://github.com/promilo/tweetr/commit/6d9eafa30d177809c2fc594218dd05146047c3cc",
+    "sha": "6d9eafa30d177809c2fc594218dd05146047c3cc"
   },
   {
-    "message": "changes index html back to build folder to development mode",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/7d186d2aabf158275e3b64d7c52a9d41c4feb337",
-    "sha": "7d186d2aabf158275e3b64d7c52a9d41c4feb337"
-  },
-  {
-    "message": "fixes index html to dist folder",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/59ed041ab4247bf07672bc95d69deafcb7881613",
-    "sha": "59ed041ab4247bf07672bc95d69deafcb7881613"
-  },
-  {
-    "message": "adds webpack to dependencies",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/66648a517bd914e00bde2ef9a6098149097711be",
-    "sha": "66648a517bd914e00bde2ef9a6098149097711be"
-  },
-  {
-    "message": "rn styling updates",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/1bc9fbb1f588b331160efd41a042622cab2f7cfe",
-    "sha": "1bc9fbb1f588b331160efd41a042622cab2f7cfe"
-  },
-  {
-    "message": "changed some colors and some styling",
+    "message": "Finished creating createTweetElement function",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/abacec66df52ea89d43a36e9c1ddab2a94730a1b",
-    "sha": "abacec66df52ea89d43a36e9c1ddab2a94730a1b"
+    "url": "https://github.com/promilo/tweetr/commit/3906b4b35a488e0dca5527d3d3e893115a3d2f26",
+    "sha": "3906b4b35a488e0dca5527d3d3e893115a3d2f26"
   },
   {
-    "message": "minor import fix",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/5def8099a8d6536259a8b55d3f0a5168bdfdd62a",
-    "sha": "5def8099a8d6536259a8b55d3f0a5168bdfdd62a"
-  },
-  {
-    "message": "Merge branch 'faeture/loginStyleing'",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/8eff420c58576fd026c493c0c57b9759a2a0ecd2",
-    "sha": "8eff420c58576fd026c493c0c57b9759a2a0ecd2"
-  },
-  {
-    "message": "incremental changes",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/785ec7b58dd055dfa54f7eab2e31e04182185f24",
-    "sha": "785ec7b58dd055dfa54f7eab2e31e04182185f24"
-  },
-  {
-    "message": "Added some style to the modals and changed some colors",
+    "message": "Finished 'creating tweets'",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/5ab55b6fab9872b2c55aa8e5fbded2285f3fa6b5",
-    "sha": "5ab55b6fab9872b2c55aa8e5fbded2285f3fa6b5"
+    "url": "https://github.com/promilo/tweetr/commit/1c6a1d57431d98daa1ac7e2242e011992386487c",
+    "sha": "1c6a1d57431d98daa1ac7e2242e011992386487c"
   },
   {
-    "message": "makes title background transparent",
-    "author": "ffiargus",
-    "url": "https://github.com/promilo/Waundr/commit/94f39470838d5607276b3c51fa85dd5ad32b9933",
-    "sha": "94f39470838d5607276b3c51fa85dd5ad32b9933"
-  },
-  {
-    "message": "Fixed some style",
+    "message": "implemented the word character counter.",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/3c380fc3a7bdd9cfaad71d19f072994b5b2fa412",
-    "sha": "3c380fc3a7bdd9cfaad71d19f072994b5b2fa412"
+    "url": "https://github.com/promilo/tweetr/commit/5ffdbc46888649ac78999cc5c5c2c1ecf6061420",
+    "sha": "5ffdbc46888649ac78999cc5c5c2c1ecf6061420"
   },
   {
-    "message": "Merge branch 'master' of github.com:promilo/gmap",
+    "message": "Finished css on tweeting box",
     "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/078d85ba61309ae77d6bc7b4a0128c4d3aff8e5b",
-    "sha": "078d85ba61309ae77d6bc7b4a0128c4d3aff8e5b"
+    "url": "https://github.com/promilo/tweetr/commit/3e249c444ffe964396e0e321a48d47b0e10b1b7d",
+    "sha": "3e249c444ffe964396e0e321a48d47b0e10b1b7d"
   },
   {
-    "message": "Changed the infowindow design",
-    "author": "promilo",
-    "url": "https://github.com/promilo/Waundr/commit/47a0fbb7ef98e27fa55d579151f0712d87a36e94",
-    "sha": "47a0fbb7ef98e27fa55d579151f0712d87a36e94"
+    "message": "Merge pull request #13 from hora/update-readme\n\nUpdates readme",
+    "author": "Khurram Virani",
+    "url": "https://github.com/promilo/tweetr/commit/1ae92a3dc51c9a10ade9887b205b1ec6139b34f5",
+    "sha": "1ae92a3dc51c9a10ade9887b205b1ec6139b34f5"
   },
   {
-    "message": "Merge branch 'master' of github.com:promilo/Waundr",
-    "author": "Arjun",
-    "url": "https://github.com/promilo/Waundr/commit/89b18000f6ca9ecdea51fc299051851734764bb0",
-    "sha": "89b18000f6ca9ecdea51fc299051851734764bb0"
+    "message": "updates readme",
+    "author": "Horatiu Halmaghi",
+    "url": "https://github.com/promilo/tweetr/commit/12c4476f08ca20f24cd2548fd4ab1221ccd54a08",
+    "sha": "12c4476f08ca20f24cd2548fd4ab1221ccd54a08"
+  },
+  {
+    "message": "Merge pull request #6 from jensen/master\n\nAdding Mac OS finder .DS_Store file to .gitignore.",
+    "author": "V",
+    "url": "https://github.com/promilo/tweetr/commit/d453909373182723ff734be1bc22d7fa9ec86911",
+    "sha": "d453909373182723ff734be1bc22d7fa9ec86911"
+  },
+  {
+    "message": "Adding Mac OS finder .DS_Store file to .gitignore.",
+    "author": "Karl Jensen",
+    "url": "https://github.com/promilo/tweetr/commit/1f0a77c2d747e40b426bf2e6c8e6046b9eea1182",
+    "sha": "1f0a77c2d747e40b426bf2e6c8e6046b9eea1182"
+  },
+  {
+    "message": "Merge pull request #4 from vaz/de-confusify\n\nAn attempt to ease the expected transition to Mongo",
+    "author": "V",
+    "url": "https://github.com/promilo/tweetr/commit/acd2afbf62b0751111ff66495da0f8018c18ab32",
+    "sha": "acd2afbf62b0751111ff66495da0f8018c18ab32"
+  },
+  {
+    "message": "Add a few comments for clarity",
+    "author": "vaz",
+    "url": "https://github.com/promilo/tweetr/commit/da633dbe3b1296c7dcfec707f7aecbdaa42668de",
+    "sha": "da633dbe3b1296c7dcfec707f7aecbdaa42668de"
+  },
+  {
+    "message": "Rename tweet-data to data-helpers",
+    "author": "vaz",
+    "url": "https://github.com/promilo/tweetr/commit/ae62ebd7300a93c08e82346b1f5150b603222d96",
+    "sha": "ae62ebd7300a93c08e82346b1f5150b603222d96"
+  },
+  {
+    "message": "Rename resources/ to data-files/",
+    "author": "vaz",
+    "url": "https://github.com/promilo/tweetr/commit/7f0dc880d567fd1764547de74cee5f9c7935d2c5",
+    "sha": "7f0dc880d567fd1764547de74cee5f9c7935d2c5"
+  },
+  {
+    "message": "Rename simulateAsync to simulateDelay",
+    "author": "vaz",
+    "url": "https://github.com/promilo/tweetr/commit/71a6c00c8ebef6d7ff946bc7a79ca8ca56cbc8a0",
+    "sha": "71a6c00c8ebef6d7ff946bc7a79ca8ca56cbc8a0"
+  },
+  {
+    "message": "An attempt to ease the expected transition to Mongo",
+    "author": "vaz",
+    "url": "https://github.com/promilo/tweetr/commit/6e375b6781e69ae6cbefd017aac4d68bb781c9b0",
+    "sha": "6e375b6781e69ae6cbefd017aac4d68bb781c9b0"
   }
 ]
