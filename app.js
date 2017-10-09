@@ -23,16 +23,20 @@ var _headers = {
 const server = http.createServer((req, res) => {
   console.log("/req.url", req.url)
 
-  if (req.url === '/github/webhooks') {
+  if (url.parse(req.url,true).pathname === '/github/webhooks') {
     console.log("its reached to the endpoint github webhooks enpoint")
     console.log("req.data", req.data)
+    var buffer = '';
     req.on("data", (data) => {
       console.log("i am in the req.on data")
       console.log(JSON.parse(decodeURI(data).slice(8)));
+      buffer += JSON.parse(decodeURI(data).slice(8));
       // data = JSON.parse(data);
       // name = data.pusher.name;
       // repo = data.repository.name;
     })
+    console.log(buffer)
+
     res.writeHead(200, _headers);
     res.end("200 ok")
 
