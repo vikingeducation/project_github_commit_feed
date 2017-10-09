@@ -28,14 +28,25 @@ const server = http.createServer((req, res) => {
     console.log("req.data", req.data)
     var buffer = '';
     req.on("data", (data) => {
-      console.log("i am in the req.on data");
-      console.log("data", data)
-      console.log(JSON.parse(decodeURI(data).slice(8)));
-      buffer += JSON.parse(decodeURI(data).slice(8));
-      // data = JSON.parse(data);
-      // name = data.pusher.name;
-      // repo = data.repository.name;
-      console.log(buffer)
+      data = JSON.parse(data);
+      var name = data.pusher.name
+      var repo = data.repository.name;
+      github.getCommits(formData.username, formData.repo).then( gitcommits =>{
+        gitcommits = gitcommits.data.map(gitcommit => {
+          return {
+            'message': gitcommit.commit.message,
+            'author': gitcommit.commit.author.name,
+            'url': gitcommit.html_url,
+            'sha': gitcommit.sha
+          }
+        })
+        gitcommits = JSON.stringify(gitcommits, null, 2)
+        fs.writeFileSync('./data/commits.json', gitcommits);
+        res.writeHead(200, _headers);
+        data = data.toString().replace(currentCommits, gitcommits);
+        currentCommits = gitcommits
+        res.end(data)
+      })
     })
 
     res.writeHead(200, _headers);
