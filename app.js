@@ -27,7 +27,7 @@ const server = http.createServer((req, res) => {
     console.log("its reached to the endpoint github webhooks enpoint")
     console.log("req.data", req.data)
     req.on("data", data => {
-      console.log("data", data)
+      console.log("data", data.toString())
     })
     res.writeHead(200, _headers);
     res.end("200 ok")
