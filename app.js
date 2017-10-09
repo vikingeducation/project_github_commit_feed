@@ -25,10 +25,10 @@ const server = http.createServer((req, res) => {
 
   if (req.url === '/github/webhooks') {
     console.log("its reached to the endpoint github webhooks enpoint")
-    console.log("req.data", req.data)
     var buffer = '';
     req.on("data", (data) => {
       data = JSON.parse(data);
+      console.log(data)
       var name = data.pusher.name
       var repo = data.repository.name;
       github.getCommits(formData.username, formData.repo).then( gitcommits =>{
