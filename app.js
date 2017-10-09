@@ -30,7 +30,7 @@ const server = http.createServer((req, res) => {
       buffer += data.toString()
     })
     req.on("end", () => {
-      buffer = decodeURI(buffer)
+      buffer = decodeURIComponent(buffer)
       console.log("buffer", buffer)
       data = JSON.parse(buffer.slice(8))
       console.log(data)
