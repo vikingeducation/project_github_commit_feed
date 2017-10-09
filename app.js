@@ -23,19 +23,30 @@ var _headers = {
 const server = http.createServer((req, res) => {
   console.log("/req.url", req.url)
 
-  if (url.parse(req.url,true).pathname === '/github/webhooks') {
-    console.log("its reached to the endpoint github webhooks enpoint")
-    console.log("req.data", req.data)
-    var buffer = '';
-    req.on("data", (data) => {
-      console.log("i am in the req.on data")
-      console.log(JSON.parse(decodeURI(data).slice(8)));
-      buffer += JSON.parse(decodeURI(data).slice(8));
-      // data = JSON.parse(data);
-      // name = data.pusher.name;
-      // repo = data.repository.name;
-    })
-    console.log(buffer)
+  if (req.url === '/github/webhooks') {
+    // console.log("its reached to the endpoint github webhooks enpoint")
+    // console.log("req.data", req.data)
+    // var buffer = '';
+    // req.on("data", (data) => {
+    //   console.log("i am in the req.on data");
+    //   console.log("data", data)
+    //   console.log(JSON.parse(decodeURI(data).slice(8)));
+    //   buffer += JSON.parse(decodeURI(data).slice(8));
+    //   // data = JSON.parse(data);
+    //   // name = data.pusher.name;
+    //   // repo = data.repository.name;
+    //   console.log(buffer)
+    // })
+
+    if (req.url === "/github/webhooks") {
+    req.on("data", data => {
+      console.log(data.toString());
+    });
+    req.on("end", () => {
+      console.log("it finished");
+    });
+  }
+
 
     res.writeHead(200, _headers);
     res.end("200 ok")
@@ -49,9 +60,6 @@ const server = http.createServer((req, res) => {
         res.end('404 not found');
       }
       res.writeHead(200, _headers);
-
-
-
       if (url.parse(req.url).pathname === '/commits'){
         let formData = url.parse(req.url, true).query
         github.getCommits(formData.username, formData.repo).then( gitcommits =>{
