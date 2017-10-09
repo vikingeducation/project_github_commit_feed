@@ -31,12 +31,11 @@ const server = http.createServer((req, res) => {
     })
     req.on("end", () => {
       buffer = decodeURIComponent(buffer)
-      console.log("buffer", buffer)
       data = JSON.parse(buffer.slice(8))
       console.log(data)
       var name = data.pusher.name
       var repo = data.repository.name;
-      github.getCommits(formData.username, formData.repo).then( gitcommits =>{
+      github.getCommits(name, repo).then( gitcommits =>{
         gitcommits = gitcommits.data.map(gitcommit => {
           return {
             'message': gitcommit.commit.message,
