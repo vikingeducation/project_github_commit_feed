@@ -4,6 +4,9 @@ const fs = require('fs');
 const host = "localhost";
 const port = 3000;
 
+const commitsJSON = require('./data/commits.json')
+var commits = JSON.stringify(commitsJSON, null, 2)
+
 const server = http.createServer((req, res) => {
   fs.readFile('./public/index.html', 'utf8', (err, data) => {
       if (err) {
@@ -13,6 +16,8 @@ const server = http.createServer((req, res) => {
       res.writeHead(200, {
         'Content-Type': 'text/html'
       });
+
+      data = data.toString().replace( '{{ commitFeed }}', commits)
       res.end(data);
     });
   });
