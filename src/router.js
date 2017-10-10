@@ -1,6 +1,7 @@
 const url = require('url');
 const fs = require('fs');
 const commits = require('../data/commits.json');
+const github = require('./githubAPI.js');
 
 
 
@@ -54,8 +55,14 @@ const router = {
       '/commits': (req, res) => {
         parseReqData(req)
           .then((newReq) => {
-            req = newReq;
-            console.log(req.body);
+            const { userName, repoName } = newReq.body;
+            github.getCommits(userName, repoName)
+              .then((commits) => {
+                console.log(commits);
+              })
+              .catch((err) => {
+                console.error(err);
+              })
           })
           .catch((err) => {
             console.error(err);
