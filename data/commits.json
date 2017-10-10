@@ -1,15 +1,25 @@
 {
-  "Foobar": {
-    "foobar": [
+  "thomahau": {
+    "project_github_commit_feed": [
       {
+        "sha": "ceec1b2306888905ae12750558706174132a6741",
         "message": "Update README.md",
         "author": {
-          "name": "Foobar",
-          "email": "foobar@email.com",
-          "date": "2017-02-16T19:25:15Z"
+          "name": "Chris Scavello",
+          "email": "bideowego@gmail.com",
+          "date": "2017-02-21T16:48:57Z"
         },
-        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
+        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/ceec1b2306888905ae12750558706174132a6741"
+      },
+      {
+        "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55",
+        "message": "Initial commit",
+        "author": {
+          "name": "Chris Scavello",
+          "email": "bideowego@gmail.com",
+          "date": "2017-02-21T16:47:14Z"
+        },
+        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/526145a8b50b13bafc85f9c8e3fa603c93912f55"
       }
     ]
   }
