@@ -141,8 +141,8 @@ const router = {
 
               writeToCommitsFile(filteredCommits, userName);
 
-              res.writeHead(200, _headers);
-              res.end('200 OK');
+              // res.writeHead(200, _headers);
+              // res.end('200 OK');
             })
             .catch((err) => {
               console.error(err);
