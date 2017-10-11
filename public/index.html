@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Github Commit Feed</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+    <section id='form'>
+      <h1>The Github Commit Feed</h1>
+
+      <form class='github-form' action='/commits' method='post'>
+        <div class='form-row'>
+          <span>Github Username:</span>
+          <input type='text' name='userName' placeholder='Enter the username' />
+        </div>
+        <div class='form-row'>
+          <span>Github Repo:</span>
+          <input type='text' name='repoName' placeholder='Enter the repo name' />
+        </div>
+        <div>
+          <button type='submit'>Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section id='commit-feed'>
+      <pre>{{ commitFeed }}</pre>
+    </section>
+
+  </body>
+</html>
