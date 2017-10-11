@@ -1,3 +1,3 @@
 # project_github_commit_feed
 
-updated readme 6
+updated readme
