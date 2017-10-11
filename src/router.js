@@ -114,9 +114,9 @@ const router = {
         };
 
         let strData = '';
-        
+
         req.on('data', (data) => {
-          data += strData;
+          strData += data;
         });
 
         req.on('end', () => {
