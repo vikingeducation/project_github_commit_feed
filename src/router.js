@@ -116,11 +116,37 @@ const router = {
         let strData = '';
 
         req.on('data', (data) => {
-          strData += data;
+          strData += data.toString();
         });
 
         req.on('end', () => {
-          console.log(strData);
+          let webhookData = JSON.parse(strData);
+          console.log(webhookData);
+
+          const userName = webhookData.pusher.name;
+          const repoName = webhookData.repository.name;
+
+          github.getCommits(userName, repoName)
+            .then((commits) => {
+              commitsArr = commits.data;
+
+              const filteredCommits = commitsArr.map((commit) => {
+                return {
+                  sha: commit.sha,
+                  message: commit.commit.message,
+                  url: commit.html_url,
+                  author: commit.author,
+                }
+              });
+
+              writeToCommitsFile(filteredCommits, userName);
+
+              res.writeHead(200, _headers);
+              res.end('200 OK');
+            })
+            .catch((err) => {
+              console.error(err);
+            })
         });
       },
     }
