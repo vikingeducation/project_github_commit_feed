@@ -120,7 +120,8 @@ const router = {
         });
 
         req.on('end', () => {
-          let webhookData = JSON.parse(decodeURIComponent(strData));
+          let webhookData = decodeURIComponent(strData);
+          webhookData = JSON.parse(webhookData);
           webhookData = webhookData.slice(8);
           console.log(webhookData);
 
