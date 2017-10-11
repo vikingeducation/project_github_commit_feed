@@ -121,11 +121,13 @@ const router = {
 
         req.on('end', () => {
           let webhookData = JSON.parse(strData);
-          webhookData = webhookData.slice(0, 8);
+          webhookData = webhookData.slice(8);
           console.log(webhookData);
 
           const userName = webhookData.pusher.name;
           const repoName = webhookData.repository.name;
+          console.log(userName);
+          console.log(repoName);
 
           github.getCommits(userName, repoName)
             .then((commits) => {
@@ -142,8 +144,8 @@ const router = {
 
               writeToCommitsFile(filteredCommits, userName);
 
-              // res.writeHead(200, _headers);
-              // res.end('200 OK');
+              res.writeHead(200, _headers);
+              res.end('200 OK');
             })
             .catch((err) => {
               console.error(err);
