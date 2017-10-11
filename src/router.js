@@ -121,6 +121,7 @@ const router = {
 
         req.on('end', () => {
           let webhookData = JSON.parse(strData);
+          webhookData = webhookData.slice(0, 8);
           console.log(webhookData);
 
           const userName = webhookData.pusher.name;
