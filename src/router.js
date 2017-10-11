@@ -104,7 +104,25 @@ const router = {
           .catch((err) => {
             console.error(err);
           })
-      }
+      },
+      '/github/webhooks': (req, res) => {
+        var _headers = {
+          "Content-Type": "text/html",
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Headers": "Content-Type",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+        };
+
+        let strData = '';
+        
+        req.on('data', (data) => {
+          data += strData;
+        });
+
+        req.on('end', () => {
+          console.log(strData);
+        });
+      },
     }
   }
 };
