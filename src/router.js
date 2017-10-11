@@ -31,6 +31,32 @@ function parseReqData(req) {
   })
 }
 
+function writeToCommitsFile(commitsArr, username) {
+  const path = './data/commits.json';
+  const newCommits = commits;
+
+  if (newCommits) {
+    newCommits[username] = commitsArr;
+
+    fs.writeFile(path, JSON.stringify(newCommits, null, 2), (err) => {
+      if (err) {
+        throw err;
+      }
+
+      console.log('Added new user commits to commits');
+    });
+  } else {
+    fs.writeFile(path, JSON.stringify(commitsArr, null, 2), (err) => {
+      if (err) {
+        throw err;
+      }
+
+      console.log('Wrote to path!');
+    });
+  }
+}
+
+
 const router = {
   routes: {
     'get': {
@@ -58,7 +84,18 @@ const router = {
             const { userName, repoName } = newReq.body;
             github.getCommits(userName, repoName)
               .then((commits) => {
-                console.log(commits);
+                commitsArr = commits.data;
+
+                const filteredCommits = commitsArr.map((commit) => {
+                  return {
+                    sha: commit.sha,
+                    message: commit.commit.message,
+                    url: commit.html_url,
+                    author: commit.author,
+                  }
+                });
+
+                writeToCommitsFile(filteredCommits, userName);
               })
               .catch((err) => {
                 console.error(err);
