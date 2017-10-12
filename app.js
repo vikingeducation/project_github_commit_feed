@@ -38,6 +38,7 @@ const _saveCommits = (data, done) => {
 const server = http.createServer((req, res) => {
   const method = req.method.toLowerCase();
   const urlObj = url.parse(req.url, true);
+  console.log(urlObj.pathname);
   const { user, repo } = urlObj.query;
 
   const github = new GithubApiWrapper();
@@ -69,10 +70,10 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen('/github/webhooks', () => {
-  console.log('Listening');
-});
-
-// server.listen(port, host, () => {
-//   console.log(`Listening at http://${host}:${port}`);
+// server.listen('/github/webhooks', () => {
+//   console.log('Listening');
 // });
+
+server.listen(port, host, () => {
+  console.log(`Listening at http://${host}:${port}`);
+});
