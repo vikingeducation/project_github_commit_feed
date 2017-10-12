@@ -20,11 +20,12 @@ const _extractPostData = (req, done) => {
     body += data;
   });
   req.on('end', () => {
-    // body = body.slice(8, body.length);
-    let webhookData = querystring.parse(body, null, null);
-    console.dir(webhookData, { depth: 0, colors: true });
-    console.log(webhookData.payload.pusher.name);
-    console.log(webhookData.payload.repository.name);
+    body = unescape(body).slice(8);
+    console.log(body);
+    // let webhookData = querystring.parse(body, null, null);
+    // console.dir(webhookData, { depth: 0, colors: true });
+    // console.log(webhookData.payload.pusher.name);
+    // console.log(webhookData.payload.repository.name);
     // console.log(JSON.parse(webhookData));
     done();
   });
