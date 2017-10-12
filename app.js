@@ -22,7 +22,7 @@ const _extractPostData = (req, done) => {
   req.on('end', () => {
     const result = querystring.parse(body, null, null);
     console.log(result);
-    // console.log(JSON.parse(body));
+    console.log(JSON.parse(result));
     done();
   });
 };
