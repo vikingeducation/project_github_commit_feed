@@ -5,7 +5,25 @@ const GithubApiWrapper = require('./lib/github');
 
 const port = process.env.PORT || 3000;
 const host = 'localhost';
+const _headers = {
+  'Content-Type': 'text/html',
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'Content-Type',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE'
+};
 let commitFeed;
+
+const _extractPostData = (req, done) => {
+  let body = '';
+  req.on('data', (data) => {
+    body += data;
+  });
+  req.on('end', () => {
+    console.log(body);
+    console.log(JSON.parse(body));
+    done();
+  });
+};
 
 const _saveCommits = (data, done) => {
   const commitString = JSON.stringify(data, null, 2);
@@ -16,12 +34,15 @@ const _saveCommits = (data, done) => {
 };
 
 const server = http.createServer((req, res) => {
+  const method = req.method.toLowerCase();
   const urlObj = url.parse(req.url, true);
   const { user, repo } = urlObj.query;
 
   const github = new GithubApiWrapper();
   const p = new Promise((resolve) => {
-    if (user) {
+    if (method === 'post') {
+      _extractPostData(req, resolve);
+    } else if (user) {
       github.getCommits(user, repo, (results) => {
         // console.dir(results, { depth: null, colors: true });
         _saveCommits(results, resolve);
@@ -36,16 +57,19 @@ const server = http.createServer((req, res) => {
         res.writeHead(404);
         res.end('404 Not Found');
       } else {
-        res.writeHead(200, {
-          'Content-Type': 'text/html'
-        });
+        res.writeHead(200, _headers);
         commitFeed = JSON.parse(fs.readFileSync('./data/commits.json', 'utf8'));
         commitFeed = JSON.stringify(commitFeed, null, 2);
-        res.end(data.replace('{{ commitFeed }}', commitFeed));
+        res.write(data.replace('{{ commitFeed }}', commitFeed));
+        res.end('200 OK');
       }
     });
   });
 });
+
+// server.listen('/github/webhooks', () => {
+//   console.log('Listening');
+// });
 
 server.listen(port, host, () => {
   console.log(`Listening at http://${host}:${port}`);
