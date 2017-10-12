@@ -1,65 +1,1005 @@
 {
-  "thomahau": {
-    "assignment_royalty_free_music_player": [
+  "curl": {
+    "curl": [
       {
-        "sha": "976362b7fd2617c270a59d8b536bfe559b11a467",
-        "message": "Delete .DS_Store",
+        "sha": "35ad79dcdd8bb181105db656cba82e5501e81c4a",
+        "message": "RELEASE-NOTES: synced with 5505df7d2",
         "author": {
-          "name": "thomahau",
-          "email": "30753761+thomahau@users.noreply.github.com",
-          "date": "2017-08-29T07:23:05Z"
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-11T10:00:19Z"
         },
-        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/976362b7fd2617c270a59d8b536bfe559b11a467"
+        "url": "https://api.github.com/repos/curl/curl/commits/35ad79dcdd8bb181105db656cba82e5501e81c4a"
       },
       {
-        "sha": "a1cd6b533a06280a6c3660f822f72f209d82d7c4",
-        "message": "finished music player",
+        "sha": "5505df7d24a2c251c7ed81a389781abca0cc5b25",
+        "message": "url: Update current connection SSL verify params in setopt\n\nNow VERIFYHOST, VERIFYPEER and VERIFYSTATUS options change during active\nconnection updates the current connection's (i.e.'connectdata'\nstructure) appropriate ssl_config (and ssl_proxy_config) structures\nvariables, making these options effective for ongoing connection.\n\nThis functionality was available before and was broken by the\nfollowing change:\n\"proxy: Support HTTPS proxy and SOCKS+HTTP(s)\"\nCommitId: cb4e2be7c6d42ca0780f8e0a747cecf9ba45f151.\n\nBug: https://github.com/curl/curl/issues/1941\n\nCloses https://github.com/curl/curl/pull/1951",
         "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-08-29T07:14:37Z"
+          "name": "Artak Galoyan",
+          "email": "agaloyan@vmware.com",
+          "date": "2017-10-05T19:43:13Z"
         },
-        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/a1cd6b533a06280a6c3660f822f72f209d82d7c4"
+        "url": "https://api.github.com/repos/curl/curl/commits/5505df7d24a2c251c7ed81a389781abca0cc5b25"
       },
       {
-        "sha": "1fdb68d9c7948962661f9f4f0e2f70569a9ec77f",
-        "message": "controls now update icons",
+        "sha": "de7597f155beea1cfba341bd7d8d7bb6202edba0",
+        "message": "openssl: don't use old BORINGSSL_YYYYMM macros\n\nThose were temporary things we'd add and remove for our own convenience\nlong ago. The last few stayed around for too long as an oversight but\nhave since been removed. These days we have a running\nBORINGSSL_API_VERSION counter which is bumped when we find it\nconvenient, but 2015-11-19 was quite some time ago, so just check\nOPENSSL_IS_BORINGSSL.\n\nCloses #1979",
         "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-08-26T10:44:51Z"
+          "name": "David Benjamin",
+          "email": "davidben@google.com",
+          "date": "2017-10-09T15:41:02Z"
         },
-        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/1fdb68d9c7948962661f9f4f0e2f70569a9ec77f"
+        "url": "https://api.github.com/repos/curl/curl/commits/de7597f155beea1cfba341bd7d8d7bb6202edba0"
       },
       {
-        "sha": "e4f4f8b68e8ae7dffb7805bfec75b75ff89c70a3",
-        "message": "finishing structure",
+        "sha": "06bba26e37be921d19ed9c950aa80c4188ccba0f",
+        "message": "test950; verify SMTP with custom request",
         "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-08-26T06:52:25Z"
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-10T14:59:13Z"
         },
-        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/e4f4f8b68e8ae7dffb7805bfec75b75ff89c70a3"
+        "url": "https://api.github.com/repos/curl/curl/commits/06bba26e37be921d19ed9c950aa80c4188ccba0f"
       },
       {
-        "sha": "d959f390de5794998d8a42a18003dc0ff1ae3fe2",
-        "message": "initial commit",
+        "sha": "b20df573269a3672b9d1166bb1dec639db38d540",
+        "message": "ftpserver: support case insensitive commands",
         "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-08-25T02:23:03Z"
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-10T14:58:40Z"
         },
-        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/d959f390de5794998d8a42a18003dc0ff1ae3fe2"
+        "url": "https://api.github.com/repos/curl/curl/commits/b20df573269a3672b9d1166bb1dec639db38d540"
       },
       {
-        "sha": "11637a7fda9e1d4032b36e65ab577870f2860cbf",
-        "message": "Initial commit",
+        "sha": "38ab7b4ccb18f03c0323d412ff0f3613cd66f5e5",
+        "message": "smtp_done: free data before returning (on send failure)\n\n... as otherwise it could leak that memory.\n\nDetected by OSS-fuzz:\nhttps://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3600\n\nAssisted-by: Max Dymond\nCloses #1977",
         "author": {
-          "name": "Kit Langton",
-          "email": "kitlangton@gmail.com",
-          "date": "2017-01-11T14:56:12Z"
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-10T12:34:57Z"
         },
-        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/11637a7fda9e1d4032b36e65ab577870f2860cbf"
+        "url": "https://api.github.com/repos/curl/curl/commits/38ab7b4ccb18f03c0323d412ff0f3613cd66f5e5"
+      },
+      {
+        "sha": "ecf21c551fa3426579463abe34b623111b8d487c",
+        "message": "FTP: URL decode path for dir listing in nocwd mode\n\nReported-by: Zenju on github\n\nTest 244 added to verify\nFixes #1974\nCloses #1976",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-10T10:02:11Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/ecf21c551fa3426579463abe34b623111b8d487c"
+      },
+      {
+        "sha": "00fb811e2b05ed88d4847c0a96a7dddb51e77bcf",
+        "message": "test298: verify --ftp-method nowcwd with URL encoded path\n\nRef: #1974",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-09T20:50:40Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/00fb811e2b05ed88d4847c0a96a7dddb51e77bcf"
+      },
+      {
+        "sha": "f8e593887e7ef69de8e07e10c62c4e1b2faca30e",
+        "message": "CURLOPT_XFERINFODATA.3: fix duplicate see also",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-09T14:24:36Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/f8e593887e7ef69de8e07e10c62c4e1b2faca30e"
+      },
+      {
+        "sha": "d895a83a3bb64719b06c4c0d0744d876a30e152d",
+        "message": "CURLOPT_NOPROGRESS.3: also refer to xferinfofunction",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-09T14:24:19Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/d895a83a3bb64719b06c4c0d0744d876a30e152d"
+      },
+      {
+        "sha": "7f555dc5a497f6beedfe6c183e3bc2d47f434704",
+        "message": "FAQ: s/CURLOPT_PROGRESSFUNCTION/CURLOPT_XFERINFOFUNCTION",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-09T14:13:27Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/7f555dc5a497f6beedfe6c183e3bc2d47f434704"
+      },
+      {
+        "sha": "62a721ea47e1e697faa7e3d87c8c9025808a8667",
+        "message": "openssl: enable PKCS12 support for !BoringSSL\n\nEnable PKCS12 for all non-boringssl builds without relying on configure\nor cmake checks.\n\nBug: https://curl.haxx.se/mail/lib-2017-10/0007.html\nReported-by: Christian Schmitz\nCloses #1948",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-05T08:16:40Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/62a721ea47e1e697faa7e3d87c8c9025808a8667"
+      },
+      {
+        "sha": "c95c92da7584483368c8761c8cca276b5401530c",
+        "message": "curl: don't pass semicolons when parsing Content-Disposition\n\nTest 1422 updated to verify.\n\nCloses #1964",
+        "author": {
+          "name": "Kristiyan Tsaklev",
+          "email": "cuki@cukii.tk",
+          "date": "2017-10-07T14:47:11Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/c95c92da7584483368c8761c8cca276b5401530c"
+      },
+      {
+        "sha": "06cb8adde2ef85c3ac610f93c0fc8a34a3e299b6",
+        "message": "mime: properly unbind mime structure in curl_mime_free().\n\nThis allows freeing a mime structure bound to the easy handle before\ncurl_easy_cleanup().\n\nFixes #1970.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-09T00:26:27Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/06cb8adde2ef85c3ac610f93c0fc8a34a3e299b6"
+      },
+      {
+        "sha": "232dffcf2422baefa66617fdae2fb20085a8e386",
+        "message": "RTSP: avoid integer overflow on funny RTSP response\n\n... like a very large non-existing RTSP version number.\n\nAdded test 577 to verify.\n\nDetected by OSS-fuzz.\nCloses #1969",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-08T15:15:44Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/232dffcf2422baefa66617fdae2fb20085a8e386"
+      },
+      {
+        "sha": "eb04636d68b078ac86558147ca124676f32dc285",
+        "message": "ftpserver: properly reset $ftptargetdir.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-08T18:29:44Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/eb04636d68b078ac86558147ca124676f32dc285"
+      },
+      {
+        "sha": "70c3ed48ac737ab7fa83600313cf4bd9c2443ee5",
+        "message": "test643: verify curl_mime_subparts() rejects cyclic additions.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-08T18:05:59Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/70c3ed48ac737ab7fa83600313cf4bd9c2443ee5"
+      },
+      {
+        "sha": "ebcbed3821533a884e18f9441084da9449514fdf",
+        "message": "mime: refuse to add subparts to one of their own descendants.\n\nReported-by: Alexey Melnichuk\nFixes #1962",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-08T17:49:52Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/ebcbed3821533a884e18f9441084da9449514fdf"
+      },
+      {
+        "sha": "112ea5adb6f5503ff7569655526f6d809761d9bb",
+        "message": "mime: avoid resetting a part's encoder when part's contents change.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-08T17:43:13Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/112ea5adb6f5503ff7569655526f6d809761d9bb"
+      },
+      {
+        "sha": "b557182db1622510ebba3344747b6787994a75e2",
+        "message": "mime: improve unbinding top multipart from easy handle.\n\nAlso avoid dangling pointers in referencing parts.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-08T17:38:34Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/b557182db1622510ebba3344747b6787994a75e2"
+      },
+      {
+        "sha": "dd97fd3bb3e365681de3b3254169bea3608688ea",
+        "message": "RELEASE-NOTES: synced with a4c1c75da30af1",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-08T15:27:57Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/dd97fd3bb3e365681de3b3254169bea3608688ea"
+      },
+      {
+        "sha": "a4c1c75da30af11ed4ba129308d0a906b54a252e",
+        "message": "curlver.h: next expected release is 7.57.0",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-08T15:27:21Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/a4c1c75da30af11ed4ba129308d0a906b54a252e"
+      },
+      {
+        "sha": "93e62adde88b6ae29767d977b6a813df21c32f02",
+        "message": "mime: be tolerant about setting twice the same header list in a part.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-08T15:20:13Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/93e62adde88b6ae29767d977b6a813df21c32f02"
+      },
+      {
+        "sha": "14d6e207d35792e3e10a674b2e27cf2aa3370bf8",
+        "message": "docs: clarify form/mime usage of non-regular data files.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-08T15:15:23Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/14d6e207d35792e3e10a674b2e27cf2aa3370bf8"
+      },
+      {
+        "sha": "b2df2d47e58d1150f11ea2f42aac6b84fa7f4d00",
+        "message": "Revert \"multi_done: wait for name resolve to finish if still ongoing\"\n\nThis reverts commit f3e03f6c0ac52a1bf396e03f7d7e9b5b3b7165fe.\n\nCaused memory leaks in the fuzzer, needs to be done differently.\n\nDisable test 1553 for now too, as it causes memory leaks without this\ncommit!",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-07T22:50:33Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/b2df2d47e58d1150f11ea2f42aac6b84fa7f4d00"
+      },
+      {
+        "sha": "1e552535e1762acd36c930299b46829e58eb1583",
+        "message": "remove_handle: call multi_done() first, then clear dns cache pointer\n\nCloses #1960",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-07T20:00:48Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/1e552535e1762acd36c930299b46829e58eb1583"
+      },
+      {
+        "sha": "f3e03f6c0ac52a1bf396e03f7d7e9b5b3b7165fe",
+        "message": "multi_done: wait for name resolve to finish if still ongoing\n\n... as we must clean up memory.",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-07T15:54:41Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/f3e03f6c0ac52a1bf396e03f7d7e9b5b3b7165fe"
+      },
+      {
+        "sha": "5b54df06d2cec422d5f237e0fa0212be0303edce",
+        "message": "pingpong: return error when trying to send without connection\n\nWhen imap_done() got called before a connection is setup, it would try\nto \"finish up\" and dereffed a NULL pointer.\n\nTest case 1553 managed to reproduce. I had to actually use a host name\nto try to resolve to slow it down, as using the normal local server IP\nwill make libcurl get a connection in the first curl_multi_perform()\nloop and then the bug doesn't trigger.\n\nFixes #1953\nAssisted-by: Max Dymond",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-06T15:20:54Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/5b54df06d2cec422d5f237e0fa0212be0303edce"
+      },
+      {
+        "sha": "0af5ac27c3d818f0a962de1e1029c0af7d497080",
+        "message": "tests: added flaky keyword to tests 587 and 644\n\nThese are around 5% flaky in my Linux x86 autobuilds.",
+        "author": {
+          "name": "Dan Fandrich",
+          "email": "dan@coneharvesters.com",
+          "date": "2017-10-06T21:04:40Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/0af5ac27c3d818f0a962de1e1029c0af7d497080"
+      },
+      {
+        "sha": "202189ff2c832bf39e7e6d9a6b8b2c980cc4201b",
+        "message": "vtls: fix warnings with --disable-crypto-auth\n\nWhen CURL_DISABLE_CRYPTO_AUTH is defined, Curl_none_md5sum's parameters\nare not used.",
+        "author": {
+          "name": "Marcel Raad",
+          "email": "marcel.raad@teamviewer.com",
+          "date": "2017-10-06T17:01:19Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/202189ff2c832bf39e7e6d9a6b8b2c980cc4201b"
+      },
+      {
+        "sha": "7f1140c8bfc47dd9b7a8010818e97e87a289bfaf",
+        "message": "multi_cleanup: call DONE on handles that never got that\n\n... fixes a memory leak with at least IMAP when remove_handle is never\ncalled and the transfer is abruptly just abandoned early.\n\nTest 1552 added to verify\n\nDetected by OSS-fuzz\nAssisted-by: Max Dymond\nCloses #1954",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-05T23:11:17Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/7f1140c8bfc47dd9b7a8010818e97e87a289bfaf"
+      },
+      {
+        "sha": "454dae0092d6f367fe486bdfd49f781329bf4500",
+        "message": "strtoofft: Remove extraneous null check\n\nFixes #1950: curlx_strtoofft() doesn't fully protect against null 'str'\nargument.\n\nCloses #1952",
+        "author": {
+          "name": "Benbuck Nason",
+          "email": "bnason@netflix.com",
+          "date": "2017-10-05T19:45:51Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/454dae0092d6f367fe486bdfd49f781329bf4500"
+      },
+      {
+        "sha": "2dcc378381881a374289d3a1fefb3495d687bf50",
+        "message": "openssl: fix build without HAVE_OPAQUE_EVP_PKEY\n\nReported-by: Javier Sixto\nFixes #1955\nCloses #1956",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-06T08:29:51Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/2dcc378381881a374289d3a1fefb3495d687bf50"
+      },
+      {
+        "sha": "24bba4045677065354c041b69820a1988bd5944f",
+        "message": "lib/config-win32.h: let SMB/SMBS be enabled with OpenSSL/NSS\n\nThe source code is now prepared to handle the case when both\nWin32 Crypto and OpenSSL/NSS crypto backends are enabled\nat the same time, making it now possible to enable `USE_WIN32_CRYPTO`\nwhenever the targeted Windows version supports it. Since this\nmatches the minimum Windows version supported by curl\n(Windows 2000), enable it unconditionally for the Win32 platform.\n\nThis in turn enables SMB (and SMBS) protocol support whenever\nWin32 Crypto is available, regardless of what other crypto backends\nare enabled.\n\nRef: https://github.com/curl/curl/pull/1840#issuecomment-325682052\n\nCloses https://github.com/curl/curl/pull/1943",
+        "author": {
+          "name": "Viktor Szakats",
+          "email": "vszakats@users.noreply.github.com",
+          "date": "2017-10-06T07:37:42Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/24bba4045677065354c041b69820a1988bd5944f"
+      },
+      {
+        "sha": "7bc5308db3385cdc31efa8182b58e229eb721994",
+        "message": "build: fix --disable-crypto-auth\n\nReported-by: Wyatt O'Day\nFixes #1945\nCloses #1947",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-04T22:20:34Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/7bc5308db3385cdc31efa8182b58e229eb721994"
+      },
+      {
+        "sha": "3e492e03b37ce76cbd0ccca1c001aaa3b17b3372",
+        "message": "darwinssl: add support for TLSv1.3\n\nCloses https://github.com/curl/curl/pull/1794",
+        "author": {
+          "name": "Nick Zitzmann",
+          "email": "nickzman@gmail.com",
+          "date": "2017-08-16T18:05:09Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/3e492e03b37ce76cbd0ccca1c001aaa3b17b3372"
+      },
+      {
+        "sha": "2592241d63c1ec56db05575c85b1647d05776e22",
+        "message": "docs: fix typo in curl_mime_data_cb man page\n\nCloses #1946",
+        "author": {
+          "name": "Felix Kaiser",
+          "email": "felix.kaiser@fxkr.net",
+          "date": "2017-10-04T20:03:49Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/2592241d63c1ec56db05575c85b1647d05776e22"
+      },
+      {
+        "sha": "aaa16f80256abc1463fd9374815130a165222257",
+        "message": "lib/Makefile.m32: allow customizing dll suffixes\n\n- New `CURL_DLL_SUFFIX` envvar will add a suffix to the generated\n  libcurl dll name. Useful to add `-x64` to 64-bit builds so that\n  it can live in the same directory as the 32-bit one. By default\n  this is empty.\n\n- New `CURL_DLL_A_SUFFIX` envvar to customize the suffix of the\n  generated import library (implib) for libcurl .dll. It defaults\n  to `dll`, and it's useful to modify that to `.dll` to have the\n  standard naming scheme for mingw-built .dlls, i.e. `libcurl.dll.a`.\n\nCloses https://github.com/curl/curl/pull/1942",
+        "author": {
+          "name": "Viktor Szakats",
+          "email": "vszakats@users.noreply.github.com",
+          "date": "2017-10-04T15:57:19Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/aaa16f80256abc1463fd9374815130a165222257"
+      },
+      {
+        "sha": "4f38db1d28a971f938400f558e968fdffb9233a0",
+        "message": "fuzzer: move to using external curl-fuzzer\n\nUse the external curl-fuzzer repository for fuzzing.\n\nCloses #1923",
+        "author": {
+          "name": "Max Dymond",
+          "email": "cmeister2@gmail.com",
+          "date": "2017-09-25T09:59:18Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/4f38db1d28a971f938400f558e968fdffb9233a0"
+      },
+      {
+        "sha": "120d963a64f121619d69d6590b2cba7783a7df2a",
+        "message": "failf: skip the sprintf() if there are no consumers\n\nCloses #1936",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-03T12:26:36Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/120d963a64f121619d69d6590b2cba7783a7df2a"
+      },
+      {
+        "sha": "a69a4d222d661268e196d481a2a2b5c3c4cd6848",
+        "message": "ftp: UBsan fixup 'pointer index expression overflowed'\n\nCloses #1939",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-03T15:20:06Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/a69a4d222d661268e196d481a2a2b5c3c4cd6848"
+      },
+      {
+        "sha": "031c3675315006932f63a1e195d1be7078b3e5fd",
+        "message": "RELEASE-PROCEDURE: update the release schedule",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-04T07:03:04Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/031c3675315006932f63a1e195d1be7078b3e5fd"
+      },
+      {
+        "sha": "3ea76790571c1f7cf1bed34fabffd3cc20ad3dd3",
+        "message": "RELEASE-NOTES: curl 7.56.0",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-30T21:51:01Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/3ea76790571c1f7cf1bed34fabffd3cc20ad3dd3"
+      },
+      {
+        "sha": "6119ce0802d05c46ff1d154ad2e51b956d7bf368",
+        "message": "THANKS: added new 7.56.0 contributors",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-01T21:19:52Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/6119ce0802d05c46ff1d154ad2e51b956d7bf368"
+      },
+      {
+        "sha": "e702df7a84cb7004a061a5bc53bc1032d6b125f4",
+        "message": "build-openssl.bat: Warn OpenSSL 1.1.0 not yet supported\n\nRef: https://github.com/curl/curl/issues/1002",
+        "author": {
+          "name": "Jay Satiro",
+          "email": "raysatiro@yahoo.com",
+          "date": "2017-10-04T04:56:31Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/e702df7a84cb7004a061a5bc53bc1032d6b125f4"
+      },
+      {
+        "sha": "5f1fa5827d949fb6be62f10eecf61bd64b5945a5",
+        "message": "idn: fix source code comment",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-10-03T16:46:50Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/5f1fa5827d949fb6be62f10eecf61bd64b5945a5"
+      },
+      {
+        "sha": "9d3dde37a8ef5eb0fa03f411eb4296ffdbe6cf3d",
+        "message": "vtls: compare and clone ssl configs properly\n\nCompare these settings in Curl_ssl_config_matches():\n- verifystatus (CURLOPT_SSL_VERIFYSTATUS)\n- random_file (CURLOPT_RANDOM_FILE)\n- egdsocket (CURLOPT_EGDSOCKET)\n\nAlso copy the setting \"verifystatus\" in Curl_clone_primary_ssl_config(),\nand copy the setting \"sessionid\" unconditionally.\n\nThis means that reusing connections that are secured with a client\ncertificate is now possible, and the statement \"TLS session resumption\nis disabled when a client certificate is used\" in the old advisory at\nhttps://curl.haxx.se/docs/adv_20170419.html is obsolete.\n\nReviewed-by: Daniel Stenberg\n\nCloses #1917",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-24T12:08:29Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/9d3dde37a8ef5eb0fa03f411eb4296ffdbe6cf3d"
+      },
+      {
+        "sha": "c4ebd8b46de09d45e251bed7e9bfc2a0ddf21d98",
+        "message": "proxy: read the \"no_proxy\" variable only if necessary\n\nReviewed-by: Daniel Stenberg\n\nCloses #1919",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-24T13:21:44Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/c4ebd8b46de09d45e251bed7e9bfc2a0ddf21d98"
+      },
+      {
+        "sha": "ff6774ea6a03ae193f92e7175e9b96aaffb3f44c",
+        "message": "libcurl-tutorial: add casts in example to avoid compilation warnings.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-03T10:03:46Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/ff6774ea6a03ae193f92e7175e9b96aaffb3f44c"
+      },
+      {
+        "sha": "c3e58d93de9449bc9e85d89d75c0a75a9e3d5fec",
+        "message": "examples: bring back curl_formadd-using examples\n\n... now with a -formadd suffix. While the new mime API is introduced in\n7.56.0 we must acknowledge that lots of users can't upgrade their curl\nversions immediately.",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-10-03T05:59:55Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/c3e58d93de9449bc9e85d89d75c0a75a9e3d5fec"
+      },
+      {
+        "sha": "2322891330e7ec5f551edc59cd3c5fc8993bb310",
+        "message": "test1153: verify quoted double-qoutes in PWD response",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-25T09:16:15Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/2322891330e7ec5f551edc59cd3c5fc8993bb310"
+      },
+      {
+        "sha": "5ff2c5ff25750aba1a8f64fbcad8e5b891512584",
+        "message": "FTP: zero terminate the entry path even on bad input\n\n... a single double quote could leave the entry path buffer without a zero\nterminating byte. CVE-2017-1000254\n\nTest 1152 added to verify.\n\nReported-by: Max Dymond\nBug: https://curl.haxx.se/docs/adv_20171004.html",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-24T22:35:22Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/5ff2c5ff25750aba1a8f64fbcad8e5b891512584"
+      },
+      {
+        "sha": "440dbcb06e8dedba1551e32046a9415adb82eb0b",
+        "message": "cmake: disable tests and man generation if perl/nroff not found\n\nFixes https://github.com/curl/curl/issues/1500\nReported-by: Jay Satiro\n\nFixes https://github.com/curl/curl/pull/1662\nAssisted-by: Tom Seddon\nAssisted-by: dpull@users.noreply.github.com\nAssisted-by: elelel@users.noreply.github.com\n\nCloses https://github.com/curl/curl/pull/1924",
+        "author": {
+          "name": "Sergei Nikulov",
+          "email": "sergey.nikulov@gmail.com",
+          "date": "2017-09-26T07:42:12Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/440dbcb06e8dedba1551e32046a9415adb82eb0b"
+      },
+      {
+        "sha": "753a5da906f2ce21d82c4e6210697b9110c151a9",
+        "message": "libcurl-tutorial: fix two typos.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-01T23:12:55Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/753a5da906f2ce21d82c4e6210697b9110c151a9"
+      },
+      {
+        "sha": "3ac14ab39a0b1832465f338e6542442cf36f485c",
+        "message": "TODO: remove deprecated form API items.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-01T17:42:52Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/3ac14ab39a0b1832465f338e6542442cf36f485c"
+      },
+      {
+        "sha": "525251398f6f3f8e1e973df315c07ce00a254ea5",
+        "message": "libcurl-tutorial: describe MIME API and deprecate form API.\n\nInclude a guide to form/mime API conversion.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-10-01T17:31:52Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/525251398f6f3f8e1e973df315c07ce00a254ea5"
+      },
+      {
+        "sha": "8392a0cf612eaf045addc0b5d8da6d287be33907",
+        "message": "cookie: fix memory leak if path was set twice in header\n\n... this will let the second occurance override the first.\n\nAdded test 1161 to verify.\n\nReported-by: Max Dymond\nFixes #1932\nCloses #1933",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-30T12:10:12Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/8392a0cf612eaf045addc0b5d8da6d287be33907"
+      },
+      {
+        "sha": "cecffff561b4cb5707510cfbc0bc41fe0e5b346a",
+        "message": "test650: Use variable replacement to set the host address and port\n\nOtherwise, the test fails when the -b test option is used to set a\ndifferent test port range.",
+        "author": {
+          "name": "Dan Fandrich",
+          "email": "dan@coneharvesters.com",
+          "date": "2017-09-29T23:37:55Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/cecffff561b4cb5707510cfbc0bc41fe0e5b346a"
+      },
+      {
+        "sha": "df7839b68c7a3e78c469efc28157ad0df228f32f",
+        "message": "Set and use more necessary options when some protocols are disabled\n\nWhen curl and libcurl are built with some protocols disabled, they stop\nsetting and receiving some options that don't make sense with those\nprotocols.  In particular, when HTTP is disabled many options aren't set\nthat are used only by HTTP.  However, some options that appear to be\nHTTP-only are actually used by other protocols as well (some despite\nhaving HTTP in the name) and should be set, but weren't. This change now\ncauses some of these options to be set and used for more (or for all)\nprotocols. In particular, this fixes tests 646 through 649 in an\nHTTP-disabled build, which use the MIME API in the mail protocols.",
+        "author": {
+          "name": "Dan Fandrich",
+          "email": "dan@coneharvesters.com",
+          "date": "2017-09-29T23:20:56Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/df7839b68c7a3e78c469efc28157ad0df228f32f"
+      },
+      {
+        "sha": "a352e21c0bb7a2ae0d2737408198d331037c37c7",
+        "message": "test1160: verifies cookie leak for large cookies\n\nThe fix done in 20ea22ff735",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-29T07:19:09Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/a352e21c0bb7a2ae0d2737408198d331037c37c7"
+      },
+      {
+        "sha": "20ea22ff735097a02721fcb5cd44433973af6190",
+        "message": "cookie: fix memory leak on oversized rejection\n\nRegression brought by 2bc230de63b\n\nDetected by OSS-fuzz: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3513\nAssisted-by: Max Dymond\n\nCloses #1930",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-29T06:50:15Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/20ea22ff735097a02721fcb5cd44433973af6190"
+      },
+      {
+        "sha": "49d75a4c15393d66e9f3e0ce289a610da4d6e5a9",
+        "message": "connect: fix race condition with happy eyeballs timeout\n\nThe timer should be started after conn->connecttime is set. Otherwise\nthe timer could expire without this condition being true:\n\n    /* should we try another protocol family? */\n    if(i == 0 && conn->tempaddr[1] == NULL &&\n      curlx_tvdiff(now, conn->connecttime) >= HAPPY_EYEBALLS_TIMEOUT) {\n\nRef: #1928",
+        "author": {
+          "name": "Anders Bakken",
+          "email": "agbakken@gmail.com",
+          "date": "2017-09-28T15:20:04Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/49d75a4c15393d66e9f3e0ce289a610da4d6e5a9"
+      },
+      {
+        "sha": "c66d94d6da50b20a8bc218683bc88b54ac15d6c2",
+        "message": "docs: link CURLOPT_CONNECTTIMEOUT and CURLOPT_CONNECTTIMEOUT_MS\n\nCloses #1922",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-24T19:33:46Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/c66d94d6da50b20a8bc218683bc88b54ac15d6c2"
+      },
+      {
+        "sha": "46d63bbbe87685b2e9c7380585c03afaa1fcf157",
+        "message": "docs: clarify the use of environment variables for proxy\n\nCloses #1921",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-24T17:58:37Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/46d63bbbe87685b2e9c7380585c03afaa1fcf157"
+      },
+      {
+        "sha": "eac324f28420871b79790c8f2c3a3ec9bd0b9e00",
+        "message": "http: add custom empty headers to repeated requests\n\nCloses #1920",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-24T17:31:43Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/eac324f28420871b79790c8f2c3a3ec9bd0b9e00"
+      },
+      {
+        "sha": "284d06df9e45a97043e6cf6c915d7eb15622c1e4",
+        "message": "reuse_conn: don't copy flags that are known to be equal\n\nA connection can only be reused if the flags \"conn_to_host\" and\n\"conn_to_port\" match. Therefore it is not necessary to copy these flags\nin reuse_conn().\n\nCloses #1918",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-24T13:02:12Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/284d06df9e45a97043e6cf6c915d7eb15622c1e4"
+      },
+      {
+        "sha": "6aa86c493bd77b70d1f5018e102bc3094290d588",
+        "message": "curl.h: include <sys/select.h> on cygwin too\n\nWhen building with -std=c++14 on cygwin, this header won't be\nautomatically included as it otherwise is.\n\nThe <sys/select.h> include decision should ideally be reversed and be\navoided where that header file doesn't exist.\n\nReported-by: Ian Fette\nFixes #1925",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-27T08:22:55Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/6aa86c493bd77b70d1f5018e102bc3094290d588"
+      },
+      {
+        "sha": "91a6e60c1efe8b059706b391f0635ddb2bbeae16",
+        "message": "RELEASE-NOTES: synced with d8ab5dc50",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-25T08:48:33Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/91a6e60c1efe8b059706b391f0635ddb2bbeae16"
+      },
+      {
+        "sha": "d8ab5dc50e2fdf6f0cd9104f1c04792a72c6cd61",
+        "message": "tests: adjust .gitignore for new tests",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-24T11:30:30Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/d8ab5dc50e2fdf6f0cd9104f1c04792a72c6cd61"
+      },
+      {
+        "sha": "953b5c4e2602711c031a4f6cd024051a72329015",
+        "message": "ntlm: move NTLM_NEEDS_NSS_INIT define into core NTLM header\n\n.. and include the core NTLM header in all NTLM-related source files.\n\nFollow up to 6f86022. Since then http_ntlm checks NTLM_NEEDS_NSS_INIT\nbut did not include vtls.h where it was defined.\n\nCloses https://github.com/curl/curl/pull/1911",
+        "author": {
+          "name": "Jay Satiro",
+          "email": "raysatiro@yahoo.com",
+          "date": "2017-09-22T19:47:14Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/953b5c4e2602711c031a4f6cd024051a72329015"
+      },
+      {
+        "sha": "afbdc96638a769d9bee8579d8b70f54537f5e891",
+        "message": "file_range: avoid integer overflow when figuring out byte range\n\nWhen trying to bump the value with one and the value is already at max,\nit causes an integer overflow.\n\nCloses #1908\nDetected by oss-fuzz:\nhttps://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3465\n\nAssisted-by: Max Dymond",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-22T12:24:39Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/afbdc96638a769d9bee8579d8b70f54537f5e891"
+      },
+      {
+        "sha": "b6a90bca335b08971371fbceeae694d970aebcb6",
+        "message": "tests: fix a compiler warning in test 643",
+        "author": {
+          "name": "Michael Kaufmann",
+          "email": "mail@michael-kaufmann.ch",
+          "date": "2017-09-23T12:43:55Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/b6a90bca335b08971371fbceeae694d970aebcb6"
+      },
+      {
+        "sha": "3a1c7cb3ca509417ac7b8269529ceacee08d1d6c",
+        "message": "symbols-in-versions: fix CURLSSLSET_NO_BACKENDS entry\n\n- Use spaces instead of tabs as the delimiter.\n\nFollow up to 7c52b12 which added the entry. The entry had used tabs but\nthe symbol-scan parser doesn't recognize tabs and would fail the symbol.",
+        "author": {
+          "name": "Jay Satiro",
+          "email": "raysatiro@yahoo.com",
+          "date": "2017-09-23T07:19:47Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/3a1c7cb3ca509417ac7b8269529ceacee08d1d6c"
+      },
+      {
+        "sha": "de47158934075322cb8fd0e681ddb7d6e50b40a7",
+        "message": "metalink: fix NSS issue in MultiSSL builds\n\nIn MultiSSL mode (i.e. when more than one SSL backend is compiled\nin), we cannot use the compile time flag `USE_NSS` as indicator that\nthe NSS backend is in use. As far as Metalink is concerned, the SSL\nbackend is only used for MD5, SHA-1 and SHA-256 calculations,\ntherefore one of the available SSL backends is selected at compile\ntime, in a strict order of preference.\n\nLet's introduce a new `HAVE_NSS_CONTEXT` constant that can be used\nto determine whether the SSL backend used for Metalink is the NSS\nbackend, and use that to guard the code that wants to de-initialize\nthe NSS-specific data structure.\n\nRef: https://github.com/curl/curl/pull/1848",
+        "author": {
+          "name": "Viktor Szakats",
+          "email": "vszakats@users.noreply.github.com",
+          "date": "2017-09-12T18:14:00Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/de47158934075322cb8fd0e681ddb7d6e50b40a7"
+      },
+      {
+        "sha": "6f86022df26243cc8a035fe8b4c89033b6a04bc0",
+        "message": "ntlm: use strict order for SSL backend #if branches\n\nWith the recently introduced MultiSSL support multiple SSL backends\ncan be compiled into cURL That means that now the order of the SSL\n\nOne option would be to use the same SSL backend as was configured\nvia `curl_global_sslset()`, however, NTLMv2 support would appear\nto be available only with some SSL backends. For example, when\neb88d778e (ntlm: Use Windows Crypt API, 2014-12-02) introduced\nsupport for NTLMv1 using Windows' Crypt API, it specifically did\n*not* introduce NTLMv2 support using Crypt API at the same time.\n\nSo let's select one specific SSL backend for NTLM support when\ncompiled with multiple SSL backends, using a priority order such\nthat we support NTLMv2 even if only one compiled-in SSL backend can\nbe used for that.\n\nRef: https://github.com/curl/curl/pull/1848",
+        "author": {
+          "name": "Viktor Szakats",
+          "email": "vszakats@users.noreply.github.com",
+          "date": "2017-08-30T21:10:38Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/6f86022df26243cc8a035fe8b4c89033b6a04bc0"
+      },
+      {
+        "sha": "7c52b12dd4721d4c5591cefa078d256331e56999",
+        "message": "symbols-in-versions: add CURLSSLSET_NO_BACKENDS\n\n...fixup from b8e0fe19ec",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-22T14:22:57Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/7c52b12dd4721d4c5591cefa078d256331e56999"
+      },
+      {
+        "sha": "3b05f79ef8c88468e2684760ec39065c739a1f3d",
+        "message": "imap: quote atoms properly when escaping characters\n\nUpdates test 800 to verify\n\nFixes #1902\nCloses #1903",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-21T07:17:06Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/3b05f79ef8c88468e2684760ec39065c739a1f3d"
+      },
+      {
+        "sha": "a4db3f70468c31c0d579e6b9dcd4e90cd9f0d1a8",
+        "message": "tests: make the imap server not verify user+password\n\n... as the test cases themselves do that and it makes it easier to add\ncrazy test cases.\n\nTest 800 updated to use user name + password that need quoting.\n\nTest 856 updated to trigger an auth fail differently.\n\nRef: #1902",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-21T06:21:43Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/a4db3f70468c31c0d579e6b9dcd4e90cd9f0d1a8"
+      },
+      {
+        "sha": "b8e0fe19ec3bd3b673a14043a4b5e656d9c26d06",
+        "message": "vtls: provide curl_global_sslset() even in non-SSL builds\n\n... it just returns error:\n\nBug: https://github.com/curl/curl/commit/1328f69d53f2f2e937696ea954c480412b018451#commitcomment-24470367\nReported-by: Marcel Raad\n\nCloses #1906",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-21T21:30:48Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/b8e0fe19ec3bd3b673a14043a4b5e656d9c26d06"
+      },
+      {
+        "sha": "ee56fdb6910f6bf215eecede9e2e9bfc83cb5f29",
+        "message": "form/mime: field names are not allowed to contain zero-valued bytes.\n\nAlso suppress length argument of curl_mime_name() (names are always\nzero-terminated).",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-09-22T00:08:29Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/ee56fdb6910f6bf215eecede9e2e9bfc83cb5f29"
+      },
+      {
+        "sha": "fa9482ab0907dfacd0fb619add2dbf41de2d8c9c",
+        "message": "openssl: only verify RSA private key if supported\n\nIn some cases the RSA key does not support verifying it because it's\nlocated on a smart card, an engine wants to hide it, ...\nCheck the flags on the key before trying to verify it.\nOpenSSL does the same thing internally; see ssl/ssl_rsa.c\n\nCloses #1904",
+        "author": {
+          "name": "Dirk Feytons",
+          "email": "dirk.feytons@gmail.com",
+          "date": "2017-09-21T07:57:32Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/fa9482ab0907dfacd0fb619add2dbf41de2d8c9c"
+      },
+      {
+        "sha": "5d916944ae3043de7b8d644d9ca3420fb0b2417e",
+        "message": "examples/post-callback: use long for CURLOPT_POSTFIELDSIZE\n\nOtherwise, typecheck-gcc.h warns on MinGW-w64.",
+        "author": {
+          "name": "Marcel Raad",
+          "email": "marcel.raad@teamviewer.com",
+          "date": "2017-09-21T18:07:24Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/5d916944ae3043de7b8d644d9ca3420fb0b2417e"
+      },
+      {
+        "sha": "a7bcf274ccf3dd6eca86c5fbdf2d568690e0c494",
+        "message": "mime: rephrase the multipart output state machine (#1898) ...\n\n... in hope coverity will like it much.",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-09-20T13:06:47Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/a7bcf274ccf3dd6eca86c5fbdf2d568690e0c494"
+      },
+      {
+        "sha": "f3042018686c0e5659264acb9bc20373c4e4503a",
+        "message": "mime: fix an explicit null dereference (#1899)",
+        "author": {
+          "name": "Patrick Monnerat",
+          "email": "patrick@monnerat.net",
+          "date": "2017-09-20T11:01:11Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/f3042018686c0e5659264acb9bc20373c4e4503a"
+      },
+      {
+        "sha": "299896ca0963a79d5ec4de8ca83922c48f16f1bb",
+        "message": "curl: check fseek() return code and bail on error\n\nDetected by coverity. CID 1418137.",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-20T10:03:44Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/299896ca0963a79d5ec4de8ca83922c48f16f1bb"
+      },
+      {
+        "sha": "1e548f77847ac51a7054adef24825624fb73b219",
+        "message": "smtp: fix memory leak in OOM\n\nRegression since ce0881edee\n\nCoverity CID 1418139 and CID 1418136 found it, but it was also seen in\ntorture testing.",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-20T09:33:46Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/1e548f77847ac51a7054adef24825624fb73b219"
+      },
+      {
+        "sha": "7f794a224e800b8b1bf3dfed353ceb825094b722",
+        "message": "RELEASE-NOTES: synced with 5fe85587c",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-20T06:31:04Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/7f794a224e800b8b1bf3dfed353ceb825094b722"
+      },
+      {
+        "sha": "5fe85587ccd2d3365540cd652e6a3bb1b0393f3a",
+        "message": "cookies: use lock when using CURLINFO_COOKIELIST\n\nCloses #1896",
+        "author": {
+          "name": "Pavel P",
+          "email": "pavlov.pavel@gmail.com",
+          "date": "2017-09-18T22:50:16Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/5fe85587ccd2d3365540cd652e6a3bb1b0393f3a"
+      },
+      {
+        "sha": "c73ebb85374164515eb9df6d619a5822b6568599",
+        "message": "ossfuzz: changes before merging the generated corpora\n\nBefore merging in the oss-fuzz corpora from Google, there are some changes\nto the fuzzer.\n- Add a read corpus script, to display corpus files nicely.\n- Change the behaviour of the fuzzer so that TLV parse failures all now\n  go down the same execution paths, which should reduce the size of the\n  corpora.\n- Make unknown TLVs a failure to parse, which should decrease the size\n  of the corpora as well.\n\nCloses #1881",
+        "author": {
+          "name": "Max Dymond",
+          "email": "cmeister2@gmail.com",
+          "date": "2017-09-11T19:51:58Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/c73ebb85374164515eb9df6d619a5822b6568599"
+      },
+      {
+        "sha": "bec50cc285995b18d57e5e5caf17e33100795f09",
+        "message": "mime:escape_string minor clarification change\n\n... as it also removes a warning with old gcc versions.\n\nBug: https://curl.haxx.se/mail/lib-2017-09/0049.html\nReported-by: Ben Greear",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-17T21:31:49Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/bec50cc285995b18d57e5e5caf17e33100795f09"
+      },
+      {
+        "sha": "e239eda39e3f0f9342bc0dd6658b49d4bd900875",
+        "message": "ossfuzz: don't write out to stdout\n\nDon't make the fuzzer write out to stdout - instead write some of the\ncontents to a memory block so we exercise the data output code but\nquietly.\n\nCloses #1885",
+        "author": {
+          "name": "Max Dymond",
+          "email": "cmeister2@gmail.com",
+          "date": "2017-09-11T19:00:27Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/e239eda39e3f0f9342bc0dd6658b49d4bd900875"
+      },
+      {
+        "sha": "2bc230de63bd7da197280a69d84972b61455cd18",
+        "message": "cookies: reject oversized cookies\n\n... instead of truncating them.\n\nThere's no fixed limit for acceptable cookie names in RFC 6265, but the\nentire cookie is said to be less than 4096 bytes (section 6.1). This is\nalso what browsers seem to implement.\n\nWe now allow max 5000 bytes cookie header. Max 4095 bytes length per\ncookie name and value. Name + value together may not exceed 4096 bytes.\n\nAdded test 1151 to verify\n\nBug: https://curl.haxx.se/mail/lib-2017-09/0062.html\nReported-by: Kevin Smith\n\nCloses #1894",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-17T22:55:07Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/2bc230de63bd7da197280a69d84972b61455cd18"
+      },
+      {
+        "sha": "1a072796d390a7f56739d48a5158c250e211e2f7",
+        "message": "travis: on mac, don't install openssl or libidn\n\n- openssl is already installed and causes warnings when trying to\n  install again\n\n- libidn isn't used these days, and homebrew doesn't seem to have a\n  libidn2 package to replace with easily\n\nCloses #1895",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-18T08:49:38Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/1a072796d390a7f56739d48a5158c250e211e2f7"
+      },
+      {
+        "sha": "697271fc980331ffb53f12850f82c80ed182a375",
+        "message": "curl: make str2udouble not return values on error\n\n... previously it would store a return value even when it returned\nerror, which could make the value get used anyway!\n\nReported-by: Brian Carpenter\nCloses #1893",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-15T14:38:48Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/697271fc980331ffb53f12850f82c80ed182a375"
+      },
+      {
+        "sha": "6d436642ddfc30264d9f466b185dfe0683d0d551",
+        "message": "socks: fix incorrect port number in SOCKS4 error message\n\nPrior to this change it appears the SOCKS5 port parsing was erroneously\nused for the SOCKS4 error message, and as a result an incorrect port\nwould be shown in the error message.\n\nBug: https://github.com/curl/curl/issues/1892\nReported-by: Jackarain@users.noreply.github.com",
+        "author": {
+          "name": "Jay Satiro",
+          "email": "raysatiro@yahoo.com",
+          "date": "2017-09-18T07:07:57Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/6d436642ddfc30264d9f466b185dfe0683d0d551"
+      },
+      {
+        "sha": "c8666089c82625a385e5d43df538b951635bccc8",
+        "message": "schannel: Support partial send for when data is too large\n\nSchannel can only encrypt a certain amount of data at once.  Instead of\nfailing when too much data is to be sent at once, send as much data as\nwe can and let the caller send the remaining data by calling send again.\n\nBug: https://curl.haxx.se/mail/lib-2014-07/0033.html\n\nCloses https://github.com/curl/curl/pull/1890",
+        "author": {
+          "name": "Marc Aldorasi",
+          "email": "marc@groundctl.com",
+          "date": "2017-09-15T17:00:05Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/c8666089c82625a385e5d43df538b951635bccc8"
+      },
+      {
+        "sha": "843200c5b9b5de41e5acefce593f1229970f18ef",
+        "message": "openssl: add missing includes\n\nlib/vtls/openssl.c uses OpenSSL APIs from BUF_MEM and BIO APIs. Include\ntheir headers directly rather than relying on other OpenSSL headers\nincluding things.\n\nCloses https://github.com/curl/curl/pull/1891",
+        "author": {
+          "name": "David Benjamin",
+          "email": "davidben@google.com",
+          "date": "2017-09-15T22:36:40Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/843200c5b9b5de41e5acefce593f1229970f18ef"
+      },
+      {
+        "sha": "93843c372f101b994194f0192db159c16d26a7c0",
+        "message": "conversions: fix several compiler warnings",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-10T22:31:12Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/93843c372f101b994194f0192db159c16d26a7c0"
+      },
+      {
+        "sha": "452c906dfdbffc0d150786884eba4fee20564fcf",
+        "message": "server/getpart: provide dummy function to build conversion enabled",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-08T07:33:22Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/452c906dfdbffc0d150786884eba4fee20564fcf"
+      },
+      {
+        "sha": "46e14b6942c285f955c9217487e8e896068c10df",
+        "message": "non-ascii: use iconv() with 'char **' argument\n\nBug: https://curl.haxx.se/mail/lib-2017-09/0031.html",
+        "author": {
+          "name": "Daniel Stenberg",
+          "email": "daniel@haxx.se",
+          "date": "2017-09-08T07:22:01Z"
+        },
+        "url": "https://api.github.com/repos/curl/curl/commits/46e14b6942c285f955c9217487e8e896068c10df"
       }
     ]
   }
