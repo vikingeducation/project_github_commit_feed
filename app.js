@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
+const querystring = require('querystring');
 const GithubApiWrapper = require('./lib/github');
 
 const port = process.env.PORT || 3000;
@@ -19,8 +20,9 @@ const _extractPostData = (req, done) => {
     body += data;
   });
   req.on('end', () => {
-    console.log(body);
-    console.log(JSON.parse(body));
+    const result = querystring.parse(body, null, null);
+    console.log(result);
+    // console.log(JSON.parse(body));
     done();
   });
 };
@@ -67,10 +69,10 @@ const server = http.createServer((req, res) => {
   });
 });
 
-// server.listen('/github/webhooks', () => {
-//   console.log('Listening');
-// });
-
-server.listen(port, host, () => {
-  console.log(`Listening at http://${host}:${port}`);
+server.listen('/github/webhooks', () => {
+  console.log('Listening');
 });
+
+// server.listen(port, host, () => {
+//   console.log(`Listening at http://${host}:${port}`);
+// });
