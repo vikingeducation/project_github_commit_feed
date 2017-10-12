@@ -28,7 +28,7 @@ const _render = (req, res, feed) => {
       }
     });
   } else if (method === 'post') {
-    res.end('as d;laskd200 OK');
+    res.end('200 OK');
   }
 };
 
@@ -91,37 +91,6 @@ const server = http.createServer((req, res) => {
       });
   }
 });
-
-//   const p = new Promise((resolve) => {
-//     if (method === 'post' && path === '/github/webhooks') {
-//       _extractPostData(req, resolve);
-//       github.getCommits(req.user, req.repo, (results) => {
-//         _saveCommits(results, resolve);
-//       });
-//     } else if (user) {
-//       github.getCommits(user, repo, (results) => {
-//         // console.dir(results, { depth: null, colors: true });
-//         _saveCommits(results, resolve);
-//       });
-//     } else {
-//       resolve();
-//     }
-//   });
-//   p.then(() => {
-//     fs.readFile('./public/index.html', 'utf8', (err, data) => {
-//       if (err) {
-//         res.writeHead(404);
-//         res.end('404 Not Found');
-//       } else {
-//         res.writeHead(200, _headers);
-//         commitFeed = JSON.parse(fs.readFileSync('./data/commits.json', 'utf8'));
-//         commitFeed = JSON.stringify(commitFeed, null, 2);
-//         res.write(data.replace('{{ commitFeed }}', commitFeed));
-//         res.end('200 OK');
-//       }
-//     });
-//   });
-// });
 
 server.listen(port, host, () => {
   console.log(`Listening at http://${host}:${port}`);
