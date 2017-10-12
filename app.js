@@ -19,13 +19,9 @@ const _render = (req, res, feed) => {
 
   if (method === 'get') {
     fs.readFile('./public/index.html', 'utf8', (err, data) => {
-      if (err) {
-        res.writeHead(404);
-        res.end('404 Not Found');
-      } else {
-        res.write(data.replace('{{ commitFeed }}', feed));
-        res.end();
-      }
+      if (err) throw err;
+      res.write(data.replace('{{ commitFeed }}', feed));
+      res.end();
     });
   } else if (method === 'post') {
     res.end('200 OK');
@@ -54,8 +50,7 @@ const _extractPostData = (req, done) => {
     body += data;
   });
   req.on('end', () => {
-    let webhookData = unescape(body).slice(8);
-    webhookData = JSON.parse(webhookData);
+    const webhookData = JSON.parse(unescape(body).slice(8));
     req.body = webhookData;
     done();
   });

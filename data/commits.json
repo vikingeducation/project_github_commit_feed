@@ -1,305 +1,65 @@
 {
   "thomahau": {
-    "project_github_commit_feed": [
+    "assignment_royalty_free_music_player": [
       {
-        "sha": "ffb477fce6ff70e64e2d24d2372547e2319cc459",
-        "message": "res.end test",
+        "sha": "976362b7fd2617c270a59d8b536bfe559b11a467",
+        "message": "Delete .DS_Store",
         "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T06:19:46Z"
+          "name": "thomahau",
+          "email": "30753761+thomahau@users.noreply.github.com",
+          "date": "2017-08-29T07:23:05Z"
         },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/ffb477fce6ff70e64e2d24d2372547e2319cc459"
+        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/976362b7fd2617c270a59d8b536bfe559b11a467"
       },
       {
-        "sha": "0375b5ed9ff28470f85a0f15409552fcdc12789b",
-        "message": "res.write test",
+        "sha": "a1cd6b533a06280a6c3660f822f72f209d82d7c4",
+        "message": "finished music player",
         "author": {
           "name": "Thomas Hauge",
           "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T06:16:50Z"
+          "date": "2017-08-29T07:14:37Z"
         },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/0375b5ed9ff28470f85a0f15409552fcdc12789b"
+        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/a1cd6b533a06280a6c3660f822f72f209d82d7c4"
       },
       {
-        "sha": "b7aa15bb010d636a02cd18d4b4a90b3393885826",
-        "message": "message test",
+        "sha": "1fdb68d9c7948962661f9f4f0e2f70569a9ec77f",
+        "message": "controls now update icons",
         "author": {
           "name": "Thomas Hauge",
           "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T06:15:30Z"
+          "date": "2017-08-26T10:44:51Z"
         },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/b7aa15bb010d636a02cd18d4b4a90b3393885826"
+        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/1fdb68d9c7948962661f9f4f0e2f70569a9ec77f"
       },
       {
-        "sha": "a3bd85a3295cad4ebcbef55e98899630021ef4cf",
-        "message": "logging message",
+        "sha": "e4f4f8b68e8ae7dffb7805bfec75b75ff89c70a3",
+        "message": "finishing structure",
         "author": {
           "name": "Thomas Hauge",
           "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T06:13:21Z"
+          "date": "2017-08-26T06:52:25Z"
         },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/a3bd85a3295cad4ebcbef55e98899630021ef4cf"
+        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/e4f4f8b68e8ae7dffb7805bfec75b75ff89c70a3"
       },
       {
-        "sha": "6d13d3e371d5a1a32014b454fc60c9120ec6c3f4",
-        "message": "test",
+        "sha": "d959f390de5794998d8a42a18003dc0ff1ae3fe2",
+        "message": "initial commit",
         "author": {
           "name": "Thomas Hauge",
           "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T06:10:14Z"
+          "date": "2017-08-25T02:23:03Z"
         },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/6d13d3e371d5a1a32014b454fc60c9120ec6c3f4"
+        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/d959f390de5794998d8a42a18003dc0ff1ae3fe2"
       },
       {
-        "sha": "061311caef6f04c8a7df8cf86da0fd4ae562bdec",
-        "message": "testing again",
+        "sha": "11637a7fda9e1d4032b36e65ab577870f2860cbf",
+        "message": "Initial commit",
         "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T06:08:11Z"
+          "name": "Kit Langton",
+          "email": "kitlangton@gmail.com",
+          "date": "2017-01-11T14:56:12Z"
         },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/061311caef6f04c8a7df8cf86da0fd4ae562bdec"
-      },
-      {
-        "sha": "73144df31163f1919567fa746261662fcae5957e",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T05:16:01Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/73144df31163f1919567fa746261662fcae5957e"
-      },
-      {
-        "sha": "c61263b63412776fa8c52c2a46bb59a66a453809",
-        "message": "refactoring",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T05:06:39Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/c61263b63412776fa8c52c2a46bb59a66a453809"
-      },
-      {
-        "sha": "bc30da18ed94c794dca98626b0f981545de5d0f3",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:47:27Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/bc30da18ed94c794dca98626b0f981545de5d0f3"
-      },
-      {
-        "sha": "7e5004fe752372ff58e8d0e0d6db50f73b8859ec",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:27:20Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/7e5004fe752372ff58e8d0e0d6db50f73b8859ec"
-      },
-      {
-        "sha": "daf602ea026afc1a1b8ff11be032e76c27df2a76",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:26:07Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/daf602ea026afc1a1b8ff11be032e76c27df2a76"
-      },
-      {
-        "sha": "b9ab7fe89a10a74d76bcca63ff7139266088f63e",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:21:40Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/b9ab7fe89a10a74d76bcca63ff7139266088f63e"
-      },
-      {
-        "sha": "b2b161d437757b25e043c8987ec54ec58ce10663",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:20:50Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/b2b161d437757b25e043c8987ec54ec58ce10663"
-      },
-      {
-        "sha": "b4c53b6635c847a3106d6a0a0bb364809f745552",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:19:32Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/b4c53b6635c847a3106d6a0a0bb364809f745552"
-      },
-      {
-        "sha": "821dd732940a6d0d74afdf3c8211f654e6930268",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:17:53Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/821dd732940a6d0d74afdf3c8211f654e6930268"
-      },
-      {
-        "sha": "8f071929d3bdd223a81791fe806e88f23dbb898d",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:16:21Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/8f071929d3bdd223a81791fe806e88f23dbb898d"
-      },
-      {
-        "sha": "7002ba94f3585fd2c7627b597b4c5fd63dca73a4",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:15:40Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/7002ba94f3585fd2c7627b597b4c5fd63dca73a4"
-      },
-      {
-        "sha": "6e865c734f566442781df06a4b978772e60c6ae1",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:13:53Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/6e865c734f566442781df06a4b978772e60c6ae1"
-      },
-      {
-        "sha": "ed0a542e864451af7feb1f4e2d38e9090ab4fbfa",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:12:39Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/ed0a542e864451af7feb1f4e2d38e9090ab4fbfa"
-      },
-      {
-        "sha": "d0d90c0f1f38672defecf77d3350c0863a304fe5",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:11:14Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/d0d90c0f1f38672defecf77d3350c0863a304fe5"
-      },
-      {
-        "sha": "8acee11436e0479576cd9b278c021a96fbaa8eb8",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:08:42Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/8acee11436e0479576cd9b278c021a96fbaa8eb8"
-      },
-      {
-        "sha": "8a4b9732d42fbbb8b295bf95ad3d37cdf912e178",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:02:41Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/8a4b9732d42fbbb8b295bf95ad3d37cdf912e178"
-      },
-      {
-        "sha": "da1d67c544da167f5148d4c7a64319ab7bc7ccfa",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T03:02:01Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/da1d67c544da167f5148d4c7a64319ab7bc7ccfa"
-      },
-      {
-        "sha": "63021f9f85f59963e37a8b930bd9f16d3a45e914",
-        "message": "test",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T02:59:34Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/63021f9f85f59963e37a8b930bd9f16d3a45e914"
-      },
-      {
-        "sha": "04c862721e0157f61833618b6ea0fb0ec5632350",
-        "message": "test",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T02:58:35Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/04c862721e0157f61833618b6ea0fb0ec5632350"
-      },
-      {
-        "sha": "bc60525f2076dbf134f53f6f782f54ec2233740d",
-        "message": "testing webhook",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T02:57:45Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/bc60525f2076dbf134f53f6f782f54ec2233740d"
-      },
-      {
-        "sha": "fe47f07bc50760e8bd2f45aa72601260de98b88f",
-        "message": "testing webhook again",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T02:41:34Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/fe47f07bc50760e8bd2f45aa72601260de98b88f"
-      },
-      {
-        "sha": "149470bbb1377eb664c5090a297e75c148e19e6d",
-        "message": "testing webhook again",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T02:40:29Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/149470bbb1377eb664c5090a297e75c148e19e6d"
-      },
-      {
-        "sha": "d91b5603cd25e9b385854e78d48d0ad104f0686f",
-        "message": "test",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T02:32:24Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/d91b5603cd25e9b385854e78d48d0ad104f0686f"
-      },
-      {
-        "sha": "55bdc73deb6707c1e16ebc53f6409d6e82d16965",
-        "message": "working on webhooks",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-12T02:16:21Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/55bdc73deb6707c1e16ebc53f6409d6e82d16965"
+        "url": "https://api.github.com/repos/thomahau/assignment_royalty_free_music_player/commits/11637a7fda9e1d4032b36e65ab577870f2860cbf"
       }
     ]
   }
