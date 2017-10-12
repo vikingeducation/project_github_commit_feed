@@ -22,10 +22,11 @@ const _extractPostData = (req, done) => {
   req.on('end', () => {
     body = unescape(body).slice(8);
     console.log(body);
+    const webhookData = JSON.parse(body);
+    console.log(webhookData.pusher.name);
+    console.log(webhookData.repository.name);
     // let webhookData = querystring.parse(body, null, null);
     // console.dir(webhookData, { depth: 0, colors: true });
-    // console.log(webhookData.payload.pusher.name);
-    // console.log(webhookData.payload.repository.name);
     // console.log(JSON.parse(webhookData));
     done();
   });
