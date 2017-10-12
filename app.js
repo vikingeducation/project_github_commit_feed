@@ -2,7 +2,9 @@ const http = require('http');
 const fs = require('fs');
 const url = require('url');
 const GithubApiWrapper = require('./lib/github');
+let commitFeed = require('./data/commits');
 
+commitFeed = JSON.stringify(commitFeed, null, 2);
 const port = process.env.PORT || 3000;
 const host = 'localhost';
 const _headers = {
@@ -11,9 +13,8 @@ const _headers = {
   'Access-Control-Allow-Headers': 'Content-Type',
   'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE'
 };
-let commitFeed = require('./data/commits');
 
-const render = (req, res) => {
+const _render = (req, res, feed) => {
   const method = req.method.toLowerCase();
 
   if (method === 'get') {
@@ -22,24 +23,20 @@ const render = (req, res) => {
         res.writeHead(404);
         res.end('404 Not Found');
       } else {
-        commitFeed = JSON.parse(fs.readFileSync('./data/commits.json', 'utf8'));
-        commitFeed = JSON.stringify(commitFeed, null, 2);
-        res.write(data.replace('{{ commitFeed }}', commitFeed));
+        res.write(data.replace('{{ commitFeed }}', feed));
         res.end();
       }
     });
   } else if (method === 'post') {
-    commitFeed = JSON.parse(fs.readFileSync('./data/commits.json', 'utf8'));
-    commitFeed = JSON.stringify(commitFeed, null, 2);
     res.end('200 OK');
   }
 };
 
 const _saveCommits = (req, res, data) => {
-  const commitString = JSON.stringify(data, null, 2);
-  fs.writeFile('./data/commits.json', commitString, 'utf8', (err) => {
+  commitFeed = JSON.stringify(data, null, 2);
+  fs.writeFile('./data/commits.json', commitFeed, 'utf8', (err) => {
     if (err) throw err;
-    render(req, res);
+    _render(req, res, commitFeed);
   });
 };
 
@@ -77,7 +74,7 @@ const server = http.createServer((req, res) => {
     if (user) {
       _getCommits(req, res, user, repo);
     } else {
-      render(req, res);
+      _render(req, res, commitFeed);
     }
   } else if (method === 'post' && path === '/github/webhooks') {
     res.writeHead(200, _headers);
