@@ -20,11 +20,9 @@ const _extractPostData = (req, done) => {
     body += data;
   });
   req.on('end', () => {
-    console.log(body);
+    body = body.slice(8, body.length);
     let webhookData = querystring.parse(body, null, null);
-    // console.log(typeof webhookData);
-    // webhookData = webhookData.slice(8, webhookData.length);
-    // console.log(JSON.parse(webhookData));
+    console.log(JSON.parse(webhookData));
     done();
   });
 };
@@ -40,12 +38,12 @@ const _saveCommits = (data, done) => {
 const server = http.createServer((req, res) => {
   const method = req.method.toLowerCase();
   const urlObj = url.parse(req.url, true);
-  console.log(urlObj.pathname);
+  const path = urlObj.pathname;
   const { user, repo } = urlObj.query;
 
   const github = new GithubApiWrapper();
   const p = new Promise((resolve) => {
-    if (method === 'post') {
+    if (method === 'post' && path === '/github/webhooks') {
       _extractPostData(req, resolve);
     } else if (user) {
       github.getCommits(user, repo, (results) => {
