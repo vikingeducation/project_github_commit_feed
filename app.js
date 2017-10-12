@@ -20,9 +20,9 @@ const _extractPostData = (req, done) => {
     body += data;
   });
   req.on('end', () => {
-    const result = querystring.parse(body, null, null);
-    console.log(result);
-    console.log(JSON.parse(result));
+    let webhookData = querystring.parse(body, null, null);
+    webhookData = webhookData.slice(8, webhookData.length);
+    console.log(JSON.parse(webhookData));
     done();
   });
 };
