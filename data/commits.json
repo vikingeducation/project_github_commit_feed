@@ -1,1005 +1,1005 @@
 {
-  "curl": {
-    "curl": [
+  "TheOdinProject": {
+    "theodinproject": [
       {
-        "sha": "35ad79dcdd8bb181105db656cba82e5501e81c4a",
-        "message": "RELEASE-NOTES: synced with 5505df7d2",
+        "sha": "2a0ccc052ceb19da00b642571638c4a60cbf8aea",
+        "message": "fixed the only two typos in seeds.rb (#758)",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-11T10:00:19Z"
+          "name": "Jonathan Yiv",
+          "email": "jonathanyiv@gmail.com",
+          "date": "2017-09-29T09:31:11Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/35ad79dcdd8bb181105db656cba82e5501e81c4a"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/2a0ccc052ceb19da00b642571638c4a60cbf8aea"
       },
       {
-        "sha": "5505df7d24a2c251c7ed81a389781abca0cc5b25",
-        "message": "url: Update current connection SSL verify params in setopt\n\nNow VERIFYHOST, VERIFYPEER and VERIFYSTATUS options change during active\nconnection updates the current connection's (i.e.'connectdata'\nstructure) appropriate ssl_config (and ssl_proxy_config) structures\nvariables, making these options effective for ongoing connection.\n\nThis functionality was available before and was broken by the\nfollowing change:\n\"proxy: Support HTTPS proxy and SOCKS+HTTP(s)\"\nCommitId: cb4e2be7c6d42ca0780f8e0a747cecf9ba45f151.\n\nBug: https://github.com/curl/curl/issues/1941\n\nCloses https://github.com/curl/curl/pull/1951",
+        "sha": "740a1b919095c6bc86c470eff42a36125462482d",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
         "author": {
-          "name": "Artak Galoyan",
-          "email": "agaloyan@vmware.com",
-          "date": "2017-10-05T19:43:13Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-21T11:12:54Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/5505df7d24a2c251c7ed81a389781abca0cc5b25"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/740a1b919095c6bc86c470eff42a36125462482d"
       },
       {
-        "sha": "de7597f155beea1cfba341bd7d8d7bb6202edba0",
-        "message": "openssl: don't use old BORINGSSL_YYYYMM macros\n\nThose were temporary things we'd add and remove for our own convenience\nlong ago. The last few stayed around for too long as an oversight but\nhave since been removed. These days we have a running\nBORINGSSL_API_VERSION counter which is bumped when we find it\nconvenient, but 2015-11-19 was quite some time ago, so just check\nOPENSSL_IS_BORINGSSL.\n\nCloses #1979",
+        "sha": "982598a787f6fff5ec1b8c1d2c92631642ff3dad",
+        "message": "remove multiple lessons from web dev 101",
         "author": {
-          "name": "David Benjamin",
-          "email": "davidben@google.com",
-          "date": "2017-10-09T15:41:02Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-21T11:12:41Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/de7597f155beea1cfba341bd7d8d7bb6202edba0"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/982598a787f6fff5ec1b8c1d2c92631642ff3dad"
       },
       {
-        "sha": "06bba26e37be921d19ed9c950aa80c4188ccba0f",
-        "message": "test950; verify SMTP with custom request",
+        "sha": "d3d33f2fea3ea10fb81cb2cd9678b9d559f09a6e",
+        "message": "Contributing guide (#743)",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-10T14:59:13Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-11T14:10:05Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/06bba26e37be921d19ed9c950aa80c4188ccba0f"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d3d33f2fea3ea10fb81cb2cd9678b9d559f09a6e"
       },
       {
-        "sha": "b20df573269a3672b9d1166bb1dec639db38d540",
-        "message": "ftpserver: support case insensitive commands",
+        "sha": "d84742e75a66deab930df269f69f960efc7d9e71",
+        "message": "Merge pull request #742 from TheOdinProject/add-code-of-conduct-1\n\nCreate CODE_OF_CONDUCT.md",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-10T14:58:40Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-10T23:45:14Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/b20df573269a3672b9d1166bb1dec639db38d540"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d84742e75a66deab930df269f69f960efc7d9e71"
       },
       {
-        "sha": "38ab7b4ccb18f03c0323d412ff0f3613cd66f5e5",
-        "message": "smtp_done: free data before returning (on send failure)\n\n... as otherwise it could leak that memory.\n\nDetected by OSS-fuzz:\nhttps://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3600\n\nAssisted-by: Max Dymond\nCloses #1977",
+        "sha": "ca088ee374b32d2439d19b6c0e3696936bdd5ac1",
+        "message": "Create CODE_OF_CONDUCT.md",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-10T12:34:57Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2017-09-10T23:43:23Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/38ab7b4ccb18f03c0323d412ff0f3613cd66f5e5"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ca088ee374b32d2439d19b6c0e3696936bdd5ac1"
       },
       {
-        "sha": "ecf21c551fa3426579463abe34b623111b8d487c",
-        "message": "FTP: URL decode path for dir listing in nocwd mode\n\nReported-by: Zenju on github\n\nTest 244 added to verify\nFixes #1974\nCloses #1976",
+        "sha": "c181ef3b9f6be0df617d466b8df5f7cb49594746",
+        "message": "Merge pull request #710 from TheOdinProject/add-lesson-data-to-analytics\n\nadd lesson data to analytics",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-10T10:02:11Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-08-31T07:07:25Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/ecf21c551fa3426579463abe34b623111b8d487c"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/c181ef3b9f6be0df617d466b8df5f7cb49594746"
       },
       {
-        "sha": "00fb811e2b05ed88d4847c0a96a7dddb51e77bcf",
-        "message": "test298: verify --ftp-method nowcwd with URL encoded path\n\nRef: #1974",
+        "sha": "30f1a5e133f53b862b251e1426266719defb9fb7",
+        "message": "add lesson data to analytics",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-09T20:50:40Z"
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-08-31T00:16:15Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/00fb811e2b05ed88d4847c0a96a7dddb51e77bcf"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/30f1a5e133f53b862b251e1426266719defb9fb7"
       },
       {
-        "sha": "f8e593887e7ef69de8e07e10c62c4e1b2faca30e",
-        "message": "CURLOPT_XFERINFODATA.3: fix duplicate see also",
+        "sha": "28040794407187abe2fec024bf1370023ee45a57",
+        "message": "remove obsolete test",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-09T14:24:36Z"
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-08-14T16:15:17Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/f8e593887e7ef69de8e07e10c62c4e1b2faca30e"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/28040794407187abe2fec024bf1370023ee45a57"
       },
       {
-        "sha": "d895a83a3bb64719b06c4c0d0744d876a30e152d",
-        "message": "CURLOPT_NOPROGRESS.3: also refer to xferinfofunction",
+        "sha": "a6bd4a8e966fc357381762d8ce93dd5767907b69",
+        "message": "I've dearly loved the 10000s of emails over the years but...",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-09T14:24:19Z"
+          "name": "Erik Trautman",
+          "email": "eriktrautman@users.noreply.github.com",
+          "date": "2017-08-11T16:18:18Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/d895a83a3bb64719b06c4c0d0744d876a30e152d"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/a6bd4a8e966fc357381762d8ce93dd5767907b69"
       },
       {
-        "sha": "7f555dc5a497f6beedfe6c183e3bc2d47f434704",
-        "message": "FAQ: s/CURLOPT_PROGRESSFUNCTION/CURLOPT_XFERINFOFUNCTION",
+        "sha": "24c27b47c8cc39d6de89ac84e9334790a91a3b47",
+        "message": "Merge pull request #620 from justinemar/patch-1\n\nfixed lesson-nav overlaying navbar on mobile view",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-09T14:13:27Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-07-02T17:16:46Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/7f555dc5a497f6beedfe6c183e3bc2d47f434704"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/24c27b47c8cc39d6de89ac84e9334790a91a3b47"
       },
       {
-        "sha": "62a721ea47e1e697faa7e3d87c8c9025808a8667",
-        "message": "openssl: enable PKCS12 support for !BoringSSL\n\nEnable PKCS12 for all non-boringssl builds without relying on configure\nor cmake checks.\n\nBug: https://curl.haxx.se/mail/lib-2017-10/0007.html\nReported-by: Christian Schmitz\nCloses #1948",
+        "sha": "56ce69b2e0f944c9b9f0586f4ae5f47df2c4cc22",
+        "message": "fixed lesson-nav overlaying navbar on mobile view\n\nSome list items are being covered by lesson nav..\r\nAlso tested on real mobile\r\nhttps://i.imgur.com/sIvVNpH.png",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-05T08:16:40Z"
+          "name": "Spacetime",
+          "email": "justinecantado@gmail.com",
+          "date": "2017-07-01T16:45:02Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/62a721ea47e1e697faa7e3d87c8c9025808a8667"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/56ce69b2e0f944c9b9f0586f4ae5f47df2c4cc22"
       },
       {
-        "sha": "c95c92da7584483368c8761c8cca276b5401530c",
-        "message": "curl: don't pass semicolons when parsing Content-Disposition\n\nTest 1422 updated to verify.\n\nCloses #1964",
+        "sha": "79ad994889854fa0aea1e650785dd25110ced9b8",
+        "message": "Merge pull request #600 from TheOdinProject/feature/display-lesson-title\n\nChange lesson headings",
         "author": {
-          "name": "Kristiyan Tsaklev",
-          "email": "cuki@cukii.tk",
-          "date": "2017-10-07T14:47:11Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-06-10T08:57:26Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/c95c92da7584483368c8761c8cca276b5401530c"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/79ad994889854fa0aea1e650785dd25110ced9b8"
       },
       {
-        "sha": "06cb8adde2ef85c3ac610f93c0fc8a34a3e299b6",
-        "message": "mime: properly unbind mime structure in curl_mime_free().\n\nThis allows freeing a mime structure bound to the easy handle before\ncurl_easy_cleanup().\n\nFixes #1970.",
+        "sha": "b6ad92b4c54417fe96c802c08006773b6313e4d1",
+        "message": "Change lesson headings\n\nThis changes the lesson title to a h2 and puts in the lesson view instead of getting it from the lesson\ncontent on the curriclum. This will be merged when the lessons on the curriculum are ammended to remove the\ntitle.",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-09T00:26:27Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-06-09T14:13:10Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/06cb8adde2ef85c3ac610f93c0fc8a34a3e299b6"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/b6ad92b4c54417fe96c802c08006773b6313e4d1"
       },
       {
-        "sha": "232dffcf2422baefa66617fdae2fb20085a8e386",
-        "message": "RTSP: avoid integer overflow on funny RTSP response\n\n... like a very large non-existing RTSP version number.\n\nAdded test 577 to verify.\n\nDetected by OSS-fuzz.\nCloses #1969",
+        "sha": "53c3eca35825d5a8f43d7d44c90946c9767262f9",
+        "message": "Merge pull request #534 from brianhays/fix/fix-README\n\nfix README - issue #533",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-08T15:15:44Z"
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-21T22:36:55Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/232dffcf2422baefa66617fdae2fb20085a8e386"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/53c3eca35825d5a8f43d7d44c90946c9767262f9"
       },
       {
-        "sha": "eb04636d68b078ac86558147ca124676f32dc285",
-        "message": "ftpserver: properly reset $ftptargetdir.",
+        "sha": "514365d8440a1df6ce4e5f184a302fdd48f397ab",
+        "message": "update link to https - also update header link",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-08T18:29:44Z"
+          "name": "Brian Hays",
+          "email": "brian.hays@gmail.com",
+          "date": "2017-05-21T22:12:27Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/eb04636d68b078ac86558147ca124676f32dc285"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/514365d8440a1df6ce4e5f184a302fdd48f397ab"
       },
       {
-        "sha": "70c3ed48ac737ab7fa83600313cf4bd9c2443ee5",
-        "message": "test643: verify curl_mime_subparts() rejects cyclic additions.",
+        "sha": "91ccd9d9223589aed7de44d9ba0faecb1c81f79d",
+        "message": "fix README - issue #533",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-08T18:05:59Z"
+          "name": "Brian Hays",
+          "email": "brian.hays@gmail.com",
+          "date": "2017-05-21T22:03:36Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/70c3ed48ac737ab7fa83600313cf4bd9c2443ee5"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/91ccd9d9223589aed7de44d9ba0faecb1c81f79d"
       },
       {
-        "sha": "ebcbed3821533a884e18f9441084da9449514fdf",
-        "message": "mime: refuse to add subparts to one of their own descendants.\n\nReported-by: Alexey Melnichuk\nFixes #1962",
+        "sha": "608e091c93da88f8417b7e17795c4862f7b627fd",
+        "message": "Merge pull request #515 from TheOdinProject/lesson-nav\n\nLesson nav",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-08T17:49:52Z"
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-11T22:13:32Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/ebcbed3821533a884e18f9441084da9449514fdf"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/608e091c93da88f8417b7e17795c4862f7b627fd"
       },
       {
-        "sha": "112ea5adb6f5503ff7569655526f6d809761d9bb",
-        "message": "mime: avoid resetting a part's encoder when part's contents change.",
+        "sha": "fd23757858f748a702c1fda038723dd69e654901",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-08T17:43:13Z"
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-11T14:32:06Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/112ea5adb6f5503ff7569655526f6d809761d9bb"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/fd23757858f748a702c1fda038723dd69e654901"
       },
       {
-        "sha": "b557182db1622510ebba3344747b6787994a75e2",
-        "message": "mime: improve unbinding top multipart from easy handle.\n\nAlso avoid dangling pointers in referencing parts.",
+        "sha": "9cae27880c754663dfa6e580b9e725bbb54eb343",
+        "message": "fixed hiding lesson navbar on mobile.",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-08T17:38:34Z"
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-11T14:30:59Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/b557182db1622510ebba3344747b6787994a75e2"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9cae27880c754663dfa6e580b9e725bbb54eb343"
       },
       {
-        "sha": "dd97fd3bb3e365681de3b3254169bea3608688ea",
-        "message": "RELEASE-NOTES: synced with a4c1c75da30af1",
+        "sha": "9c9d8d0c561964f9238002a71487b839804c17f1",
+        "message": "set ad backup background so the people can see it",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-08T15:27:57Z"
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T16:00:51Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/dd97fd3bb3e365681de3b3254169bea3608688ea"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9c9d8d0c561964f9238002a71487b839804c17f1"
       },
       {
-        "sha": "a4c1c75da30af11ed4ba129308d0a906b54a252e",
-        "message": "curlver.h: next expected release is 7.57.0",
+        "sha": "f2c5e03b03e248fd594df6b52757eb14a785a32e",
+        "message": "Merge branch 'master' of https://git.heroku.com/theodinproject",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-08T15:27:21Z"
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T15:37:33Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/a4c1c75da30af11ed4ba129308d0a906b54a252e"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/f2c5e03b03e248fd594df6b52757eb14a785a32e"
       },
       {
-        "sha": "93e62adde88b6ae29767d977b6a813df21c32f02",
-        "message": "mime: be tolerant about setting twice the same header list in a part.",
+        "sha": "3bdc8853e3d978e3b42139f093c2cdaaf6b3ff0c",
+        "message": "tweak adbox ID name",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-08T15:20:13Z"
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T15:32:56Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/93e62adde88b6ae29767d977b6a813df21c32f02"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3bdc8853e3d978e3b42139f093c2cdaaf6b3ff0c"
       },
       {
-        "sha": "14d6e207d35792e3e10a674b2e27cf2aa3370bf8",
-        "message": "docs: clarify form/mime usage of non-regular data files.",
+        "sha": "d5146d665fec63610e9214c132a3bce194c1ede7",
+        "message": "remove old ad images",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-08T15:15:23Z"
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T14:34:15Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/14d6e207d35792e3e10a674b2e27cf2aa3370bf8"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d5146d665fec63610e9214c132a3bce194c1ede7"
       },
       {
-        "sha": "b2df2d47e58d1150f11ea2f42aac6b84fa7f4d00",
-        "message": "Revert \"multi_done: wait for name resolve to finish if still ongoing\"\n\nThis reverts commit f3e03f6c0ac52a1bf396e03f7d7e9b5b3b7165fe.\n\nCaused memory leaks in the fuzzer, needs to be done differently.\n\nDisable test 1553 for now too, as it causes memory leaks without this\ncommit!",
+        "sha": "3424c5271f8097517bb08d11df73c17024a5f753",
+        "message": "Merge pull request #425 from mindovermiles262/master\n\nupdate and add FAQ content",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-07T22:50:33Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-05-01T14:09:46Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/b2df2d47e58d1150f11ea2f42aac6b84fa7f4d00"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3424c5271f8097517bb08d11df73c17024a5f753"
       },
       {
-        "sha": "1e552535e1762acd36c930299b46829e58eb1583",
-        "message": "remove_handle: call multi_done() first, then clear dns cache pointer\n\nCloses #1960",
+        "sha": "ae2d1c98e0ceeeec7b697594e411bdb6ee29ad54",
+        "message": "Update \"How Long...\"\n\nChange \"How long does TOP take?\" back to original text, clean up minor words to match style and voice of other FAQs",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-07T20:00:48Z"
+          "name": "Andy",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-05-01T01:24:58Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/1e552535e1762acd36c930299b46829e58eb1583"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ae2d1c98e0ceeeec7b697594e411bdb6ee29ad54"
       },
       {
-        "sha": "f3e03f6c0ac52a1bf396e03f7d7e9b5b3b7165fe",
-        "message": "multi_done: wait for name resolve to finish if still ongoing\n\n... as we must clean up memory.",
+        "sha": "d4959ef97bbe860641f90a2b6fca67a28a4f89fd",
+        "message": "Merge pull request #445 from eating247/master\n\nFix typos in docs",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-07T15:54:41Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-29T19:14:53Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/f3e03f6c0ac52a1bf396e03f7d7e9b5b3b7165fe"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d4959ef97bbe860641f90a2b6fca67a28a4f89fd"
       },
       {
-        "sha": "5b54df06d2cec422d5f237e0fa0212be0303edce",
-        "message": "pingpong: return error when trying to send without connection\n\nWhen imap_done() got called before a connection is setup, it would try\nto \"finish up\" and dereffed a NULL pointer.\n\nTest case 1553 managed to reproduce. I had to actually use a host name\nto try to resolve to slow it down, as using the normal local server IP\nwill make libcurl get a connection in the first curl_multi_perform()\nloop and then the bug doesn't trigger.\n\nFixes #1953\nAssisted-by: Max Dymond",
+        "sha": "177a2d53ca99105013a4196dea45a06bb4f45990",
+        "message": "Merge branch 'master' into master",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-06T15:20:54Z"
+          "name": "Andy",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-04-29T18:02:57Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/5b54df06d2cec422d5f237e0fa0212be0303edce"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/177a2d53ca99105013a4196dea45a06bb4f45990"
       },
       {
-        "sha": "0af5ac27c3d818f0a962de1e1029c0af7d497080",
-        "message": "tests: added flaky keyword to tests 587 and 644\n\nThese are around 5% flaky in my Linux x86 autobuilds.",
+        "sha": "e519f5fb3a48d384565fb86ad02ee751d1d269a5",
+        "message": "add \"When do I pay?\" and sustainability sections",
         "author": {
-          "name": "Dan Fandrich",
-          "email": "dan@coneharvesters.com",
-          "date": "2017-10-06T21:04:40Z"
+          "name": "Andy",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-04-29T17:55:21Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/0af5ac27c3d818f0a962de1e1029c0af7d497080"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e519f5fb3a48d384565fb86ad02ee751d1d269a5"
       },
       {
-        "sha": "202189ff2c832bf39e7e6d9a6b8b2c980cc4201b",
-        "message": "vtls: fix warnings with --disable-crypto-auth\n\nWhen CURL_DISABLE_CRYPTO_AUTH is defined, Curl_none_md5sum's parameters\nare not used.",
+        "sha": "9d2ebea1331818876e1cc6065920ff2e764f817d",
+        "message": "Edit wording in readme description",
         "author": {
-          "name": "Marcel Raad",
-          "email": "marcel.raad@teamviewer.com",
-          "date": "2017-10-06T17:01:19Z"
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T23:59:02Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/202189ff2c832bf39e7e6d9a6b8b2c980cc4201b"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9d2ebea1331818876e1cc6065920ff2e764f817d"
       },
       {
-        "sha": "7f1140c8bfc47dd9b7a8010818e97e87a289bfaf",
-        "message": "multi_cleanup: call DONE on handles that never got that\n\n... fixes a memory leak with at least IMAP when remove_handle is never\ncalled and the transfer is abruptly just abandoned early.\n\nTest 1552 added to verify\n\nDetected by OSS-fuzz\nAssisted-by: Max Dymond\nCloses #1954",
+        "sha": "382e3933b2cff07865c850ce78034e45e137183f",
+        "message": "Fix typos in linux_setup docs",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-05T23:11:17Z"
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T01:19:26Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/7f1140c8bfc47dd9b7a8010818e97e87a289bfaf"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/382e3933b2cff07865c850ce78034e45e137183f"
       },
       {
-        "sha": "454dae0092d6f367fe486bdfd49f781329bf4500",
-        "message": "strtoofft: Remove extraneous null check\n\nFixes #1950: curlx_strtoofft() doesn't fully protect against null 'str'\nargument.\n\nCloses #1952",
+        "sha": "9819ef450d98a197b6234c28b599bcc7f43ad759",
+        "message": "Edit readme wording",
         "author": {
-          "name": "Benbuck Nason",
-          "email": "bnason@netflix.com",
-          "date": "2017-10-05T19:45:51Z"
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T01:18:36Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/454dae0092d6f367fe486bdfd49f781329bf4500"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9819ef450d98a197b6234c28b599bcc7f43ad759"
       },
       {
-        "sha": "2dcc378381881a374289d3a1fefb3495d687bf50",
-        "message": "openssl: fix build without HAVE_OPAQUE_EVP_PKEY\n\nReported-by: Javier Sixto\nFixes #1955\nCloses #1956",
+        "sha": "cbe5bb43e4d8d1d16eb2f9697ce8e974a5cd4838",
+        "message": "Fix typos in readme.md",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-06T08:29:51Z"
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T01:06:20Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/2dcc378381881a374289d3a1fefb3495d687bf50"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/cbe5bb43e4d8d1d16eb2f9697ce8e974a5cd4838"
       },
       {
-        "sha": "24bba4045677065354c041b69820a1988bd5944f",
-        "message": "lib/config-win32.h: let SMB/SMBS be enabled with OpenSSL/NSS\n\nThe source code is now prepared to handle the case when both\nWin32 Crypto and OpenSSL/NSS crypto backends are enabled\nat the same time, making it now possible to enable `USE_WIN32_CRYPTO`\nwhenever the targeted Windows version supports it. Since this\nmatches the minimum Windows version supported by curl\n(Windows 2000), enable it unconditionally for the Win32 platform.\n\nThis in turn enables SMB (and SMBS) protocol support whenever\nWin32 Crypto is available, regardless of what other crypto backends\nare enabled.\n\nRef: https://github.com/curl/curl/pull/1840#issuecomment-325682052\n\nCloses https://github.com/curl/curl/pull/1943",
+        "sha": "08d5ed7d4503bac49f73c39daa2e5a63df7f95ae",
+        "message": "changed default mailer urls to use https",
         "author": {
-          "name": "Viktor Szakats",
-          "email": "vszakats@users.noreply.github.com",
-          "date": "2017-10-06T07:37:42Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-27T07:41:24Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/24bba4045677065354c041b69820a1988bd5944f"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/08d5ed7d4503bac49f73c39daa2e5a63df7f95ae"
       },
       {
-        "sha": "7bc5308db3385cdc31efa8182b58e229eb721994",
-        "message": "build: fix --disable-crypto-auth\n\nReported-by: Wyatt O'Day\nFixes #1945\nCloses #1947",
+        "sha": "ee2265a5f6b028d044b12241f9840f948532e10f",
+        "message": "reenable force ssl",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-04T22:20:34Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-27T07:19:42Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/7bc5308db3385cdc31efa8182b58e229eb721994"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ee2265a5f6b028d044b12241f9840f948532e10f"
       },
       {
-        "sha": "3e492e03b37ce76cbd0ccca1c001aaa3b17b3372",
-        "message": "darwinssl: add support for TLSv1.3\n\nCloses https://github.com/curl/curl/pull/1794",
+        "sha": "a1f0a28c24052717844f2194a4d09d0e54da5c4f",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
         "author": {
-          "name": "Nick Zitzmann",
-          "email": "nickzman@gmail.com",
-          "date": "2017-08-16T18:05:09Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-27T07:19:04Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/3e492e03b37ce76cbd0ccca1c001aaa3b17b3372"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/a1f0a28c24052717844f2194a4d09d0e54da5c4f"
       },
       {
-        "sha": "2592241d63c1ec56db05575c85b1647d05776e22",
-        "message": "docs: fix typo in curl_mime_data_cb man page\n\nCloses #1946",
+        "sha": "986b2b11170954b92042819c220ba55431e76bd4",
+        "message": "Merge pull request #412 from TheOdinProject/update-faq\n\nupdate faq",
         "author": {
-          "name": "Felix Kaiser",
-          "email": "felix.kaiser@fxkr.net",
-          "date": "2017-10-04T20:03:49Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-21T16:21:13Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/2592241d63c1ec56db05575c85b1647d05776e22"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/986b2b11170954b92042819c220ba55431e76bd4"
       },
       {
-        "sha": "aaa16f80256abc1463fd9374815130a165222257",
-        "message": "lib/Makefile.m32: allow customizing dll suffixes\n\n- New `CURL_DLL_SUFFIX` envvar will add a suffix to the generated\n  libcurl dll name. Useful to add `-x64` to 64-bit builds so that\n  it can live in the same directory as the 32-bit one. By default\n  this is empty.\n\n- New `CURL_DLL_A_SUFFIX` envvar to customize the suffix of the\n  generated import library (implib) for libcurl .dll. It defaults\n  to `dll`, and it's useful to modify that to `.dll` to have the\n  standard naming scheme for mingw-built .dlls, i.e. `libcurl.dll.a`.\n\nCloses https://github.com/curl/curl/pull/1942",
+        "sha": "96f8aebae04a4cdf78e406b2f1422478380d233d",
+        "message": "update and add FAQ content",
         "author": {
-          "name": "Viktor Szakats",
-          "email": "vszakats@users.noreply.github.com",
-          "date": "2017-10-04T15:57:19Z"
+          "name": "Erik Johnson",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-04-18T17:30:10Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/aaa16f80256abc1463fd9374815130a165222257"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/96f8aebae04a4cdf78e406b2f1422478380d233d"
       },
       {
-        "sha": "4f38db1d28a971f938400f558e968fdffb9233a0",
-        "message": "fuzzer: move to using external curl-fuzzer\n\nUse the external curl-fuzzer repository for fuzzing.\n\nCloses #1923",
+        "sha": "0e6ce87d24e8e78a2a162375ce8ec91aa963174a",
+        "message": "update faq",
         "author": {
-          "name": "Max Dymond",
-          "email": "cmeister2@gmail.com",
-          "date": "2017-09-25T09:59:18Z"
+          "name": "Austin Mason",
+          "email": "austinpmason@gmail.com",
+          "date": "2017-04-11T10:47:34Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/4f38db1d28a971f938400f558e968fdffb9233a0"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/0e6ce87d24e8e78a2a162375ce8ec91aa963174a"
       },
       {
-        "sha": "120d963a64f121619d69d6590b2cba7783a7df2a",
-        "message": "failf: skip the sprintf() if there are no consumers\n\nCloses #1936",
+        "sha": "3362479271b4629690e21d7d80b1ed23216d6158",
+        "message": "Merge pull request #399 from OlehSliusar/patch-1\n\nFix typo",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-03T12:26:36Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-28T10:02:33Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/120d963a64f121619d69d6590b2cba7783a7df2a"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3362479271b4629690e21d7d80b1ed23216d6158"
       },
       {
-        "sha": "a69a4d222d661268e196d481a2a2b5c3c4cd6848",
-        "message": "ftp: UBsan fixup 'pointer index expression overflowed'\n\nCloses #1939",
+        "sha": "36fb836dd165dd8a38dc561a6ae7ab64250b166f",
+        "message": "Fix typo\n\nIt should be 'here's a couple of exercises' or 'here are a couple of exercises'. The former seems to be more correct.",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-03T15:20:06Z"
+          "name": "Oleh Sliusar",
+          "email": "olehsliusar@gmail.com",
+          "date": "2017-03-28T08:53:00Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/a69a4d222d661268e196d481a2a2b5c3c4cd6848"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/36fb836dd165dd8a38dc561a6ae7ab64250b166f"
       },
       {
-        "sha": "031c3675315006932f63a1e195d1be7078b3e5fd",
-        "message": "RELEASE-PROCEDURE: update the release schedule",
+        "sha": "bcf13b744be0b2647694e1e1d099f817f27d80b5",
+        "message": "Merge pull request #396 from OlehSliusar/patch-1\n\nUpdate seeds.rb",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-04T07:03:04Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-18T23:06:04Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/031c3675315006932f63a1e195d1be7078b3e5fd"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/bcf13b744be0b2647694e1e1d099f817f27d80b5"
       },
       {
-        "sha": "3ea76790571c1f7cf1bed34fabffd3cc20ad3dd3",
-        "message": "RELEASE-NOTES: curl 7.56.0",
+        "sha": "b5fe3f4219e94d7e2f6ef257d767df3fbf5ed853",
+        "message": "Update seeds.rb",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-30T21:51:01Z"
+          "name": "Oleh Sliusar",
+          "email": "olehsliusar@gmail.com",
+          "date": "2017-03-13T19:20:15Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/3ea76790571c1f7cf1bed34fabffd3cc20ad3dd3"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/b5fe3f4219e94d7e2f6ef257d767df3fbf5ed853"
       },
       {
-        "sha": "6119ce0802d05c46ff1d154ad2e51b956d7bf368",
-        "message": "THANKS: added new 7.56.0 contributors",
+        "sha": "69808373be8cbe32040889e7087a230bce6f9824",
+        "message": "Update seeds.rb\n\nWe don't build a web server anymore",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-01T21:19:52Z"
+          "name": "Oleh Sliusar",
+          "email": "olehsliusar@gmail.com",
+          "date": "2017-03-13T08:41:14Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/6119ce0802d05c46ff1d154ad2e51b956d7bf368"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/69808373be8cbe32040889e7087a230bce6f9824"
       },
       {
-        "sha": "e702df7a84cb7004a061a5bc53bc1032d6b125f4",
-        "message": "build-openssl.bat: Warn OpenSSL 1.1.0 not yet supported\n\nRef: https://github.com/curl/curl/issues/1002",
+        "sha": "151ca64024c7619f79c369e1f8d565adbdd1a417",
+        "message": "removed space",
         "author": {
-          "name": "Jay Satiro",
-          "email": "raysatiro@yahoo.com",
-          "date": "2017-10-04T04:56:31Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-13T03:08:45Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/e702df7a84cb7004a061a5bc53bc1032d6b125f4"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/151ca64024c7619f79c369e1f8d565adbdd1a417"
       },
       {
-        "sha": "5f1fa5827d949fb6be62f10eecf61bd64b5945a5",
-        "message": "idn: fix source code comment",
+        "sha": "79d0ee3cbf880a4899240f4010583c94ff7d1ffa",
+        "message": "Merge pull request #389 from TheOdinProject/feature/remove-ruby-on-the-web\n\nremoved ruby on the web section",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-10-03T16:46:50Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-03T13:33:16Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/5f1fa5827d949fb6be62f10eecf61bd64b5945a5"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/79d0ee3cbf880a4899240f4010583c94ff7d1ffa"
       },
       {
-        "sha": "9d3dde37a8ef5eb0fa03f411eb4296ffdbe6cf3d",
-        "message": "vtls: compare and clone ssl configs properly\n\nCompare these settings in Curl_ssl_config_matches():\n- verifystatus (CURLOPT_SSL_VERIFYSTATUS)\n- random_file (CURLOPT_RANDOM_FILE)\n- egdsocket (CURLOPT_EGDSOCKET)\n\nAlso copy the setting \"verifystatus\" in Curl_clone_primary_ssl_config(),\nand copy the setting \"sessionid\" unconditionally.\n\nThis means that reusing connections that are secured with a client\ncertificate is now possible, and the statement \"TLS session resumption\nis disabled when a client certificate is used\" in the old advisory at\nhttps://curl.haxx.se/docs/adv_20170419.html is obsolete.\n\nReviewed-by: Daniel Stenberg\n\nCloses #1917",
+        "sha": "7fe459d5aadad1839b936736953cf41514cc805b",
+        "message": "Merge pull request #389 from TheOdinProject/feature/remove-ruby-on-the-web\n\nremoved ruby on the web section",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-24T12:08:29Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-03T13:33:16Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/9d3dde37a8ef5eb0fa03f411eb4296ffdbe6cf3d"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/7fe459d5aadad1839b936736953cf41514cc805b"
       },
       {
-        "sha": "c4ebd8b46de09d45e251bed7e9bfc2a0ddf21d98",
-        "message": "proxy: read the \"no_proxy\" variable only if necessary\n\nReviewed-by: Daniel Stenberg\n\nCloses #1919",
+        "sha": "4138b1e8f7beb5bf75e7ca5246c1521a4ea85598",
+        "message": "removed ruby on the web section",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-24T13:21:44Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-03T13:30:30Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/c4ebd8b46de09d45e251bed7e9bfc2a0ddf21d98"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/4138b1e8f7beb5bf75e7ca5246c1521a4ea85598"
       },
       {
-        "sha": "ff6774ea6a03ae193f92e7175e9b96aaffb3f44c",
-        "message": "libcurl-tutorial: add casts in example to avoid compilation warnings.",
+        "sha": "664722ab42fa6c636096fe14d7b40ef26c63b871",
+        "message": "Merge pull request #387 from arun1595/gitter-sidecar\n\nEmbed gitter chat",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-03T10:03:46Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-02-20T16:23:21Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/ff6774ea6a03ae193f92e7175e9b96aaffb3f44c"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/664722ab42fa6c636096fe14d7b40ef26c63b871"
       },
       {
-        "sha": "c3e58d93de9449bc9e85d89d75c0a75a9e3d5fec",
-        "message": "examples: bring back curl_formadd-using examples\n\n... now with a -formadd suffix. While the new mime API is introduced in\n7.56.0 we must acknowledge that lots of users can't upgrade their curl\nversions immediately.",
+        "sha": "00845e7fb859df0b9d34a49ed7554dccf24a0764",
+        "message": "Embed gitter chat",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-10-03T05:59:55Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2017-02-19T08:38:27Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/c3e58d93de9449bc9e85d89d75c0a75a9e3d5fec"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/00845e7fb859df0b9d34a49ed7554dccf24a0764"
       },
       {
-        "sha": "2322891330e7ec5f551edc59cd3c5fc8993bb310",
-        "message": "test1153: verify quoted double-qoutes in PWD response",
+        "sha": "9b63726ae1d83b8d4a2b2aeaa51009409668bf6e",
+        "message": "Merge pull request #385 from clormor/master\n\nremoving .DS_Stores that were committed before .DS_Store was ignored",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-25T09:16:15Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-01-30T13:21:36Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/2322891330e7ec5f551edc59cd3c5fc8993bb310"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9b63726ae1d83b8d4a2b2aeaa51009409668bf6e"
       },
       {
-        "sha": "5ff2c5ff25750aba1a8f64fbcad8e5b891512584",
-        "message": "FTP: zero terminate the entry path even on bad input\n\n... a single double quote could leave the entry path buffer without a zero\nterminating byte. CVE-2017-1000254\n\nTest 1152 added to verify.\n\nReported-by: Max Dymond\nBug: https://curl.haxx.se/docs/adv_20171004.html",
+        "sha": "b3425e97d3c5fc71d0e59d8c746ae6222671b562",
+        "message": "removing .DS_Stores that must have been commited before .DS_Store was ignored",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-24T22:35:22Z"
+          "name": "Chris Lormor",
+          "email": "clormor@palantir.com",
+          "date": "2017-01-30T09:40:27Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/5ff2c5ff25750aba1a8f64fbcad8e5b891512584"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/b3425e97d3c5fc71d0e59d8c746ae6222671b562"
       },
       {
-        "sha": "440dbcb06e8dedba1551e32046a9415adb82eb0b",
-        "message": "cmake: disable tests and man generation if perl/nroff not found\n\nFixes https://github.com/curl/curl/issues/1500\nReported-by: Jay Satiro\n\nFixes https://github.com/curl/curl/pull/1662\nAssisted-by: Tom Seddon\nAssisted-by: dpull@users.noreply.github.com\nAssisted-by: elelel@users.noreply.github.com\n\nCloses https://github.com/curl/curl/pull/1924",
+        "sha": "42c7f52740f2bc079e39fcc47a7270fc89666d69",
+        "message": "Merge pull request #381 from RobPando/master\n\nFixed row shift in users show view when providers button is not present",
         "author": {
-          "name": "Sergei Nikulov",
-          "email": "sergey.nikulov@gmail.com",
-          "date": "2017-09-26T07:42:12Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-01-26T15:23:39Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/440dbcb06e8dedba1551e32046a9415adb82eb0b"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/42c7f52740f2bc079e39fcc47a7270fc89666d69"
       },
       {
-        "sha": "753a5da906f2ce21d82c4e6210697b9110c151a9",
-        "message": "libcurl-tutorial: fix two typos.",
+        "sha": "148fa5f575b8a37f3ebba6da6ca54ca7d48ddd8a",
+        "message": "Fixed row shift in users show view",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-01T23:12:55Z"
+          "name": "Roberto Pando",
+          "email": "roberto_pando@hotmail.com",
+          "date": "2017-01-26T14:42:57Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/753a5da906f2ce21d82c4e6210697b9110c151a9"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/148fa5f575b8a37f3ebba6da6ca54ca7d48ddd8a"
       },
       {
-        "sha": "3ac14ab39a0b1832465f338e6542442cf36f485c",
-        "message": "TODO: remove deprecated form API items.",
+        "sha": "3ce38a8296cff14f3246c4d78df056a9a544a5ad",
+        "message": "Merge pull request #1 from TheOdinProject/master\n\nMerge updated repo",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-01T17:42:52Z"
+          "name": "Roberto Pando",
+          "email": "roberto_pando@hotmail.com",
+          "date": "2017-01-26T14:24:43Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/3ac14ab39a0b1832465f338e6542442cf36f485c"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3ce38a8296cff14f3246c4d78df056a9a544a5ad"
       },
       {
-        "sha": "525251398f6f3f8e1e973df315c07ce00a254ea5",
-        "message": "libcurl-tutorial: describe MIME API and deprecate form API.\n\nInclude a guide to form/mime API conversion.",
+        "sha": "e6f0992340cb0f354650386b32a33483a81331c2",
+        "message": "Merge pull request #373 from ChadKreutzer/feature/pairing_section\n\nwire pair programming section into seeds.rb",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-10-01T17:31:52Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-01-02T05:27:25Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/525251398f6f3f8e1e973df315c07ce00a254ea5"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e6f0992340cb0f354650386b32a33483a81331c2"
       },
       {
-        "sha": "8392a0cf612eaf045addc0b5d8da6d287be33907",
-        "message": "cookie: fix memory leak if path was set twice in header\n\n... this will let the second occurance override the first.\n\nAdded test 1161 to verify.\n\nReported-by: Max Dymond\nFixes #1932\nCloses #1933",
+        "sha": "dfaba713db3a5440be86a6ef9e325cc87ab0b522",
+        "message": "change pairing project lesson to use project_pairing.md file.",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-30T12:10:12Z"
+          "name": "Chad Kreutzer",
+          "email": "kanthalion@gmail.com",
+          "date": "2016-12-31T06:29:18Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/8392a0cf612eaf045addc0b5d8da6d287be33907"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/dfaba713db3a5440be86a6ef9e325cc87ab0b522"
       },
       {
-        "sha": "cecffff561b4cb5707510cfbc0bc41fe0e5b346a",
-        "message": "test650: Use variable replacement to set the host address and port\n\nOtherwise, the test fails when the -b test option is used to set a\ndifferent test port range.",
+        "sha": "c942ad9f3d388f6efa5d15f432488c06257870ed",
+        "message": "Merge pull request #374 from TheOdinProject/feature/lesson-decorator\n\nAdded a lesson decorator",
         "author": {
-          "name": "Dan Fandrich",
-          "email": "dan@coneharvesters.com",
-          "date": "2017-09-29T23:37:55Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-30T02:18:37Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/cecffff561b4cb5707510cfbc0bc41fe0e5b346a"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/c942ad9f3d388f6efa5d15f432488c06257870ed"
       },
       {
-        "sha": "df7839b68c7a3e78c469efc28157ad0df228f32f",
-        "message": "Set and use more necessary options when some protocols are disabled\n\nWhen curl and libcurl are built with some protocols disabled, they stop\nsetting and receiving some options that don't make sense with those\nprotocols.  In particular, when HTTP is disabled many options aren't set\nthat are used only by HTTP.  However, some options that appear to be\nHTTP-only are actually used by other protocols as well (some despite\nhaving HTTP in the name) and should be set, but weren't. This change now\ncauses some of these options to be set and used for more (or for all)\nprotocols. In particular, this fixes tests 646 through 649 in an\nHTTP-disabled build, which use the MIME API in the mail protocols.",
+        "sha": "e70ddc39657afbc23c158662e45a8407b8560f83",
+        "message": "Added a lesson decorator",
         "author": {
-          "name": "Dan Fandrich",
-          "email": "dan@coneharvesters.com",
-          "date": "2017-09-29T23:20:56Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-30T02:17:42Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/df7839b68c7a3e78c469efc28157ad0df228f32f"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e70ddc39657afbc23c158662e45a8407b8560f83"
       },
       {
-        "sha": "a352e21c0bb7a2ae0d2737408198d331037c37c7",
-        "message": "test1160: verifies cookie leak for large cookies\n\nThe fix done in 20ea22ff735",
+        "sha": "aeb27570cdb721ae1206f6b9eafe7ad97ff6fd7e",
+        "message": "Merge pull request #370 from arun1595/projects-controller\n\nAllow admin to update and destroy project submissions",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-29T07:19:09Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-30T02:05:10Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/a352e21c0bb7a2ae0d2737408198d331037c37c7"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/aeb27570cdb721ae1206f6b9eafe7ad97ff6fd7e"
       },
       {
-        "sha": "20ea22ff735097a02721fcb5cd44433973af6190",
-        "message": "cookie: fix memory leak on oversized rejection\n\nRegression brought by 2bc230de63b\n\nDetected by OSS-fuzz: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3513\nAssisted-by: Max Dymond\n\nCloses #1930",
+        "sha": "d088dfabf9fe00a2f159ebdb132e0511ab92fad6",
+        "message": "wire pair programming section into seeds.rb",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-29T06:50:15Z"
+          "name": "Chad Kreutzer",
+          "email": "kanthalion@gmail.com",
+          "date": "2016-12-29T10:05:52Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/20ea22ff735097a02721fcb5cd44433973af6190"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d088dfabf9fe00a2f159ebdb132e0511ab92fad6"
       },
       {
-        "sha": "49d75a4c15393d66e9f3e0ce289a610da4d6e5a9",
-        "message": "connect: fix race condition with happy eyeballs timeout\n\nThe timer should be started after conn->connecttime is set. Otherwise\nthe timer could expire without this condition being true:\n\n    /* should we try another protocol family? */\n    if(i == 0 && conn->tempaddr[1] == NULL &&\n      curlx_tvdiff(now, conn->connecttime) >= HAPPY_EYEBALLS_TIMEOUT) {\n\nRef: #1928",
+        "sha": "739d213c238eda026e1485a62ec7cf15a86c619f",
+        "message": "Allow admin to update and destroy project submissions",
         "author": {
-          "name": "Anders Bakken",
-          "email": "agbakken@gmail.com",
-          "date": "2017-09-28T15:20:04Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-12-24T06:45:13Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/49d75a4c15393d66e9f3e0ce289a610da4d6e5a9"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/739d213c238eda026e1485a62ec7cf15a86c619f"
       },
       {
-        "sha": "c66d94d6da50b20a8bc218683bc88b54ac15d6c2",
-        "message": "docs: link CURLOPT_CONNECTTIMEOUT and CURLOPT_CONNECTTIMEOUT_MS\n\nCloses #1922",
+        "sha": "654089294526e5c6928395eccc23aa5d8960e4b9",
+        "message": "add rack attack middleware to block abusive ips",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-24T19:33:46Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-27T13:15:59Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/c66d94d6da50b20a8bc218683bc88b54ac15d6c2"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/654089294526e5c6928395eccc23aa5d8960e4b9"
       },
       {
-        "sha": "46d63bbbe87685b2e9c7380585c03afaa1fcf157",
-        "message": "docs: clarify the use of environment variables for proxy\n\nCloses #1921",
+        "sha": "51215764f06d49407c70ca69cbeea624c1662e30",
+        "message": "Merge pull request #371 from TheOdinProject/feature/performance-boost\n\nchanged length to count in course methods as this is more performant",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-24T17:58:37Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-25T13:11:54Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/46d63bbbe87685b2e9c7380585c03afaa1fcf157"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/51215764f06d49407c70ca69cbeea624c1662e30"
       },
       {
-        "sha": "eac324f28420871b79790c8f2c3a3ec9bd0b9e00",
-        "message": "http: add custom empty headers to repeated requests\n\nCloses #1920",
+        "sha": "53f426082aa43180f686804f629ac62d57635fca",
+        "message": "changed length to count in course methods as this is more performant",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-24T17:31:43Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-25T13:11:14Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/eac324f28420871b79790c8f2c3a3ec9bd0b9e00"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/53f426082aa43180f686804f629ac62d57635fca"
       },
       {
-        "sha": "284d06df9e45a97043e6cf6c915d7eb15622c1e4",
-        "message": "reuse_conn: don't copy flags that are known to be equal\n\nA connection can only be reused if the flags \"conn_to_host\" and\n\"conn_to_port\" match. Therefore it is not necessary to copy these flags\nin reuse_conn().\n\nCloses #1918",
+        "sha": "a5d04f24f7500a952b5106d7e9a58a2fae6d9445",
+        "message": "Merge pull request #369 from lujanfernaud/patch-2\n\nFix #lesson-nav appearing on top of scroll down menu",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-24T13:02:12Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-23T19:13:24Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/284d06df9e45a97043e6cf6c915d7eb15622c1e4"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/a5d04f24f7500a952b5106d7e9a58a2fae6d9445"
       },
       {
-        "sha": "6aa86c493bd77b70d1f5018e102bc3094290d588",
-        "message": "curl.h: include <sys/select.h> on cygwin too\n\nWhen building with -std=c++14 on cygwin, this header won't be\nautomatically included as it otherwise is.\n\nThe <sys/select.h> include decision should ideally be reversed and be\navoided where that header file doesn't exist.\n\nReported-by: Ian Fette\nFixes #1925",
+        "sha": "f3777d3a0335a5105c9920fe5ace29d15c3b0063",
+        "message": "Fix #lesson-nav appearing on top of scroll down menu\n\nOn small screens #lesson-nav appears on top of the scroll down menu.",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-27T08:22:55Z"
+          "name": "Luján Fernaud",
+          "email": "lujanfernaud@gmail.com",
+          "date": "2016-12-22T17:52:12Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/6aa86c493bd77b70d1f5018e102bc3094290d588"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/f3777d3a0335a5105c9920fe5ace29d15c3b0063"
       },
       {
-        "sha": "91a6e60c1efe8b059706b391f0635ddb2bbeae16",
-        "message": "RELEASE-NOTES: synced with d8ab5dc50",
+        "sha": "3199abb9359181f9260a256f2056a5bacd5cb1f7",
+        "message": "Merge pull request #367 from arun1595/projects-controller\n\nAdd all_submissions and recent_submissions for projects",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-25T08:48:33Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-20T16:33:42Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/91a6e60c1efe8b059706b391f0635ddb2bbeae16"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3199abb9359181f9260a256f2056a5bacd5cb1f7"
       },
       {
-        "sha": "d8ab5dc50e2fdf6f0cd9104f1c04792a72c6cd61",
-        "message": "tests: adjust .gitignore for new tests",
+        "sha": "c4999f499802072de42dbc8ea54e8321a01dc7b6",
+        "message": "Add all_submissions and recent_submissions for projects",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-24T11:30:30Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-12-20T16:13:02Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/d8ab5dc50e2fdf6f0cd9104f1c04792a72c6cd61"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/c4999f499802072de42dbc8ea54e8321a01dc7b6"
       },
       {
-        "sha": "953b5c4e2602711c031a4f6cd024051a72329015",
-        "message": "ntlm: move NTLM_NEEDS_NSS_INIT define into core NTLM header\n\n.. and include the core NTLM header in all NTLM-related source files.\n\nFollow up to 6f86022. Since then http_ntlm checks NTLM_NEEDS_NSS_INIT\nbut did not include vtls.h where it was defined.\n\nCloses https://github.com/curl/curl/pull/1911",
+        "sha": "5c2acf1e08185781e8fec9d5ddda7b3d13547263",
+        "message": "Merge pull request #365 from arun1595/projects-controller\n\nComplete create, update and destroy actions for projects",
         "author": {
-          "name": "Jay Satiro",
-          "email": "raysatiro@yahoo.com",
-          "date": "2017-09-22T19:47:14Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-20T15:16:14Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/953b5c4e2602711c031a4f6cd024051a72329015"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/5c2acf1e08185781e8fec9d5ddda7b3d13547263"
       },
       {
-        "sha": "afbdc96638a769d9bee8579d8b70f54537f5e891",
-        "message": "file_range: avoid integer overflow when figuring out byte range\n\nWhen trying to bump the value with one and the value is already at max,\nit causes an integer overflow.\n\nCloses #1908\nDetected by oss-fuzz:\nhttps://bugs.chromium.org/p/oss-fuzz/issues/detail?id=3465\n\nAssisted-by: Max Dymond",
+        "sha": "2983602b614a356c04af7c33f2a79e721975ec81",
+        "message": "Complete create, update and destroy actions for projects",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-22T12:24:39Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-12-13T11:04:35Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/afbdc96638a769d9bee8579d8b70f54537f5e891"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/2983602b614a356c04af7c33f2a79e721975ec81"
       },
       {
-        "sha": "b6a90bca335b08971371fbceeae694d970aebcb6",
-        "message": "tests: fix a compiler warning in test 643",
+        "sha": "ec81872a626919f616594ca9b9850d87523459ac",
+        "message": "Merge pull request #363 from TheOdinProject/feature/update-readme\n\nupdated the README",
         "author": {
-          "name": "Michael Kaufmann",
-          "email": "mail@michael-kaufmann.ch",
-          "date": "2017-09-23T12:43:55Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T14:12:25Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/b6a90bca335b08971371fbceeae694d970aebcb6"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ec81872a626919f616594ca9b9850d87523459ac"
       },
       {
-        "sha": "3a1c7cb3ca509417ac7b8269529ceacee08d1d6c",
-        "message": "symbols-in-versions: fix CURLSSLSET_NO_BACKENDS entry\n\n- Use spaces instead of tabs as the delimiter.\n\nFollow up to 7c52b12 which added the entry. The entry had used tabs but\nthe symbol-scan parser doesn't recognize tabs and would fail the symbol.",
+        "sha": "6c242bf48b93731171df490a9eb37464bee92f26",
+        "message": "updated the README",
         "author": {
-          "name": "Jay Satiro",
-          "email": "raysatiro@yahoo.com",
-          "date": "2017-09-23T07:19:47Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T14:11:07Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/3a1c7cb3ca509417ac7b8269529ceacee08d1d6c"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/6c242bf48b93731171df490a9eb37464bee92f26"
       },
       {
-        "sha": "de47158934075322cb8fd0e681ddb7d6e50b40a7",
-        "message": "metalink: fix NSS issue in MultiSSL builds\n\nIn MultiSSL mode (i.e. when more than one SSL backend is compiled\nin), we cannot use the compile time flag `USE_NSS` as indicator that\nthe NSS backend is in use. As far as Metalink is concerned, the SSL\nbackend is only used for MD5, SHA-1 and SHA-256 calculations,\ntherefore one of the available SSL backends is selected at compile\ntime, in a strict order of preference.\n\nLet's introduce a new `HAVE_NSS_CONTEXT` constant that can be used\nto determine whether the SSL backend used for Metalink is the NSS\nbackend, and use that to guard the code that wants to de-initialize\nthe NSS-specific data structure.\n\nRef: https://github.com/curl/curl/pull/1848",
+        "sha": "29f4f60a45c8546e840ebbc80a4757c7c1644c6f",
+        "message": "Updated linux installation guide",
         "author": {
-          "name": "Viktor Szakats",
-          "email": "vszakats@users.noreply.github.com",
-          "date": "2017-09-12T18:14:00Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:32:44Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/de47158934075322cb8fd0e681ddb7d6e50b40a7"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/29f4f60a45c8546e840ebbc80a4757c7c1644c6f"
       },
       {
-        "sha": "6f86022df26243cc8a035fe8b4c89033b6a04bc0",
-        "message": "ntlm: use strict order for SSL backend #if branches\n\nWith the recently introduced MultiSSL support multiple SSL backends\ncan be compiled into cURL That means that now the order of the SSL\n\nOne option would be to use the same SSL backend as was configured\nvia `curl_global_sslset()`, however, NTLMv2 support would appear\nto be available only with some SSL backends. For example, when\neb88d778e (ntlm: Use Windows Crypt API, 2014-12-02) introduced\nsupport for NTLMv1 using Windows' Crypt API, it specifically did\n*not* introduce NTLMv2 support using Crypt API at the same time.\n\nSo let's select one specific SSL backend for NTLM support when\ncompiled with multiple SSL backends, using a priority order such\nthat we support NTLMv2 even if only one compiled-in SSL backend can\nbe used for that.\n\nRef: https://github.com/curl/curl/pull/1848",
+        "sha": "3f8cc64db55c55e610bfc98180d3561711f1b2e2",
+        "message": "Updated installation guide for mac",
         "author": {
-          "name": "Viktor Szakats",
-          "email": "vszakats@users.noreply.github.com",
-          "date": "2017-08-30T21:10:38Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:25:07Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/6f86022df26243cc8a035fe8b4c89033b6a04bc0"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3f8cc64db55c55e610bfc98180d3561711f1b2e2"
       },
       {
-        "sha": "7c52b12dd4721d4c5591cefa078d256331e56999",
-        "message": "symbols-in-versions: add CURLSSLSET_NO_BACKENDS\n\n...fixup from b8e0fe19ec",
+        "sha": "ca19c56640202a3301289655ea65a38bd9a092c4",
+        "message": "Fixed typo in the mac installation guide",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-22T14:22:57Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:22:23Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/7c52b12dd4721d4c5591cefa078d256331e56999"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ca19c56640202a3301289655ea65a38bd9a092c4"
       },
       {
-        "sha": "3b05f79ef8c88468e2684760ec39065c739a1f3d",
-        "message": "imap: quote atoms properly when escaping characters\n\nUpdates test 800 to verify\n\nFixes #1902\nCloses #1903",
+        "sha": "d3bef003b4af41d0704ac31bc4d64658faf12e4f",
+        "message": "fixed typo in mac installation guide",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-21T07:17:06Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:19:29Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/3b05f79ef8c88468e2684760ec39065c739a1f3d"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d3bef003b4af41d0704ac31bc4d64658faf12e4f"
       },
       {
-        "sha": "a4db3f70468c31c0d579e6b9dcd4e90cd9f0d1a8",
-        "message": "tests: make the imap server not verify user+password\n\n... as the test cases themselves do that and it makes it easier to add\ncrazy test cases.\n\nTest 800 updated to use user name + password that need quoting.\n\nTest 856 updated to trigger an auth fail differently.\n\nRef: #1902",
+        "sha": "80dac1e159c4a90271f6cc1da74911b126497117",
+        "message": "Fixed typo",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-21T06:21:43Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:18:32Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/a4db3f70468c31c0d579e6b9dcd4e90cd9f0d1a8"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/80dac1e159c4a90271f6cc1da74911b126497117"
       },
       {
-        "sha": "b8e0fe19ec3bd3b673a14043a4b5e656d9c26d06",
-        "message": "vtls: provide curl_global_sslset() even in non-SSL builds\n\n... it just returns error:\n\nBug: https://github.com/curl/curl/commit/1328f69d53f2f2e937696ea954c480412b018451#commitcomment-24470367\nReported-by: Marcel Raad\n\nCloses #1906",
+        "sha": "6a21d12a3509558ca15a2314e72f93e770858e10",
+        "message": "Updated the install guide for mac\n\nAdded in steps for:\r\n* getting a github api token\r\n* running the tests\r\n* seeding the db and pulling in the lesson content\r\n* running the app locally\r\n* setting up github omniauth",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-21T21:30:48Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:15:44Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/b8e0fe19ec3bd3b673a14043a4b5e656d9c26d06"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/6a21d12a3509558ca15a2314e72f93e770858e10"
       },
       {
-        "sha": "ee56fdb6910f6bf215eecede9e2e9bfc83cb5f29",
-        "message": "form/mime: field names are not allowed to contain zero-valued bytes.\n\nAlso suppress length argument of curl_mime_name() (names are always\nzero-terminated).",
+        "sha": "e8adb9c15b28344757507f92a1f53fb49ba351e4",
+        "message": "Merge pull request #362 from arun1595/projects\n\nAdd a project model and set up relationships",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-09-22T00:08:29Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-03T20:35:23Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/ee56fdb6910f6bf215eecede9e2e9bfc83cb5f29"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e8adb9c15b28344757507f92a1f53fb49ba351e4"
       },
       {
-        "sha": "fa9482ab0907dfacd0fb619add2dbf41de2d8c9c",
-        "message": "openssl: only verify RSA private key if supported\n\nIn some cases the RSA key does not support verifying it because it's\nlocated on a smart card, an engine wants to hide it, ...\nCheck the flags on the key before trying to verify it.\nOpenSSL does the same thing internally; see ssl/ssl_rsa.c\n\nCloses #1904",
+        "sha": "9326991c74ab48dd5659c67193400be0a515d872",
+        "message": "Add model specs",
         "author": {
-          "name": "Dirk Feytons",
-          "email": "dirk.feytons@gmail.com",
-          "date": "2017-09-21T07:57:32Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-30T17:16:56Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/fa9482ab0907dfacd0fb619add2dbf41de2d8c9c"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9326991c74ab48dd5659c67193400be0a515d872"
       },
       {
-        "sha": "5d916944ae3043de7b8d644d9ca3420fb0b2417e",
-        "message": "examples/post-callback: use long for CURLOPT_POSTFIELDSIZE\n\nOtherwise, typecheck-gcc.h warns on MinGW-w64.",
+        "sha": "4680bbe768af02593edeac37f10452a26fd4c49f",
+        "message": "Add a project model and set up relationships",
         "author": {
-          "name": "Marcel Raad",
-          "email": "marcel.raad@teamviewer.com",
-          "date": "2017-09-21T18:07:24Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-27T17:45:20Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/5d916944ae3043de7b8d644d9ca3420fb0b2417e"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/4680bbe768af02593edeac37f10452a26fd4c49f"
       },
       {
-        "sha": "a7bcf274ccf3dd6eca86c5fbdf2d568690e0c494",
-        "message": "mime: rephrase the multipart output state machine (#1898) ...\n\n... in hope coverity will like it much.",
+        "sha": "412c92deaaf403c0d7a9334d20fa013c2531adbb",
+        "message": "Merge pull request #359 from arun1595/fix-rubocop-issues-spec\n\nFix rubocop issues in spec files",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-09-20T13:06:47Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-22T01:29:24Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/a7bcf274ccf3dd6eca86c5fbdf2d568690e0c494"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/412c92deaaf403c0d7a9334d20fa013c2531adbb"
       },
       {
-        "sha": "f3042018686c0e5659264acb9bc20373c4e4503a",
-        "message": "mime: fix an explicit null dereference (#1899)",
+        "sha": "060621316d71f53042068cd4c1e569cfa046e615",
+        "message": "Fix rubocop issues in miscellaneous files",
         "author": {
-          "name": "Patrick Monnerat",
-          "email": "patrick@monnerat.net",
-          "date": "2017-09-20T11:01:11Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-20T15:54:58Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/f3042018686c0e5659264acb9bc20373c4e4503a"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/060621316d71f53042068cd4c1e569cfa046e615"
       },
       {
-        "sha": "299896ca0963a79d5ec4de8ca83922c48f16f1bb",
-        "message": "curl: check fseek() return code and bail on error\n\nDetected by coverity. CID 1418137.",
+        "sha": "d45fcd467aec08b197f6dfc3f5647f651d684da2",
+        "message": "Fix rubocop issues in model specs",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-20T10:03:44Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-20T15:54:37Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/299896ca0963a79d5ec4de8ca83922c48f16f1bb"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d45fcd467aec08b197f6dfc3f5647f651d684da2"
       },
       {
-        "sha": "1e548f77847ac51a7054adef24825624fb73b219",
-        "message": "smtp: fix memory leak in OOM\n\nRegression since ce0881edee\n\nCoverity CID 1418139 and CID 1418136 found it, but it was also seen in\ntorture testing.",
+        "sha": "8dbdd4c336ac31136e8b74560e240167d4480a5c",
+        "message": "Fix rubocop issues in controller specs",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-20T09:33:46Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-20T14:54:29Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/1e548f77847ac51a7054adef24825624fb73b219"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/8dbdd4c336ac31136e8b74560e240167d4480a5c"
       },
       {
-        "sha": "7f794a224e800b8b1bf3dfed353ceb825094b722",
-        "message": "RELEASE-NOTES: synced with 5fe85587c",
+        "sha": "7e9840d7d36c60ea3bdac657ab49a923a00df202",
+        "message": "fixed some readability problems",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-20T06:31:04Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-21T19:20:16Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/7f794a224e800b8b1bf3dfed353ceb825094b722"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/7e9840d7d36c60ea3bdac657ab49a923a00df202"
       },
       {
-        "sha": "5fe85587ccd2d3365540cd652e6a3bb1b0393f3a",
-        "message": "cookies: use lock when using CURLINFO_COOKIELIST\n\nCloses #1896",
+        "sha": "8617c9c4b93bc5cdd9198c3a479c47dffee7e65b",
+        "message": "Merge pull request #356 from arun1595/fix-rubocop-issues\n\nFix rubocop issues in models",
         "author": {
-          "name": "Pavel P",
-          "email": "pavlov.pavel@gmail.com",
-          "date": "2017-09-18T22:50:16Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-21T18:56:59Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/5fe85587ccd2d3365540cd652e6a3bb1b0393f3a"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/8617c9c4b93bc5cdd9198c3a479c47dffee7e65b"
       },
       {
-        "sha": "c73ebb85374164515eb9df6d619a5822b6568599",
-        "message": "ossfuzz: changes before merging the generated corpora\n\nBefore merging in the oss-fuzz corpora from Google, there are some changes\nto the fuzzer.\n- Add a read corpus script, to display corpus files nicely.\n- Change the behaviour of the fuzzer so that TLV parse failures all now\n  go down the same execution paths, which should reduce the size of the\n  corpora.\n- Make unknown TLVs a failure to parse, which should decrease the size\n  of the corpora as well.\n\nCloses #1881",
+        "sha": "2352abdb337de0821ebb39b0c97d877610426bc7",
+        "message": "Merge pull request #358 from arun1595/fix-rubocop-issues-step-definitions\n\nFix rubocop issues in step definitions",
         "author": {
-          "name": "Max Dymond",
-          "email": "cmeister2@gmail.com",
-          "date": "2017-09-11T19:51:58Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-21T18:56:17Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/c73ebb85374164515eb9df6d619a5822b6568599"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/2352abdb337de0821ebb39b0c97d877610426bc7"
       },
       {
-        "sha": "bec50cc285995b18d57e5e5caf17e33100795f09",
-        "message": "mime:escape_string minor clarification change\n\n... as it also removes a warning with old gcc versions.\n\nBug: https://curl.haxx.se/mail/lib-2017-09/0049.html\nReported-by: Ben Greear",
+        "sha": "671d88e450d9396d43b267207d25e0e39e3a4697",
+        "message": "Fix rubocop issues in step definitions",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-17T21:31:49Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-19T14:32:19Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/bec50cc285995b18d57e5e5caf17e33100795f09"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/671d88e450d9396d43b267207d25e0e39e3a4697"
       },
       {
-        "sha": "e239eda39e3f0f9342bc0dd6658b49d4bd900875",
-        "message": "ossfuzz: don't write out to stdout\n\nDon't make the fuzzer write out to stdout - instead write some of the\ncontents to a memory block so we exercise the data output code but\nquietly.\n\nCloses #1885",
+        "sha": "ca5b5c51ddc9d994d9e0e8bd9856b146229cf1f4",
+        "message": "Fix rubocop issues in models",
         "author": {
-          "name": "Max Dymond",
-          "email": "cmeister2@gmail.com",
-          "date": "2017-09-11T19:00:27Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-19T02:53:02Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/e239eda39e3f0f9342bc0dd6658b49d4bd900875"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ca5b5c51ddc9d994d9e0e8bd9856b146229cf1f4"
       },
       {
-        "sha": "2bc230de63bd7da197280a69d84972b61455cd18",
-        "message": "cookies: reject oversized cookies\n\n... instead of truncating them.\n\nThere's no fixed limit for acceptable cookie names in RFC 6265, but the\nentire cookie is said to be less than 4096 bytes (section 6.1). This is\nalso what browsers seem to implement.\n\nWe now allow max 5000 bytes cookie header. Max 4095 bytes length per\ncookie name and value. Name + value together may not exceed 4096 bytes.\n\nAdded test 1151 to verify\n\nBug: https://curl.haxx.se/mail/lib-2017-09/0062.html\nReported-by: Kevin Smith\n\nCloses #1894",
+        "sha": "e1db62f4f65b9109e75fd97062f105c4d39e4976",
+        "message": "Merge pull request #353 from TheOdinProject/feature/cukes-for-edit-user\n\nAdded cukes for edit user profile and edit user account",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-17T22:55:07Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-18T19:51:17Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/2bc230de63bd7da197280a69d84972b61455cd18"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e1db62f4f65b9109e75fd97062f105c4d39e4976"
       },
       {
-        "sha": "1a072796d390a7f56739d48a5158c250e211e2f7",
-        "message": "travis: on mac, don't install openssl or libidn\n\n- openssl is already installed and causes warnings when trying to\n  install again\n\n- libidn isn't used these days, and homebrew doesn't seem to have a\n  libidn2 package to replace with easily\n\nCloses #1895",
+        "sha": "292c7d935b3e447cf597fc61e1f820ea7ca7e8fc",
+        "message": "Added cukes for edit user profile and edit user account",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-18T08:49:38Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-18T19:43:40Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/1a072796d390a7f56739d48a5158c250e211e2f7"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/292c7d935b3e447cf597fc61e1f820ea7ca7e8fc"
       },
       {
-        "sha": "697271fc980331ffb53f12850f82c80ed182a375",
-        "message": "curl: make str2udouble not return values on error\n\n... previously it would store a return value even when it returned\nerror, which could make the value get used anyway!\n\nReported-by: Brian Carpenter\nCloses #1893",
+        "sha": "3fcfa1e2693a8946a752192df58c1bf236540208",
+        "message": "Merge pull request #352 from arun1595/fix-rubocop-issues\n\nFix rubocop issues",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-15T14:38:48Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-18T19:09:31Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/697271fc980331ffb53f12850f82c80ed182a375"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3fcfa1e2693a8946a752192df58c1bf236540208"
       },
       {
-        "sha": "6d436642ddfc30264d9f466b185dfe0683d0d551",
-        "message": "socks: fix incorrect port number in SOCKS4 error message\n\nPrior to this change it appears the SOCKS5 port parsing was erroneously\nused for the SOCKS4 error message, and as a result an incorrect port\nwould be shown in the error message.\n\nBug: https://github.com/curl/curl/issues/1892\nReported-by: Jackarain@users.noreply.github.com",
+        "sha": "58e36ea7a29bd0414a2798bf1b4e582083e1c810",
+        "message": "Fix rubocop issues in controllers",
         "author": {
-          "name": "Jay Satiro",
-          "email": "raysatiro@yahoo.com",
-          "date": "2017-09-18T07:07:57Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-18T17:18:18Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/6d436642ddfc30264d9f466b185dfe0683d0d551"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/58e36ea7a29bd0414a2798bf1b4e582083e1c810"
       },
       {
-        "sha": "c8666089c82625a385e5d43df538b951635bccc8",
-        "message": "schannel: Support partial send for when data is too large\n\nSchannel can only encrypt a certain amount of data at once.  Instead of\nfailing when too much data is to be sent at once, send as much data as\nwe can and let the caller send the remaining data by calling send again.\n\nBug: https://curl.haxx.se/mail/lib-2014-07/0033.html\n\nCloses https://github.com/curl/curl/pull/1890",
+        "sha": "89d752aaf291fad5035682a3ad4c11e858037817",
+        "message": "Fix rubocop issues in ApplicationController",
         "author": {
-          "name": "Marc Aldorasi",
-          "email": "marc@groundctl.com",
-          "date": "2017-09-15T17:00:05Z"
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-18T16:50:21Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/c8666089c82625a385e5d43df538b951635bccc8"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/89d752aaf291fad5035682a3ad4c11e858037817"
       },
       {
-        "sha": "843200c5b9b5de41e5acefce593f1229970f18ef",
-        "message": "openssl: add missing includes\n\nlib/vtls/openssl.c uses OpenSSL APIs from BUF_MEM and BIO APIs. Include\ntheir headers directly rather than relying on other OpenSSL headers\nincluding things.\n\nCloses https://github.com/curl/curl/pull/1891",
+        "sha": "6fa9635e672ae88bf1ecfb25907598bbe980f4a9",
+        "message": "Merge pull request #350 from ChadKreutzer/patch-1\n\nfound a reference to the twitter spambot I missed",
         "author": {
-          "name": "David Benjamin",
-          "email": "davidben@google.com",
-          "date": "2017-09-15T22:36:40Z"
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-17T23:39:05Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/843200c5b9b5de41e5acefce593f1229970f18ef"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/6fa9635e672ae88bf1ecfb25907598bbe980f4a9"
       },
       {
-        "sha": "93843c372f101b994194f0192db159c16d26a7c0",
-        "message": "conversions: fix several compiler warnings",
+        "sha": "fb9abdd323cbe0e76c56c5da307640da2df8eaa4",
+        "message": "found a reference to the twitter spambot I missed",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-10T22:31:12Z"
+          "name": "Chad Kreutzer",
+          "email": "kanthalion@gmail.com",
+          "date": "2016-11-17T21:20:11Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/93843c372f101b994194f0192db159c16d26a7c0"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/fb9abdd323cbe0e76c56c5da307640da2df8eaa4"
       },
       {
-        "sha": "452c906dfdbffc0d150786884eba4fee20564fcf",
-        "message": "server/getpart: provide dummy function to build conversion enabled",
+        "sha": "f9cac8f085c757c4ef89a58bf6da3f37d2278788",
+        "message": "removed the test for studygroups page",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-08T07:33:22Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-16T22:18:58Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/452c906dfdbffc0d150786884eba4fee20564fcf"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/f9cac8f085c757c4ef89a58bf6da3f37d2278788"
       },
       {
-        "sha": "46e14b6942c285f955c9217487e8e896068c10df",
-        "message": "non-ascii: use iconv() with 'char **' argument\n\nBug: https://curl.haxx.se/mail/lib-2017-09/0031.html",
+        "sha": "ae3afe8118868c52d94bdbe5a1b357890a185b8c",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
         "author": {
-          "name": "Daniel Stenberg",
-          "email": "daniel@haxx.se",
-          "date": "2017-09-08T07:22:01Z"
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-16T22:16:11Z"
         },
-        "url": "https://api.github.com/repos/curl/curl/commits/46e14b6942c285f955c9217487e8e896068c10df"
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ae3afe8118868c52d94bdbe5a1b357890a185b8c"
       }
     ]
   }

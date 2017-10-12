@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/thomahau/project_github_commit_feed#readme",
   "dependencies": {
-    "github": "^11.0.0"
+    "github": "^11.0.0",
+    "handlebars": "^4.0.10"
   },
   "devDependencies": {
     "eslint": "^4.8.0",

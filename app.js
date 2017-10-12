@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
+const Handlebars = require('handlebars');
 const GithubApiWrapper = require('./lib/github');
 let commitFeed = require('./data/commits');
 
@@ -13,34 +14,42 @@ const _headers = {
   'Access-Control-Allow-Headers': 'Content-Type',
   'Access-Control-Allow-Methods': 'GET, POST, PUT, PATCH, DELETE'
 };
+let user;
+let repo;
 
-const _render = (req, res, feed) => {
+const _render = (req, res, feed, commitArr) => {
   const method = req.method.toLowerCase();
 
   if (method === 'get') {
-    fs.readFile('./public/index.html', 'utf8', (err, data) => {
+    const context = {
+      user,
+      repo,
+      commits: commitArr
+    };
+    fs.readFile('./public/index.hbs', 'utf8', (err, data) => {
       if (err) throw err;
-      res.write(data.replace('{{ commitFeed }}', feed));
-      res.end();
+      const template = Handlebars.compile(data.toString());
+      const html = template(context);
+      res.end(html);
     });
   } else if (method === 'post') {
     res.end('200 OK');
   }
 };
 
-const _saveCommits = (req, res, data) => {
+const _saveCommits = (req, res, data, commitArr) => {
   commitFeed = JSON.stringify(data, null, 2);
   fs.writeFile('./data/commits.json', commitFeed, 'utf8', (err) => {
     if (err) throw err;
-    _render(req, res, commitFeed);
+    _render(req, res, commitFeed, commitArr);
   });
 };
 
-const _getCommits = (req, res, user, repo) => {
+const _getCommits = (req, res, username, repository) => {
   const github = new GithubApiWrapper();
 
-  github.getCommits(user, repo, (results) => {
-    _saveCommits(req, res, results);
+  github.getCommits(username, repository, (results, commitArr) => {
+    _saveCommits(req, res, results, commitArr);
   });
 };
 
@@ -60,7 +69,7 @@ const server = http.createServer((req, res) => {
   const method = req.method.toLowerCase();
   const urlObj = url.parse(req.url, true);
   const path = urlObj.pathname;
-  const { user, repo } = urlObj.query;
+  ({ user, repo } = urlObj.query);
 
   if (method === 'get') {
     res.writeHead(200, {
