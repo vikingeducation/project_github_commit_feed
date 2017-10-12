@@ -20,11 +20,12 @@ const _extractPostData = (req, done) => {
     body += data;
   });
   req.on('end', () => {
-    body = unescape(body).slice(8);
-    console.log(body);
-    const webhookData = JSON.parse(body);
-    console.log(webhookData.pusher.name);
-    console.log(webhookData.repository.name);
+    let webhookData = unescape(body).slice(8);
+    webhookData = JSON.parse(webhookData);
+    req.user = webhookData.pusher.name;
+    req.repo = webhookData.repository.name;
+    // console.log(webhookData.pusher.name);
+    // console.log(webhookData.repository.name);
     // let webhookData = querystring.parse(body, null, null);
     // console.dir(webhookData, { depth: 0, colors: true });
     // console.log(JSON.parse(webhookData));
@@ -50,6 +51,9 @@ const server = http.createServer((req, res) => {
   const p = new Promise((resolve) => {
     if (method === 'post' && path === '/github/webhooks') {
       _extractPostData(req, resolve);
+      github.getCommits(req.user, req.repo, (results) => {
+        _saveCommits(results, resolve);
+      });
     } else if (user) {
       github.getCommits(user, repo, (results) => {
         // console.dir(results, { depth: null, colors: true });
