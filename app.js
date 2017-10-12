@@ -29,6 +29,8 @@ const render = (req, res) => {
       }
     });
   } else if (method === 'post') {
+    commitFeed = JSON.parse(fs.readFileSync('./data/commits.json', 'utf8'));
+    commitFeed = JSON.stringify(commitFeed, null, 2);
     res.end('200 OK');
   }
 };
