@@ -36,6 +36,7 @@ const _saveCommits = (req, res, data) => {
   commitFeed = JSON.stringify(data, null, 2);
   fs.writeFile('./data/commits.json', commitFeed, 'utf8', (err) => {
     if (err) throw err;
+    console.log('commit feed updated');
     _render(req, res, commitFeed);
   });
 };

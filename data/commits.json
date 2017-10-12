@@ -2,6 +2,16 @@
   "thomahau": {
     "project_github_commit_feed": [
       {
+        "sha": "6d13d3e371d5a1a32014b454fc60c9120ec6c3f4",
+        "message": "test",
+        "author": {
+          "name": "Thomas Hauge",
+          "email": "thomas.sommerfelt.hauge@gmail.com",
+          "date": "2017-10-12T06:10:14Z"
+        },
+        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/6d13d3e371d5a1a32014b454fc60c9120ec6c3f4"
+      },
+      {
         "sha": "061311caef6f04c8a7df8cf86da0fd4ae562bdec",
         "message": "testing again",
         "author": {
@@ -290,16 +300,6 @@
           "date": "2017-10-10T05:27:56Z"
         },
         "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/db8f66a4d10fa3f416078ad33ce8f08c73e64c83"
-      },
-      {
-        "sha": "eeda4cc5604e6b84cab2e8bfea3c11ea6b3c11db",
-        "message": "parsing form data",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-07T14:49:25Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/eeda4cc5604e6b84cab2e8bfea3c11ea6b3c11db"
       }
     ]
   }
