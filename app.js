@@ -28,6 +28,7 @@ const _render = (req, res, feed) => {
       }
     });
   } else if (method === 'post') {
+    console.log('post request');
     res.end('200 OK');
   }
 };
@@ -36,7 +37,6 @@ const _saveCommits = (req, res, data) => {
   commitFeed = JSON.stringify(data, null, 2);
   fs.writeFile('./data/commits.json', commitFeed, 'utf8', (err) => {
     if (err) throw err;
-    console.log('commit feed updated');
     _render(req, res, commitFeed);
   });
 };
