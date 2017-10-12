@@ -2,6 +2,16 @@
   "thomahau": {
     "project_github_commit_feed": [
       {
+        "sha": "061311caef6f04c8a7df8cf86da0fd4ae562bdec",
+        "message": "testing again",
+        "author": {
+          "name": "Thomas Hauge",
+          "email": "thomas.sommerfelt.hauge@gmail.com",
+          "date": "2017-10-12T06:08:11Z"
+        },
+        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/061311caef6f04c8a7df8cf86da0fd4ae562bdec"
+      },
+      {
         "sha": "73144df31163f1919567fa746261662fcae5957e",
         "message": "testing webhook",
         "author": {
@@ -290,16 +300,6 @@
           "date": "2017-10-07T14:49:25Z"
         },
         "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/eeda4cc5604e6b84cab2e8bfea3c11ea6b3c11db"
-      },
-      {
-        "sha": "0758c9e61f20be70adbd9d4cd2fc4e8311acc035",
-        "message": "displaying dynamic JSON",
-        "author": {
-          "name": "Thomas Hauge",
-          "email": "thomas.sommerfelt.hauge@gmail.com",
-          "date": "2017-10-07T13:42:44Z"
-        },
-        "url": "https://api.github.com/repos/thomahau/project_github_commit_feed/commits/0758c9e61f20be70adbd9d4cd2fc4e8311acc035"
       }
     ]
   }
