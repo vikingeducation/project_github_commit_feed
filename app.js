@@ -28,8 +28,7 @@ const _render = (req, res, feed) => {
       }
     });
   } else if (method === 'post') {
-    res.write('post request');
-    res.end('200 OK');
+    res.end('as d;laskd200 OK');
   }
 };
 
