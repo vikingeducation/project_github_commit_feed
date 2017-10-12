@@ -1,0 +1,1006 @@
+{
+  "TheOdinProject": {
+    "theodinproject": [
+      {
+        "sha": "2a0ccc052ceb19da00b642571638c4a60cbf8aea",
+        "message": "fixed the only two typos in seeds.rb (#758)",
+        "author": {
+          "name": "Jonathan Yiv",
+          "email": "jonathanyiv@gmail.com",
+          "date": "2017-09-29T09:31:11Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/2a0ccc052ceb19da00b642571638c4a60cbf8aea"
+      },
+      {
+        "sha": "740a1b919095c6bc86c470eff42a36125462482d",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-21T11:12:54Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/740a1b919095c6bc86c470eff42a36125462482d"
+      },
+      {
+        "sha": "982598a787f6fff5ec1b8c1d2c92631642ff3dad",
+        "message": "remove multiple lessons from web dev 101",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-21T11:12:41Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/982598a787f6fff5ec1b8c1d2c92631642ff3dad"
+      },
+      {
+        "sha": "d3d33f2fea3ea10fb81cb2cd9678b9d559f09a6e",
+        "message": "Contributing guide (#743)",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-11T14:10:05Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d3d33f2fea3ea10fb81cb2cd9678b9d559f09a6e"
+      },
+      {
+        "sha": "d84742e75a66deab930df269f69f960efc7d9e71",
+        "message": "Merge pull request #742 from TheOdinProject/add-code-of-conduct-1\n\nCreate CODE_OF_CONDUCT.md",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-09-10T23:45:14Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d84742e75a66deab930df269f69f960efc7d9e71"
+      },
+      {
+        "sha": "ca088ee374b32d2439d19b6c0e3696936bdd5ac1",
+        "message": "Create CODE_OF_CONDUCT.md",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2017-09-10T23:43:23Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ca088ee374b32d2439d19b6c0e3696936bdd5ac1"
+      },
+      {
+        "sha": "c181ef3b9f6be0df617d466b8df5f7cb49594746",
+        "message": "Merge pull request #710 from TheOdinProject/add-lesson-data-to-analytics\n\nadd lesson data to analytics",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-08-31T07:07:25Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/c181ef3b9f6be0df617d466b8df5f7cb49594746"
+      },
+      {
+        "sha": "30f1a5e133f53b862b251e1426266719defb9fb7",
+        "message": "add lesson data to analytics",
+        "author": {
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-08-31T00:16:15Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/30f1a5e133f53b862b251e1426266719defb9fb7"
+      },
+      {
+        "sha": "28040794407187abe2fec024bf1370023ee45a57",
+        "message": "remove obsolete test",
+        "author": {
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-08-14T16:15:17Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/28040794407187abe2fec024bf1370023ee45a57"
+      },
+      {
+        "sha": "a6bd4a8e966fc357381762d8ce93dd5767907b69",
+        "message": "I've dearly loved the 10000s of emails over the years but...",
+        "author": {
+          "name": "Erik Trautman",
+          "email": "eriktrautman@users.noreply.github.com",
+          "date": "2017-08-11T16:18:18Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/a6bd4a8e966fc357381762d8ce93dd5767907b69"
+      },
+      {
+        "sha": "24c27b47c8cc39d6de89ac84e9334790a91a3b47",
+        "message": "Merge pull request #620 from justinemar/patch-1\n\nfixed lesson-nav overlaying navbar on mobile view",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-07-02T17:16:46Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/24c27b47c8cc39d6de89ac84e9334790a91a3b47"
+      },
+      {
+        "sha": "56ce69b2e0f944c9b9f0586f4ae5f47df2c4cc22",
+        "message": "fixed lesson-nav overlaying navbar on mobile view\n\nSome list items are being covered by lesson nav..\r\nAlso tested on real mobile\r\nhttps://i.imgur.com/sIvVNpH.png",
+        "author": {
+          "name": "Spacetime",
+          "email": "justinecantado@gmail.com",
+          "date": "2017-07-01T16:45:02Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/56ce69b2e0f944c9b9f0586f4ae5f47df2c4cc22"
+      },
+      {
+        "sha": "79ad994889854fa0aea1e650785dd25110ced9b8",
+        "message": "Merge pull request #600 from TheOdinProject/feature/display-lesson-title\n\nChange lesson headings",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-06-10T08:57:26Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/79ad994889854fa0aea1e650785dd25110ced9b8"
+      },
+      {
+        "sha": "b6ad92b4c54417fe96c802c08006773b6313e4d1",
+        "message": "Change lesson headings\n\nThis changes the lesson title to a h2 and puts in the lesson view instead of getting it from the lesson\ncontent on the curriclum. This will be merged when the lessons on the curriculum are ammended to remove the\ntitle.",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-06-09T14:13:10Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/b6ad92b4c54417fe96c802c08006773b6313e4d1"
+      },
+      {
+        "sha": "53c3eca35825d5a8f43d7d44c90946c9767262f9",
+        "message": "Merge pull request #534 from brianhays/fix/fix-README\n\nfix README - issue #533",
+        "author": {
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-21T22:36:55Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/53c3eca35825d5a8f43d7d44c90946c9767262f9"
+      },
+      {
+        "sha": "514365d8440a1df6ce4e5f184a302fdd48f397ab",
+        "message": "update link to https - also update header link",
+        "author": {
+          "name": "Brian Hays",
+          "email": "brian.hays@gmail.com",
+          "date": "2017-05-21T22:12:27Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/514365d8440a1df6ce4e5f184a302fdd48f397ab"
+      },
+      {
+        "sha": "91ccd9d9223589aed7de44d9ba0faecb1c81f79d",
+        "message": "fix README - issue #533",
+        "author": {
+          "name": "Brian Hays",
+          "email": "brian.hays@gmail.com",
+          "date": "2017-05-21T22:03:36Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/91ccd9d9223589aed7de44d9ba0faecb1c81f79d"
+      },
+      {
+        "sha": "608e091c93da88f8417b7e17795c4862f7b627fd",
+        "message": "Merge pull request #515 from TheOdinProject/lesson-nav\n\nLesson nav",
+        "author": {
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-11T22:13:32Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/608e091c93da88f8417b7e17795c4862f7b627fd"
+      },
+      {
+        "sha": "fd23757858f748a702c1fda038723dd69e654901",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
+        "author": {
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-11T14:32:06Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/fd23757858f748a702c1fda038723dd69e654901"
+      },
+      {
+        "sha": "9cae27880c754663dfa6e580b9e725bbb54eb343",
+        "message": "fixed hiding lesson navbar on mobile.",
+        "author": {
+          "name": "Cody Loyd",
+          "email": "codyloyd@gmail.com",
+          "date": "2017-05-11T14:30:59Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9cae27880c754663dfa6e580b9e725bbb54eb343"
+      },
+      {
+        "sha": "9c9d8d0c561964f9238002a71487b839804c17f1",
+        "message": "set ad backup background so the people can see it",
+        "author": {
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T16:00:51Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9c9d8d0c561964f9238002a71487b839804c17f1"
+      },
+      {
+        "sha": "f2c5e03b03e248fd594df6b52757eb14a785a32e",
+        "message": "Merge branch 'master' of https://git.heroku.com/theodinproject",
+        "author": {
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T15:37:33Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/f2c5e03b03e248fd594df6b52757eb14a785a32e"
+      },
+      {
+        "sha": "3bdc8853e3d978e3b42139f093c2cdaaf6b3ff0c",
+        "message": "tweak adbox ID name",
+        "author": {
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T15:32:56Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3bdc8853e3d978e3b42139f093c2cdaaf6b3ff0c"
+      },
+      {
+        "sha": "d5146d665fec63610e9214c132a3bce194c1ede7",
+        "message": "remove old ad images",
+        "author": {
+          "name": "Erik Trautman",
+          "email": "erik.trautman@gmail.com",
+          "date": "2017-05-04T14:34:15Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d5146d665fec63610e9214c132a3bce194c1ede7"
+      },
+      {
+        "sha": "3424c5271f8097517bb08d11df73c17024a5f753",
+        "message": "Merge pull request #425 from mindovermiles262/master\n\nupdate and add FAQ content",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-05-01T14:09:46Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3424c5271f8097517bb08d11df73c17024a5f753"
+      },
+      {
+        "sha": "ae2d1c98e0ceeeec7b697594e411bdb6ee29ad54",
+        "message": "Update \"How Long...\"\n\nChange \"How long does TOP take?\" back to original text, clean up minor words to match style and voice of other FAQs",
+        "author": {
+          "name": "Andy",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-05-01T01:24:58Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ae2d1c98e0ceeeec7b697594e411bdb6ee29ad54"
+      },
+      {
+        "sha": "d4959ef97bbe860641f90a2b6fca67a28a4f89fd",
+        "message": "Merge pull request #445 from eating247/master\n\nFix typos in docs",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-29T19:14:53Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d4959ef97bbe860641f90a2b6fca67a28a4f89fd"
+      },
+      {
+        "sha": "177a2d53ca99105013a4196dea45a06bb4f45990",
+        "message": "Merge branch 'master' into master",
+        "author": {
+          "name": "Andy",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-04-29T18:02:57Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/177a2d53ca99105013a4196dea45a06bb4f45990"
+      },
+      {
+        "sha": "e519f5fb3a48d384565fb86ad02ee751d1d269a5",
+        "message": "add \"When do I pay?\" and sustainability sections",
+        "author": {
+          "name": "Andy",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-04-29T17:55:21Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e519f5fb3a48d384565fb86ad02ee751d1d269a5"
+      },
+      {
+        "sha": "9d2ebea1331818876e1cc6065920ff2e764f817d",
+        "message": "Edit wording in readme description",
+        "author": {
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T23:59:02Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9d2ebea1331818876e1cc6065920ff2e764f817d"
+      },
+      {
+        "sha": "382e3933b2cff07865c850ce78034e45e137183f",
+        "message": "Fix typos in linux_setup docs",
+        "author": {
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T01:19:26Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/382e3933b2cff07865c850ce78034e45e137183f"
+      },
+      {
+        "sha": "9819ef450d98a197b6234c28b599bcc7f43ad759",
+        "message": "Edit readme wording",
+        "author": {
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T01:18:36Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9819ef450d98a197b6234c28b599bcc7f43ad759"
+      },
+      {
+        "sha": "cbe5bb43e4d8d1d16eb2f9697ce8e974a5cd4838",
+        "message": "Fix typos in readme.md",
+        "author": {
+          "name": "tt",
+          "email": "ttwang.303@gmail.com",
+          "date": "2017-04-28T01:06:20Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/cbe5bb43e4d8d1d16eb2f9697ce8e974a5cd4838"
+      },
+      {
+        "sha": "08d5ed7d4503bac49f73c39daa2e5a63df7f95ae",
+        "message": "changed default mailer urls to use https",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-27T07:41:24Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/08d5ed7d4503bac49f73c39daa2e5a63df7f95ae"
+      },
+      {
+        "sha": "ee2265a5f6b028d044b12241f9840f948532e10f",
+        "message": "reenable force ssl",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-27T07:19:42Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ee2265a5f6b028d044b12241f9840f948532e10f"
+      },
+      {
+        "sha": "a1f0a28c24052717844f2194a4d09d0e54da5c4f",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-27T07:19:04Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/a1f0a28c24052717844f2194a4d09d0e54da5c4f"
+      },
+      {
+        "sha": "986b2b11170954b92042819c220ba55431e76bd4",
+        "message": "Merge pull request #412 from TheOdinProject/update-faq\n\nupdate faq",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-04-21T16:21:13Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/986b2b11170954b92042819c220ba55431e76bd4"
+      },
+      {
+        "sha": "96f8aebae04a4cdf78e406b2f1422478380d233d",
+        "message": "update and add FAQ content",
+        "author": {
+          "name": "Erik Johnson",
+          "email": "mindovermiles262@gmail.com",
+          "date": "2017-04-18T17:30:10Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/96f8aebae04a4cdf78e406b2f1422478380d233d"
+      },
+      {
+        "sha": "0e6ce87d24e8e78a2a162375ce8ec91aa963174a",
+        "message": "update faq",
+        "author": {
+          "name": "Austin Mason",
+          "email": "austinpmason@gmail.com",
+          "date": "2017-04-11T10:47:34Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/0e6ce87d24e8e78a2a162375ce8ec91aa963174a"
+      },
+      {
+        "sha": "3362479271b4629690e21d7d80b1ed23216d6158",
+        "message": "Merge pull request #399 from OlehSliusar/patch-1\n\nFix typo",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-28T10:02:33Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3362479271b4629690e21d7d80b1ed23216d6158"
+      },
+      {
+        "sha": "36fb836dd165dd8a38dc561a6ae7ab64250b166f",
+        "message": "Fix typo\n\nIt should be 'here's a couple of exercises' or 'here are a couple of exercises'. The former seems to be more correct.",
+        "author": {
+          "name": "Oleh Sliusar",
+          "email": "olehsliusar@gmail.com",
+          "date": "2017-03-28T08:53:00Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/36fb836dd165dd8a38dc561a6ae7ab64250b166f"
+      },
+      {
+        "sha": "bcf13b744be0b2647694e1e1d099f817f27d80b5",
+        "message": "Merge pull request #396 from OlehSliusar/patch-1\n\nUpdate seeds.rb",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-18T23:06:04Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/bcf13b744be0b2647694e1e1d099f817f27d80b5"
+      },
+      {
+        "sha": "b5fe3f4219e94d7e2f6ef257d767df3fbf5ed853",
+        "message": "Update seeds.rb",
+        "author": {
+          "name": "Oleh Sliusar",
+          "email": "olehsliusar@gmail.com",
+          "date": "2017-03-13T19:20:15Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/b5fe3f4219e94d7e2f6ef257d767df3fbf5ed853"
+      },
+      {
+        "sha": "69808373be8cbe32040889e7087a230bce6f9824",
+        "message": "Update seeds.rb\n\nWe don't build a web server anymore",
+        "author": {
+          "name": "Oleh Sliusar",
+          "email": "olehsliusar@gmail.com",
+          "date": "2017-03-13T08:41:14Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/69808373be8cbe32040889e7087a230bce6f9824"
+      },
+      {
+        "sha": "151ca64024c7619f79c369e1f8d565adbdd1a417",
+        "message": "removed space",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-13T03:08:45Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/151ca64024c7619f79c369e1f8d565adbdd1a417"
+      },
+      {
+        "sha": "79d0ee3cbf880a4899240f4010583c94ff7d1ffa",
+        "message": "Merge pull request #389 from TheOdinProject/feature/remove-ruby-on-the-web\n\nremoved ruby on the web section",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-03T13:33:16Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/79d0ee3cbf880a4899240f4010583c94ff7d1ffa"
+      },
+      {
+        "sha": "7fe459d5aadad1839b936736953cf41514cc805b",
+        "message": "Merge pull request #389 from TheOdinProject/feature/remove-ruby-on-the-web\n\nremoved ruby on the web section",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-03T13:33:16Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/7fe459d5aadad1839b936736953cf41514cc805b"
+      },
+      {
+        "sha": "4138b1e8f7beb5bf75e7ca5246c1521a4ea85598",
+        "message": "removed ruby on the web section",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-03-03T13:30:30Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/4138b1e8f7beb5bf75e7ca5246c1521a4ea85598"
+      },
+      {
+        "sha": "664722ab42fa6c636096fe14d7b40ef26c63b871",
+        "message": "Merge pull request #387 from arun1595/gitter-sidecar\n\nEmbed gitter chat",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-02-20T16:23:21Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/664722ab42fa6c636096fe14d7b40ef26c63b871"
+      },
+      {
+        "sha": "00845e7fb859df0b9d34a49ed7554dccf24a0764",
+        "message": "Embed gitter chat",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2017-02-19T08:38:27Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/00845e7fb859df0b9d34a49ed7554dccf24a0764"
+      },
+      {
+        "sha": "9b63726ae1d83b8d4a2b2aeaa51009409668bf6e",
+        "message": "Merge pull request #385 from clormor/master\n\nremoving .DS_Stores that were committed before .DS_Store was ignored",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-01-30T13:21:36Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9b63726ae1d83b8d4a2b2aeaa51009409668bf6e"
+      },
+      {
+        "sha": "b3425e97d3c5fc71d0e59d8c746ae6222671b562",
+        "message": "removing .DS_Stores that must have been commited before .DS_Store was ignored",
+        "author": {
+          "name": "Chris Lormor",
+          "email": "clormor@palantir.com",
+          "date": "2017-01-30T09:40:27Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/b3425e97d3c5fc71d0e59d8c746ae6222671b562"
+      },
+      {
+        "sha": "42c7f52740f2bc079e39fcc47a7270fc89666d69",
+        "message": "Merge pull request #381 from RobPando/master\n\nFixed row shift in users show view when providers button is not present",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-01-26T15:23:39Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/42c7f52740f2bc079e39fcc47a7270fc89666d69"
+      },
+      {
+        "sha": "148fa5f575b8a37f3ebba6da6ca54ca7d48ddd8a",
+        "message": "Fixed row shift in users show view",
+        "author": {
+          "name": "Roberto Pando",
+          "email": "roberto_pando@hotmail.com",
+          "date": "2017-01-26T14:42:57Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/148fa5f575b8a37f3ebba6da6ca54ca7d48ddd8a"
+      },
+      {
+        "sha": "3ce38a8296cff14f3246c4d78df056a9a544a5ad",
+        "message": "Merge pull request #1 from TheOdinProject/master\n\nMerge updated repo",
+        "author": {
+          "name": "Roberto Pando",
+          "email": "roberto_pando@hotmail.com",
+          "date": "2017-01-26T14:24:43Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3ce38a8296cff14f3246c4d78df056a9a544a5ad"
+      },
+      {
+        "sha": "e6f0992340cb0f354650386b32a33483a81331c2",
+        "message": "Merge pull request #373 from ChadKreutzer/feature/pairing_section\n\nwire pair programming section into seeds.rb",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2017-01-02T05:27:25Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e6f0992340cb0f354650386b32a33483a81331c2"
+      },
+      {
+        "sha": "dfaba713db3a5440be86a6ef9e325cc87ab0b522",
+        "message": "change pairing project lesson to use project_pairing.md file.",
+        "author": {
+          "name": "Chad Kreutzer",
+          "email": "kanthalion@gmail.com",
+          "date": "2016-12-31T06:29:18Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/dfaba713db3a5440be86a6ef9e325cc87ab0b522"
+      },
+      {
+        "sha": "c942ad9f3d388f6efa5d15f432488c06257870ed",
+        "message": "Merge pull request #374 from TheOdinProject/feature/lesson-decorator\n\nAdded a lesson decorator",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-30T02:18:37Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/c942ad9f3d388f6efa5d15f432488c06257870ed"
+      },
+      {
+        "sha": "e70ddc39657afbc23c158662e45a8407b8560f83",
+        "message": "Added a lesson decorator",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-30T02:17:42Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e70ddc39657afbc23c158662e45a8407b8560f83"
+      },
+      {
+        "sha": "aeb27570cdb721ae1206f6b9eafe7ad97ff6fd7e",
+        "message": "Merge pull request #370 from arun1595/projects-controller\n\nAllow admin to update and destroy project submissions",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-30T02:05:10Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/aeb27570cdb721ae1206f6b9eafe7ad97ff6fd7e"
+      },
+      {
+        "sha": "d088dfabf9fe00a2f159ebdb132e0511ab92fad6",
+        "message": "wire pair programming section into seeds.rb",
+        "author": {
+          "name": "Chad Kreutzer",
+          "email": "kanthalion@gmail.com",
+          "date": "2016-12-29T10:05:52Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d088dfabf9fe00a2f159ebdb132e0511ab92fad6"
+      },
+      {
+        "sha": "739d213c238eda026e1485a62ec7cf15a86c619f",
+        "message": "Allow admin to update and destroy project submissions",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-12-24T06:45:13Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/739d213c238eda026e1485a62ec7cf15a86c619f"
+      },
+      {
+        "sha": "654089294526e5c6928395eccc23aa5d8960e4b9",
+        "message": "add rack attack middleware to block abusive ips",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-27T13:15:59Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/654089294526e5c6928395eccc23aa5d8960e4b9"
+      },
+      {
+        "sha": "51215764f06d49407c70ca69cbeea624c1662e30",
+        "message": "Merge pull request #371 from TheOdinProject/feature/performance-boost\n\nchanged length to count in course methods as this is more performant",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-25T13:11:54Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/51215764f06d49407c70ca69cbeea624c1662e30"
+      },
+      {
+        "sha": "53f426082aa43180f686804f629ac62d57635fca",
+        "message": "changed length to count in course methods as this is more performant",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-25T13:11:14Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/53f426082aa43180f686804f629ac62d57635fca"
+      },
+      {
+        "sha": "a5d04f24f7500a952b5106d7e9a58a2fae6d9445",
+        "message": "Merge pull request #369 from lujanfernaud/patch-2\n\nFix #lesson-nav appearing on top of scroll down menu",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-23T19:13:24Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/a5d04f24f7500a952b5106d7e9a58a2fae6d9445"
+      },
+      {
+        "sha": "f3777d3a0335a5105c9920fe5ace29d15c3b0063",
+        "message": "Fix #lesson-nav appearing on top of scroll down menu\n\nOn small screens #lesson-nav appears on top of the scroll down menu.",
+        "author": {
+          "name": "Luján Fernaud",
+          "email": "lujanfernaud@gmail.com",
+          "date": "2016-12-22T17:52:12Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/f3777d3a0335a5105c9920fe5ace29d15c3b0063"
+      },
+      {
+        "sha": "3199abb9359181f9260a256f2056a5bacd5cb1f7",
+        "message": "Merge pull request #367 from arun1595/projects-controller\n\nAdd all_submissions and recent_submissions for projects",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-20T16:33:42Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3199abb9359181f9260a256f2056a5bacd5cb1f7"
+      },
+      {
+        "sha": "c4999f499802072de42dbc8ea54e8321a01dc7b6",
+        "message": "Add all_submissions and recent_submissions for projects",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-12-20T16:13:02Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/c4999f499802072de42dbc8ea54e8321a01dc7b6"
+      },
+      {
+        "sha": "5c2acf1e08185781e8fec9d5ddda7b3d13547263",
+        "message": "Merge pull request #365 from arun1595/projects-controller\n\nComplete create, update and destroy actions for projects",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-20T15:16:14Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/5c2acf1e08185781e8fec9d5ddda7b3d13547263"
+      },
+      {
+        "sha": "2983602b614a356c04af7c33f2a79e721975ec81",
+        "message": "Complete create, update and destroy actions for projects",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-12-13T11:04:35Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/2983602b614a356c04af7c33f2a79e721975ec81"
+      },
+      {
+        "sha": "ec81872a626919f616594ca9b9850d87523459ac",
+        "message": "Merge pull request #363 from TheOdinProject/feature/update-readme\n\nupdated the README",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T14:12:25Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ec81872a626919f616594ca9b9850d87523459ac"
+      },
+      {
+        "sha": "6c242bf48b93731171df490a9eb37464bee92f26",
+        "message": "updated the README",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T14:11:07Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/6c242bf48b93731171df490a9eb37464bee92f26"
+      },
+      {
+        "sha": "29f4f60a45c8546e840ebbc80a4757c7c1644c6f",
+        "message": "Updated linux installation guide",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:32:44Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/29f4f60a45c8546e840ebbc80a4757c7c1644c6f"
+      },
+      {
+        "sha": "3f8cc64db55c55e610bfc98180d3561711f1b2e2",
+        "message": "Updated installation guide for mac",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:25:07Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3f8cc64db55c55e610bfc98180d3561711f1b2e2"
+      },
+      {
+        "sha": "ca19c56640202a3301289655ea65a38bd9a092c4",
+        "message": "Fixed typo in the mac installation guide",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:22:23Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ca19c56640202a3301289655ea65a38bd9a092c4"
+      },
+      {
+        "sha": "d3bef003b4af41d0704ac31bc4d64658faf12e4f",
+        "message": "fixed typo in mac installation guide",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:19:29Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d3bef003b4af41d0704ac31bc4d64658faf12e4f"
+      },
+      {
+        "sha": "80dac1e159c4a90271f6cc1da74911b126497117",
+        "message": "Fixed typo",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:18:32Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/80dac1e159c4a90271f6cc1da74911b126497117"
+      },
+      {
+        "sha": "6a21d12a3509558ca15a2314e72f93e770858e10",
+        "message": "Updated the install guide for mac\n\nAdded in steps for:\r\n* getting a github api token\r\n* running the tests\r\n* seeding the db and pulling in the lesson content\r\n* running the app locally\r\n* setting up github omniauth",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-05T11:15:44Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/6a21d12a3509558ca15a2314e72f93e770858e10"
+      },
+      {
+        "sha": "e8adb9c15b28344757507f92a1f53fb49ba351e4",
+        "message": "Merge pull request #362 from arun1595/projects\n\nAdd a project model and set up relationships",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-12-03T20:35:23Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e8adb9c15b28344757507f92a1f53fb49ba351e4"
+      },
+      {
+        "sha": "9326991c74ab48dd5659c67193400be0a515d872",
+        "message": "Add model specs",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-30T17:16:56Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/9326991c74ab48dd5659c67193400be0a515d872"
+      },
+      {
+        "sha": "4680bbe768af02593edeac37f10452a26fd4c49f",
+        "message": "Add a project model and set up relationships",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-27T17:45:20Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/4680bbe768af02593edeac37f10452a26fd4c49f"
+      },
+      {
+        "sha": "412c92deaaf403c0d7a9334d20fa013c2531adbb",
+        "message": "Merge pull request #359 from arun1595/fix-rubocop-issues-spec\n\nFix rubocop issues in spec files",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-22T01:29:24Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/412c92deaaf403c0d7a9334d20fa013c2531adbb"
+      },
+      {
+        "sha": "060621316d71f53042068cd4c1e569cfa046e615",
+        "message": "Fix rubocop issues in miscellaneous files",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-20T15:54:58Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/060621316d71f53042068cd4c1e569cfa046e615"
+      },
+      {
+        "sha": "d45fcd467aec08b197f6dfc3f5647f651d684da2",
+        "message": "Fix rubocop issues in model specs",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-20T15:54:37Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/d45fcd467aec08b197f6dfc3f5647f651d684da2"
+      },
+      {
+        "sha": "8dbdd4c336ac31136e8b74560e240167d4480a5c",
+        "message": "Fix rubocop issues in controller specs",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-20T14:54:29Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/8dbdd4c336ac31136e8b74560e240167d4480a5c"
+      },
+      {
+        "sha": "7e9840d7d36c60ea3bdac657ab49a923a00df202",
+        "message": "fixed some readability problems",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-21T19:20:16Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/7e9840d7d36c60ea3bdac657ab49a923a00df202"
+      },
+      {
+        "sha": "8617c9c4b93bc5cdd9198c3a479c47dffee7e65b",
+        "message": "Merge pull request #356 from arun1595/fix-rubocop-issues\n\nFix rubocop issues in models",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-21T18:56:59Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/8617c9c4b93bc5cdd9198c3a479c47dffee7e65b"
+      },
+      {
+        "sha": "2352abdb337de0821ebb39b0c97d877610426bc7",
+        "message": "Merge pull request #358 from arun1595/fix-rubocop-issues-step-definitions\n\nFix rubocop issues in step definitions",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-21T18:56:17Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/2352abdb337de0821ebb39b0c97d877610426bc7"
+      },
+      {
+        "sha": "671d88e450d9396d43b267207d25e0e39e3a4697",
+        "message": "Fix rubocop issues in step definitions",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-19T14:32:19Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/671d88e450d9396d43b267207d25e0e39e3a4697"
+      },
+      {
+        "sha": "ca5b5c51ddc9d994d9e0e8bd9856b146229cf1f4",
+        "message": "Fix rubocop issues in models",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-19T02:53:02Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ca5b5c51ddc9d994d9e0e8bd9856b146229cf1f4"
+      },
+      {
+        "sha": "e1db62f4f65b9109e75fd97062f105c4d39e4976",
+        "message": "Merge pull request #353 from TheOdinProject/feature/cukes-for-edit-user\n\nAdded cukes for edit user profile and edit user account",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-18T19:51:17Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/e1db62f4f65b9109e75fd97062f105c4d39e4976"
+      },
+      {
+        "sha": "292c7d935b3e447cf597fc61e1f820ea7ca7e8fc",
+        "message": "Added cukes for edit user profile and edit user account",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-18T19:43:40Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/292c7d935b3e447cf597fc61e1f820ea7ca7e8fc"
+      },
+      {
+        "sha": "3fcfa1e2693a8946a752192df58c1bf236540208",
+        "message": "Merge pull request #352 from arun1595/fix-rubocop-issues\n\nFix rubocop issues",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-18T19:09:31Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/3fcfa1e2693a8946a752192df58c1bf236540208"
+      },
+      {
+        "sha": "58e36ea7a29bd0414a2798bf1b4e582083e1c810",
+        "message": "Fix rubocop issues in controllers",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-18T17:18:18Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/58e36ea7a29bd0414a2798bf1b4e582083e1c810"
+      },
+      {
+        "sha": "89d752aaf291fad5035682a3ad4c11e858037817",
+        "message": "Fix rubocop issues in ApplicationController",
+        "author": {
+          "name": "Arun Kumar",
+          "email": "arunkumarm1995@gmail.com",
+          "date": "2016-11-18T16:50:21Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/89d752aaf291fad5035682a3ad4c11e858037817"
+      },
+      {
+        "sha": "6fa9635e672ae88bf1ecfb25907598bbe980f4a9",
+        "message": "Merge pull request #350 from ChadKreutzer/patch-1\n\nfound a reference to the twitter spambot I missed",
+        "author": {
+          "name": "Kevin Mulhern",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-17T23:39:05Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/6fa9635e672ae88bf1ecfb25907598bbe980f4a9"
+      },
+      {
+        "sha": "fb9abdd323cbe0e76c56c5da307640da2df8eaa4",
+        "message": "found a reference to the twitter spambot I missed",
+        "author": {
+          "name": "Chad Kreutzer",
+          "email": "kanthalion@gmail.com",
+          "date": "2016-11-17T21:20:11Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/fb9abdd323cbe0e76c56c5da307640da2df8eaa4"
+      },
+      {
+        "sha": "f9cac8f085c757c4ef89a58bf6da3f37d2278788",
+        "message": "removed the test for studygroups page",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-16T22:18:58Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/f9cac8f085c757c4ef89a58bf6da3f37d2278788"
+      },
+      {
+        "sha": "ae3afe8118868c52d94bdbe5a1b357890a185b8c",
+        "message": "Merge branch 'master' of github.com:TheOdinProject/theodinproject",
+        "author": {
+          "name": "Kevin",
+          "email": "kevinmulhern23@gmail.com",
+          "date": "2016-11-16T22:16:11Z"
+        },
+        "url": "https://api.github.com/repos/TheOdinProject/theodinproject/commits/ae3afe8118868c52d94bdbe5a1b357890a185b8c"
+      }
+    ]
+  }
+}
