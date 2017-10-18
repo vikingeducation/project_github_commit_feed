@@ -4,22 +4,48 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>The Github Commit Feed</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!--link rel="stylesheet" type="text/css" href="css/reset.css"-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="./index.js" type="text/javascript"></script>
 </head>	
 
 <body>
-	<h1>The Github Commit Feed</h1>
+	<div class="container">
+		<h1>The Github Commit Feed</h1>
+		<form action="/commits" method="get">
+			<fieldset>
+				<legend>Github User/Repo</legend>
+				<div class="form-group">
+					<input type="text" class="form-control form-control-sm" name="user" placeholder="Enter Github username">
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-control form-control-sm" name="repo" placeholder="Enter associated repo">
+				</div>
+				<!--input type="submit" value="Submit"-->
+				<button type="submit" class="btn btn-primary btn-sm">Submit</button>
+			</fieldset>
+		</form>
+		<pre>
 
-	<form action="/commits" method="get">
-		<fieldset>
-			<legend>Github User/Repo</legend>
-			<input type="text" name="user" placeholder="Username"><br>
-			<input type="text" name="repo" placeholder="Repo"><br>
-			<input type="submit" value="Submit">
-		</fieldset>
-	</form>
 
+{
+  "Foobar": {
+    "foobar": [
+      {
+        "message": "Update README.md",
+        "author": {
+          "name": "Foobar",
+          "email": "foobar@email.com",
+          "date": "2017-02-16T19:25:15Z"
+        },
+        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
+        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
+      }
+    ]
+  }
+}
+		</pre>
+	</div> <!-- container -->
 </body>
 
 </html>
