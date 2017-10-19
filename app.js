@@ -3,6 +3,9 @@
 const http = require('http');
 const fs = require('fs');
 
+const myJsonFile = require('./data/commits.json');
+const myStrFile = JSON.stringify(myJsonFile, null, 2);
+
 const hostname = 'localhost';
 const port = 3000;
 
@@ -18,7 +21,8 @@ const server = http.createServer( (req, res) => {
 			res.writeHead(200, {
 				"Content-Type": "text/html"
 			});
-			res.end(data);
+			let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
+			res.end(goodToGo);
 		}
 	});
 });
