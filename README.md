@@ -2,8 +2,14 @@
 
 Usage
 -----
+From browser: 
 ```
-GITHUB_ACCESS_TOKEN=<your Github access token> node index.js
+localhost:3000
+```
+
+From command line: 
+```
+node index.js
 ```
 
 #### by Dennis C :+1:
