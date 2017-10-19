@@ -2,6 +2,7 @@
 
 const http = require('http');
 const fs = require('fs');
+const url = require('url');
 
 const myJsonFile = require('./data/commits.json');
 const myStrFile = JSON.stringify(myJsonFile, null, 2);
@@ -12,12 +13,15 @@ const port = 3000;
 const server = http.createServer( (req, res) => {
 	fs.readFile(__dirname + '/public/index.html', 'utf8', (err,data) => {
 		if (err) {
-			//response.writeHead(statusCode[, statusMessage][, headers])
-			//writeHead() sends a **response header** to the request.
 			res.writeHead(404);
 			res.end("404 Not Found");
 		} else {
-			//response.writeHead(statusCode[, statusMessage][, headers])
+			let queryString = url.parse(req.url).query;
+			if (queryString) {
+				let params = getParams(queryString);
+				console.log(`user = ${params[1]} and repo = ${params[2]}`);
+			}
+			
 			res.writeHead(200, {
 				"Content-Type": "text/html"
 			});
@@ -26,6 +30,12 @@ const server = http.createServer( (req, res) => {
 		}
 	});
 });
+
+let getParams = (url) => {
+	let regex = /user=(\w+)&repo=(\w+)/g;
+	let params = regex.exec(url);
+	return params;
+};
 
 server.listen(port, hostname, () => {
 	console.log(`Server running at http://${hostname}:${port}/`);
