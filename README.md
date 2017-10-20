@@ -7,7 +7,7 @@ From browser:
 localhost:3000
 ```
 
-From command line: 
+From command-line: 
 ```
 node index.js
 ```
