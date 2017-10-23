@@ -21,17 +21,13 @@ const server = http.createServer( (req, res) => {
 				let params = getParams(queryString);
 				// console.log(`user = ${params[1]} and repo = ${params[2]}`);
 				let githubParams = {owner: params[1], repo: params[2] };
-				console.log('before getRepoCommits');
-				github.getRepoCommits(githubParams).then(() => {
-					res.writeHead(200, {
-						"Content-Type": "text/html"
-					});
-					const myJsonFile = require('./data/commits.json');
-					const myStrFile = JSON.stringify(myJsonFile, null, 2);
-					let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
-					res.end(goodToGo);					
-				}).catch(console.log);
+ 				github.getRepoCommits(githubParams);
 			}
+	 		res.writeHead(200, {"Content-Type": "text/html"});
+			const myJsonFile = require('./data/commits.json');
+			const myStrFile = JSON.stringify(myJsonFile, null, 2);
+			let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
+			res.end(goodToGo);					
 		}
 	});
 });
