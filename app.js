@@ -11,7 +11,8 @@ const port = 4000;
 github.authenticate(process.env.GITHUB_ACCESS_TOKEN);
 
 const server = http.createServer( (req, res) => {
-	fs.readFile(__dirname + '/public/index.html', 'utf8', (err, readFileContents) => {
+	let htmlPath = __dirname + '/public/index.html';
+	fs.readFile(htmlPath, 'utf8', (err, readFileContents) => {
 		if (err) {
 			res.writeHead(404);
 			res.end("404 Not Found");
@@ -22,6 +23,8 @@ const server = http.createServer( (req, res) => {
 				// console.log(`user = ${params[1]} and repo = ${params[2]}`);
 				let githubParams = {owner: params[1], repo: params[2] };
  				let p = github.getRepoCommits(githubParams);
+
+ 				//make github api call
 				p.then(result => {
 					//console.log(res.data[0].commit); // traversing the object returned from github
 					console.log('>>>>> in P1 THEN: ' + result);
@@ -30,15 +33,30 @@ const server = http.createServer( (req, res) => {
 					//console.log(trimmedResStringified);
 					let path = './data/commits.json';
 					let p2 = github.doWriting(path, trimmedResultStringified);
+
+					//write the file
 					p2.then(result => {
 						console.log('>>>>> in P2 THEN: ' + result);
-		 		res.writeHead(200, {"Content-Type": "text/html"});
-				let myJsonFile = require('./data/commits.json');
-				let myStrFile = JSON.stringify(myJsonFile, null, 2);
-				console.log(myStrFile);
-				// let goodToGo = data.replace('{{ commitFeed }}', '<strong>HAVE PARAMETERS!!</strong>');
-				let goodToGo = readFileContents.replace('{{ commitFeed }}', myStrFile);
-				res.end(goodToGo);							
+
+						let myJsonFile = './data/commits.json';
+						// let myJsonFile = require('./data/commits.json');
+						let p3 = github.reReadFile(myJsonFile);
+
+						//re-read file contents
+						p3.then(result => {
+							res.writeHead(200, {"Content-Type": "text/html"});
+							// let myStrFile = JSON.stringify(myJsonFile, null, 2);
+							// let myStrFile = JSON.stringify(result, null, 2);
+							// console.log(myStrFile);
+							// let goodToGo = data.replace('{{ commitFeed }}', '<strong>HAVE PARAMETERS!!</strong>');
+							// let goodToGo = readFileContents.replace('{{ commitFeed }}', myStrFile);
+							let goodToGo = readFileContents.replace('{{ commitFeed }}', result);
+							res.end(goodToGo);	
+						})
+						.catch(err => {
+							console.log('>>>>> in P3 CATCH: ');
+							console.log(err);
+						});
 					})
 					.catch(err => {
 						console.log('>>>>> in P2 CATCH: ');
