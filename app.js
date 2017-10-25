@@ -23,33 +23,21 @@ const server = http.createServer( (req, res) => {
 				let params = getParams(queryString);
 				// console.log(`user = ${params[1]} and repo = ${params[2]}`);
 				let githubParams = {owner: params[1], repo: params[2] };
-
- 				//make github api call
  				let p1 = github.getRepoCommits(githubParams);
 				p1.then(result => {
 					//console.log(res.data[0].commit); // traversing the object returned from github
-					// console.log('>>>>> in P1 THEN: ' + result);
 					let trimmedResult = github.trimMeDown(result.data);
 					let trimmedResultStringified = JSON.stringify(trimmedResult, null, " ");
-					//console.log(trimmedResStringified);
-
-					//write the file
 					let p2 = github.doWriting(myJsonFile, trimmedResultStringified);
-					p2.then(result => {
-						// console.log('>>>>> in P2 THEN: ' + result);
-
-						//re-read file contents
-						let p3 = github.reReadFile(myJsonFile);
-						p3.then(result => {
-							res.writeHead(200, {"Content-Type": "text/html"});
-							let goodToGo = readFileContents.replace('{{ commitFeed }}', result);
-							res.end(goodToGo);	
-						})
-						.catch(catchError);
-					})
-					.catch(catchError);
-				})
-				.catch(catchError);
+					return p2;
+				}).then(result => {
+					let p3 = github.reReadFile(myJsonFile);
+					return p3;
+				}).then(result => {
+					res.writeHead(200, {"Content-Type": "text/html"});
+					let goodToGo = readFileContents.replace('{{ commitFeed }}', result);
+					res.end(goodToGo);	
+				}).catch(catchError);
 			} else {
 		 		res.writeHead(200, {"Content-Type": "text/html"});
 				let noContent = readFileContents.replace('{{ commitFeed }}', '');
