@@ -11,7 +11,7 @@ const port = 4000;
 github.authenticate(process.env.GITHUB_ACCESS_TOKEN);
 
 const server = http.createServer( (req, res) => {
-	fs.readFile(__dirname + '/public/index.html', 'utf8', (err,data) => {
+	fs.readFile(__dirname + '/public/index.html', 'utf8', (err, data) => {
 		if (err) {
 			res.writeHead(404);
 			res.end("404 Not Found");
@@ -21,8 +21,21 @@ const server = http.createServer( (req, res) => {
 				let params = getParams(queryString);
 				// console.log(`user = ${params[1]} and repo = ${params[2]}`);
 				let githubParams = {owner: params[1], repo: params[2] };
- 				github.getRepoCommits(githubParams);
+ 				let p = github.getRepoCommits(githubParams);
+				p.then(result => {
+					//console.log(res.data[0].commit); // traversing the object returned from github
+					let trimmedResult = github.trimMeDown(result.data);
+					let trimmedResultStringified = JSON.stringify(trimmedResult, null, " ");
+					//console.log(trimmedResStringified);
+					let path = './data/commits.json';
+					return github.doWriting(path, trimmedResultStringified);
+				}) 				
+				.catch(err => {
+					console.log(err); // verbose mode
+					// console.log('DC promise rejected: \n' + err); // one-sentence mode
+				});				
 			}
+
 	 		res.writeHead(200, {"Content-Type": "text/html"});
 			const myJsonFile = require('./data/commits.json');
 			const myStrFile = JSON.stringify(myJsonFile, null, 2);
