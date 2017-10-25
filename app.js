@@ -5,6 +5,7 @@ const fs = require('fs');
 const url = require('url');
 const github = require('./lib/github-wrapper');
 
+const myJsonFile = './data/commits.json';
 const hostname = 'localhost';
 const port = 4000;
 
@@ -22,66 +23,45 @@ const server = http.createServer( (req, res) => {
 				let params = getParams(queryString);
 				// console.log(`user = ${params[1]} and repo = ${params[2]}`);
 				let githubParams = {owner: params[1], repo: params[2] };
- 				let p = github.getRepoCommits(githubParams);
 
  				//make github api call
-				p.then(result => {
+ 				let p1 = github.getRepoCommits(githubParams);
+				p1.then(result => {
 					//console.log(res.data[0].commit); // traversing the object returned from github
-					console.log('>>>>> in P1 THEN: ' + result);
+					// console.log('>>>>> in P1 THEN: ' + result);
 					let trimmedResult = github.trimMeDown(result.data);
 					let trimmedResultStringified = JSON.stringify(trimmedResult, null, " ");
 					//console.log(trimmedResStringified);
-					let path = './data/commits.json';
-					let p2 = github.doWriting(path, trimmedResultStringified);
 
 					//write the file
+					let p2 = github.doWriting(myJsonFile, trimmedResultStringified);
 					p2.then(result => {
-						console.log('>>>>> in P2 THEN: ' + result);
-
-						let myJsonFile = './data/commits.json';
-						// let myJsonFile = require('./data/commits.json');
-						let p3 = github.reReadFile(myJsonFile);
+						// console.log('>>>>> in P2 THEN: ' + result);
 
 						//re-read file contents
+						let p3 = github.reReadFile(myJsonFile);
 						p3.then(result => {
 							res.writeHead(200, {"Content-Type": "text/html"});
-							// let myStrFile = JSON.stringify(myJsonFile, null, 2);
-							// let myStrFile = JSON.stringify(result, null, 2);
-							// console.log(myStrFile);
-							// let goodToGo = data.replace('{{ commitFeed }}', '<strong>HAVE PARAMETERS!!</strong>');
-							// let goodToGo = readFileContents.replace('{{ commitFeed }}', myStrFile);
 							let goodToGo = readFileContents.replace('{{ commitFeed }}', result);
 							res.end(goodToGo);	
 						})
-						.catch(err => {
-							console.log('>>>>> in P3 CATCH: ');
-							console.log(err);
-						});
+						.catch(catchError);
 					})
-					.catch(err => {
-						console.log('>>>>> in P2 CATCH: ');
-						console.log(err);
-					});
+					.catch(catchError);
 				})
-				.catch(err => {
-					console.log('>>>>> in P1 CATCH: ');
-					console.log(err); // verbose mode
-					// console.log('DC promise rejected: \n' + err); // one-sentence mode
-				});				
+				.catch(catchError);
 			} else {
-				console.log('>>> I am in the ELSE');
 		 		res.writeHead(200, {"Content-Type": "text/html"});
-				// myJsonFile = require('./data/commits.json');
-				// myStrFile = JSON.stringify(myJsonFile, null, 2);
-				// console.log(myStrFile);
-				let other = readFileContents.replace('{{ commitFeed }}', '');
-				// goodToGo = readFileContents.replace('{{ commitFeed }}', myStrFile);
-				// let goodToGo = data.replace('{{ commitFeed }}', '<strong>NO PARAMS :(</strong>');
-				res.end(other);					
+				let noContent = readFileContents.replace('{{ commitFeed }}', '');
+				res.end(noContent);					
 			}
 		}
 	});
 });
+
+let catchError = (err) => {
+	console.log(err);
+};
 
 let getParams = (url) => {
 	let regex = /user=(\w+)&repo=(\w+)/g;
