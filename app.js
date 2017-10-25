@@ -32,6 +32,12 @@ const server = http.createServer( (req, res) => {
 					let p2 = github.doWriting(path, trimmedResultStringified);
 					p2.then(result => {
 						console.log('>>>>> in P2 THEN: ' + result);
+		 		res.writeHead(200, {"Content-Type": "text/html"});
+				const myJsonFile = require('./data/commits.json');
+				const myStrFile = JSON.stringify(myJsonFile, null, 2);
+				let goodToGo = data.replace('{{ commitFeed }}', '<strong>HAVE PARAMETERS!!</strong>');
+				// let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
+				res.end(goodToGo);							
 					})
 					.catch(err => {
 						console.log('>>>>> in P2 CATCH: ');
@@ -43,12 +49,15 @@ const server = http.createServer( (req, res) => {
 					console.log(err); // verbose mode
 					// console.log('DC promise rejected: \n' + err); // one-sentence mode
 				});				
+			} else {
+				console.log('>>> I am in the ELSE');
+		 		res.writeHead(200, {"Content-Type": "text/html"});
+				const myJsonFile = require('./data/commits.json');
+				const myStrFile = JSON.stringify(myJsonFile, null, 2);
+				// let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
+				let goodToGo = data.replace('{{ commitFeed }}', '<strong>NO PARAMS :(</strong>');
+				res.end(goodToGo);					
 			}
-	 		res.writeHead(200, {"Content-Type": "text/html"});
-			const myJsonFile = require('./data/commits.json');
-			const myStrFile = JSON.stringify(myJsonFile, null, 2);
-			let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
-			res.end(goodToGo);					
 		}
 	});
 });
