@@ -11,7 +11,7 @@ const port = 4000;
 github.authenticate(process.env.GITHUB_ACCESS_TOKEN);
 
 const server = http.createServer( (req, res) => {
-	fs.readFile(__dirname + '/public/index.html', 'utf8', (err, data) => {
+	fs.readFile(__dirname + '/public/index.html', 'utf8', (err, readFileContents) => {
 		if (err) {
 			res.writeHead(404);
 			res.end("404 Not Found");
@@ -33,10 +33,11 @@ const server = http.createServer( (req, res) => {
 					p2.then(result => {
 						console.log('>>>>> in P2 THEN: ' + result);
 		 		res.writeHead(200, {"Content-Type": "text/html"});
-				const myJsonFile = require('./data/commits.json');
-				const myStrFile = JSON.stringify(myJsonFile, null, 2);
-				let goodToGo = data.replace('{{ commitFeed }}', '<strong>HAVE PARAMETERS!!</strong>');
-				// let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
+				let myJsonFile = require('./data/commits.json');
+				let myStrFile = JSON.stringify(myJsonFile, null, 2);
+				console.log(myStrFile);
+				// let goodToGo = data.replace('{{ commitFeed }}', '<strong>HAVE PARAMETERS!!</strong>');
+				let goodToGo = readFileContents.replace('{{ commitFeed }}', myStrFile);
 				res.end(goodToGo);							
 					})
 					.catch(err => {
@@ -52,11 +53,13 @@ const server = http.createServer( (req, res) => {
 			} else {
 				console.log('>>> I am in the ELSE');
 		 		res.writeHead(200, {"Content-Type": "text/html"});
-				const myJsonFile = require('./data/commits.json');
-				const myStrFile = JSON.stringify(myJsonFile, null, 2);
-				// let goodToGo = data.replace('{{ commitFeed }}', myStrFile);
-				let goodToGo = data.replace('{{ commitFeed }}', '<strong>NO PARAMS :(</strong>');
-				res.end(goodToGo);					
+				// myJsonFile = require('./data/commits.json');
+				// myStrFile = JSON.stringify(myJsonFile, null, 2);
+				// console.log(myStrFile);
+				let other = readFileContents.replace('{{ commitFeed }}', '');
+				// goodToGo = readFileContents.replace('{{ commitFeed }}', myStrFile);
+				// let goodToGo = data.replace('{{ commitFeed }}', '<strong>NO PARAMS :(</strong>');
+				res.end(other);					
 			}
 		}
 	});
