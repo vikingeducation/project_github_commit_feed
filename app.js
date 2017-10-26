@@ -21,6 +21,7 @@ const WEBHOOKS_HEADERS = {
 let render = (res, fileContents, replacement) => {
 	res.writeHead(200, WEBHOOKS_HEADERS);
 	let content = fileContents.replace('{{ commitFeed }}', replacement);
+	console.log(content);
 	res.end(content);	
 };
 
@@ -67,7 +68,6 @@ let routerHandle = (req, res) => {
 				.then( () => {
 					// console.log(req.body.pusher.name); console.log(req.body.repository.name);
 					let githubParams = {owner: req.body.pusher.name, repo: req.body.repository.name };					
-					console.log(fileContents);
 					fetchRepoCommits(githubParams, res, fileContents);
 				})
 				.catch(catchError);
