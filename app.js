@@ -8,33 +8,18 @@ const github = require('./lib/github-wrapper');
 const hostname = 'localhost';
 const port = 3000;
 
-const contentFile = './data/commits.json';
-const noContent = '';
-const _headers = {
+const HTML_PATH = __dirname + '/public/index.html';
+const CONTENT_PATH = './data/commits.json';
+const NO_CONTENT = '';
+const WEBHOOKS_HEADERS = {
 	"Content-Type": "text/html",
 	"Access-Control-Allow-Origin": "*",
 	"Access-Control-Allow-Headers": "Content-Type",
 	"Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
 };
 
-// const express = require('./lib/express');
-// const app = express();
-
-//
-//create routes here
-//
-// app.post('/github/webhooks', (req, res) => {
-// 	let data = req.body;	
-
-// 	if (req.headers['content-type'] === 'application/json') {
-// 		data = JSON.parse(req.body);
-// 		data = JSON.stringify(data, null, 2);
-// 	}
-// 	res.end(data);
-// });
-
 let render = (res, fileContents, replacement) => {
-	res.writeHead(200, _headers);
+	res.writeHead(200, WEBHOOKS_HEADERS);
 	let content = fileContents.replace('{{ commitFeed }}', replacement);
 	res.end(content);	
 };
@@ -44,40 +29,77 @@ const fileNotFound = (res) => {
 	res.end("404 Not Found");
 };
 
+let _extractPostData = (req, callback) => {
+  let body = '';
+  req.on('data', (data) => {
+    body += data;
+  });
+  req.on('end', () => {
+    req.body = JSON.parse(body);
+    callback();
+  });
+};
+
 //
 //handle all incoming HTTP requests here
 //
 let routerHandle = (req, res) => {
-	let htmlPath = __dirname + '/public/index.html';
-	fs.readFile(htmlPath, 'utf8', (err, fileContents) => {
+	let method = req.method.toLowerCase();
+	let path = url.parse(req.url).pathname;
+	// console.log(method); console.log(path);
+
+	fs.readFile(HTML_PATH, 'utf8', (err, fileContents) => {
 		if (err) {
 			fileNotFound(res);
 		} else {
-			let queryString = url.parse(req.url).query;
-			if (queryString) {
-				fetchRepoCommits(queryString, res, fileContents);
-			} else {
-				render(res, fileContents, noContent);
+			if (method === 'get') {
+				let queryString = url.parse(req.url).query;
+				if (queryString) {
+					let params = getParams(queryString);
+					// console.log(`user = ${params[1]} and repo = ${params[2]}`);
+					let githubParams = {owner: params[1], repo: params[2] };					
+					fetchRepoCommits(githubParams, res, fileContents);
+				} else {
+					render(res, fileContents, NO_CONTENT);
+				}
+			} else if ( (method === 'post') && (path === '/github/webhooks') ) {
+				extractPostData(req)
+				.then( () => {
+					// console.log(req.body.pusher.name); console.log(req.body.repository.name);
+					let githubParams = {owner: req.body.pusher.name, repo: req.body.repository.name };					
+					console.log(fileContents);
+					fetchRepoCommits(githubParams, res, fileContents);
+				})
+				.catch(catchError);
 			}
 		}
 	});
 };
 
-let fetchRepoCommits = (queryString, res, fileContents) => {
-	github.authenticate(process.env.GITHUB_ACCESS_TOKEN);
+let catchError = (err) => {
+	console.log(err);
+};
 
-	let params = getParams(queryString);
-	// console.log(`user = ${params[1]} and repo = ${params[2]}`);
-	let githubParams = {owner: params[1], repo: params[2] };
+let extractPostData = (req) => {
+	return new Promise( (resolve, reject) => {
+		_extractPostData(req, (err) => {
+			if (err) reject(err);
+			resolve();
+		});
+	});
+};
+
+let fetchRepoCommits = (githubParams, res, fileContents) => {
+	github.authenticate(process.env.GITHUB_ACCESS_TOKEN);
 	github.getRepoCommits(githubParams)
 	.then(result => {
 		//console.log(res.data[0].commit); // traversing the object returned from github
 		let scrubbedResult = scrub(result.data);
 		let content = JSON.stringify(scrubbedResult, null, 2);
-		return doWriting(contentFile, content);
+		return doWriting(CONTENT_PATH, content);
 	}).then(result => {
 		console.log(result);
-		return reReadFile(contentFile);
+		return reReadFile(CONTENT_PATH);
 	}).then(result => {
 		render(res, fileContents, result);
 	}).catch(catchError);	
@@ -125,10 +147,6 @@ let scrub = (result) => {
 	});
 	// console.log(newResult);
 	return _objectify(newResult);
-};
-
-let catchError = (err) => {
-	console.log(err);
 };
 
 let getParams = (url) => {
