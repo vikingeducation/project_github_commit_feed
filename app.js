@@ -1,7 +1,8 @@
 const http = require('http');
 const fs = require('fs');
-const router = require('./router');
 const url = require('url');
+const commitFeed = require('./data/commits');
+// const router = require('./router');
 
 var port = 3100;
 var host = 'localhost';
@@ -10,6 +11,7 @@ var host = 'localhost';
 const server = http.createServer( (req, res) => {
   var body = '';
   var css = '';
+  var jsonStr = JSON.stringify(commitFeed, null, 2)
   // var method = req.method.toLowerCase();
   var path = url.parse(req.url).pathname;
   if ( path == '/') {
@@ -17,6 +19,7 @@ const server = http.createServer( (req, res) => {
       fs.readFile('./public/index.html', 'utf8', (err, data) => {
         if (err) throw reject(err);
         body += data;
+        body = body.replace(/{{ commitFeed }}/, jsonStr);
         resolve(body);
       })
       // fs.readFile('./public/main.css', 'utf8', (err, data) => {
