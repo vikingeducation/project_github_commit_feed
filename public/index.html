@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>GitHub Commit Feed</title>
-  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="./public/main.css" rel="stylesheet" type="text/css" >
 </head>
 
 <body>
@@ -35,27 +35,28 @@
       <div class="col">
       </div>
     </div>
-
-<pre>
-    {
-      "Foobar": {
-        "foobar": [
+    <br><br><br>
+    <div class="json-wrapper">
+      <pre>
           {
-            "message": "Update README.md",
-            "author": {
-              "name": "Foobar",
-              "email": "foobar@email.com",
-              "date": "2017-02-16T19:25:15Z"
-            },
-            "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-            "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
+            "Foobar": {
+              "foobar": [
+                {
+                  "message": "Update README.md",
+                  "author": {
+                    "name": "Foobar",
+                    "email": "foobar@email.com",
+                    "date": "2017-02-16T19:25:15Z"
+                  },
+                  "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
+                  "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
+                }
+              ]
+            }
           }
-        ]
-      }
-    }
 
-</pre>
-
+      </pre>
+    </div>
 
   </div>
 
