@@ -1,45 +1,43 @@
-var apiKey = process.env.MY_VARIABLE
+'use strict';
+const GitHub = require('github');
 
+let github = new GitHub({
+  debug: true,
+  headers: {
+    'user-agent': 'Chrome',
+    'owner': 'visiona'
+  },
+});
 
 function gitHubWrapper(userName, repoName) {
-  var GitHub = require('github');
-
-  var github = new GitHub({
-    debug: true,
-  });
 
   github.authenticate({
-      type: "oauth",
-      token: apiKey
+    type: 'oauth',
+    key: process.env.CLIENT_ID,
+    secret: process.env.CLIENT_SECRET
   });
 
-  getCommits = () => {
-    github.repos.getCommits({
-        owner: 'visiona',
-        repo: 'assignment_githuh'
-    })
-
-    // .then(result => {
-    //   const firstCommitId = result.data[0].id
-    //
-    //   return github.repos.getCommits({
-    //     owner: 'visiona',
-    //     repo: 'assignment_githuh',
-    //     // id: firstCommitId
-    //     // number: 640
-    //   })
-    // })
-
-    .then(result => {
-      // result.data has review properties
-      console.log(result.data)
-    })
+  let formData = {
+    username: userName,
+    repo: repoName
   }
 
-  return getCommits();
+  let responseCommits = new Promise( (resolve, reject) => {
+    github.repos.getCommits({
+      username: userName,
+      repo: repoName
+    }, (err, res) => {
+      debugger;
+      if (err) reject(err);
+      resolve(res);
+    })
+  });
+
+  return responseCommits;
+
 }
 
 
-gitHubWrapper('visiona', 'assignment_githuh');
+console.log( gitHubWrapper('visiona', 'assignment_githuh') );
 
 module.exports = gitHubWrapper;

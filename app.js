@@ -1,7 +1,10 @@
+'use strict';
+
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
 const commitFeed = require('./data/commits');
+const gitHubWrapper = require('./github_wrapper');
 // const router = require('./router');
 
 var port = 3100;
@@ -36,17 +39,20 @@ const server = http.createServer( (req, res) => {
       callback(req, res, body, css);
     })
   } else if (path == '/commits') {
-    // var p = new Promise( (resolve) => {
-    //   _extractPostData(req, resolve)
-    // })
-    // p.then( () => {
-    //   postCallback(req, res);
-    // })
-    var newUrl = url.parse(req.url).query;
-    var params = strParser(newUrl);
-    console.log(params);
-    res.write(params.toString());
-    res.end();
+    var p = new Promise( (resolve, reject) => {
+      fs.readFile('./public/index.html', 'utf8', (err, data) => {
+        if (err) throw reject(err);
+        body += data;
+        var newUrl = url.parse(req.url).query;
+        var params = strParser(newUrl).toString();
+        var jsonStr = gitHubWrapper(params[0], params[1]);
+        body = body.replace(/{{ commitFeed }}/, jsonStr);
+        resolve(body);
+      })
+    })
+    p.then( function(body) {
+      gitCallback(req, res, body);
+    })
   } else {
     res.statusCode = 404;
     res.end('404 Not Found');
@@ -55,7 +61,7 @@ const server = http.createServer( (req, res) => {
 
 var strParser = (query) => {
   var params = {};
-  str = query.split('&');
+  var str = query.split('&');
   str.forEach( (el) => {
     params[el.split('=')[0]] = el.split('=')[1];
   })
@@ -74,6 +80,11 @@ var callback = (req, res, body, css) => {
 var postCallback = (req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.write(req.body);
+  res.end();
+}
+
+var gitCallback = (req, res, body) => {
+  res.write(body);
   res.end();
 }
 
