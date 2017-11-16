@@ -16,11 +16,11 @@ var host = 'localhost';
 const server = http.createServer( (req, res) => {
   var body = '';
   var css = '';
-  var jsonStr = JSON.stringify(commitFeed, null, 2)
   var method = req.method.toLowerCase();
   var path = url.parse(req.url).pathname;
   console.log(path);
   if ( path == '/') {
+    var jsonStr = JSON.stringify(commitFeed, null, 2)
     var p = new Promise( (resolve, reject) => {
       fs.readFile('./public/index.html', 'utf8', (err, data) => {
         if (err) throw reject(err);
@@ -28,12 +28,6 @@ const server = http.createServer( (req, res) => {
         body = body.replace(/{{ commitFeed }}/, jsonStr);
         resolve(body);
       })
-      // fs.readFile('./public/main.css', 'utf8', (err, data) => {
-      //   if (err) throw reject(err);
-      //   css += data;
-      //
-      //   res.end();
-      // })
     });
     p.then( function(body) {
       callback(req, res, body, css);
@@ -42,12 +36,15 @@ const server = http.createServer( (req, res) => {
     var p = new Promise( (resolve, reject) => {
       fs.readFile('./public/index.html', 'utf8', (err, data) => {
         if (err) throw reject(err);
-        body += data;
         var newUrl = url.parse(req.url).query;
-        var params = strParser(newUrl).toString();
-        var jsonStr = gitHubWrapper(params[0], params[1]);
-        body = body.replace(/{{ commitFeed }}/, jsonStr);
-        resolve(body);
+        var params = strParser(newUrl);
+        var jsonStr = gitHubWrapper(params.username, params.repo);
+        body += data;
+        jsonStr.then(json => {
+          body = body.replace(/{{ commitFeed }}/, JSON.stringify(json, null, 2) );
+          console.log('body is: ' + body);
+          resolve(body);
+        })
       })
     })
     p.then( function(body) {
@@ -71,8 +68,6 @@ var strParser = (query) => {
 
 var callback = (req, res, body, css) => {
   res.writeHead(200, {'Content-Type': 'text/html'});
-  // res.writeHead(200, {'Content-Type': 'text/css'});
-  // res.write(css);
   res.write(body);
   res.end();
 }
@@ -84,20 +79,10 @@ var postCallback = (req, res) => {
 }
 
 var gitCallback = (req, res, body) => {
+  res.writeHead(200, {'Content-Type': 'text/html'});
   res.write(body);
   res.end();
 }
-
-// var _extractPostData = (req, done) => {
-//   var body = '';
-//   req.on('data', (data) => {
-//     body += data;
-//   })
-//   req.on('end', () => {
-//     req.body = body;
-//     done(body);
-//   })
-// }
 
 server.listen(port, host, () => {
   console.log(`Server is listening on http://${host}:${port}`)

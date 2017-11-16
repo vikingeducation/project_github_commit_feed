@@ -5,8 +5,7 @@ let github = new GitHub({
   debug: true,
   headers: {
     'user-agent': 'Chrome',
-    'owner': 'visiona'
-  },
+  }
 });
 
 function gitHubWrapper(userName, repoName) {
@@ -18,16 +17,12 @@ function gitHubWrapper(userName, repoName) {
   });
 
   let formData = {
-    username: userName,
+    owner: userName,
     repo: repoName
   }
 
   let responseCommits = new Promise( (resolve, reject) => {
-    github.repos.getCommits({
-      username: userName,
-      repo: repoName
-    }, (err, res) => {
-      debugger;
+    github.repos.getCommits( formData, (err, res) => {
       if (err) reject(err);
       resolve(res);
     })
@@ -38,6 +33,6 @@ function gitHubWrapper(userName, repoName) {
 }
 
 
-console.log( gitHubWrapper('visiona', 'assignment_githuh') );
+// console.log( gitHubWrapper('visiona', 'assignment_githuh') );
 
 module.exports = gitHubWrapper;
