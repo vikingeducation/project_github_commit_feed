@@ -36,8 +36,15 @@ let displayCommits = (req, res) => {
           })
           .then(data => {
             res.statusCode = 200;
-            let jData = JSON.stringify(data["data"][0], null, "\t");
+            let keysArr = ["'commit']['message'", 'author', 'html_url', 'sha'];
+            let filterData = data['data']['commit']['message'] + data['data']['author'] + data['data']['html_url'] + data['data']['sha'];
+            let jData = JSON.stringify(filterData, null, "\t");
             let body2 = page.replace("{{commitData}}", jData);
+            fs.writeFile('./public/commitData.json', jData, (err) => {
+              if(err){
+                throw err;
+              } else{}
+            })
             res.end(body2);
           })
           .catch(err => {

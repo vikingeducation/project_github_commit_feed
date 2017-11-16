@@ -16,20 +16,22 @@
 <link rel="shortcut icon" href="">
 </head>
 <body>
+  <div class='jumbotron container'>
   <form action="/commits" method="GET">
     <div class="form-group">
       <label>Username:</label>
-      <input type="text" name="owner">
+      <input type="text" class='form-control' name="owner">
     </div>
     <div class="form-group">
       <label>Repo:</label>
-      <input type="text" name="repo">
+      <input type="text" class='form-control'  name="repo">
     </div>
       <input type="submit">
     </div>
+  </form>
+</div>
     <pre>
       {{commitData}}
     </pre>
-  </form>
 </body>
 </html>
