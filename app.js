@@ -111,11 +111,11 @@ let displayWebhooks = (req, res) => {
   req.on('end', () => {
     res.writeHead(200, _headers);
   console.log(body);
-  body = body.substring(8);
-  jBody = JSON.parse(body);
+  /*body = body.substring(8);
+  /*jBody = JSON.parse(body);
   let jOwn = jBody.pusher.name;
   let jRepo = jBody.repository.name;
-  let jWrite = jOwn.concat(jWrite);
+  let jWrite = jOwn.concat(jWrite);*/
   fs.writeFile('./public/webhookData.json', body, () => {
     if(err){
       throw err;
