@@ -124,7 +124,6 @@ let displayWebhooks = (req, res) => {
     }
   });
     res.end('200 OK');
-  }
   });
 }
 
