@@ -3,11 +3,6 @@ fs = require("fs");
 var http = require("http");
 let url = require("url");
 
-var commits = github.githubCommits(
-  "GeneTinderholm",
-  "project_github_commit_feed"
-);
-
 var server = http.createServer((req, res) => {
   path = url.parse(req.url).pathname;
   if (path === "/") {
@@ -32,7 +27,6 @@ let displayCommits = (req, res) => {
       });
       req.on("end", () => {
         req.body = body;
-        console.log("body is " + body);
         let path = url.parse(req.url).pathname;
         let query = url.parse(req.url, true).query;
         github
@@ -61,7 +55,11 @@ var displayRoot = (req, res) => {
     if (err) {
       res.end("404");
     } else {
-      res.end(data);
+      let dummyData = require("./public/dummyFile.json");
+      let body = data;
+      let jData = JSON.stringify(dummyData, null, "\t");
+      body = body.replace("{{commitData}}", jData);
+      res.end(body);
     }
   });
 };
