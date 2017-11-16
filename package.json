@@ -1,0 +1,19 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "pull commits from public repos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seeker0/project_github_commit_feed.git"
+  },
+  "author": "Jeff Dederick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seeker0/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/Seeker0/project_github_commit_feed#readme"
+}
