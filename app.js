@@ -113,6 +113,7 @@ let displayWebhooks = (req, res) => {
   req.on("end", () => {
     res.writeHead(200, _headers);
     console.log(body);
+    body = JSON.parse(body);
     /*body = body.substring(8);
   /*jBody = JSON.parse(body);
   let jOwn = jBody.pusher.name;
