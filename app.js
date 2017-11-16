@@ -19,7 +19,7 @@ var server = http.createServer((req, res) => {
 server.listen(3000, "localhost");
 
 let displayCommits = (req, res) => {
-  fs.readFile("./public/index.html", "utf8", (err, data) => {
+  fs.readFile("./public/index.html", "utf8", (err, page) => {
     if (err) {
       res.statusCode = 404;
       res.end("404");
@@ -27,7 +27,9 @@ let displayCommits = (req, res) => {
       let body = "";
       req.on("data", data => {
         body += data;
-      });
+        console.log(data);
+      })
+      console.log('line 31\n', body);
       req.on("end", () => {
         req.body = body;
         let path = url.parse(req.url).pathname;
@@ -49,8 +51,8 @@ let displayCommits = (req, res) => {
           	console.log(data['data']);
           	console.log(body);
             res.statusCode = 200;
-            let jData = JSON.stringify(data[data]);
-            let body2 = body.replace("{{commitData}}", jData);
+            let jData = JSON.stringify(data['data']);
+            let body2 = page.replace("{{commitData}}", jData);
             res.end(body2);
           })
           .catch(err => {
