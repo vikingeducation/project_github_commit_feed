@@ -10,7 +10,7 @@ var server = http.createServer((req, res) => {
   } else if (path === "/commits") {
     displayCommits(req, res);
   }
-  else if(path === '/github/webhooks'){
+  else if(path === '/github/webhooks' && ){
     displayWebhooks(req, res);
   }
 });
@@ -83,6 +83,7 @@ let displayCommits = (req, res) => {
 };
 
 var displayRoot = (req, res) => {
+
   fs.readFile("./public/index.html", "utf8", (err, data) => {
     if (err) {
       res.end("404");
@@ -97,13 +98,23 @@ var displayRoot = (req, res) => {
 };
 
 let displayWebhooks = (req, res) => {
+  var _headers = {
+  "Content-Type": "text/html",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
   let body = '';
   req.on('data', data => {
     body += data;
   });
   console.log(body);
+  body = body.substring(8);
+  jBody = JSON.parse(body);
+  console.log(jBody);
   req.on('end', () => {
-    res.end(body);
+    res.writeHead(200, _headers);
+    res.end('200 OK');
   });
 }
 
