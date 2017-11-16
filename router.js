@@ -1,15 +1,45 @@
 const http = require('http');
 const fs = require('fs');
+const url = require('url');
 
 const Router = {};
 
+
 Router.handle = (req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello All');
+    let method = req.method.toLowerCase();
+    let path = url.parse(req.url).pathname;
+    Router.routes[method][path](req, res);
 };
 
-Router.methods = ['get', 'post'];
+Router.routes = {
+    get: {
+        '/': (req, res) => {
+            fs.readFile('./views/index.html', function (err, html) {
+                if (err) {
+                    throw err;
+                }
+                   res.writeHead(200, {
+                        "Content-Type": "text/html"
+                    });
+                    res.write(html);
+                    res.end();
+                })
+            }
+        },
+    post: {
+        '/': (req, res) => {
+            fs.readFile('./views/index.html', function (err, html) {
+                if (err) {
+                    throw err;
+                }
+                    res.writeHead(200, {
+                        "Content-Type": "text/html"
+                    });
+                    res.write(html);
+                    res.end();
+                })
+            }
+        },
+};
 
-Router.routes = {};
 module.exports = Router;
