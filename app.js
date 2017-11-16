@@ -101,6 +101,7 @@ let displayWebhooks = (req, res) => {
   req.on('data', data => {
     body += data;
   });
+  console.log(body);
   req.on('end', () => {
     res.end(body);
   });
