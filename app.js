@@ -42,7 +42,7 @@ let displayCommits = (req, res) => {
           })
           .then(data => {
             res.statusCode = 200;
-            let jData = JSON.stringify(data["data"]);
+            let jData = JSON.stringify(data["data"][0], null, "\t");
             let body2 = page.replace("{{commitData}}", jData);
             res.end(body2);
           })
