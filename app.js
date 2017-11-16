@@ -26,32 +26,23 @@ let displayCommits = (req, res) => {
     } else {
       let body = "";
       req.on("data", data => {
+        console.log("req.on data event fired");
         body += data;
         console.log(data);
-      })
-      console.log('line 31\n', body);
+      });
       req.on("end", () => {
         req.body = body;
+        console.log("body is " + body);
         let path = url.parse(req.url).pathname;
-        let query = url.parse(req.url).query;
-        let fields = query.split("&");
-        fields = fields.map(field => {
-          return field.split("=");
-        });
-        let params = {};
-        params[fields[0][0]] = fields[0][1];
-        params[fields[1][0]] = fields[1][1];
-        console.log(params.owner, params.repo);
-        github.githubCommits(params.owner, params.repo)
+        let query = url.parse(req.url, true).query;
+        github
+          .githubCommits(query.owner, query.repo)
           .then(data => {
-              return data;
+            return data;
           })
           .then(data => {
-          	console.log('begin here');
-          	console.log(data['data']);
-          	console.log(body);
             res.statusCode = 200;
-            let jData = JSON.stringify(data['data']);
+            let jData = JSON.stringify(data["data"]);
             let body2 = page.replace("{{commitData}}", jData);
             res.end(body2);
           })
