@@ -108,12 +108,12 @@ let displayWebhooks = (req, res) => {
   req.on('data', data => {
     body += data;
   });
+  req.on('end', () => {
+    res.writeHead(200, _headers);
   console.log(body);
   body = body.substring(8);
   jBody = JSON.parse(body);
   console.log(jBody);
-  req.on('end', () => {
-    res.writeHead(200, _headers);
     res.end('200 OK');
   });
 }
