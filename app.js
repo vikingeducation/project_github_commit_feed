@@ -119,6 +119,9 @@ let displayWebhooks = (req, res) => {
   let jOwn = jBody.pusher.name;
   let jRepo = jBody.repository.name;
   let jWrite = jOwn.concat(jWrite);*/
+    let owner = body.pusher.name;
+    let repository = body.repository.name;
+    console.log("owner is " + owner + " repository: " + repository);
     fs.writeFile(
       "./public/webhookData.json",
       JSON.stringify(body, null, "\t"),
