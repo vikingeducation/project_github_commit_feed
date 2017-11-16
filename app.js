@@ -115,7 +115,7 @@ let displayWebhooks = (req, res) => {
   jBody = JSON.parse(body);
   let jOwn = jBody.pusher.name;
   let jRepo = jBody.repository.name;
-  let jWrite = (jOwn + jWrite);
+  let jWrite = jOwn.concat(jWrite);
   fs.writeFile('./public/webhookData.json', JSON.stringify(jWrite), () => {
     if(err){
       throw err;
