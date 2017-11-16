@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/SamuelLangenfeld/project_github_commit_feed#readme",
   "dependencies": {
-    "github": "^12.0.2"
+    "fs": "0.0.1-security",
+    "github": "^12.0.2",
+    "http": "0.0.0",
+    "url": "^0.11.0"
   }
 }

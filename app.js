@@ -39,20 +39,17 @@ let displayCommits = (req, res) => {
         let params = {};
         params[fields[0][0]] = fields[0][1];
         params[fields[1][0]] = fields[1][1];
-        console.log(params);
-        github
-          .githubCommits(params.owner, params.repo)
-          .then((err, data) => {
-            if (err) {
-              throw err;
-            } else {
-              console.log(data);
+        console.log(params.owner, params.repo);
+        github.githubCommits(params.owner, params.repo)
+          .then(data => {
               return data;
-            }
           })
           .then(data => {
+          	console.log('begin here');
+          	console.log(data['data']);
+          	console.log(body);
             res.statusCode = 200;
-            let jData = JSON.stringify(data);
+            let jData = JSON.stringify(data[data]);
             let body2 = body.replace("{{commitData}}", jData);
             res.end(body2);
           })
