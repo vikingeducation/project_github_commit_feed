@@ -10,7 +10,7 @@ var server = http.createServer((req, res) => {
   } else if (path === "/commits") {
     displayCommits(req, res);
   }
-  else if(path === '/github/webhooks' && ){
+  else if(path === '/github/webhooks'){
     displayWebhooks(req, res);
   }
 });
