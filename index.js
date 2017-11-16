@@ -20,3 +20,9 @@ github.activity
   .then(data => {
     console.log(data);
   });
+
+github.gitdata.getCommit({
+  owner: "SamuelLangenfeld",
+  repo: "project_github_commit_feed",
+  sha: token
+});
