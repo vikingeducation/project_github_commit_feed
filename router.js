@@ -32,16 +32,7 @@ Router.routes = {
   },
   post: {
     '/': (req, res) => {
-      fs.readFile('./views/index.html', function(err, html) {
-        if (err) {
-          throw err;
-        }
-        res.writeHead(200, {
-          'Content-Type': 'text/html'
-        });
-        res.write(html);
-        res.end();
-      });
+      postData(req, res);
     }
   }
 };
@@ -59,8 +50,9 @@ let postData = (req, res) => {
   // When the end event is fired
   // we know we have all the data
   // and can send back a response
-  console.log(body);
-  return body;
+  console.log(req.headers['content-type']);
+  console.log('It no work');
+  // return body;
 };
 
 // Output the POST data
