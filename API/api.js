@@ -1,5 +1,4 @@
 'use strict';
-
 var Github = require('github');
 var git = Github();
 

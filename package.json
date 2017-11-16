@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "github": "^12.0.2",
     "hbs": "^4.0.1"
   },
   "devDependencies": {},
