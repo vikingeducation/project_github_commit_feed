@@ -36,15 +36,38 @@ let displayCommits = (req, res) => {
           })
           .then(data => {
             res.statusCode = 200;
-            let keysArr = ["'commit']['message'", 'author', 'html_url', 'sha'];
-            let filterData = data['data']['commit']['message'] + data['data']['author'] + data['data']['html_url'] + data['data']['sha'];
+            let keysArr = ["'commit']['message'", "author", "html_url", "sha"];
+            let dataArray = data["data"];
+            let checkArray = fs.readFileSync("./public/shas", "utf8");
+            checkArray = checkArray.split(",");
+            console.log(checkArray);
+            let filterData = dataArray.map(element => {
+              let obj = {
+                message: element.commit.message,
+                author: element.author,
+                html_url: element.html_url,
+                sha: element.sha
+              };
+              if (!checkArray.includes(element.sha)) {
+                checkArray.push(element.sha);
+                fs.appendFile("./public/commits.json", obj, err => {
+                  if (err) {
+                    throw err;
+                  }
+                });
+              }
+              return obj;
+            });
+
             let jData = JSON.stringify(filterData, null, "\t");
             let body2 = page.replace("{{commitData}}", jData);
-            fs.writeFile('./public/commitData.json', jData, (err) => {
-              if(err){
+            checkArray = checkArray.join(",");
+            fs.writeFile("./public/shas", checkArray, err => {
+              if (err) {
                 throw err;
-              } else{}
-            })
+              } else {
+              }
+            });
             res.end(body2);
           })
           .catch(err => {
