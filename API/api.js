@@ -20,5 +20,5 @@ class Gitwrap {
     }
 }
 
-
-module.exports Gitwrap
+var gitty = new Gitwrap
+console.log (gitty)
