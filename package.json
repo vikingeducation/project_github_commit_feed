@@ -1,42 +1,23 @@
 {
   "name": "project_github_commit_feed",
   "version": "1.0.0",
-
-  "description": "pull commits from public repos",
-  "main": "index.js",
-
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "dependencies": {
-    "github": "^12.0.2",
     "hbs": "^4.0.1"
   },
   "devDependencies": {},
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-
     "url": "git+https://github.com/Seeker0/project_github_commit_feed.git"
-  },
-  "author": "Jeff Dederick",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Seeker0/project_github_commit_feed/issues"
-  },
-  "homepage": "https://github.com/Seeker0/project_github_commit_feed#readme",
-  "dependencies": {
-    "github": "^12.0.2"
-  }
- {
-    "url": "git+https://github.com/eliashantula/project_github_commit_feed.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eliashantula/project_github_commit_feed/issues"
-  }, {
-  "homepage": "https://github.com/eliashantula/project_github_commit_feed#readme"
+    "url": "https://github.com/Seeker0/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/Seeker0/project_github_commit_feed#readme"
 }
