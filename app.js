@@ -113,8 +113,18 @@ let displayWebhooks = (req, res) => {
   console.log(body);
   body = body.substring(8);
   jBody = JSON.parse(body);
-  console.log(jBody);
+  let jOwn = jBody.pusher.name;
+  let jRepo = jBody.repository.name;
+  let jWrite = (jOwn + jWrite);
+  fs.writeFile('./public/webhookData.json', JSON.stringify(jWrite), () => {
+    if(err){
+      throw err;
+    } else {
+
+    }
+  });
     res.end('200 OK');
+  }
   });
 }
 
