@@ -9,8 +9,7 @@ var server = http.createServer((req, res) => {
     displayRoot(req, res);
   } else if (path === "/commits") {
     displayCommits(req, res);
-  }
-  else if(path === '/github/webhooks'){
+  } else if (path === "/github/webhooks") {
     displayWebhooks(req, res);
   }
 });
@@ -52,11 +51,15 @@ let displayCommits = (req, res) => {
               };
               if (!checkArray.includes(element.sha)) {
                 checkArray.push(element.sha);
-                fs.appendFile("./public/commits.json", JSON.stringify(obj, null, '\t'), err => {
-                  if (err) {
-                    throw err;
+                fs.appendFile(
+                  "./public/commits.json",
+                  JSON.stringify(obj, null, "\t"),
+                  err => {
+                    if (err) {
+                      throw err;
+                    }
                   }
-                });
+                );
               }
               return obj;
             });
@@ -83,7 +86,6 @@ let displayCommits = (req, res) => {
 };
 
 var displayRoot = (req, res) => {
-
   fs.readFile("./public/index.html", "utf8", (err, data) => {
     if (err) {
       res.end("404");
@@ -99,33 +101,36 @@ var displayRoot = (req, res) => {
 
 let displayWebhooks = (req, res) => {
   var _headers = {
-  "Content-Type": "text/html",
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "Content-Type",
-  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
-};
-  let body = '';
-  req.on('data', data => {
+    "Content-Type": "text/html",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+  };
+  let body = "";
+  req.on("data", data => {
     body += data;
   });
-  req.on('end', () => {
+  req.on("end", () => {
     res.writeHead(200, _headers);
-  console.log(body);
-  /*body = body.substring(8);
+    console.log(body);
+    /*body = body.substring(8);
   /*jBody = JSON.parse(body);
   let jOwn = jBody.pusher.name;
   let jRepo = jBody.repository.name;
   let jWrite = jOwn.concat(jWrite);*/
-  fs.writeFile('./public/webhookData.json', body, () => {
-    if(err){
-      throw err;
-    } else {
-
-    }
+    fs.writeFile(
+      "./public/webhookData.json",
+      JSON.stringify(body, null, "\t"),
+      () => {
+        if (err) {
+          throw err;
+        } else {
+        }
+      }
+    );
+    res.end("200 OK");
   });
-    res.end('200 OK');
-  });
-}
+};
 
 var appObj;
 module.exports = appObj;
