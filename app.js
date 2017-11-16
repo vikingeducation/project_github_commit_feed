@@ -5,12 +5,9 @@ const fs = require('fs');
 const url = require('url');
 const commitFeed = require('./data/commits');
 const gitHubWrapper = require('./github_wrapper');
-// const router = require('./router');
 
 var port = 3100;
 var host = 'localhost';
-
-
 
 
 const server = http.createServer( (req, res) => {
@@ -18,10 +15,9 @@ const server = http.createServer( (req, res) => {
   var css = '';
   var method = req.method.toLowerCase();
   var path = url.parse(req.url).pathname;
-  console.log(path);
   if ( path == '/') {
-    var jsonStr = JSON.stringify(commitFeed, null, 2)
     var p = new Promise( (resolve, reject) => {
+      var jsonStr = JSON.stringify(commitFeed, null, 2)
       fs.readFile('./public/index.html', 'utf8', (err, data) => {
         if (err) throw reject(err);
         body += data;
@@ -41,8 +37,9 @@ const server = http.createServer( (req, res) => {
         var jsonStr = gitHubWrapper(params.username, params.repo);
         body += data;
         jsonStr.then(json => {
+          json = scrubber(json);
+          saveToFile(json);
           body = body.replace(/{{ commitFeed }}/, JSON.stringify(json, null, 2) );
-          console.log('body is: ' + body);
           resolve(body);
         })
       })
@@ -65,7 +62,6 @@ var strParser = (query) => {
   return params;
 }
 
-
 var callback = (req, res, body, css) => {
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.write(body);
@@ -82,6 +78,30 @@ var gitCallback = (req, res, body) => {
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.write(body);
   res.end();
+}
+
+var scrubber = (json) => {
+  return json['data'].map( (commitData) => {
+    return {
+      'message': commitData.commit.message,
+      'author': commitData.commit.author,
+      'url': commitData.url,
+      'sha': commitData.sha
+    }
+  })
+}
+
+var saveToFile = (newJson) => {
+  debugger;
+  var fileContent = commitFeed;
+  newJson.forEach( (el) => {
+    fileContent.push(el)
+  })
+  console.log(fileContent)
+  fs.writeFile("./data/commits.json", JSON.stringify(fileContent, null, 2), function(err) {
+    if(err) return console.log(err);
+    console.log("The file was saved!");
+  });
 }
 
 server.listen(port, host, () => {

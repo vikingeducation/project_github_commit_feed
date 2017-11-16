@@ -1,17 +1,168 @@
-
-{
-  "Foobar": {
-    "foobar": [
-      {
-        "message": "Update README.md",
-        "author": {
-          "name": "Foobar",
-          "email": "foobar@email.com",
-          "date": "2017-02-16T19:25:15Z"
-        },
-        "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
-        "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
-      }
-    ]
+[
+  {
+    "Foobar": {
+      "foobar": [
+        {
+          "message": "Update README.md",
+          "author": {
+            "name": "Foobar",
+            "email": "foobar@email.com",
+            "date": "2017-02-16T19:25:15Z"
+          },
+          "url": "https://github.com/Foobar/foobar/commit/20ad02f81024c7dc9bff6da3d8e996725203923e",
+          "sha": "20ad02f81024c7dc9bff6da3d8e996725203923e"
+        }
+      ]
+    }
+  },
+  {
+    "message": "Finished Connecting Form and Github API Wrapper",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-16T19:40:05Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/18cfcfa9832bea2079b333bbd772543e6209910c",
+    "sha": "18cfcfa9832bea2079b333bbd772543e6209910c"
+  },
+  {
+    "message": "updates gitignore",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-14T22:54:48Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/ba4d02ecd1956241e84b7590cf88177aea7c16d1",
+    "sha": "ba4d02ecd1956241e84b7590cf88177aea7c16d1"
+  },
+  {
+    "message": "working on github call",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-14T20:58:14Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/72896101b766c92765572c56ff15a4349b20d639",
+    "sha": "72896101b766c92765572c56ff15a4349b20d639"
+  },
+  {
+    "message": "Enabled parsing form data into the server",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-12T21:41:19Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/a86c52b0648175e60f7ca30390bd00506c12ab89",
+    "sha": "a86c52b0648175e60f7ca30390bd00506c12ab89"
+  },
+  {
+    "message": "Displayed Dynamic JSON",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-12T20:51:34Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/9704d912c2e99094f37f21775ee6dac3b244f17f",
+    "sha": "9704d912c2e99094f37f21775ee6dac3b244f17f"
+  },
+  {
+    "message": "Initial Server Setup with serve the HTML file at the root",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-12T20:44:03Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/7880a6e7c63741753e8810706c8bbf171efdca12",
+    "sha": "7880a6e7c63741753e8810706c8bbf171efdca12"
+  },
+  {
+    "message": "added some json code in pre tags",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-11T20:19:34Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/81ee9a0362dee7c0e8d02484cc4a848928f898e4",
+    "sha": "81ee9a0362dee7c0e8d02484cc4a848928f898e4"
+  },
+  {
+    "message": "Created html interface for yje github feeder",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-11T20:11:22Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/397449bf40e704965f15f30a14ec82d5d3b6cf29",
+    "sha": "397449bf40e704965f15f30a14ec82d5d3b6cf29"
+  },
+  {
+    "message": "Created GitHub Repos COmmits Wrapper",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-11T18:02:34Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/4b017af4d99dd9362151038286242e53698e2b25",
+    "sha": "4b017af4d99dd9362151038286242e53698e2b25"
+  },
+  {
+    "message": "Getting Commits from the API",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-11T16:53:00Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/830f88ee697c3d53b8f4382607b8d82a0ae4bcc5",
+    "sha": "830f88ee697c3d53b8f4382607b8d82a0ae4bcc5"
+  },
+  {
+    "message": "Signed up new project",
+    "author": {
+      "name": "Visiona",
+      "email": "darbis@gmail.com",
+      "date": "2017-11-11T14:16:26Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/f1eba6e24b31884953ee6bfe76c03d14c40a649b",
+    "sha": "f1eba6e24b31884953ee6bfe76c03d14c40a649b"
+  },
+  {
+    "message": "Update README.md",
+    "author": {
+      "name": "Chris Scavello",
+      "email": "bideowego@gmail.com",
+      "date": "2017-02-21T16:48:57Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/ceec1b2306888905ae12750558706174132a6741",
+    "sha": "ceec1b2306888905ae12750558706174132a6741"
+  },
+  {
+    "message": "Initial commit",
+    "author": {
+      "name": "Chris Scavello",
+      "email": "bideowego@gmail.com",
+      "date": "2017-02-21T16:47:14Z"
+    },
+    "url": "https://api.github.com/repos/Visiona/project_github_commit_feed/commits/526145a8b50b13bafc85f9c8e3fa603c93912f55",
+    "sha": "526145a8b50b13bafc85f9c8e3fa603c93912f55"
+  },
+  {
+    "message": "Create README.md",
+    "author": {
+      "name": "software-administrator",
+      "email": "software.administrator@wattics.com",
+      "date": "2017-08-24T09:52:58Z"
+    },
+    "url": "https://api.github.com/repos/Wattics/api-client-java/commits/d7d52916cf457a6fca8bbf0e1fc0869f8e7f3799",
+    "sha": "d7d52916cf457a6fca8bbf0e1fc0869f8e7f3799"
+  },
+  {
+    "message": "Initial commit",
+    "author": {
+      "name": "Michele Delle Vergini",
+      "email": "michele.dellevergini@wattics.com",
+      "date": "2017-08-18T10:56:19Z"
+    },
+    "url": "https://api.github.com/repos/Wattics/api-client-java/commits/6ac04ede8cdde156b8b7bc928a9bbb9d51f0d36c",
+    "sha": "6ac04ede8cdde156b8b7bc928a9bbb9d51f0d36c"
   }
-}
+]
