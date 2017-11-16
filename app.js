@@ -10,6 +10,9 @@ var server = http.createServer((req, res) => {
   } else if (path === "/commits") {
     displayCommits(req, res);
   }
+  else if(path === '/github/webhooks'){
+    displayWebhooks(req, res);
+  }
 });
 server.listen(3000, "localhost");
 
@@ -92,6 +95,16 @@ var displayRoot = (req, res) => {
     }
   });
 };
+
+let displayWebhooks = (req, res) => {
+  let body = '';
+  req.on('data', data => {
+    body += data;
+  });
+  req.on('end', () => {
+    res.end(body);
+  });
+}
 
 var appObj;
 module.exports = appObj;

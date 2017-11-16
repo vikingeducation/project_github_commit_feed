@@ -895,4 +895,50 @@
 	},
 	"html_url": "https://github.com/GeneTinderholm/assignment_node_dictionary_reader/commit/fb60d46270eb8d3849234d03da26f8c8e3f4aaee",
 	"sha": "fb60d46270eb8d3849234d03da26f8c8e3f4aaee"
+}{
+	"message": "meets specs",
+	"author": {
+		"login": "GeneTinderholm",
+		"id": 22762373,
+		"avatar_url": "https://avatars1.githubusercontent.com/u/22762373?v=4",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/GeneTinderholm",
+		"html_url": "https://github.com/GeneTinderholm",
+		"followers_url": "https://api.github.com/users/GeneTinderholm/followers",
+		"following_url": "https://api.github.com/users/GeneTinderholm/following{/other_user}",
+		"gists_url": "https://api.github.com/users/GeneTinderholm/gists{/gist_id}",
+		"starred_url": "https://api.github.com/users/GeneTinderholm/starred{/owner}{/repo}",
+		"subscriptions_url": "https://api.github.com/users/GeneTinderholm/subscriptions",
+		"organizations_url": "https://api.github.com/users/GeneTinderholm/orgs",
+		"repos_url": "https://api.github.com/users/GeneTinderholm/repos",
+		"events_url": "https://api.github.com/users/GeneTinderholm/events{/privacy}",
+		"received_events_url": "https://api.github.com/users/GeneTinderholm/received_events",
+		"type": "User",
+		"site_admin": false
+	},
+	"html_url": "https://github.com/GeneTinderholm/project_github_commit_feed/commit/6fbdaade04be272033707271657875a0fccb382d",
+	"sha": "6fbdaade04be272033707271657875a0fccb382d"
+}{
+	"message": "functioning sha check",
+	"author": {
+		"login": "SamuelLangenfeld",
+		"id": 22413614,
+		"avatar_url": "https://avatars3.githubusercontent.com/u/22413614?v=4",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/SamuelLangenfeld",
+		"html_url": "https://github.com/SamuelLangenfeld",
+		"followers_url": "https://api.github.com/users/SamuelLangenfeld/followers",
+		"following_url": "https://api.github.com/users/SamuelLangenfeld/following{/other_user}",
+		"gists_url": "https://api.github.com/users/SamuelLangenfeld/gists{/gist_id}",
+		"starred_url": "https://api.github.com/users/SamuelLangenfeld/starred{/owner}{/repo}",
+		"subscriptions_url": "https://api.github.com/users/SamuelLangenfeld/subscriptions",
+		"organizations_url": "https://api.github.com/users/SamuelLangenfeld/orgs",
+		"repos_url": "https://api.github.com/users/SamuelLangenfeld/repos",
+		"events_url": "https://api.github.com/users/SamuelLangenfeld/events{/privacy}",
+		"received_events_url": "https://api.github.com/users/SamuelLangenfeld/received_events",
+		"type": "User",
+		"site_admin": false
+	},
+	"html_url": "https://github.com/GeneTinderholm/project_github_commit_feed/commit/f1babf382e9e92c68163005edfd660b97ea98d3a",
+	"sha": "f1babf382e9e92c68163005edfd660b97ea98d3a"
 }
