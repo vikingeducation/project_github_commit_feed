@@ -40,7 +40,6 @@ let displayCommits = (req, res) => {
             let dataArray = data["data"];
             let checkArray = fs.readFileSync("./public/shas", "utf8");
             checkArray = checkArray.split(",");
-            console.log(checkArray);
             let filterData = dataArray.map(element => {
               let obj = {
                 message: element.commit.message,
@@ -50,7 +49,7 @@ let displayCommits = (req, res) => {
               };
               if (!checkArray.includes(element.sha)) {
                 checkArray.push(element.sha);
-                fs.appendFile("./public/commits.json", obj, err => {
+                fs.appendFile("./public/commits.json", JSON.stringify(obj, null, '\t'), err => {
                   if (err) {
                     throw err;
                   }
