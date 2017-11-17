@@ -23,9 +23,7 @@ let displayCommits = (req, res) => {
     } else {
       let body = "";
       req.on("data", data => {
-        console.log("req.on data event fired");
         body += data;
-        console.log(data);
       });
       req.on("end", () => {
         req.body = body;
@@ -112,7 +110,6 @@ let displayWebhooks = (req, res) => {
   });
   req.on("end", () => {
     res.writeHead(200, _headers);
-    console.log(body);
     body = JSON.parse(body);
 
     let owner = body.pusher.name;
@@ -137,7 +134,7 @@ let displayWebhooks = (req, res) => {
           }
         }
       );
-      fs.appendFile("./public/shas", obj.sha, err => {
+      fs.appendFile("./public/shas", "," + obj.sha, err => {
         if (err) {
           throw err;
         } else {
