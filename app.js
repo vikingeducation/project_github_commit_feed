@@ -49,12 +49,12 @@ const server = http.createServer( (req, res) => {
     })
   } else if (path == '/github/webhooks') {
     var readStream = fs.createReadStream(path, 'utf8');
-    streamedData = '';
+    var streamedData = '';
     readStream.on('data', (data) => {
       streamedData += data;
     });
     readStream.on('end', () => {
-      console.log(`Stream read ${ streamedData } bytes`);
+      console.log(`Streamed data is as follows: ${ streamedData } `);
     });
   } else {
     res.statusCode = 404;
