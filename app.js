@@ -60,9 +60,10 @@ const server = http.createServer( (req, res) => {
         debugger
         var jsonData = JSON.parse(webhooksData.slice(8));
         var jsonStr = gitHubWrapper(jsonData.pusher.name, jsonData.repository.name);
-        json = scrubber(jsonStr);
-        saveToFile(json);
-        console.log('FInsihing savinf file.')
+        jsonStr.then(json => {
+          json = scrubber(json);
+          saveToFile(json);
+        })
         res.end('200 OK');
       });
       var newUrl = url.parse(req.url).query;
