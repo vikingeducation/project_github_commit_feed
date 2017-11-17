@@ -55,14 +55,12 @@ const server = http.createServer( (req, res) => {
       })
       req.on('end', () => {
         debugger
-        if (req.headers['content-type'] === 'pplication/x-www-form-urlencoded') {
-          console.log('slicing data');
-          webhooksData = decodeURIComponent(webhooksData);
-           jsonData = JSON.parse(webhooksData.slice(8));
-           var jsonStr = gitHubWrapper(jsonData.pusher.name, jsonData.repository.name);
-           json = scrubber(json);
-           saveToFile(json);
-        }
+        console.log('slicing data');
+        webhooksData = decodeURIComponent(webhooksData);
+        jsonData = JSON.parse(webhooksData.slice(8));
+        var jsonStr = gitHubWrapper(jsonData.pusher.name, jsonData.repository.name);
+        json = scrubber(json);
+        saveToFile(json);
         console.log('FInsihing savinf file.')
         res.end('200 OK');
       });
