@@ -48,7 +48,7 @@ const server = http.createServer( (req, res) => {
       gitCallback(req, res, body);
     })
   } else if (path == '/github/webhooks') {
-    console.log(req.data)
+    console.log(req.body)
   } else {
     res.statusCode = 404;
     res.end('404 Not Found');
