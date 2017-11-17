@@ -127,12 +127,16 @@ let displayWebhooks = (req, res) => {
         sha: element.sha
       };
 
-      fs.appendFile("./public/commits.json", JSON.stringify(obj), err => {
-        if (err) {
-          throw err;
-        } else {
+      fs.appendFile(
+        "./public/commits.json",
+        JSON.stringify(obj, null, "\t"),
+        err => {
+          if (err) {
+            throw err;
+          } else {
+          }
         }
-      });
+      );
       fs.appendFile("./public/shas", obj.sha, err => {
         if (err) {
           throw err;
