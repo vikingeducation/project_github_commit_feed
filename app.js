@@ -49,9 +49,10 @@ const server = http.createServer( (req, res) => {
     })
   } else if (path == '/github/webhooks') {
     // var p = new Promise( (resolve, reject) => {
-      console.log('looked data is: ' + data)
+      var newUrl = url.parse(req.url).query;
+      console.log('looked data is: ' + newUrl)
       var webhooks = '';
-      webhooks += data;
+      webhooks += newUrl;
       debugger
       var newUrl = url.parse(req.url).query;
 
