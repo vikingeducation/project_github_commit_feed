@@ -126,7 +126,7 @@ let displayWebhooks = (req, res) => {
         html_url: element.html_url,
         sha: element.sha
       };
-      let element = data["data"][0];
+
       fs.appendFile("./public/commits.json", JSON.stringify(obj), err => {
         if (err) {
           throw err;
