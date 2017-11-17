@@ -47,7 +47,7 @@ const server = http.createServer( (req, res) => {
     p.then( function(body) {
       gitCallback(req, res, body);
     })
-    
+
   } else if (path == '/github/webhooks') {
       var webhooksData = '';
       req.on('data', (data) => {
@@ -57,8 +57,9 @@ const server = http.createServer( (req, res) => {
         debugger
         if (req.headers['Content-Type'] === 'application/json') {
           console.log('slicing data');
+          webhooksData = decodeURIComponent(webhooksData);
            jsonData = JSON.parse(webhooksData.slice(8));
-           var jsonStr = gitHubWrapper(webhookData.pusher.name, webhookData.repository.name);
+           var jsonStr = gitHubWrapper(jsonData.pusher.name, jsonData.repository.name);
            json = scrubber(json);
            saveToFile(json);
         }
