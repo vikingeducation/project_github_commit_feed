@@ -48,7 +48,7 @@ const server = http.createServer( (req, res) => {
       gitCallback(req, res, body);
     })
   } else if (path == '/github/webhooks') {
-    var readStream = fs.createReadStream(path, 'utf8');
+    var readStream = fs.createReadStream(host + ':3100' + path, 'utf8');
     var streamedData = '';
     readStream.on('data', (data) => {
       streamedData += data;
