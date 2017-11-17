@@ -48,14 +48,35 @@ const server = http.createServer( (req, res) => {
       gitCallback(req, res, body);
     })
   } else if (path == '/github/webhooks') {
-    var readStream = fs.createReadStream(host + ':3100' + path, 'utf8');
-    var streamedData = '';
-    readStream.on('data', (data) => {
-      streamedData += data;
-    });
-    readStream.on('end', () => {
-      console.log(`Streamed data is as follows: ${ streamedData } `);
-    });
+    var p = new Promise( (resolve, reject) => {
+      console.log('looked data is: ' + data)
+      fs.readFile('./public/index.html', 'utf8', (err, data) => {
+        if (err) throw reject(err);
+        var newUrl = url.parse(req.url).query;
+        var params = strParser(newUrl);
+        var jsonStr = gitHubWrapper(params.username, params.repo);
+        body += data;
+        jsonStr.then(json => {
+          json = scrubber(json);
+          saveToFile(json);
+          body = body.replace(/{{ commitFeed }}/, JSON.stringify(json, null, 2) );
+          resolve(body);
+        })
+      })
+    })
+    p.then( function(body) {
+      gitCallback(req, res, body);
+    })
+
+
+    // var readStream = fs.createReadStream(host + ':3100' + path, 'utf8');
+    // var streamedData = '';
+    // readStream.on('data', (data) => {
+    //   streamedData += data;
+    // });
+    // readStream.on('end', () => {
+    //   console.log(`Streamed data is as follows: ${ streamedData } `);
+    // });
   } else {
     res.statusCode = 404;
     res.end('404 Not Found');
