@@ -1,0 +1,25 @@
+{
+  "name": "project_github_commit_feed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "env": "0.0.2",
+    "github": "^12.0.2",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seeker0/project_github_commit_feed.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seeker0/project_github_commit_feed/issues"
+  },
+  "homepage": "https://github.com/Seeker0/project_github_commit_feed#readme"
+}
