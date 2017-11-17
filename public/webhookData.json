@@ -1,20 +1,20 @@
 {
 	"ref": "refs/heads/master",
-	"before": "0e05e832e58abe7d4d572650e1f8d1621f2d156a",
-	"after": "6003c2c271b7bf09fb5e2685972cdaebe2299fab",
+	"before": "6003c2c271b7bf09fb5e2685972cdaebe2299fab",
+	"after": "2034496760a46f30ed75da5fc11b9b34d923fd28",
 	"created": false,
 	"deleted": false,
 	"forced": false,
 	"base_ref": null,
-	"compare": "https://github.com/SamuelLangenfeld/project_github_commit_feed/compare/0e05e832e58a...6003c2c271b7",
+	"compare": "https://github.com/SamuelLangenfeld/project_github_commit_feed/compare/6003c2c271b7...2034496760a4",
 	"commits": [
 		{
-			"id": "6003c2c271b7bf09fb5e2685972cdaebe2299fab",
-			"tree_id": "23e919c08ae56afe9154082108d01c987cab9b19",
+			"id": "2034496760a46f30ed75da5fc11b9b34d923fd28",
+			"tree_id": "b4b894be1c10ef79c673d368fe36aa8ec881abaf",
 			"distinct": true,
 			"message": "push",
-			"timestamp": "2017-11-16T18:42:51-05:00",
-			"url": "https://github.com/SamuelLangenfeld/project_github_commit_feed/commit/6003c2c271b7bf09fb5e2685972cdaebe2299fab",
+			"timestamp": "2017-11-16T18:47:42-05:00",
+			"url": "https://github.com/SamuelLangenfeld/project_github_commit_feed/commit/2034496760a46f30ed75da5fc11b9b34d923fd28",
 			"author": {
 				"name": "SamuelLangenfeld",
 				"email": "samlangenfeld@gmail.com",
@@ -34,12 +34,12 @@
 		}
 	],
 	"head_commit": {
-		"id": "6003c2c271b7bf09fb5e2685972cdaebe2299fab",
-		"tree_id": "23e919c08ae56afe9154082108d01c987cab9b19",
+		"id": "2034496760a46f30ed75da5fc11b9b34d923fd28",
+		"tree_id": "b4b894be1c10ef79c673d368fe36aa8ec881abaf",
 		"distinct": true,
 		"message": "push",
-		"timestamp": "2017-11-16T18:42:51-05:00",
-		"url": "https://github.com/SamuelLangenfeld/project_github_commit_feed/commit/6003c2c271b7bf09fb5e2685972cdaebe2299fab",
+		"timestamp": "2017-11-16T18:47:42-05:00",
+		"url": "https://github.com/SamuelLangenfeld/project_github_commit_feed/commit/2034496760a46f30ed75da5fc11b9b34d923fd28",
 		"author": {
 			"name": "SamuelLangenfeld",
 			"email": "samlangenfeld@gmail.com",
@@ -125,7 +125,7 @@
 		"deployments_url": "https://api.github.com/repos/SamuelLangenfeld/project_github_commit_feed/deployments",
 		"created_at": 1510841595,
 		"updated_at": "2017-11-16T18:03:31Z",
-		"pushed_at": 1510875778,
+		"pushed_at": 1510876066,
 		"git_url": "git://github.com/SamuelLangenfeld/project_github_commit_feed.git",
 		"ssh_url": "git@github.com:SamuelLangenfeld/project_github_commit_feed.git",
 		"clone_url": "https://github.com/SamuelLangenfeld/project_github_commit_feed.git",

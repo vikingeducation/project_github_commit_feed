@@ -114,24 +114,32 @@ let displayWebhooks = (req, res) => {
     res.writeHead(200, _headers);
     console.log(body);
     body = JSON.parse(body);
-    /*body = body.substring(8);
-  /*jBody = JSON.parse(body);
-  let jOwn = jBody.pusher.name;
-  let jRepo = jBody.repository.name;
-  let jWrite = jOwn.concat(jWrite);*/
+
     let owner = body.pusher.name;
     let repository = body.repository.name;
-    console.log("owner is " + owner + " repository: " + repository);
-    fs.writeFile(
-      "./public/webhookData.json",
-      JSON.stringify(body, null, "\t"),
-      () => {
+    github.githubCommits(owner, repository).then(data => {
+      let element = data["data"][0];
+
+      let obj = {
+        message: element.commit.message,
+        author: element.author,
+        html_url: element.html_url,
+        sha: element.sha
+      };
+      let element = data["data"][0];
+      fs.appendFile("./public/commits.json", JSON.stringify(obj), err => {
         if (err) {
           throw err;
         } else {
         }
-      }
-    );
+      });
+      fs.appendFile("./public/shas", obj.sha, err => {
+        if (err) {
+          throw err;
+        } else {
+        }
+      });
+    });
     res.end("200 OK");
   });
 };
