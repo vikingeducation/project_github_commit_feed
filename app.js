@@ -53,7 +53,8 @@ const server = http.createServer( (req, res) => {
         webhooksData += data;
       })
       req.on('end', () => {
-        if (req.headers['content-type'] === 'application/json') {
+        debugger
+        if (req.headers['Content-Type'] === 'application/json') {
           console.log('slicing data');
            jsonData = JSON.parse(webhooksData.slice(8));
            var jsonStr = gitHubWrapper(webhookData.pusher.name, webhookData.repository.name);
