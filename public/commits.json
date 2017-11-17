@@ -1217,4 +1217,27 @@
 	},
 	"html_url": "https://github.com/SamuelLangenfeld/project_github_commit_feed/commit/62960f354b5e2b0fa03377051424d63b4b68717c",
 	"sha": "62960f354b5e2b0fa03377051424d63b4b68717c"
+}{
+	"message": "shas should concatenate correctly in file",
+	"author": {
+		"login": "SamuelLangenfeld",
+		"id": 22413614,
+		"avatar_url": "https://avatars3.githubusercontent.com/u/22413614?v=4",
+		"gravatar_id": "",
+		"url": "https://api.github.com/users/SamuelLangenfeld",
+		"html_url": "https://github.com/SamuelLangenfeld",
+		"followers_url": "https://api.github.com/users/SamuelLangenfeld/followers",
+		"following_url": "https://api.github.com/users/SamuelLangenfeld/following{/other_user}",
+		"gists_url": "https://api.github.com/users/SamuelLangenfeld/gists{/gist_id}",
+		"starred_url": "https://api.github.com/users/SamuelLangenfeld/starred{/owner}{/repo}",
+		"subscriptions_url": "https://api.github.com/users/SamuelLangenfeld/subscriptions",
+		"organizations_url": "https://api.github.com/users/SamuelLangenfeld/orgs",
+		"repos_url": "https://api.github.com/users/SamuelLangenfeld/repos",
+		"events_url": "https://api.github.com/users/SamuelLangenfeld/events{/privacy}",
+		"received_events_url": "https://api.github.com/users/SamuelLangenfeld/received_events",
+		"type": "User",
+		"site_admin": false
+	},
+	"html_url": "https://github.com/SamuelLangenfeld/project_github_commit_feed/commit/c1bd008c1e4c7c05a870cdb74e86dd87f424e69c",
+	"sha": "c1bd008c1e4c7c05a870cdb74e86dd87f424e69c"
 }
