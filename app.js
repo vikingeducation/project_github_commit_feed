@@ -55,7 +55,7 @@ const server = http.createServer( (req, res) => {
       })
       req.on('end', () => {
         debugger
-        if (req.headers['Content-Type'] === 'application/json') {
+        if (req.headers['content-type'] === 'pplication/x-www-form-urlencoded') {
           console.log('slicing data');
           webhooksData = decodeURIComponent(webhooksData);
            jsonData = JSON.parse(webhooksData.slice(8));
