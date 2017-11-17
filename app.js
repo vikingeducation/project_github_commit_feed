@@ -54,12 +54,12 @@ const server = http.createServer( (req, res) => {
         webhooksData += data;
       })
       req.on('end', () => {
-        debugger
         console.log('slicing data');
         webhooksData = decodeURIComponent(webhooksData);
-        jsonData = JSON.parse(webhooksData.slice(8));
+        debugger
+        var jsonData = JSON.parse(webhooksData.slice(8));
         var jsonStr = gitHubWrapper(jsonData.pusher.name, jsonData.repository.name);
-        json = scrubber(json);
+        json = scrubber(jsonStr);
         saveToFile(json);
         console.log('FInsihing savinf file.')
         res.end('200 OK');
