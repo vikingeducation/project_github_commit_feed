@@ -62,11 +62,19 @@ var strParser = (query) => {
   return params;
 }
 
+var _headers = {
+  "Content-Type": "text/html",
+  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Access-Control-Allow-Methods": "GET, POST, PUT, PATCH, DELETE"
+};
+
 var callback = (req, res, body, css) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.writeHead(200, _headers);
   res.write(body);
   res.end();
 }
+
 
 var postCallback = (req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
@@ -75,7 +83,7 @@ var postCallback = (req, res) => {
 }
 
 var gitCallback = (req, res, body) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.writeHead(200, _headers);
   res.write(body);
   res.end();
 }
