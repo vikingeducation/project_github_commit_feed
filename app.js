@@ -66,8 +66,6 @@ const server = http.createServer( (req, res) => {
         })
         res.end('200 OK');
       });
-      var newUrl = url.parse(req.url).query;
-
   } else {
     res.statusCode = 404;
     res.end('404 Not Found');
