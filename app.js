@@ -1,7 +1,10 @@
 const http = require('http');
 const fs = require('fs'); 
+const commits = require('./data/commits.json');
 
 var path = './public/index.html';
+
+var commitsStr = JSON.stringify(commits, null, 2);
 
 var requestListener = (req, res) => {
    res.writeHead(200, {
@@ -9,6 +12,7 @@ var requestListener = (req, res) => {
    });
    fs.readFile(path, 'utf8', (err, data) => {
       if (err) { throw err; }
+      data = data.replace('{{ commitFeed }}', commitsStr);
       res.write(data);
       res.end();
     });
