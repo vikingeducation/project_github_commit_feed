@@ -2,6 +2,7 @@ const http = require('http');
 const fs = require('fs'); 
 const url = require('url');
 const commits = require('./data/commits.json');
+const githubAPI = require('./lib/wrapper');
 
 var path = './public/index.html';
 
@@ -15,8 +16,7 @@ var parseGet = (path) => {
    if(matches !== null) { 
       var user = matches[0].substring(1);
       var repo = matches[1].substring(1);
-      console.log(user);
-      console.log(repo);
+      githubAPI.githubRepoCommits(user, repo);
    }
 };
 
