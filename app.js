@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs'); 
 const url = require('url');
 const commits = require('./data/commits.json');
-const githubAPI = require('./lib/wrapper');
+const githubRepoCommits = require('./lib/wrapper');
 
 var path = './public/index.html';
 
@@ -30,24 +30,21 @@ var requestListener = (req, res) => {
    parseGet(req.url, (user, repo) => {
       // if both parameters exist
       if((user) && (repo)) {
-         // in resolve of promise, call API
-         var APIresponse = new Promise((resolve, reject) => {
-            resolve(githubAPI.githubRepoCommits(user, repo)); 
-         }).then((value) => {
-            console.log(value);
-         });
          
-         // APIresponse.then(() => {
-         //    // stringify results from JSON file
-         //    var commitsStr = JSON.stringify(commits, null, 2);
-         //    // only call fs.readFile if URL parameters are present and JSON parameters are correct
-         //    fs.readFile(path, 'utf8', (err, data) => {
-         //       if (err) { throw err; }
-         //       data = data.replace('{{ commitFeed }}', commitsStr);
-         //       res.write(data);
-         //       res.end();
-         //    });
-         // });
+         var promise = githubRepoCommits.githubRepoCommits.getCommits(user, repo);
+         promise.then((output) => {
+            //  stringify results from JSON file
+             var commitsStr = JSON.stringify(output, null, 2);
+
+            //  only call fs.readFile if URL parameters are present and JSON parameters are correct
+            fs.readFile(path, 'utf8', (err, data) => {
+               if (err) { throw err; }
+               data = data.replace('{{ commitFeed }}', commitsStr);
+               console.log(data);
+               res.write(data);
+               res.end();
+            });
+          });
          
       } else {
          // handle readFile without user and repo parameters
