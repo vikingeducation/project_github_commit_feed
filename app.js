@@ -1,7 +1,7 @@
 const http = require('http');
 const fs = require('fs'); 
 const url = require('url');
-const commits = require('./data/commits.json');
+// const commits = require('./data/commits.json');
 const githubRepoCommits = require('./lib/wrapper');
 
 var path = './public/index.html';
@@ -10,22 +10,31 @@ var parseGet = (path, callback) => {
    var str = url.parse(path);
    var re = /\=(\w+)/g;
    var matches = str.path.match(re);
-   
+   var user;
+   var repo;
+
    if(matches !== null) { 
-      var user = matches[0].substring(1);
-      var repo = matches[1].substring(1);
+      user = matches[0].substring(1);
+      repo = matches[1].substring(1);
    }
    callback(user, repo);
 };
 
 var requestListener = (req, res) => {
-
+   // 1. Return HTML
    // 2. Check for parameters and make github call
    // 3. Return HTML
   
    res.writeHead(200, {
       'Content-type':'text/html' 
    });
+
+  //  fs.readFile(path, 'utf8', (err, data) => {
+  //   if (err) { throw err; }
+  //   data = data.replace('{{ commitFeed }}', 'Select a user and repository.');
+  //   res.write(data);
+  //   res.end();
+  //   });
    
    parseGet(req.url, (user, repo) => {
       // if both parameters exist
@@ -40,7 +49,6 @@ var requestListener = (req, res) => {
             fs.readFile(path, 'utf8', (err, data) => {
                if (err) { throw err; }
                data = data.replace('{{ commitFeed }}', commitsStr);
-               console.log(data);
                res.write(data);
                res.end();
             });
@@ -51,6 +59,8 @@ var requestListener = (req, res) => {
          fs.readFile(path, 'utf8', (err, data) => {
             if (err) { throw err; }
             data = data.replace('{{ commitFeed }}', 'Select a user and repository.');
+            res.write(data);
+            res.end();
          });
       }
    });   
