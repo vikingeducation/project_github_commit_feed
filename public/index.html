@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github Commit Feed</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+    <link rel='stylesheet' href='/public/style.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <div class="container">
+    <body>
+      <h1>The Github Commit Feed</h1>
+          <form action="/commits" method="GET">
+            <div class="row">
+                  <label for="user">User</label>
+                  <input type="text" name="user">
+            </div>
+            <div class="row">
+               <label for="repo">Repo</label>
+               <input type="text" name="repo">
+            </div>
+            <div class="row">
+               <button type ="submit" class="btn btn-default">Submit</button>
+            </div>
+         </form>
+
+         <pre>
+          {{ commitFeed }}
+         </pre>
+       </body>   
+   </div>   
+</html>
